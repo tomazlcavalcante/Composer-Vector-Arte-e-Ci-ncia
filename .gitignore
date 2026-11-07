@@ -1,0 +1,20 @@
+# Dados e pesos (ficam na máquina do laboratório)
+*.pt
+*.pth
+*.npy
+*.npz
+*.parquet
+*.mid
+*.midi
+*.wav
+*.mp3
+surname_checked_midis/
+analysis/data/embeddings/
+analysis/*/outputs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+.ipynb_checkpoints/

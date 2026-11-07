@@ -1,0 +1,23 @@
+# Modelo e tokenização (versões do treino, ver analysis/data/tokenizer_config.json)
+torch>=2.4
+miditok==3.0.6.post1
+symusic==0.6.0
+tokenizers==0.23.1
+mido
+
+# Análise
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+pyyaml
+tqdm
+
+# Topologia (F5)
+ripser
+persim
+kmapper
+
+# Opcional: UMAP para figuras (F3)
+umap-learn
