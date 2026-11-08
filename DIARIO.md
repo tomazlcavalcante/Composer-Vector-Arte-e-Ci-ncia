@@ -176,7 +176,7 @@ Itens B1–B8 concluídos, mais os extras: diagramas, exemplos MIDI, descritores
 - **C3 (fio brasileiro, F13).** Gêneros de Nazareth verificados em fontes (IMSLP, Musica Brasilis, Nazareth 150 anos). As 4 valsas ficam longe do ragtime e perto de Chopin, e os 8 tangos e polcas, o contrário: separação completa (p = 0,002). As valsas de Joplin e Johnson também ficam mais perto de Chopin que os 79 rags (p = 0,0003). **Para o modelo, a "valsa" atravessa culturas.** Ressalva: o compasso 3/4 pode ser o que ele capta.
 - **D.** Explorador interativo publicado como artifact (https://claude.ai/artifact/NeP4zc74AncnZsXsZuLvvo). Figuras novas: `F9_superficie/figs/controles_cronologia.png`, `F13_brasil/figs/valsas.png`, `F4_nuvens/figs/nuvens_pecas.png`, `F11_tempo/figs/tempo_vs_mapa.png`.
 
-## 2026-11-08, 09:35 — Plano 2 concluído
+## 2026-11-08, 09:15 — Plano 2 concluído
 
 - E1: RESULTADOS (Q6, Q7, H8–H14) e roteiro (13 slides + reserva) atualizados.
 - E2: revisão independente (Revisão 2 em REVISAO_FINAL.md). Números conferem; a linguagem ficou mais cautelosa nas valsas ("talvez pelo compasso 3/4") e nos controles.
