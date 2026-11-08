@@ -1,0 +1,304 @@
+{
+ "config": {
+  "camada": 6,
+  "alpha": 1.0,
+  "novos": 120,
+  "reps": 2,
+  "n_sementes": 7
+ },
+ "referencia": {
+  "Chopin, Frédéric": {
+   "notas_por_s": {
+    "media": 9.340976546940437,
+    "dp": 4.135469250658912,
+    "n": 96
+   },
+   "altura_media": {
+    "media": 63.78031216548468,
+    "dp": 4.107001813100201,
+    "n": 96
+   },
+   "altura_dp": {
+    "media": 11.449621765306489,
+    "dp": 1.94940196698215,
+    "n": 96
+   },
+   "extensao_p95_p5": {
+    "media": 36.782291666666666,
+    "dp": 6.642256984706116,
+    "n": 96
+   },
+   "dur_media_s": {
+    "media": 0.6300318221358577,
+    "dp": 0.33606494101715123,
+    "n": 96
+   },
+   "polifonia_media": {
+    "media": 4.803443450117201,
+    "dp": 1.4677731254693636,
+    "n": 96
+   },
+   "entropia_classes": {
+    "media": 3.0994468135825137,
+    "dp": 0.21473895240226548,
+    "n": 96
+   }
+  },
+  "Joplin, Scott": {
+   "notas_por_s": {
+    "media": 12.527465120063837,
+    "dp": 2.7354740907722115,
+    "n": 31
+   },
+   "altura_media": {
+    "media": 64.43931510736923,
+    "dp": 2.3155800351911497,
+    "n": 31
+   },
+   "altura_dp": {
+    "media": 12.928325356665765,
+    "dp": 1.7111461190084964,
+    "n": 31
+   },
+   "extensao_p95_p5": {
+    "media": 41.354838709677416,
+    "dp": 5.689454496972297,
+    "n": 31
+   },
+   "dur_media_s": {
+    "media": 0.33458613187021097,
+    "dp": 0.1347869573881029,
+    "n": 31
+   },
+   "polifonia_media": {
+    "media": 3.9245129030197554,
+    "dp": 0.8747854960780875,
+    "n": 31
+   },
+   "entropia_classes": {
+    "media": 3.107239723730191,
+    "dp": 0.11143062288247423,
+    "n": 31
+   }
+  }
+ },
+ "steering": {
+  "notas_por_s": {
+   "chopin_ref": {
+    "media": 9.340976546940437,
+    "dp": 4.135469250658912,
+    "n": 96
+   },
+   "joplin_ref": {
+    "media": 12.527465120063837,
+    "dp": 2.7354740907722115,
+    "n": 31
+   },
+   "direcao_joplin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 13.030775115382975,
+    "centrado": 18.475990247932152,
+    "nenhum": 15.330140412478414
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 3.1458498354537374,
+    "sementes_na_direcao_joplin": 5,
+    "sementes_contra": 2,
+    "wilcoxon_p": 0.078125
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 5.445215132549175,
+    "sementes_na_direcao_joplin": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   }
+  },
+  "altura_media": {
+   "chopin_ref": {
+    "media": 63.78031216548468,
+    "dp": 4.107001813100201,
+    "n": 96
+   },
+   "joplin_ref": {
+    "media": 64.43931510736923,
+    "dp": 2.3155800351911497,
+    "n": 31
+   },
+   "direcao_joplin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 64.06428571428572,
+    "centrado": 65.8875,
+    "nenhum": 64.41428571428571
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 1.4732142857142887,
+    "sementes_na_direcao_joplin": 5,
+    "sementes_contra": 2,
+    "wilcoxon_p": 0.078125
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 1.8232142857142861,
+    "sementes_na_direcao_joplin": 6,
+    "sementes_contra": 1,
+    "wilcoxon_p": 0.03125
+   }
+  },
+  "altura_dp": {
+   "chopin_ref": {
+    "media": 11.449621765306489,
+    "dp": 1.94940196698215,
+    "n": 96
+   },
+   "joplin_ref": {
+    "media": 12.928325356665765,
+    "dp": 1.7111461190084964,
+    "n": 31
+   },
+   "direcao_joplin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 9.763051553195305,
+    "centrado": 10.931432921289476,
+    "nenhum": 9.9361590932615
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 0.995273828027978,
+    "sementes_na_direcao_joplin": 5,
+    "sementes_contra": 2,
+    "wilcoxon_p": 0.078125
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 1.1683813680941721,
+    "sementes_na_direcao_joplin": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   }
+  },
+  "extensao_p95_p5": {
+   "chopin_ref": {
+    "media": 36.782291666666666,
+    "dp": 6.642256984706116,
+    "n": 96
+   },
+   "joplin_ref": {
+    "media": 41.354838709677416,
+    "dp": 5.689454496972297,
+    "n": 31
+   },
+   "direcao_joplin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 29.621428571428574,
+    "centrado": 33.067857142857136,
+    "nenhum": 29.95
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 3.1178571428571407,
+    "sementes_na_direcao_joplin": 6,
+    "sementes_contra": 1,
+    "wilcoxon_p": 0.109375
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 3.446428571428569,
+    "sementes_na_direcao_joplin": 6,
+    "sementes_contra": 1,
+    "wilcoxon_p": 0.078125
+   }
+  },
+  "dur_media_s": {
+   "chopin_ref": {
+    "media": 0.6300318221358577,
+    "dp": 0.33606494101715123,
+    "n": 96
+   },
+   "joplin_ref": {
+    "media": 0.33458613187021097,
+    "dp": 0.1347869573881029,
+    "n": 31
+   },
+   "direcao_joplin": -1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 0.35044642857142855,
+    "centrado": 0.264875,
+    "nenhum": 0.3039642857142857
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": -0.039089285714285715,
+    "sementes_na_direcao_joplin": 4,
+    "sementes_contra": 3,
+    "wilcoxon_p": 0.296875
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": -0.0855714285714286,
+    "sementes_na_direcao_joplin": 6,
+    "sementes_contra": 1,
+    "wilcoxon_p": 0.078125
+   }
+  },
+  "polifonia_media": {
+   "chopin_ref": {
+    "media": 4.803443450117201,
+    "dp": 1.4677731254693636,
+    "n": 96
+   },
+   "joplin_ref": {
+    "media": 3.9245129030197554,
+    "dp": 0.8747854960780875,
+    "n": 31
+   },
+   "direcao_joplin": -1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 3.760798770243485,
+    "centrado": 4.235429894508994,
+    "nenhum": 3.5610696986846935
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 0.6743601958243005,
+    "sementes_na_direcao_joplin": 2,
+    "sementes_contra": 5,
+    "wilcoxon_p": 0.078125
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 0.4746311242655096,
+    "sementes_na_direcao_joplin": 2,
+    "sementes_contra": 5,
+    "wilcoxon_p": 0.46875
+   }
+  },
+  "entropia_classes": {
+   "chopin_ref": {
+    "media": 3.0994468135825137,
+    "dp": 0.21473895240226548,
+    "n": 96
+   },
+   "joplin_ref": {
+    "media": 3.107239723730191,
+    "dp": 0.11143062288247423,
+    "n": 31
+   },
+   "direcao_joplin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 2.549292006390831,
+    "centrado": 2.494129827656672,
+    "nenhum": 2.2297782069568712
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 0.264351620699801,
+    "sementes_na_direcao_joplin": 5,
+    "sementes_contra": 2,
+    "wilcoxon_p": 0.109375
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": -0.055162178734158865,
+    "sementes_na_direcao_joplin": 2,
+    "sementes_contra": 5,
+    "wilcoxon_p": 0.578125
+   }
+  }
+ }
+}

@@ -22,7 +22,7 @@ Quanto da variação entre peças é explicado pelo compositor? O estilo é um p
 - **Sobreposição:** 66,9% das peças ficam mais perto do centróide de outro compositor. Em `acerto_centroide.csv`, o acerto médio por compositor é 0,337.
   - Acerto de 1,00 em Victoria, 0,83 em Meyer-Helmund (só 6 peças), 0,81 em C. L. Johnson, 0,75 em Hitz e em J. Scott, 0,74 em Joplin.
   - Acerto de 0 em Lack; Ravina (0,04), Schumann (0,03), Villa-Lobos e Busoni (0,05) quase nunca acertam.
-- **H4** (1.053 peças com gênero):
+- **H4** (1.000 peças com gênero):
   - R² do gênero = 0,155; R² do compositor nas mesmas peças = 0,303.
   - Distância média entre peças: mesmo compositor e mesmo gênero 0,648; mesmo compositor e gênero diferente 0,779; mesmo gênero e compositor diferente 0,944; tudo diferente 1,017.
 - **Dispersão (n = 20):** mais compactos Victoria (0,084), C. L. Johnson (0,251), J. Scott (0,297), Meyer-Helmund (0,318), Joplin (0,423). Meyer-Helmund tem agora só 6 peças (o resto eram cópias), reamostradas com reposição até 20 em cada sorteio, então o valor dele pesa menos. Mais espalhados Heller (0,902), Ravina (0,894), Gurlitt (0,884), Mendelssohn (0,876), Hummel (0,8745). Moszkowski (0,8675) e Schubert (0,8665) ficam logo atrás.

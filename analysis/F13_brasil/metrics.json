@@ -25,44 +25,44 @@
  "resumo": {
   "Nazareth": {
    "n": 22,
-   "d_ragtime": 0.6281043145466935,
-   "d_chopin": 0.9335468701848929,
-   "d_rag_minus_chopin": -0.3054425556381995,
+   "d_ragtime": 0.6256826171143488,
+   "d_chopin": 0.9285962322980843,
+   "d_rag_minus_chopin": -0.30291361518373544,
    "frac_mais_perto_ragtime_que_chopin": 0.8181818181818182
   },
   "Tico-Tico": {
    "n": 1,
-   "d_ragtime": 0.44100719690322876,
-   "d_chopin": 1.4092711210250854,
-   "d_rag_minus_chopin": -0.9682639241218567,
+   "d_ragtime": 0.44125163555145264,
+   "d_chopin": 1.410082995891571,
+   "d_rag_minus_chopin": -0.9688313603401184,
    "frac_mais_perto_ragtime_que_chopin": 1.0
   },
   "Villa-Lobos": {
    "n": 22,
-   "d_ragtime": 1.1710120210085402,
-   "d_chopin": 0.8985888001255014,
-   "d_rag_minus_chopin": 0.2724232208830389,
+   "d_ragtime": 1.1694104814563284,
+   "d_chopin": 0.8996467449786988,
+   "d_rag_minus_chopin": 0.2697637364776297,
    "frac_mais_perto_ragtime_que_chopin": 0.4090909090909091
   },
   "ragtime (ref.)": {
    "n": 83,
-   "d_ragtime": 0.2280356991721923,
-   "d_chopin": 1.196133631045919,
-   "d_rag_minus_chopin": -0.9680979318737265,
+   "d_ragtime": 0.22733176993318352,
+   "d_chopin": 1.1892478741840067,
+   "d_rag_minus_chopin": -0.9619161042508232,
    "frac_mais_perto_ragtime_que_chopin": 0.9879518072289156
   },
   "Nazareth/outro": {
    "n": 21,
-   "d_ragtime": 0.6259438441622824,
-   "d_chopin": 0.9322502917299668,
-   "d_rag_minus_chopin": -0.3063064475676843,
+   "d_ragtime": 0.6235990173050335,
+   "d_chopin": 0.9276215328081023,
+   "d_rag_minus_chopin": -0.30402251550306875,
    "frac_mais_perto_ragtime_que_chopin": 0.8095238095238095
   },
   "Nazareth/tango/maxixe/choro": {
    "n": 1,
-   "d_ragtime": 0.6734741926193237,
-   "d_chopin": 0.9607750177383423,
-   "d_rag_minus_chopin": -0.28730082511901855,
+   "d_ragtime": 0.6694382131099701,
+   "d_chopin": 0.9490649215877056,
+   "d_rag_minus_chopin": -0.2796267084777355,
    "frac_mais_perto_ragtime_que_chopin": 1.0
   }
  },
@@ -71,43 +71,43 @@
   "n_valsa": 0,
   "nota": "teste impossível: classes por título quase vazias"
  },
- "nazareth_dist_LOO_media": 0.47664853219281544,
+ "nazareth_dist_LOO_media": 0.4745795787735419,
  "tico_tico": [
   {
-   "d_ragtime": 0.44100719690322876,
-   "d_chopin": 1.4092711210250854,
-   "d_nazareth_loo": 0.4877051115036011
+   "d_ragtime": 0.44125163555145264,
+   "d_chopin": 1.410082995891571,
+   "d_nazareth_loo": 0.4891319274902344
   }
  ],
- "villa_lobos_mais_perto_ragtime_que_nazareth": 0.5429077064618467,
+ "villa_lobos_mais_perto_ragtime_que_nazareth": 0.5437278643419796,
  "ranking_compositores_por_dist_ao_ragtime": {
   "posicao_nazareth": 1,
-  "posicao_villa_lobos": 47,
+  "posicao_villa_lobos": 46,
   "n": 49,
   "mais_proximos": [
    [
     "Nazareth, Ernesto",
-    0.354
+    0.352
    ],
    [
     "Czerny, Carl",
-    0.579
+    0.535
    ],
    [
     "Hitz, Franz",
-    0.586
+    0.583
    ],
    [
     "Schubert, Franz",
-    0.6
+    0.595
    ],
    [
     "Wachs, Paul",
-    0.633
+    0.608
    ],
    [
     "Gottschalk, Louis Moreau",
-    0.644
+    0.638
    ]
   ]
  }

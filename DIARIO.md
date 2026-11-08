@@ -219,4 +219,10 @@ Conclusões inalteradas. A sonda era a mais inflada pelas cópias. F6 (transposi
 
 ## Ciclo 4
 
-- [ ] **H20 (controle de perfil oposto):** steering de Chopin para Joplin, cujas notas são curtas e pouco sobrepostas. Se o efeito for específico do alvo, a duração e a polifonia caem e as notas/s sobem. Se for genérico, a duração e a polifonia sobem mesmo assim.
+- [x] **H20 (controle de perfil oposto):** steering de Chopin para Joplin, cujas notas são curtas e pouco sobrepostas. Se o efeito for específico do alvo, a duração e a polifonia caem e as notas/s sobem. Se for genérico, a duração e a polifonia sobem mesmo assim.
+
+### Resultados do ciclo 4 e revisões (10:15)
+
+- **H20 mista (Chopin → Joplin).** As notas/s **sobem** com o vetor de Joplin (15,3 → 18,5; 7 de 7 sementes contra o aleatório, p = 0,016), o oposto dos pares Bach → Chopin e Mozart → Debussy, e na direção do alvo. A duração deixa de subir (0,30 → 0,26, p = 0,30). A polifonia sobe nos três pares, mesmo quando o alvo tem menos. **Leitura:** o andamento (densidade e duração) depende do alvo, enquanto o aumento da polifonia parece um efeito comum do steering. A entropia de classes de altura não se move em nenhum par em que foi medida (Mozart → Debussy e Chopin → Joplin). Figura: `F7_deslocamento/figs/descritores_tres_pares.png`.
+- **F12 e F13 refeitas** na base sem duplicatas.
+- **F5 sem duplicatas: grupos finos ficaram estáveis** (ARI k = 3: 0,68; k = 4: 0,72; k = 5: 0,73, contra 0,44–0,57 antes). Com k = 3: o bloco pré-romântico; um grupo "regular e dançante" (Alkan, Czerny, Hitz, Johnson, Joplin, Nazareth, Raff, Schubert, J. Scott, Wachs); e o resto. Com k = 4 surge um grupo "despojado" (Gurlitt, Rebikov, Satie, Victoria). **Decisão:** o veredito de "grupos finos" passa de "cai" para "enfraquece", porque são estáveis, mas a razão da lacuna (1,91, contra p95 do nulo de 2,38) continua dizendo que o espaço é um contínuo. São regiões de um contínuo, não ilhas. A mudança veio depois da limpeza dos dados, então os grupos não foram previstos e entram como exploratórios.
