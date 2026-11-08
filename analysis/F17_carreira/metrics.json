@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "n_compositores": 11,
+  "n_rho_positivo": 7,
+  "p_sinal_unilateral": 0.2744140625,
+  "media_ponderada_sqrt_n": 0.0791223601695144,
+  "p_media_perm_unilateral": 0.09158168366326734,
+  "var_pc1": 0.3384788930416107,
+  "nperm": 5000
+ },
+ "compositores": [
+  {
+   "compositor": "Scriabin, Aleksandr",
+   "n": 54,
+   "rho": 0.054774156660949105,
+   "p": 0.6930613877224555,
+   "p_unilateral": 0.34253149370125974,
+   "periodo_ref": "Moderno",
+   "rho_dist": -0.11873451496093004,
+   "p_dist": 0.3899220155968806
+  },
+  {
+   "compositor": "Beethoven, Ludwig van",
+   "n": 39,
+   "rho": 0.05520106725233536,
+   "p": 0.7338532293541292,
+   "p_unilateral": 0.3755248950209958,
+   "periodo_ref": "Romântico",
+   "rho_dist": -0.12518994334658076,
+   "p_dist": 0.4465106978604279
+  },
+  {
+   "compositor": "Brahms, Johannes",
+   "n": 18,
+   "rho": 0.13636370912791212,
+   "p": 0.6010797840431914,
+   "p_unilateral": 0.2959408118376325,
+   "periodo_ref": "Romântico",
+   "rho_dist": -0.3130166959527074,
+   "p_dist": 0.20815836832633472
+  },
+  {
+   "compositor": "Schumann, Robert",
+   "n": 30,
+   "rho": 0.26140155728587317,
+   "p": 0.16336732653469307,
+   "p_unilateral": 0.07738452309538092,
+   "periodo_ref": "Romântico",
+   "rho_dist": -0.26985539488320354,
+   "p_dist": 0.14717056588682265
+  },
+  {
+   "compositor": "Rachmaninoff, Sergei",
+   "n": 13,
+   "rho": -0.15384615384615383,
+   "p": 0.619876024795041,
+   "p_unilateral": 0.6962607478504299,
+   "periodo_ref": "Moderno",
+   "rho_dist": 0.0,
+   "p_dist": 1.0
+  },
+  {
+   "compositor": "Prokofiev, Sergey",
+   "n": 26,
+   "rho": -0.06940170940170941,
+   "p": 0.7420515896820636,
+   "p_unilateral": 0.636872625474905,
+   "periodo_ref": "Moderno",
+   "rho_dist": 0.052307692307692305,
+   "p_dist": 0.8098380323935213
+  },
+  {
+   "compositor": "Fauré, Gabriel",
+   "n": 30,
+   "rho": -0.28097886540600664,
+   "p": 0.13457308538292342,
+   "p_unilateral": 0.9322135572885423,
+   "periodo_ref": "Romântico",
+   "rho_dist": 0.26896551724137935,
+   "p_dist": 0.1365726854629074
+  },
+  {
+   "compositor": "Grieg, Edvard",
+   "n": 21,
+   "rho": 0.3818181818181818,
+   "p": 0.09098180363927215,
+   "p_unilateral": 0.042191561687662464,
+   "periodo_ref": "Romântico",
+   "rho_dist": -0.1974025974025974,
+   "p_dist": 0.3867226554689062
+  },
+  {
+   "compositor": "Medtner, Nikolay",
+   "n": 32,
+   "rho": -0.2981024954595569,
+   "p": 0.10037992401519696,
+   "p_unilateral": 0.9498100379924015,
+   "periodo_ref": "Moderno",
+   "rho_dist": 0.1364011418338932,
+   "p_dist": 0.45770845830833834
+  },
+  {
+   "compositor": "Chopin, Frédéric",
+   "n": 50,
+   "rho": 0.441344537815126,
+   "p": 0.001999600079984003,
+   "p_unilateral": 0.0011997600479904018,
+   "periodo_ref": "Romântico",
+   "rho_dist": -0.3909243697478992,
+   "p_dist": 0.0061987602479504095
+  },
+  {
+   "compositor": "Mendelssohn, Felix",
+   "n": 10,
+   "rho": 0.34545454545454546,
+   "p": 0.3379324135172965,
+   "p_unilateral": 0.16916616676664667,
+   "periodo_ref": "Romântico",
+   "rho_dist": -0.2606060606060606,
+   "p_dist": 0.46790641871625677
+  }
+ ]
+}

@@ -236,6 +236,8 @@ O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → C
 - 36 de 52 têm IC que exclui zero. Soam mais "modernos" que a data: 20 (Victoria 0,45, Scharwenka 0,40, Meyer-Helmund 0,39, Fauré, Balakirev, Scriabin, Debussy, Chopin...). Mais "antigos": 16 (Johnson −0,70, J. Scott −0,66, Joplin −0,44, Haydn −0,35, Beethoven −0,30, Mozart −0,28...). Handel e Rzewski deixaram a lista; Medtner e Rebikov entraram nos "modernos". O padrão: ragtime e clássicos abaixo da reta; romantismo médio e tardio acima.
 - **Ressalva (decisão: só ilustração).** O IC mede só a amostragem das peças; não inclui a incerteza da reta nem da PCA, e não há nulo. Com R² de 0,32, um desvio de grupo (todo o Classicismo, o ragtime) gera resíduos "significativos" em bloco, então 36 de 52 não são 36 casos notáveis. Victoria (1548) tem alavancagem e extrapolação; Meyer-Helmund agora tem só 6 peças. É posição no espaço do modelo, não juízo histórico sobre inovação. Fora da VALIDADE.
 
+**Mudança dentro da carreira (F17, H21 não confirmada).** Testamos se as obras tardias de um compositor ficam mais "à frente" no eixo do tempo do mapa, usando o número de opus como data aproximada. Não ficam: em 9 compositores, a média ponderada do ρ é 0,008 (5 de 9 positivos). Nem Scriabin, que vai de um estilo chopiniano a um quase atonal, mostra efeito (ρ = 0,05, p = 0,69). A exceção é Chopin (ρ = 0,44, p = 0,002). O eixo do tempo do modelo separa épocas, mas não acompanha a evolução individual. Ressalvas: o opus é um proxy de data e há poucas peças por compositor.
+
 ## Hipóteses
 
 | Hipótese | Previsão | Resultado | Veredito |
@@ -259,6 +261,7 @@ O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → C
 | H17 | O eixo do tempo (PC1) acompanha cromatismo, polifonia e extensão (ρ > 0) | ρ entre compositores: polifonia 0,85, duração 0,85, cromatismo 0,60, extensão 0,43 | Confirmada; polifonia e duração dominam, o cromatismo pesa menos |
 | H18 | Entre os românticos, a mesma nacionalidade aproxima os centróides (Mantel parcial > 0) | ρ parcial = −0,01, p = 0,52 (33 compositores, 528 pares) | Não confirmada (poder baixo; ausência de evidência) |
 | H19 | No steering Mozart → Debussy, os descritores vão na direção de Debussy (entropia, polifonia, duração) em mais de 4 de 7 sementes | Polifonia e duração 7/7 (p = 0,016); entropia de classes 1/7 e 4/7 (p ≥ 0,22) | Parcial |
+| H21 | Dentro da carreira, o opus acompanha o eixo do tempo (F17) | 5 de 9 com ρ > 0; média ponderada de 0,008; Scriabin 0,05 (p = 0,69); só Chopin com efeito (0,44, p = 0,002) | Não confirmada |
 | H20 | Controle de perfil oposto (Chopin → Joplin): se o efeito for do alvo, duração e polifonia caem e as notas/s sobem | Notas/s 15,3 → 18,5 (7/7 contra o aleatório, p = 0,016); duração 0,30 → 0,26 (p = 0,30); polifonia 3,56 → 4,24, sobe nos três pares | Mista: o andamento depende do alvo, a polifonia parece efeito comum |
 
 ## Leitura à luz de Meyer
