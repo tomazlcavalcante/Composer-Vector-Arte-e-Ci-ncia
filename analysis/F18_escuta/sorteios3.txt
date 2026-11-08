@@ -1,0 +1,6 @@
+1_sem_vetor	sorteio 0	posição no eixo Bach→Debussy 0.570
+2_t000	sorteio 0	posição no eixo Bach→Debussy 0.328
+2_t025	sorteio 0	posição no eixo Bach→Debussy 0.342
+2_t050	sorteio 0	posição no eixo Bach→Debussy 0.615
+2_t075	sorteio 0	posição no eixo Bach→Debussy 0.860
+2_t100	sorteio 0	posição no eixo Bach→Debussy 0.917

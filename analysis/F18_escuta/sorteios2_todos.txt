@@ -1,0 +1,25 @@
+bach	semente 50 notas, 10.4 s
+bach	alfa 0.0	sorteio 0
+bach	alfa 0.5	sorteio 0
+bach	alfa 0.75	sorteio 0
+bach	alfa 1.0	sorteio 0
+elise	semente 54 notas, 10.4 s
+elise	alfa 0.0	sorteio 2
+elise	alfa 0.5	sorteio 2
+elise	alfa 0.75	sorteio 2
+elise	alfa 1.0	sorteio 2
+gymnopedie	semente 18 notas, 9.0 s
+gymnopedie	alfa 0.0	sorteio 4
+gymnopedie	alfa 0.5	sorteio 4
+gymnopedie	alfa 0.75	sorteio 4
+gymnopedie	alfa 1.0	sorteio 4
+mozart545	semente 83 notas, 10.4 s
+mozart545	alfa 0.0	sorteio 4
+mozart545	alfa 0.5	sorteio 7
+mozart545	alfa 0.75	sorteio 8
+mozart545	alfa 1.0	sorteio 4
+impromptu	semente 67 notas, 10.5 s
+impromptu	alfa 0.0	sorteio 0
+impromptu	alfa 0.5	sorteio 0
+impromptu	alfa 0.75	sorteio 0
+impromptu	alfa 1.0	sorteio 0
