@@ -84,3 +84,16 @@ Ambiente intacto: dados, modelo e as 4.368 janelas extraídas. O modelo do Thiag
 - **Robustez entre representações** (`F6_controles/secundaria.py`). H1 vale em todas: camada 6 média 0,51; camada 5 média 0,49; camada 12 média 0,42; camada 6 último token 0,41, todas com p = 0,001. A nacionalidade parcial fica entre 0,01 e 0,04 em todas. R² do compositor: 0,28 / 0,26 / 0,22 / 0,12. O bloco pré-romântico aparece em todas; nas camadas 12 e com último token, vem com intrusos. **Decisão:** as conclusões H1, H2, H3 e H5 não dependem da escolha fina da representação. O número exato do R² depende.
 - **Tabela de validade** escrita em `analysis/F6_controles/VALIDADE.md`: 12 afirmações classificadas em sobrevive, enfraquece ou cai, mais o que nenhum controle cobre (pianista e gravação, modelo treinado no Lakh, poucos barrocos e clássicos).
 - O dendrograma da F5 agora distingue J. Scott de C. Scott. A F5 foi refeita; números inalterados.
+
+## Backlog do trabalho contínuo (2026-11-08, 07:10 → 13:00)
+
+Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a subagentes baratos. Marque [x] ao concluir.
+
+- [ ] B1. Passada 3 de extração (janela a 5/6), em segundo plano, para 3 janelas por peça.
+- [ ] B2. Revisão independente (F9): um subagente confere REPORTs, VALIDADE e DIARIO contra os metrics e CSVs.
+- [ ] B3. Expectativa (Meyer): surpresa média do modelo (perda) por compositor e período, a partir da perda já salva por janela.
+- [ ] B4. Corrigir o que a revisão apontar.
+- [ ] B5. Refazer F2–F5 com 3 janelas, se a B1 terminar; registrar a estabilidade.
+- [ ] B6. RESULTADOS.md: conclusões por hipótese, números finais e limitações.
+- [ ] B7. APRESENTACAO.md: roteiro slide a slide (mensagem, figura, número, fala), para o grupo montar o deck às 13h.
+- [ ] B8. Revisão final de RESULTADOS e APRESENTACAO por um subagente independente.
