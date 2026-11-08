@@ -1,0 +1,17 @@
+{
+ "layer": 6,
+ "pooling": "mean",
+ "n_vs_dist_media_geral": -0.11,
+ "n_vs_z_originalidade": 0.46,
+ "n_vs_dispersao": 0.004,
+ "transposicao": {
+  "n_pecas": 45,
+  "deslocamento_medio_por_semitons": {
+   "2": 0.0223,
+   "5": 0.0269
+  },
+  "frac_muda_centroide_mais_proximo": 0.122,
+  "ref_dist_media_entre_centroides": 0.9421,
+  "ref_dist_media_peca_ao_proprio_centroide": 0.5422
+ }
+}

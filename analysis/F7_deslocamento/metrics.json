@@ -54,5 +54,115 @@
   ],
   "rho_t_vs_nascimento_dentro_do_segmento": 0.53,
   "dist_bach_chopin": 0.8802
+ },
+ "b_piloto": {
+  "origem": "Bach, Johann Sebastian",
+  "alvo": "Chopin, Frédéric",
+  "n_novos_tokens": 120,
+  "resumo": [
+   {
+    "cond": "aleatorio",
+    "alpha": 0.5,
+    "progresso": 0.479,
+    "progresso_dp": 0.179,
+    "repeticao": 0.061,
+    "n": 6
+   },
+   {
+    "cond": "caminho_t0.5",
+    "alpha": 0.5,
+    "progresso": 0.428,
+    "progresso_dp": 0.152,
+    "repeticao": 0.018,
+    "n": 6
+   },
+   {
+    "cond": "centrado",
+    "alpha": 0.2,
+    "progresso": 0.55,
+    "progresso_dp": 0.257,
+    "repeticao": 0.018,
+    "n": 6
+   },
+   {
+    "cond": "centrado",
+    "alpha": 0.5,
+    "progresso": 0.578,
+    "progresso_dp": 0.231,
+    "repeticao": 0.031,
+    "n": 6
+   },
+   {
+    "cond": "centrado",
+    "alpha": 1.0,
+    "progresso": 0.741,
+    "progresso_dp": 0.071,
+    "repeticao": 0.026,
+    "n": 6
+   },
+   {
+    "cond": "nenhum",
+    "alpha": 0.0,
+    "progresso": 0.406,
+    "progresso_dp": 0.174,
+    "repeticao": 0.039,
+    "n": 6
+   }
+  ]
+ },
+ "b_forte": {
+  "origem": "Bach, Johann Sebastian",
+  "alvo": "Chopin, Frédéric",
+  "n_novos_tokens": 120,
+  "resumo": [
+   {
+    "cond": "aleatorio",
+    "alpha": 1.0,
+    "progresso": 0.433,
+    "progresso_dp": 0.142,
+    "repeticao": 0.032,
+    "n": 14
+   },
+   {
+    "cond": "caminho_t0",
+    "alpha": 1.0,
+    "progresso": 0.277,
+    "progresso_dp": 0.062,
+    "repeticao": 0.024,
+    "n": 14
+   },
+   {
+    "cond": "caminho_t0.5",
+    "alpha": 1.0,
+    "progresso": 0.338,
+    "progresso_dp": 0.097,
+    "repeticao": 0.017,
+    "n": 14
+   },
+   {
+    "cond": "caminho_t1",
+    "alpha": 1.0,
+    "progresso": 0.688,
+    "progresso_dp": 0.083,
+    "repeticao": 0.015,
+    "n": 14
+   },
+   {
+    "cond": "centrado",
+    "alpha": 1.0,
+    "progresso": 0.684,
+    "progresso_dp": 0.09,
+    "repeticao": 0.028,
+    "n": 14
+   },
+   {
+    "cond": "nenhum",
+    "alpha": 0.0,
+    "progresso": 0.392,
+    "progresso_dp": 0.128,
+    "repeticao": 0.041,
+    "n": 14
+   }
+  ]
  }
 }
