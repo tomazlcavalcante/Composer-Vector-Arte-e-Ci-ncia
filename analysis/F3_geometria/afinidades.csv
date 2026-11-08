@@ -1,0 +1,1327 @@
+a,b,dist,delta_ano,residuo,ic_lo,ic_hi
+"Satie, Erik","Victoria, Tomás Luis de",0.7509,318.0,-0.8702,0.7004,0.8391
+"Beethoven, Ludwig van","Scarlatti, Domenico",0.1619,85.0,-0.8339,0.1403,0.2648
+"Mozart, Wolfgang Amadeus","Scarlatti, Domenico",0.1524,71.0,-0.8058,0.1171,0.2682
+"Rzewski, Frederic","Victoria, Tomás Luis de",1.0558,390.0,-0.7585,0.9828,1.1359
+"Rebikov, Vladimir","Victoria, Tomás Luis de",0.8819,318.0,-0.7391,0.8081,0.9742
+"Bach, Johann Sebastian","Mozart, Wolfgang Amadeus",0.2201,71.0,-0.7382,0.1882,0.309
+"Gurlitt, Cornelius","Victoria, Tomás Luis de",0.7636,272.0,-0.734,0.611,1.0369
+"Haydn, Joseph","Mozart, Wolfgang Amadeus",0.1064,24.0,-0.7257,0.0943,0.2288
+"Busoni, Ferruccio","Victoria, Tomás Luis de",0.904,318.0,-0.7171,0.6435,1.1624
+"Johnson, Charles Leslie","Scott, James",0.0818,9.0,-0.7101,0.0731,0.1291
+"Medtner, Nikolay","Schumann, Robert",0.2478,70.0,-0.7077,0.2602,0.588
+"Balakirev, Mily","Scriabin, Aleksandr",0.1582,35.0,-0.7034,0.1325,0.3235
+"Haydn, Joseph","Scarlatti, Domenico",0.191,47.0,-0.7028,0.1484,0.2903
+"Johnson, Charles Leslie","Victoria, Tomás Luis de",0.9543,328.0,-0.6936,0.9113,0.9995
+"Scharwenka, Xaver","Victoria, Tomás Luis de",0.8887,302.0,-0.6895,0.8458,0.9352
+"Joplin, Scott","Scott, James",0.1414,17.0,-0.6719,0.1109,0.2292
+"Beethoven, Ludwig van","Haydn, Joseph",0.1981,38.0,-0.6716,0.1643,0.3424
+"Handel, George Frideric","Victoria, Tomás Luis de",0.4675,137.0,-0.6678,0.4096,0.5443
+"Balakirev, Mily","Fauré, Gabriel",0.1341,8.0,-0.6551,0.1028,0.3115
+"Debussy, Claude","Scott, Cyril",0.1615,17.0,-0.6518,0.1454,0.4524
+"Handel, George Frideric","Mozart, Wolfgang Amadeus",0.308,71.0,-0.6502,0.2442,0.439
+"Prokofiev, Sergey","Victoria, Tomás Luis de",1.0449,343.0,-0.6432,0.8925,1.2029
+"Poulenc, Francis","Victoria, Tomás Luis de",1.0733,351.0,-0.6363,0.8879,1.237
+"Lack, Théodore","Scharwenka, Xaver",0.1431,4.0,-0.6354,0.0994,0.3798
+"Bach, Johann Sebastian","Beethoven, Ludwig van",0.362,85.0,-0.6338,0.3099,0.4536
+"Scott, James","Victoria, Tomás Luis de",1.043,337.0,-0.629,0.9882,1.0912
+"Hummel, Johann Nepomuk","Victoria, Tomás Luis de",0.7668,230.0,-0.6181,0.5819,1.0019
+"Johnson, Charles Leslie","Joplin, Scott",0.1808,8.0,-0.6084,0.1393,0.2624
+"Joplin, Scott","Victoria, Tomás Luis de",1.0185,320.0,-0.6079,0.9588,1.0857
+"Bach, Johann Sebastian","Haydn, Joseph",0.2881,47.0,-0.6058,0.2574,0.3546
+"Scharwenka, Xaver","Scriabin, Aleksandr",0.223,22.0,-0.6037,0.1719,0.3264
+"Brahms, Johannes","Medtner, Nikolay",0.2967,47.0,-0.5971,0.254,0.6353
+"Lack, Théodore","Scriabin, Aleksandr",0.2411,26.0,-0.5964,0.189,0.4422
+"Debussy, Claude","Scriabin, Aleksandr",0.2012,10.0,-0.5933,0.1626,0.4029
+"Hitz, Franz","Wachs, Paul",0.2387,23.0,-0.5907,0.236,0.4153
+"Beethoven, Ludwig van","Mozart, Wolfgang Amadeus",0.2177,14.0,-0.5876,0.1763,0.3817
+"Balakirev, Mily","Medtner, Nikolay",0.299,43.0,-0.5841,0.2128,0.6456
+"Chopin, Frédéric","Scriabin, Aleksandr",0.358,62.0,-0.576,0.2634,0.5209
+"Bach, Johann Sebastian","Handel, George Frideric",0.1928,0.0,-0.5749,0.1426,0.2776
+"Nazareth, Ernesto","Schubert, Franz",0.3726,66.0,-0.5722,0.3051,0.6386
+"Fauré, Gabriel","Scriabin, Aleksandr",0.2682,27.0,-0.5719,0.1991,0.4313
+"Raff, Joachim","Victoria, Tomás Luis de",0.9341,274.0,-0.5688,0.8038,1.0618
+"Scott, Cyril","Turina, Joaquín",0.2098,3.0,-0.5659,0.1794,0.4573
+"Handel, George Frideric","Hummel, Johann Nepomuk",0.4545,93.0,-0.5628,0.3762,0.6801
+"Bach, Johann Sebastian","Scarlatti, Domenico",0.2082,0.0,-0.5595,0.1669,0.2672
+"Debussy, Claude","Turina, Joaquín",0.2652,20.0,-0.5561,0.2211,0.4583
+"Handel, George Frideric","Haydn, Joseph",0.3412,47.0,-0.5526,0.2847,0.4465
+"Poulenc, Francis","Rachmaninoff, Sergei",0.2875,26.0,-0.55,0.2549,0.6213
+"Debussy, Claude","Rachmaninoff, Sergei",0.2501,11.0,-0.5471,0.2212,0.5474
+"Godard, Benjamin","Poulenc, Francis",0.3577,50.0,-0.5441,0.3248,0.6055
+"Balakirev, Mily","Scott, Cyril",0.3376,42.0,-0.5428,0.2465,0.6522
+"Chaminade, Cécile","Medtner, Nikolay",0.2888,23.0,-0.5406,0.2553,0.5829
+"Chaminade, Cécile","Schumann, Robert",0.3546,47.0,-0.5392,0.3103,0.7365
+"Lack, Théodore","Rzewski, Frederic",0.487,92.0,-0.5276,0.4169,0.6785
+"Lack, Théodore","Victoria, Tomás Luis de",1.0401,298.0,-0.5272,0.9192,1.1803
+"Alkan, Charles-Valentin","Czerny, Carl",0.2997,22.0,-0.5271,0.23,0.6029
+"Poulenc, Francis","Ravina, Jean Henri",0.4646,81.0,-0.5205,0.3518,0.8805
+"Debussy, Claude","Liszt, Franz",0.3897,51.0,-0.5149,0.2862,0.5895
+"Liszt, Franz","Rachmaninoff, Sergei",0.4218,62.0,-0.5123,0.3161,0.6653
+"Godard, Benjamin","Meyer-Helmund, Erik",0.2907,12.0,-0.5092,0.2444,0.4328
+"Hummel, Johann Nepomuk","Scarlatti, Domenico",0.5084,93.0,-0.5089,0.3465,0.883
+"Lange, Gustav","Rachmaninoff, Sergei",0.3747,43.0,-0.5083,0.3294,0.6457
+"Scriabin, Aleksandr","Victoria, Tomás Luis de",1.1295,324.0,-0.5076,1.0626,1.1928
+"Turina, Joaquín","Victoria, Tomás Luis de",1.1569,334.0,-0.5071,1.0767,1.2294
+"Poulenc, Francis","Schumann, Robert",0.4996,89.0,-0.507,0.387,0.8626
+"Bach, Johann Sebastian","Victoria, Tomás Luis de",0.6294,137.0,-0.5059,0.5564,0.7181
+"Balakirev, Mily","Debussy, Claude",0.3289,25.0,-0.5058,0.2695,0.5721
+"Joplin, Scott","Schubert, Franz",0.4543,71.0,-0.5039,0.3778,0.6425
+"Joplin, Scott","Nazareth, Ernesto",0.2803,5.0,-0.5009,0.2488,0.4262
+"Scott, Cyril","Scriabin, Aleksandr",0.2867,7.0,-0.4997,0.2012,0.5981
+"Gurlitt, Cornelius","Satie, Erik",0.3921,46.0,-0.499,0.3174,0.7183
+"Grieg, Edvard","Poulenc, Francis",0.4208,56.0,-0.4972,0.3788,0.7472
+"Debussy, Claude","Scharwenka, Xaver",0.3028,12.0,-0.4971,0.2232,0.5339
+"Scott, Cyril","Victoria, Tomás Luis de",1.1598,331.0,-0.4961,1.0633,1.2501
+"Grieg, Edvard","Victoria, Tomás Luis de",1.0675,295.0,-0.4919,0.8925,1.2685
+"Balakirev, Mily","Rachmaninoff, Sergei",0.3733,36.0,-0.491,0.3018,0.6941
+"Chaminade, Cécile","Ravina, Jean Henri",0.3816,39.0,-0.4908,0.3364,0.7398
+"Rzewski, Frederic","Scriabin, Aleksandr",0.4583,66.0,-0.4865,0.361,0.6432
+"Rebikov, Vladimir","Satie, Erik",0.2816,0.0,-0.4861,0.2233,0.4596
+"Rachmaninoff, Sergei","Ravina, Jean Henri",0.4315,55.0,-0.4838,0.3431,0.8331
+"Chaminade, Cécile","Poulenc, Francis",0.3992,42.0,-0.4812,0.2991,0.7166
+"Rachmaninoff, Sergei","Schumann, Robert",0.4577,63.0,-0.479,0.3825,0.835
+"Mozart, Wolfgang Amadeus","Victoria, Tomás Luis de",0.8478,208.0,-0.478,0.7467,0.9568
+"Brahms, Johannes","Schumann, Robert",0.3517,23.0,-0.4777,0.3281,0.7687
+"Meyer-Helmund, Erik","Victoria, Tomás Luis de",1.1309,313.0,-0.4767,1.1,1.1569
+"Lange, Gustav","Meyer-Helmund, Erik",0.3747,31.0,-0.4762,0.3032,0.5467
+"Chopin, Frédéric","Meyer-Helmund, Erik",0.429,51.0,-0.4756,0.3822,0.5296
+"Bach, Johann Sebastian","Hummel, Johann Nepomuk",0.5422,93.0,-0.475,0.4211,0.7963
+"Liszt, Franz","Medtner, Nikolay",0.4801,69.0,-0.4727,0.3926,0.7006
+"Rebikov, Vladimir","Scharwenka, Xaver",0.3384,16.0,-0.4722,0.2629,0.5238
+"Fauré, Gabriel","Villa-Lobos, Heitor",0.4086,42.0,-0.4718,0.2863,0.8363
+"Lange, Gustav","Poulenc, Francis",0.4838,69.0,-0.469,0.3936,0.8113
+"Meyer-Helmund, Erik","Teilman, Christian",0.3471,18.0,-0.4689,0.2691,0.5457
+"Chopin, Frédéric","Rachmaninoff, Sergei",0.4693,63.0,-0.4675,0.386,0.6892
+"Balakirev, Mily","Chaminade, Cécile",0.3545,20.0,-0.4668,0.2459,0.711
+"Godard, Benjamin","Medtner, Nikolay",0.3847,31.0,-0.4662,0.3126,0.6492
+"Chopin, Frédéric","Scharwenka, Xaver",0.4089,40.0,-0.4661,0.31,0.5946
+"Balakirev, Mily","Poulenc, Francis",0.4701,62.0,-0.464,0.353,0.7756
+"Godard, Benjamin","Ravina, Jean Henri",0.3883,31.0,-0.4625,0.3433,0.7065
+"Lange, Gustav","Ravina, Jean Henri",0.3381,12.0,-0.4618,0.2907,0.6799
+"Brahms, Johannes","Prokofiev, Sergey",0.4631,58.0,-0.4603,0.4039,0.7638
+"Mendelssohn, Felix","Scarlatti, Domenico",0.6403,124.0,-0.4602,0.4564,1.0369
+"Beethoven, Ludwig van","Handel, George Frideric",0.5375,85.0,-0.4583,0.4191,0.699
+"Grieg, Edvard","Scott, Cyril",0.4065,36.0,-0.4578,0.3477,0.7838
+"Godard, Benjamin","Schumann, Robert",0.4157,39.0,-0.4566,0.3444,0.7223
+"Debussy, Claude","Victoria, Tomás Luis de",1.1566,314.0,-0.4537,1.0372,1.2579
+"Balakirev, Mily","Turina, Joaquín",0.435,45.0,-0.4534,0.3742,0.6157
+"Gottschalk, Louis Moreau","Nazareth, Ernesto",0.407,34.0,-0.4519,0.2924,0.7029
+"Czerny, Carl","Raff, Joachim",0.4007,31.0,-0.4502,0.3358,0.635
+"Debussy, Claude","Rzewski, Frederic",0.5222,76.0,-0.4494,0.441,0.6984
+"Medtner, Nikolay","Poulenc, Francis",0.3699,19.0,-0.4488,0.3245,0.6577
+"Grieg, Edvard","Prokofiev, Sergey",0.4478,48.0,-0.4487,0.3877,0.8019
+"Medtner, Nikolay","Rachmaninoff, Sergei",0.3409,7.0,-0.4456,0.2655,0.6907
+"Czerny, Carl","Scott, James",0.5744,94.0,-0.4455,0.4686,0.759
+"Liszt, Franz","Villa-Lobos, Heitor",0.528,76.0,-0.4436,0.3369,1.0502
+"Hitz, Franz","Teilman, Christian",0.3645,15.0,-0.4434,0.337,0.599
+"Rachmaninoff, Sergei","Scott, Cyril",0.3422,6.0,-0.4416,0.2979,0.6198
+"Prokofiev, Sergey","Rzewski, Frederic",0.4531,47.0,-0.4407,0.3467,0.7152
+"Hitz, Franz","Nazareth, Ernesto",0.4214,35.0,-0.4402,0.3741,0.6325
+"Liszt, Franz","Moszkowski, Moritz",0.4435,43.0,-0.4396,0.3592,0.6923
+"Godard, Benjamin","Lange, Gustav",0.3809,19.0,-0.4378,0.3234,0.5673
+"Chaminade, Cécile","Godard, Benjamin",0.3517,8.0,-0.4374,0.2859,0.6229
+"Liszt, Franz","Scott, Cyril",0.5129,68.0,-0.4373,0.4045,0.752
+"Meyer-Helmund, Erik","Scott, Cyril",0.3788,18.0,-0.4372,0.3478,0.5944
+"Grieg, Edvard","Rachmaninoff, Sergei",0.4116,30.0,-0.4366,0.3664,0.7138
+"Liszt, Franz","Scriabin, Aleksandr",0.4955,61.0,-0.4359,0.3571,0.7192
+"Scharwenka, Xaver","Scott, Cyril",0.4107,29.0,-0.4349,0.295,0.6939
+"Medtner, Nikolay","Prokofiev, Sergey",0.3629,11.0,-0.4343,0.3263,0.6423
+"Rachmaninoff, Sergei","Scriabin, Aleksandr",0.3369,1.0,-0.4335,0.2254,0.6236
+"Chopin, Frédéric","Lack, Théodore",0.4318,36.0,-0.4325,0.3515,0.6302
+"Grieg, Edvard","Meyer-Helmund, Erik",0.384,18.0,-0.432,0.344,0.6751
+"Moszkowski, Moritz","Schumann, Robert",0.456,44.0,-0.4298,0.3841,0.8312
+"Brahms, Johannes","Rzewski, Frederic",0.6207,105.0,-0.4288,0.5124,0.8801
+"Balakirev, Mily","Liszt, Franz",0.4113,26.0,-0.4261,0.2869,0.6451
+"Lack, Théodore","Meyer-Helmund, Erik",0.3838,15.0,-0.4241,0.2883,0.5564
+"Grieg, Edvard","Scriabin, Aleksandr",0.4249,29.0,-0.4206,0.268,0.8059
+"Brahms, Johannes","Scriabin, Aleksandr",0.452,39.0,-0.4204,0.3152,0.7786
+"Balakirev, Mily","Schumann, Robert",0.4209,27.0,-0.4192,0.2852,0.8736
+"Balakirev, Mily","Chopin, Frédéric",0.4221,27.0,-0.418,0.2962,0.6372
+"Debussy, Claude","Grieg, Edvard",0.4018,19.0,-0.4169,0.3127,0.7454
+"Nazareth, Ernesto","Scott, James",0.4114,22.0,-0.4153,0.3385,0.5716
+"Heller, Stephen","Prokofiev, Sergey",0.5617,78.0,-0.4153,0.4661,0.8623
+"Czerny, Carl","Johnson, Charles Leslie",0.5807,85.0,-0.4151,0.4533,0.7806
+"Busoni, Ferruccio","Rzewski, Frederic",0.5464,72.0,-0.4145,0.3901,0.8762
+"Debussy, Claude","Prokofiev, Sergey",0.4313,29.0,-0.4142,0.3157,0.7305
+"Debussy, Claude","Villa-Lobos, Heitor",0.4209,25.0,-0.4139,0.303,0.8295
+"Gottschalk, Louis Moreau","Liszt, Franz",0.4045,18.0,-0.4115,0.2968,0.6693
+"Gottschalk, Louis Moreau","Lange, Gustav",0.361,1.0,-0.4094,0.3058,0.5893
+"Chopin, Frédéric","Grieg, Edvard",0.4474,33.0,-0.4088,0.3316,0.7886
+"Victoria, Tomás Luis de","Villa-Lobos, Heitor",1.269,339.0,-0.4084,1.0931,1.3569
+"Godard, Benjamin","Rachmaninoff, Sergei",0.4246,24.0,-0.4075,0.3726,0.6954
+"Chopin, Frédéric","Godard, Benjamin",0.4665,39.0,-0.4058,0.3618,0.678
+"Godard, Benjamin","Teilman, Christian",0.3787,6.0,-0.4051,0.3295,0.5594
+"Meyer-Helmund, Erik","Poulenc, Francis",0.4649,38.0,-0.4048,0.3804,0.7165
+"Alkan, Charles-Valentin","Nazareth, Ernesto",0.4971,50.0,-0.4047,0.3792,0.7323
+"Chopin, Frédéric","Scott, Cyril",0.5488,69.0,-0.404,0.4489,0.744
+"Rachmaninoff, Sergei","Victoria, Tomás Luis de",1.236,325.0,-0.4039,1.0744,1.3668
+"Grieg, Edvard","Scharwenka, Xaver",0.3837,7.0,-0.4028,0.2225,0.7964
+"Medtner, Nikolay","Scriabin, Aleksandr",0.387,8.0,-0.4022,0.2061,0.753
+"Chaminade, Cécile","Liszt, Franz",0.4906,46.0,-0.4005,0.3889,0.7686
+"Teilman, Christian","Victoria, Tomás Luis de",1.1591,295.0,-0.4002,1.0025,1.2992
+"Fauré, Gabriel","Scott, Cyril",0.4597,34.0,-0.3992,0.3286,0.7909
+"Balakirev, Mily","Rzewski, Frederic",0.64,101.0,-0.3988,0.4885,0.8533
+"Debussy, Claude","Poulenc, Francis",0.4693,37.0,-0.3977,0.3408,0.7998
+"Godard, Benjamin","Scott, Cyril",0.4511,30.0,-0.3971,0.3902,0.6491
+"Poulenc, Francis","Scott, Cyril",0.4246,20.0,-0.3967,0.3643,0.7668
+"Rzewski, Frederic","Scharwenka, Xaver",0.6073,88.0,-0.3966,0.5037,0.8105
+"Haydn, Joseph","Hummel, Johann Nepomuk",0.4956,46.0,-0.3955,0.365,0.7921
+"Liszt, Franz","Rzewski, Frederic",0.7134,127.0,-0.3951,0.5267,0.899
+"Gottschalk, Louis Moreau","Ravina, Jean Henri",0.4024,11.0,-0.3948,0.3602,0.6788
+"Balakirev, Mily","Villa-Lobos, Heitor",0.5071,50.0,-0.3948,0.3419,0.9775
+"Debussy, Claude","Lack, Théodore",0.4163,16.0,-0.3943,0.3454,0.6386
+"Liszt, Franz","Turina, Joaquín",0.5646,71.0,-0.3936,0.4377,0.7733
+"Medtner, Nikolay","Moszkowski, Moritz",0.4447,26.0,-0.3927,0.3333,0.7972
+"Chopin, Frédéric","Poulenc, Francis",0.6168,89.0,-0.3898,0.45,0.8951
+"Grieg, Edvard","Heller, Stephen",0.4598,30.0,-0.3884,0.4013,0.8898
+"Hummel, Johann Nepomuk","Mozart, Wolfgang Amadeus",0.4401,22.0,-0.3866,0.3436,0.756
+"Liszt, Franz","Ravina, Jean Henri",0.4002,7.0,-0.3862,0.335,0.6982
+"Moszkowski, Moritz","Raff, Joachim",0.4676,32.0,-0.3859,0.3371,0.8456
+"Nazareth, Ernesto","Wachs, Paul",0.4146,12.0,-0.3853,0.3567,0.5974
+"Grieg, Edvard","Rebikov, Vladimir",0.4444,23.0,-0.385,0.3374,0.8344
+"Heller, Stephen","Turina, Joaquín",0.569,69.0,-0.3839,0.4224,0.8704
+"Heller, Stephen","Meyer-Helmund, Erik",0.5129,48.0,-0.3836,0.3824,0.8892
+"Fauré, Gabriel","Rzewski, Frederic",0.6351,93.0,-0.3822,0.5086,0.8435
+"Schubert, Franz","Scott, James",0.6219,88.0,-0.3819,0.508,0.8481
+"Chopin, Frédéric","Medtner, Nikolay",0.5757,70.0,-0.3799,0.4207,0.896
+"Lange, Gustav","Scriabin, Aleksandr",0.5018,42.0,-0.3786,0.3892,0.6856
+"Busoni, Ferruccio","Liszt, Franz",0.5369,55.0,-0.3783,0.3576,0.9972
+"Chopin, Frédéric","Rebikov, Vladimir",0.5402,56.0,-0.3778,0.4393,0.7369
+"Godard, Benjamin","Gottschalk, Louis Moreau",0.4437,20.0,-0.3777,0.3882,0.6223
+"Johnson, Charles Leslie","Schubert, Franz",0.6025,79.0,-0.3771,0.4526,0.8421
+"Fauré, Gabriel","Medtner, Nikolay",0.4846,35.0,-0.377,0.291,0.829
+"Medtner, Nikolay","Ravina, Jean Henri",0.557,62.0,-0.377,0.4724,0.8945
+"Meyer-Helmund, Erik","Scriabin, Aleksandr",0.4208,11.0,-0.3764,0.3759,0.4924
+"Medtner, Nikolay","Scott, Cyril",0.3947,1.0,-0.3756,0.2994,0.7319
+"Lack, Théodore","Scott, Cyril",0.4811,33.0,-0.3752,0.3414,0.7972
+"Johnson, Charles Leslie","Nazareth, Ernesto",0.4278,13.0,-0.3748,0.3601,0.5799
+"Teilman, Christian","Wachs, Paul",0.4146,8.0,-0.3746,0.3244,0.6452
+"Brahms, Johannes","Rachmaninoff, Sergei",0.5017,40.0,-0.3734,0.407,0.8619
+"Debussy, Claude","Medtner, Nikolay",0.4427,18.0,-0.3733,0.3011,0.7769
+"Schubert, Franz","Teilman, Christian",0.5179,46.0,-0.3732,0.4576,0.7345
+"Haydn, Joseph","Victoria, Tomás Luis de",0.8886,184.0,-0.3729,0.7967,0.9667
+"Balakirev, Mily","Godard, Benjamin",0.4279,12.0,-0.372,0.2915,0.6556
+"Brahms, Johannes","Debussy, Claude",0.4752,29.0,-0.3703,0.3956,0.791
+"Rebikov, Vladimir","Scott, Cyril",0.4326,13.0,-0.3699,0.3504,0.6515
+"Brahms, Johannes","Scott, Cyril",0.524,46.0,-0.3672,0.432,0.8654
+"Fauré, Gabriel","Victoria, Tomás Luis de",1.1981,297.0,-0.3666,1.1132,1.2475
+"Fauré, Gabriel","Turina, Joaquín",0.5032,37.0,-0.3638,0.4244,0.658
+"Schumann, Robert","Scott, Cyril",0.5896,69.0,-0.3633,0.4172,0.9552
+"Scriabin, Aleksandr","Villa-Lobos, Heitor",0.4447,15.0,-0.3632,0.3349,0.8245
+"Medtner, Nikolay","Rzewski, Frederic",0.5603,58.0,-0.363,0.4268,0.804
+"Balakirev, Mily","Brahms, Johannes",0.4164,4.0,-0.362,0.2775,0.8103
+"Brahms, Johannes","Turina, Joaquín",0.5378,49.0,-0.3614,0.4646,0.8774
+"Hitz, Franz","Joplin, Scott",0.5137,40.0,-0.3613,0.4437,0.6668
+"Schumann, Robert","Turina, Joaquín",0.6,72.0,-0.3609,0.4565,1.0019
+"Meyer-Helmund, Erik","Scharwenka, Xaver",0.4363,11.0,-0.3609,0.38,0.5359
+"Balakirev, Mily","Lack, Théodore",0.433,9.0,-0.3589,0.3567,0.6672
+"Chaminade, Cécile","Scott, Cyril",0.4679,22.0,-0.3588,0.3609,0.8246
+"Alkan, Charles-Valentin","Victoria, Tomás Luis de",1.1217,265.0,-0.3571,0.9135,1.3142
+"Brahms, Johannes","Chaminade, Cécile",0.4751,24.0,-0.357,0.352,0.8387
+"Debussy, Claude","Meyer-Helmund, Erik",0.414,1.0,-0.3564,0.3595,0.5783
+"Chopin, Frédéric","Debussy, Claude",0.5517,52.0,-0.3555,0.449,0.7491
+"Debussy, Claude","Lange, Gustav",0.4987,32.0,-0.3548,0.3992,0.7056
+"Poulenc, Francis","Prokofiev, Sergey",0.435,8.0,-0.3542,0.3574,0.7606
+"Rachmaninoff, Sergei","Scharwenka, Xaver",0.4757,23.0,-0.3538,0.3156,0.7594
+"Prokofiev, Sergey","Scott, Cyril",0.4461,12.0,-0.3538,0.3555,0.77
+"Balakirev, Mily","Meyer-Helmund, Erik",0.4785,24.0,-0.3536,0.392,0.6454
+"Grieg, Edvard","Lack, Théodore",0.4235,3.0,-0.3522,0.3031,0.8224
+"Chaminade, Cécile","Meyer-Helmund, Erik",0.4266,4.0,-0.3519,0.347,0.7105
+"Grieg, Edvard","Turina, Joaquín",0.5205,39.0,-0.3518,0.4243,0.8042
+"Lack, Théodore","Rebikov, Vladimir",0.4702,20.0,-0.3512,0.3873,0.6339
+"Chaminade, Cécile","Heller, Stephen",0.5353,44.0,-0.3505,0.4213,0.8792
+"Meyer-Helmund, Erik","Turina, Joaquín",0.4738,21.0,-0.3503,0.4024,0.6384
+"Meyer-Helmund, Erik","Ravina, Jean Henri",0.5336,43.0,-0.3495,0.4135,0.832
+"Lange, Gustav","Liszt, Franz",0.4702,19.0,-0.3484,0.3626,0.6665
+"Rzewski, Frederic","Scott, Cyril",0.578,59.0,-0.348,0.4661,0.8728
+"Liszt, Franz","Poulenc, Francis",0.6585,88.0,-0.3454,0.4667,0.995
+"Heller, Stephen","Tchaikovsky, Pyotr",0.4947,27.0,-0.3454,0.4131,0.916
+"Heller, Stephen","Rzewski, Frederic",0.7603,125.0,-0.3428,0.5526,1.0724
+"Gurlitt, Cornelius","Handel, George Frideric",0.7875,135.0,-0.3425,0.5881,1.0498
+"Hummel, Johann Nepomuk","Raff, Joachim",0.5433,44.0,-0.3424,0.4097,0.8389
+"Debussy, Claude","Fauré, Gabriel",0.4714,17.0,-0.3419,0.3628,0.6864
+"Heller, Stephen","Medtner, Nikolay",0.6067,67.0,-0.3408,0.4544,0.9483
+"Czerny, Carl","Nazareth, Ernesto",0.6212,72.0,-0.3397,0.4633,0.8849
+"Scriabin, Aleksandr","Turina, Joaquín",0.4555,10.0,-0.339,0.3773,0.6165
+"Mendelssohn, Felix","Tchaikovsky, Pyotr",0.5122,31.0,-0.3387,0.3771,0.9515
+"Lange, Gustav","Villa-Lobos, Heitor",0.5826,57.0,-0.3381,0.4617,0.9235
+"Godard, Benjamin","Turina, Joaquín",0.5183,33.0,-0.338,0.418,0.7283
+"Lange, Gustav","Scott, Cyril",0.5612,49.0,-0.338,0.4248,0.8032
+"Chaminade, Cécile","Scriabin, Aleksandr",0.4706,15.0,-0.3373,0.3145,0.8334
+"Rachmaninoff, Sergei","Villa-Lobos, Heitor",0.4682,14.0,-0.337,0.381,0.8454
+"Heller, Stephen","Satie, Erik",0.574,53.0,-0.3359,0.3921,0.9104
+"Handel, George Frideric","Scarlatti, Domenico",0.4326,0.0,-0.3351,0.3401,0.5349
+"Meyer-Helmund, Erik","Rachmaninoff, Sergei",0.4649,12.0,-0.335,0.4273,0.6194
+"Beethoven, Ludwig van","Hummel, Johann Nepomuk",0.4545,8.0,-0.3346,0.3358,0.7711
+"Gottschalk, Louis Moreau","Meyer-Helmund, Erik",0.5196,32.0,-0.334,0.4003,0.7167
+"Balakirev, Mily","Scharwenka, Xaver",0.4711,13.0,-0.3314,0.3535,0.6614
+"Medtner, Nikolay","Victoria, Tomás Luis de",1.3272,332.0,-0.3314,1.1884,1.4164
+"Scott, Cyril","Villa-Lobos, Heitor",0.4586,8.0,-0.3305,0.3376,0.8544
+"Poulenc, Francis","Scriabin, Aleksandr",0.5103,27.0,-0.3298,0.344,0.816
+"Prokofiev, Sergey","Rachmaninoff, Sergei",0.4876,18.0,-0.3284,0.3755,0.7893
+"Prokofiev, Sergey","Schumann, Robert",0.6574,81.0,-0.3277,0.5299,0.9621
+"Balakirev, Mily","Ravina, Jean Henri",0.4918,19.0,-0.3269,0.3519,0.9397
+"Schumann, Robert","Scriabin, Aleksandr",0.6072,62.0,-0.3269,0.3631,1.0714
+"Godard, Benjamin","Grieg, Edvard",0.4577,6.0,-0.3261,0.3769,0.7295
+"Prokofiev, Sergey","Scharwenka, Xaver",0.5524,41.0,-0.3253,0.3477,0.8898
+"Brahms, Johannes","Heller, Stephen",0.4963,20.0,-0.3251,0.4222,0.9293
+"Grieg, Edvard","Medtner, Nikolay",0.5418,37.0,-0.3251,0.4232,0.8551
+"Handel, George Frideric","Johnson, Charles Leslie",0.9552,191.0,-0.325,0.9045,1.0332
+"Schumann, Robert","Tchaikovsky, Pyotr",0.5268,30.0,-0.3214,0.4335,0.9784
+"Chaminade, Cécile","Chopin, Frédéric",0.5725,47.0,-0.3213,0.4258,0.8718
+"Godard, Benjamin","Heller, Stephen",0.5432,36.0,-0.3211,0.4393,0.8943
+"Grieg, Edvard","Rzewski, Frederic",0.7025,95.0,-0.3201,0.5651,0.9765
+"Heller, Stephen","Scott, Cyril",0.6258,66.0,-0.319,0.4564,1.0143
+"Satie, Erik","Scharwenka, Xaver",0.4931,16.0,-0.3176,0.3734,0.6979
+"Brahms, Johannes","Poulenc, Francis",0.6284,66.0,-0.3164,0.5246,0.9477
+"Lange, Gustav","Teilman, Christian",0.4867,13.0,-0.3159,0.3698,0.7567
+"Brahms, Johannes","Chopin, Frédéric",0.5137,23.0,-0.3157,0.4157,0.832
+"Alkan, Charles-Valentin","Scott, James",0.646,72.0,-0.3149,0.5189,0.8606
+"Moszkowski, Moritz","Poulenc, Francis",0.5741,45.0,-0.3144,0.455,0.925
+"Poulenc, Francis","Turina, Joaquín",0.499,17.0,-0.3143,0.4011,0.8115
+"Gottschalk, Louis Moreau","Poulenc, Francis",0.6417,70.0,-0.3138,0.5008,0.954
+"Moszkowski, Moritz","Victoria, Tomás Luis de",1.2755,306.0,-0.3134,1.0927,1.3947
+"Rebikov, Vladimir","Turina, Joaquín",0.4977,16.0,-0.3129,0.3918,0.6874
+"Heller, Stephen","Teilman, Christian",0.5368,30.0,-0.3114,0.4589,0.8682
+"Rzewski, Frederic","Schumann, Robert",0.8,128.0,-0.3112,0.589,1.0943
+"Heller, Stephen","Poulenc, Francis",0.6881,86.0,-0.3104,0.5255,1.0784
+"Heller, Stephen","Rebikov, Vladimir",0.5998,53.0,-0.3101,0.4497,0.9644
+"Chaminade, Cécile","Turina, Joaquín",0.5272,25.0,-0.3076,0.4146,0.8271
+"Prokofiev, Sergey","Turina, Joaquín",0.4855,9.0,-0.3064,0.4025,0.7524
+"Chaminade, Cécile","Rachmaninoff, Sergei",0.5048,16.0,-0.3058,0.4156,0.887
+"Rachmaninoff, Sergei","Turina, Joaquín",0.4862,9.0,-0.3056,0.4132,0.7278
+"Nazareth, Ernesto","Teilman, Christian",0.5161,20.0,-0.3052,0.403,0.7882
+"Debussy, Claude","Rebikov, Vladimir",0.4734,4.0,-0.305,0.3425,0.6866
+"Fauré, Gabriel","Schumann, Robert",0.5566,35.0,-0.305,0.3603,0.9759
+"Chopin, Frédéric","Villa-Lobos, Heitor",0.6696,77.0,-0.3048,0.5205,0.9264
+"Godard, Benjamin","Liszt, Franz",0.5651,38.0,-0.3046,0.4477,0.7325
+"Chaminade, Cécile","Gottschalk, Louis Moreau",0.5391,28.0,-0.3038,0.4662,0.785
+"Chopin, Frédéric","Turina, Joaquín",0.658,72.0,-0.3029,0.5561,0.8161
+"Rzewski, Frederic","Turina, Joaquín",0.6169,56.0,-0.3011,0.5209,0.7703
+"Grieg, Edvard","Satie, Erik",0.5288,23.0,-0.3006,0.3743,0.9984
+"Godard, Benjamin","Scriabin, Aleksandr",0.5288,23.0,-0.3006,0.4009,0.7597
+"Beethoven, Ludwig van","Victoria, Tomás Luis de",1.0639,222.0,-0.2995,0.9385,1.1459
+"Poulenc, Francis","Scharwenka, Xaver",0.6001,49.0,-0.2991,0.4299,0.9388
+"Fauré, Gabriel","Liszt, Franz",0.5603,34.0,-0.2987,0.4439,0.7443
+"Nazareth, Ernesto","Victoria, Tomás Luis de",1.3145,315.0,-0.2985,1.2218,1.3818
+"Chaminade, Cécile","Rzewski, Frederic",0.6865,81.0,-0.2985,0.57,0.9278
+"Brahms, Johannes","Godard, Benjamin",0.5161,16.0,-0.2945,0.4221,0.7942
+"Chaminade, Cécile","Grieg, Edvard",0.5122,14.0,-0.2931,0.3918,0.8618
+"Chopin, Frédéric","Fauré, Gabriel",0.569,35.0,-0.2927,0.4194,0.7868
+"Nazareth, Ernesto","Ravina, Jean Henri",0.5958,45.0,-0.2926,0.4524,0.9231
+"Lange, Gustav","Victoria, Tomás Luis de",1.2319,282.0,-0.2925,1.1273,1.3285
+"Prokofiev, Sergey","Scriabin, Aleksandr",0.5269,19.0,-0.2918,0.3353,0.9115
+"Balakirev, Mily","Lange, Gustav",0.4955,7.0,-0.291,0.393,0.708
+"Alkan, Charles-Valentin","Moszkowski, Moritz",0.5884,41.0,-0.2894,0.4614,0.9557
+"Balakirev, Mily","Prokofiev, Sergey",0.6234,54.0,-0.2892,0.4522,0.931
+"Godard, Benjamin","Wachs, Paul",0.4856,2.0,-0.2875,0.3648,0.7232
+"Johnson, Charles Leslie","Scarlatti, Domenico",0.9948,191.0,-0.2854,0.9205,1.0674
+"Gottschalk, Louis Moreau","Rachmaninoff, Sergei",0.6009,44.0,-0.2848,0.4906,0.8755
+"Alkan, Charles-Valentin","Johnson, Charles Leslie",0.6539,63.0,-0.2829,0.5394,0.8674
+"Czerny, Carl","Moszkowski, Moritz",0.6542,63.0,-0.2825,0.412,1.0196
+"Godard, Benjamin","Victoria, Tomás Luis de",1.2941,301.0,-0.2813,1.1873,1.3811
+"Ravina, Jean Henri","Turina, Joaquín",0.6595,64.0,-0.2799,0.4971,0.9663
+"Alkan, Charles-Valentin","Raff, Joachim",0.5125,9.0,-0.2794,0.3961,0.806
+"Moszkowski, Moritz","Turina, Joaquín",0.5643,28.0,-0.2785,0.433,0.8541
+"Czerny, Carl","Scarlatti, Domenico",0.7739,106.0,-0.2783,0.6218,1.0413
+"Gottschalk, Louis Moreau","Joplin, Scott",0.5942,39.0,-0.2781,0.4419,0.8421
+"Scarlatti, Domenico","Scott, James",1.0274,200.0,-0.277,0.9483,1.1055
+"Balakirev, Mily","Victoria, Tomás Luis de",1.2665,289.0,-0.2767,1.1679,1.3423
+"Scharwenka, Xaver","Turina, Joaquín",0.5777,32.0,-0.2759,0.4548,0.7636
+"Medtner, Nikolay","Tchaikovsky, Pyotr",0.6015,40.0,-0.2736,0.4846,0.9954
+"Meyer-Helmund, Erik","Rebikov, Vladimir",0.5091,5.0,-0.272,0.4427,0.6145
+"Handel, George Frideric","Scott, James",1.0327,200.0,-0.2717,0.9578,1.1178
+"Poulenc, Francis","Teilman, Christian",0.6475,56.0,-0.2704,0.5338,0.8872
+"Ravina, Jean Henri","Scriabin, Aleksandr",0.6422,54.0,-0.2704,0.429,1.0283
+"Alkan, Charles-Valentin","Liszt, Franz",0.5029,2.0,-0.2701,0.3856,0.7969
+"Fauré, Gabriel","Rachmaninoff, Sergei",0.5728,28.0,-0.27,0.3719,0.8435
+"Chaminade, Cécile","Lange, Gustav",0.5714,27.0,-0.2688,0.4487,0.843
+"Chopin, Frédéric","Prokofiev, Sergey",0.7164,81.0,-0.2687,0.5237,0.9707
+"Grieg, Edvard","Teilman, Christian",0.4994,0.0,-0.2683,0.4312,0.7989
+"Debussy, Claude","Ravina, Jean Henri",0.6183,44.0,-0.2675,0.4521,0.9795
+"Gurlitt, Cornelius","Rebikov, Vladimir",0.6238,46.0,-0.2673,0.5022,0.9203
+"Busoni, Ferruccio","Schumann, Robert",0.6509,56.0,-0.2671,0.4994,1.0739
+"Gottschalk, Louis Moreau","Schubert, Franz",0.5869,32.0,-0.2667,0.411,0.8779
+"Chaminade, Cécile","Debussy, Claude",0.5146,5.0,-0.2665,0.3582,0.8259
+"Hummel, Johann Nepomuk","Johnson, Charles Leslie",0.7649,98.0,-0.2658,0.6126,1.0294
+"Prokofiev, Sergey","Rebikov, Vladimir",0.5695,25.0,-0.2653,0.4275,0.831
+"Chaminade, Cécile","Prokofiev, Sergey",0.5949,34.0,-0.2641,0.4848,0.8828
+"Chopin, Frédéric","Lange, Gustav",0.5581,20.0,-0.2633,0.4351,0.7452
+"Czerny, Carl","Hummel, Johann Nepomuk",0.5414,13.0,-0.2612,0.3899,0.8767
+"Ravina, Jean Henri","Scott, Cyril",0.671,61.0,-0.2604,0.5206,0.9785
+"Chaminade, Cécile","Victoria, Tomás Luis de",1.3366,309.0,-0.2603,1.1638,1.4394
+"Debussy, Claude","Schumann, Robert",0.6475,52.0,-0.2597,0.4321,1.0932
+"Beethoven, Ludwig van","Mendelssohn, Felix",0.6135,39.0,-0.2589,0.4579,0.9945
+"Brahms, Johannes","Meyer-Helmund, Erik",0.586,28.0,-0.2568,0.4947,0.8848
+"Lack, Théodore","Turina, Joaquín",0.6077,36.0,-0.2566,0.4942,0.8019
+"Godard, Benjamin","Nazareth, Ernesto",0.5491,14.0,-0.2562,0.4059,0.7956
+"Brahms, Johannes","Liszt, Franz",0.5707,22.0,-0.256,0.4176,0.9326
+"Czerny, Carl","Joplin, Scott",0.7188,77.0,-0.2555,0.5558,0.9181
+"Chaminade, Cécile","Moszkowski, Moritz",0.5212,3.0,-0.2545,0.4067,0.8251
+"Medtner, Nikolay","Meyer-Helmund, Erik",0.565,19.0,-0.2537,0.4212,0.8588
+"Poulenc, Francis","Schubert, Franz",0.7884,102.0,-0.253,0.5546,1.0531
+"Heller, Stephen","Victoria, Tomás Luis de",1.2265,265.0,-0.2523,1.0105,1.3531
+"Brahms, Johannes","Victoria, Tomás Luis de",1.2804,285.0,-0.2521,1.0128,1.4427
+"Debussy, Claude","Godard, Benjamin",0.5511,13.0,-0.2515,0.4217,0.7696
+"Fauré, Gabriel","Lack, Théodore",0.5189,1.0,-0.2514,0.3959,0.7148
+"Liszt, Franz","Prokofiev, Sergey",0.7313,80.0,-0.2511,0.5675,0.9727
+"Schubert, Franz","Tchaikovsky, Pyotr",0.6323,43.0,-0.2508,0.4485,1.0666
+"Busoni, Ferruccio","Raff, Joachim",0.6353,44.0,-0.2505,0.4774,1.0414
+"Handel, George Frideric","Satie, Erik",1.003,181.0,-0.2504,0.8921,1.1248
+"Lack, Théodore","Prokofiev, Sergey",0.6384,45.0,-0.25,0.473,0.9745
+"Brahms, Johannes","Moszkowski, Moritz",0.5746,21.0,-0.2495,0.4487,0.9809
+"Schubert, Franz","Victoria, Tomás Luis de",1.1882,249.0,-0.2477,1.0338,1.299
+"Balakirev, Mily","Moszkowski, Moritz",0.567,17.0,-0.2463,0.3408,0.9468
+"Bach, Johann Sebastian","Johnson, Charles Leslie",1.0342,191.0,-0.246,0.9761,1.0972
+"Grieg, Edvard","Lange, Gustav",0.557,13.0,-0.2456,0.3974,0.8698
+"Gottschalk, Louis Moreau","Wachs, Paul",0.5815,22.0,-0.2452,0.4768,0.8182
+"Czerny, Carl","Victoria, Tomás Luis de",1.1747,243.0,-0.2451,1.0135,1.3013
+"Godard, Benjamin","Prokofiev, Sergey",0.6355,42.0,-0.2449,0.5226,0.8379
+"Liszt, Franz","Raff, Joachim",0.5525,11.0,-0.2447,0.4317,0.77
+"Hitz, Franz","Victoria, Tomás Luis de",1.2749,280.0,-0.2441,1.157,1.3356
+"Hummel, Johann Nepomuk","Scott, James",0.8114,107.0,-0.2434,0.6701,1.0212
+"Prokofiev, Sergey","Satie, Erik",0.5914,25.0,-0.2434,0.4498,0.8576
+"Balakirev, Mily","Busoni, Ferruccio",0.6028,29.0,-0.2427,0.415,1.0869
+"Heller, Stephen","Rachmaninoff, Sergei",0.6871,60.0,-0.2416,0.5168,1.0695
+"Lack, Théodore","Poulenc, Francis",0.6684,53.0,-0.2415,0.5031,1.049
+"Rzewski, Frederic","Villa-Lobos, Heitor",0.6636,51.0,-0.241,0.5308,0.9707
+"Medtner, Nikolay","Turina, Joaquín",0.5322,2.0,-0.2409,0.4202,0.7682
+"Prokofiev, Sergey","Ravina, Jean Henri",0.723,73.0,-0.2406,0.5533,1.0829
+"Turina, Joaquín","Villa-Lobos, Heitor",0.5412,5.0,-0.2399,0.4251,0.8069
+"Brahms, Johannes","Scharwenka, Xaver",0.5734,17.0,-0.2399,0.3739,1.0099
+"Busoni, Ferruccio","Medtner, Nikolay",0.5656,14.0,-0.2397,0.4448,0.9765
+"Rebikov, Vladimir","Scriabin, Aleksandr",0.545,6.0,-0.2388,0.4459,0.7377
+"Lange, Gustav","Turina, Joaquín",0.6721,52.0,-0.2352,0.5622,0.8803
+"Godard, Benjamin","Schubert, Franz",0.6722,52.0,-0.235,0.5301,0.9318
+"Liszt, Franz","Schumann, Robert",0.5364,1.0,-0.234,0.3895,0.8803
+"Gottschalk, Louis Moreau","Scott, Cyril",0.6687,50.0,-0.2332,0.5378,0.9364
+"Gurlitt, Cornelius","Schubert, Franz",0.5966,23.0,-0.2328,0.4619,0.9914
+"Debussy, Claude","Heller, Stephen",0.6668,49.0,-0.2324,0.4675,1.0198
+"Lange, Gustav","Nazareth, Ernesto",0.6276,33.0,-0.2286,0.4249,0.8525
+"Raff, Joachim","Scott, James",0.7084,63.0,-0.2283,0.5972,0.891
+"Chopin, Frédéric","Tchaikovsky, Pyotr",0.6216,30.0,-0.2266,0.3403,1.0932
+"Brahms, Johannes","Fauré, Gabriel",0.5734,12.0,-0.2265,0.3625,1.0195
+"Moszkowski, Moritz","Scott, Cyril",0.6091,25.0,-0.2257,0.4166,0.9927
+"Busoni, Ferruccio","Fauré, Gabriel",0.5991,21.0,-0.2249,0.3892,1.1071
+"Chaminade, Cécile","Lack, Théodore",0.5725,11.0,-0.2247,0.3953,0.881
+"Lack, Théodore","Rachmaninoff, Sergei",0.6158,27.0,-0.2243,0.4408,0.8846
+"Fauré, Gabriel","Poulenc, Francis",0.6901,54.0,-0.2225,0.5206,1.0053
+"Chaminade, Cécile","Fauré, Gabriel",0.5779,12.0,-0.222,0.426,0.9199
+"Gottschalk, Louis Moreau","Scott, James",0.6971,56.0,-0.2209,0.5271,0.9326
+"Lack, Théodore","Satie, Erik",0.6005,20.0,-0.2208,0.4495,0.7912
+"Ravina, Jean Henri","Wachs, Paul",0.636,33.0,-0.2202,0.5017,0.9264
+"Bach, Johann Sebastian","Rzewski, Frederic",1.228,253.0,-0.2186,1.1115,1.333
+"Lack, Théodore","Medtner, Nikolay",0.6421,34.0,-0.2168,0.4482,0.974
+"Bach, Johann Sebastian","Scott, James",1.0877,200.0,-0.2167,1.0207,1.1578
+"Ravina, Jean Henri","Villa-Lobos, Heitor",0.7369,69.0,-0.216,0.538,1.0905
+"Meyer-Helmund, Erik","Prokofiev, Sergey",0.6323,30.0,-0.2159,0.5063,0.8601
+"Alkan, Charles-Valentin","Gottschalk, Louis Moreau",0.5948,16.0,-0.2158,0.4657,0.8968
+"Godard, Benjamin","Moszkowski, Moritz",0.5677,5.0,-0.2134,0.4383,0.8912
+"Gurlitt, Cornelius","Haydn, Joseph",0.7907,88.0,-0.2131,0.5986,1.0723
+"Mendelssohn, Felix","Schumann, Robert",0.5588,1.0,-0.2116,0.4314,1.0222
+"Debussy, Claude","Gottschalk, Louis Moreau",0.6461,33.0,-0.2101,0.4563,0.9173
+"Hitz, Franz","Schubert, Franz",0.6412,31.0,-0.2096,0.5324,0.8512
+"Moszkowski, Moritz","Ravina, Jean Henri",0.6553,36.0,-0.209,0.5282,0.9368
+"Grieg, Edvard","Schubert, Franz",0.6822,46.0,-0.2089,0.4775,1.0135
+"Scarlatti, Domenico","Tchaikovsky, Pyotr",0.9754,155.0,-0.2083,0.5739,1.4081
+"Brahms, Johannes","Grieg, Edvard",0.5863,10.0,-0.2082,0.4697,0.9515
+"Poulenc, Francis","Rebikov, Vladimir",0.6485,33.0,-0.2077,0.4713,0.9549
+"Fauré, Gabriel","Scharwenka, Xaver",0.5734,5.0,-0.2077,0.4142,0.7454
+"Hitz, Franz","Meyer-Helmund, Erik",0.65,33.0,-0.2062,0.5154,0.8419
+"Brahms, Johannes","Lack, Théodore",0.5977,13.0,-0.2049,0.4477,0.9481
+"Chopin, Frédéric","Ravina, Jean Henri",0.5855,8.0,-0.2037,0.411,0.9435
+"Joplin, Scott","Teilman, Christian",0.6332,25.0,-0.2016,0.519,0.8144
+"Schubert, Franz","Wachs, Paul",0.7128,54.0,-0.1998,0.5705,0.9683
+"Scharwenka, Xaver","Villa-Lobos, Heitor",0.67,37.0,-0.197,0.5129,0.9973
+"Meyer-Helmund, Erik","Schumann, Robert",0.709,51.0,-0.1955,0.4959,1.0139
+"Godard, Benjamin","Hitz, Franz",0.629,21.0,-0.195,0.5076,0.8559
+"Gottschalk, Louis Moreau","Moszkowski, Moritz",0.6402,25.0,-0.1946,0.4824,0.9597
+"Alkan, Charles-Valentin","Poulenc, Francis",0.8044,86.0,-0.1941,0.5672,1.1546
+"Chopin, Frédéric","Teilman, Christian",0.6632,33.0,-0.1931,0.5123,0.8998
+"Bach, Johann Sebastian","Busoni, Ferruccio",1.0605,181.0,-0.1929,0.7341,1.2963
+"Alkan, Charles-Valentin","Joplin, Scott",0.7226,55.0,-0.1927,0.6004,0.9261
+"Lack, Théodore","Villa-Lobos, Heitor",0.6854,41.0,-0.1923,0.5388,0.9583
+"Hitz, Franz","Johnson, Charles Leslie",0.7044,48.0,-0.1921,0.6098,0.8713
+"Lack, Théodore","Lange, Gustav",0.6187,16.0,-0.1919,0.4857,0.8451
+"Rachmaninoff, Sergei","Schubert, Franz",0.7799,76.0,-0.1918,0.5616,1.0686
+"Moszkowski, Moritz","Rachmaninoff, Sergei",0.627,19.0,-0.1917,0.4452,0.9757
+"Johnson, Charles Leslie","Raff, Joachim",0.7214,54.0,-0.1912,0.6093,0.8573
+"Heller, Stephen","Lack, Théodore",0.6665,33.0,-0.1898,0.4167,1.0293
+"Hitz, Franz","Scott, James",0.7317,57.0,-0.1889,0.6073,0.9278
+"Busoni, Ferruccio","Moszkowski, Moritz",0.6111,12.0,-0.1888,0.484,1.0276
+"Joplin, Scott","Wachs, Paul",0.6247,17.0,-0.1887,0.5108,0.777
+"Heller, Stephen","Schumann, Robert",0.5872,3.0,-0.1885,0.4299,1.0059
+"Ravina, Jean Henri","Schumann, Robert",0.6009,8.0,-0.1882,0.4911,0.9621
+"Chopin, Frédéric","Gottschalk, Louis Moreau",0.6313,19.0,-0.1874,0.4481,0.8612
+"Schumann, Robert","Villa-Lobos, Heitor",0.7874,77.0,-0.1869,0.5825,1.1139
+"Medtner, Nikolay","Scharwenka, Xaver",0.6626,30.0,-0.1856,0.4454,1.0309
+"Alkan, Charles-Valentin","Busoni, Ferruccio",0.7249,53.0,-0.185,0.5054,1.1596
+"Chopin, Frédéric","Victoria, Tomás Luis de",1.2865,262.0,-0.1843,1.1677,1.4003
+"Lange, Gustav","Scharwenka, Xaver",0.6384,20.0,-0.183,0.4947,0.8265
+"Schumann, Robert","Wachs, Paul",0.6954,41.0,-0.1824,0.5867,0.9468
+"Gottschalk, Louis Moreau","Teilman, Christian",0.6239,14.0,-0.1814,0.5348,0.8107
+"Grieg, Edvard","Villa-Lobos, Heitor",0.7046,44.0,-0.1811,0.4893,1.0734
+"Teilman, Christian","Turina, Joaquín",0.6919,39.0,-0.1804,0.5632,0.8741
+"Balakirev, Mily","Gottschalk, Louis Moreau",0.6106,8.0,-0.1786,0.4007,0.9106
+"Brahms, Johannes","Rebikov, Vladimir",0.6814,33.0,-0.1749,0.4974,1.062
+"Scott, Cyril","Teilman, Christian",0.6923,36.0,-0.172,0.5856,0.9087
+"Medtner, Nikolay","Mendelssohn, Felix",0.7872,71.0,-0.171,0.5933,1.0943
+"Gottschalk, Louis Moreau","Medtner, Nikolay",0.7359,51.0,-0.1687,0.6178,0.9491
+"Rzewski, Frederic","Satie, Erik",0.7926,72.0,-0.1683,0.6691,1.0054
+"Handel, George Frideric","Rzewski, Frederic",1.2784,253.0,-0.1682,1.1627,1.3648
+"Victoria, Tomás Luis de","Wachs, Paul",1.4134,303.0,-0.1674,1.3044,1.4629
+"Heller, Stephen","Scriabin, Aleksandr",0.759,59.0,-0.167,0.4615,1.1305
+"Grieg, Edvard","Schumann, Robert",0.6919,33.0,-0.1643,0.4912,1.0928
+"Lange, Gustav","Medtner, Nikolay",0.7385,50.0,-0.1633,0.5849,1.0458
+"Liszt, Franz","Meyer-Helmund, Erik",0.7397,50.0,-0.1622,0.6229,0.8668
+"Gottschalk, Louis Moreau","Turina, Joaquín",0.7482,53.0,-0.1617,0.5936,0.9769
+"Busoni, Ferruccio","Czerny, Carl",0.8083,75.0,-0.1606,0.5415,1.2809
+"Bach, Johann Sebastian","Mendelssohn, Felix",0.9399,124.0,-0.1606,0.7668,1.178
+"Rachmaninoff, Sergei","Rebikov, Vladimir",0.6265,7.0,-0.16,0.4949,0.8852
+"Meyer-Helmund, Erik","Rzewski, Frederic",0.8147,77.0,-0.1596,0.718,0.9337
+"Nazareth, Ernesto","Poulenc, Francis",0.7068,36.0,-0.1575,0.4896,1.0103
+"Rebikov, Vladimir","Rzewski, Frederic",0.8064,72.0,-0.1545,0.6679,0.9805
+"Rzewski, Frederic","Scarlatti, Domenico",1.2922,253.0,-0.1544,1.1666,1.4156
+"Chaminade, Cécile","Wachs, Paul",0.6301,6.0,-0.1537,0.4683,0.9141
+"Gurlitt, Cornelius","Teilman, Christian",0.6773,23.0,-0.1521,0.576,0.9642
+"Meyer-Helmund, Erik","Schubert, Franz",0.7875,64.0,-0.1519,0.6368,0.9358
+"Satie, Erik","Schubert, Franz",0.8034,69.0,-0.1495,0.6184,1.0563
+"Moszkowski, Moritz","Prokofiev, Sergey",0.7191,37.0,-0.1479,0.5698,1.0269
+"Grieg, Edvard","Ravina, Jean Henri",0.6876,25.0,-0.1472,0.5096,1.0529
+"Alkan, Charles-Valentin","Schubert, Franz",0.6635,16.0,-0.1471,0.4894,1.0003
+"Gottschalk, Louis Moreau","Scriabin, Aleksandr",0.7361,43.0,-0.147,0.4919,1.0218
+"Bach, Johann Sebastian","Gurlitt, Cornelius",0.9839,135.0,-0.1461,0.7904,1.2
+"Chopin, Frédéric","Satie, Erik",0.7721,56.0,-0.1458,0.5909,0.9657
+"Chaminade, Cécile","Teilman, Christian",0.6598,14.0,-0.1454,0.5487,0.88
+"Fauré, Gabriel","Prokofiev, Sergey",0.7459,46.0,-0.1453,0.4889,1.055
+"Prokofiev, Sergey","Tchaikovsky, Pyotr",0.7595,51.0,-0.1451,0.5884,1.1346
+"Haydn, Joseph","Rzewski, Frederic",1.1761,206.0,-0.1444,1.0099,1.3264
+"Meyer-Helmund, Erik","Wachs, Paul",0.6505,10.0,-0.144,0.5316,0.8264
+"Rachmaninoff, Sergei","Tchaikovsky, Pyotr",0.7131,33.0,-0.1432,0.4323,1.1381
+"Gottschalk, Louis Moreau","Johnson, Charles Leslie",0.7507,47.0,-0.1431,0.587,0.9993
+"Heller, Stephen","Scharwenka, Xaver",0.7242,37.0,-0.1428,0.4486,1.1212
+"Fauré, Gabriel","Moszkowski, Moritz",0.6491,9.0,-0.1427,0.3627,0.9376
+"Balakirev, Mily","Grieg, Edvard",0.6412,6.0,-0.1426,0.46,1.0188
+"Bach, Johann Sebastian","Satie, Erik",1.1119,181.0,-0.1415,0.97,1.2781
+"Haydn, Joseph","Satie, Erik",0.9864,134.0,-0.1409,0.8563,1.1642
+"Scarlatti, Domenico","Wachs, Paul",1.0733,166.0,-0.1398,0.8817,1.2687
+"Balakirev, Mily","Rebikov, Vladimir",0.7073,29.0,-0.1382,0.5321,0.9736
+"Medtner, Nikolay","Villa-Lobos, Heitor",0.6484,7.0,-0.138,0.4583,0.9985
+"Ravina, Jean Henri","Teilman, Christian",0.6972,25.0,-0.1376,0.5404,0.9764
+"Beethoven, Ludwig van","Gurlitt, Cornelius",0.7657,50.0,-0.1361,0.5849,1.0409
+"Alkan, Charles-Valentin","Rachmaninoff, Sergei",0.7932,60.0,-0.1355,0.583,1.1262
+"Ravina, Jean Henri","Victoria, Tomás Luis de",1.3574,270.0,-0.1349,1.1446,1.433
+"Lange, Gustav","Wachs, Paul",0.6894,21.0,-0.1346,0.5139,0.9148
+"Scarlatti, Domenico","Victoria, Tomás Luis de",1.0016,137.0,-0.1337,0.9333,1.0529
+"Fauré, Gabriel","Ravina, Jean Henri",0.7065,27.0,-0.1336,0.4754,1.0884
+"Busoni, Ferruccio","Prokofiev, Sergey",0.7016,25.0,-0.1332,0.4888,1.1066
+"Rebikov, Vladimir","Teilman, Christian",0.701,23.0,-0.1284,0.5332,0.9441
+"Rachmaninoff, Sergei","Rzewski, Frederic",0.8138,65.0,-0.1283,0.6308,1.0386
+"Handel, George Frideric","Joplin, Scott",1.1314,183.0,-0.1274,1.0452,1.2216
+"Heller, Stephen","Moszkowski, Moritz",0.7509,41.0,-0.1268,0.5183,1.0971
+"Chopin, Frédéric","Rzewski, Frederic",0.9844,128.0,-0.1267,0.8437,1.1348
+"Mendelssohn, Felix","Villa-Lobos, Heitor",0.8505,78.0,-0.1265,0.6279,1.1691
+"Czerny, Carl","Liszt, Franz",0.6977,20.0,-0.1237,0.4801,0.9382
+"Gurlitt, Cornelius","Scarlatti, Domenico",1.0063,135.0,-0.1237,0.7772,1.2525
+"Lange, Gustav","Schubert, Franz",0.7329,33.0,-0.1234,0.5444,0.9398
+"Gurlitt, Cornelius","Mozart, Wolfgang Amadeus",0.8166,64.0,-0.1228,0.6482,1.05
+"Johnson, Charles Leslie","Wachs, Paul",0.7131,25.0,-0.1217,0.579,0.8671
+"Rachmaninoff, Sergei","Teilman, Christian",0.7275,30.0,-0.1207,0.5754,0.9479
+"Chopin, Frédéric","Schumann, Robert",0.6472,0.0,-0.1205,0.476,0.951
+"Poulenc, Francis","Villa-Lobos, Heitor",0.6797,12.0,-0.1202,0.4949,1.0139
+"Hitz, Franz","Lange, Gustav",0.654,2.0,-0.1191,0.4803,0.9295
+"Tchaikovsky, Pyotr","Victoria, Tomás Luis de",1.434,292.0,-0.1173,1.1875,1.5142
+"Gottschalk, Louis Moreau","Raff, Joachim",0.6703,7.0,-0.1162,0.5046,0.9128
+"Brahms, Johannes","Busoni, Ferruccio",0.7403,33.0,-0.1159,0.5624,1.0978
+"Godard, Benjamin","Lack, Théodore",0.6634,3.0,-0.1123,0.4749,0.8758
+"Czerny, Carl","Wachs, Paul",0.8189,60.0,-0.1098,0.6807,1.0224
+"Scott, James","Wachs, Paul",0.7503,34.0,-0.1086,0.5924,0.9325
+"Fauré, Gabriel","Lange, Gustav",0.7013,15.0,-0.1066,0.509,0.9131
+"Gottschalk, Louis Moreau","Victoria, Tomás Luis de",1.4154,281.0,-0.1064,1.2522,1.4916
+"Alkan, Charles-Valentin","Medtner, Nikolay",0.8419,67.0,-0.1056,0.622,1.1295
+"Heller, Stephen","Schubert, Franz",0.706,16.0,-0.1046,0.5011,1.134
+"Busoni, Ferruccio","Handel, George Frideric",1.1489,181.0,-0.1045,0.834,1.3685
+"Chopin, Frédéric","Heller, Stephen",0.6717,3.0,-0.1041,0.4745,0.9876
+"Debussy, Claude","Moszkowski, Moritz",0.6853,8.0,-0.1039,0.4425,1.0131
+"Handel, George Frideric","Raff, Joachim",1.032,137.0,-0.1033,0.8707,1.168
+"Busoni, Ferruccio","Mendelssohn, Felix",0.8179,57.0,-0.1027,0.5539,1.1897
+"Lack, Théodore","Schumann, Robert",0.7624,36.0,-0.1019,0.4765,1.1582
+"Brahms, Johannes","Tchaikovsky, Pyotr",0.6846,7.0,-0.1019,0.5175,1.0665
+"Beethoven, Ludwig van","Tchaikovsky, Pyotr",0.8546,70.0,-0.101,0.5632,1.2588
+"Godard, Benjamin","Villa-Lobos, Heitor",0.7689,38.0,-0.1008,0.5714,1.0867
+"Liszt, Franz","Nazareth, Ernesto",0.807,52.0,-0.1002,0.6574,0.9714
+"Prokofiev, Sergey","Schubert, Franz",0.9213,94.0,-0.0987,0.6921,1.1418
+"Prokofiev, Sergey","Villa-Lobos, Heitor",0.6799,4.0,-0.0985,0.5076,1.0101
+"Fauré, Gabriel","Godard, Benjamin",0.6805,4.0,-0.0979,0.4985,0.9107
+"Fauré, Gabriel","Meyer-Helmund, Erik",0.7134,16.0,-0.0972,0.599,0.8132
+"Nazareth, Ernesto","Schumann, Robert",0.8128,53.0,-0.0972,0.6147,1.1026
+"Tchaikovsky, Pyotr","Villa-Lobos, Heitor",0.7973,47.0,-0.0965,0.5206,1.1887
+"Godard, Benjamin","Joplin, Scott",0.7241,19.0,-0.0945,0.5858,0.9192
+"Chopin, Frédéric","Schubert, Franz",0.709,13.0,-0.0935,0.5387,0.9426
+"Ravina, Jean Henri","Schubert, Franz",0.7311,21.0,-0.093,0.5313,1.0755
+"Godard, Benjamin","Rzewski, Frederic",0.9139,89.0,-0.0927,0.7488,1.0763
+"Hitz, Franz","Scarlatti, Domenico",1.0599,143.0,-0.0916,0.8549,1.2579
+"Mendelssohn, Felix","Rzewski, Frederic",1.0229,129.0,-0.0909,0.8433,1.1715
+"Hitz, Franz","Poulenc, Francis",0.8685,71.0,-0.0897,0.695,1.071
+"Rebikov, Vladimir","Villa-Lobos, Heitor",0.7351,21.0,-0.089,0.508,1.0377
+"Lange, Gustav","Schumann, Robert",0.7325,20.0,-0.0889,0.5416,1.0436
+"Czerny, Carl","Gottschalk, Louis Moreau",0.7807,38.0,-0.0889,0.5251,1.0942
+"Busoni, Ferruccio","Ravina, Jean Henri",0.8081,48.0,-0.0884,0.5676,1.1849
+"Godard, Benjamin","Tchaikovsky, Pyotr",0.7044,9.0,-0.0875,0.475,1.0661
+"Brahms, Johannes","Satie, Erik",0.7693,33.0,-0.087,0.484,1.1415
+"Schumann, Robert","Teilman, Christian",0.7695,33.0,-0.0867,0.6534,1.0375
+"Busoni, Ferruccio","Chaminade, Cécile",0.7071,9.0,-0.0848,0.5276,1.0834
+"Grieg, Edvard","Tchaikovsky, Pyotr",0.6909,3.0,-0.0848,0.4547,1.1571
+"Heller, Stephen","Wachs, Paul",0.7863,38.0,-0.0834,0.6422,1.014
+"Haydn, Joseph","Mendelssohn, Felix",0.8911,77.0,-0.0833,0.705,1.1356
+"Busoni, Ferruccio","Poulenc, Francis",0.7736,33.0,-0.0826,0.6,1.1061
+"Beethoven, Ludwig van","Johnson, Charles Leslie",0.97,106.0,-0.0821,0.8542,1.088
+"Godard, Benjamin","Rebikov, Vladimir",0.7316,17.0,-0.0818,0.5935,0.915
+"Grieg, Edvard","Liszt, Franz",0.7737,32.0,-0.0798,0.5366,1.0641
+"Gottschalk, Louis Moreau","Villa-Lobos, Heitor",0.8439,58.0,-0.0794,0.618,1.1646
+"Busoni, Ferruccio","Scriabin, Aleksandr",0.7049,6.0,-0.0789,0.4805,1.1702
+"Satie, Erik","Scott, Cyril",0.7248,13.0,-0.0778,0.5681,0.9658
+"Moszkowski, Moritz","Rzewski, Frederic",0.9161,84.0,-0.077,0.6748,1.1216
+"Joplin, Scott","Ravina, Jean Henri",0.8252,50.0,-0.0766,0.6125,1.0879
+"Gurlitt, Cornelius","Joplin, Scott",0.8199,48.0,-0.0766,0.6475,1.0553
+"Beethoven, Ludwig van","Scott, James",0.9999,115.0,-0.0764,0.8815,1.1411
+"Haydn, Joseph","Johnson, Charles Leslie",1.0789,144.0,-0.0752,0.9756,1.1791
+"Gottschalk, Louis Moreau","Grieg, Edvard",0.7305,14.0,-0.0748,0.5735,1.0135
+"Bach, Johann Sebastian","Czerny, Carl",0.9777,106.0,-0.0744,0.8052,1.2171
+"Gottschalk, Louis Moreau","Hitz, Franz",0.696,1.0,-0.0744,0.5578,0.9226
+"Tchaikovsky, Pyotr","Wachs, Paul",0.7237,11.0,-0.0735,0.5655,1.0146
+"Alkan, Charles-Valentin","Prokofiev, Sergey",0.9041,78.0,-0.0729,0.6745,1.1876
+"Hummel, Johann Nepomuk","Joplin, Scott",0.9382,90.0,-0.0711,0.746,1.1853
+"Chaminade, Cécile","Scharwenka, Xaver",0.7159,7.0,-0.0705,0.5055,1.0496
+"Ravina, Jean Henri","Rzewski, Frederic",1.0197,120.0,-0.07,0.7905,1.2042
+"Grieg, Edvard","Gurlitt, Cornelius",0.7615,23.0,-0.0679,0.568,1.1481
+"Nazareth, Ernesto","Tchaikovsky, Pyotr",0.7626,23.0,-0.0669,0.5244,1.0968
+"Poulenc, Francis","Tchaikovsky, Pyotr",0.8597,59.0,-0.0664,0.6192,1.1724
+"Busoni, Ferruccio","Hummel, Johann Nepomuk",0.9389,88.0,-0.0649,0.671,1.2133
+"Johnson, Charles Leslie","Mozart, Wolfgang Amadeus",1.0292,120.0,-0.0605,0.9395,1.128
+"Meyer-Helmund, Erik","Villa-Lobos, Heitor",0.7777,26.0,-0.0598,0.6073,1.0383
+"Rebikov, Vladimir","Schubert, Franz",0.8933,69.0,-0.0595,0.7005,1.1112
+"Mendelssohn, Felix","Wachs, Paul",0.8214,42.0,-0.059,0.6925,1.042
+"Satie, Erik","Turina, Joaquín",0.7517,16.0,-0.0589,0.5627,0.9608
+"Fauré, Gabriel","Rebikov, Vladimir",0.7658,21.0,-0.0583,0.576,0.9833
+"Lange, Gustav","Prokofiev, Sergey",0.8733,61.0,-0.0581,0.6755,1.1106
+"Raff, Joachim","Ravina, Jean Henri",0.7208,4.0,-0.0576,0.5365,0.9997
+"Gurlitt, Cornelius","Heller, Stephen",0.7293,7.0,-0.0571,0.5701,1.0677
+"Mendelssohn, Felix","Moszkowski, Moritz",0.8315,45.0,-0.0569,0.593,1.1147
+"Lack, Théodore","Teilman, Christian",0.721,3.0,-0.0548,0.5513,0.9955
+"Tchaikovsky, Pyotr","Teilman, Christian",0.7212,3.0,-0.0546,0.5712,1.0304
+"Heller, Stephen","Nazareth, Ernesto",0.8475,50.0,-0.0544,0.5974,1.1946
+"Haydn, Joseph","Scott, James",1.1245,153.0,-0.0537,1.0279,1.245
+"Busoni, Ferruccio","Scarlatti, Domenico",1.2001,181.0,-0.0533,0.7635,1.4516
+"Tchaikovsky, Pyotr","Turina, Joaquín",0.8274,42.0,-0.053,0.5346,1.2239
+"Mendelssohn, Felix","Victoria, Tomás Luis de",1.4155,261.0,-0.0526,1.1878,1.4671
+"Gottschalk, Louis Moreau","Schumann, Robert",0.7669,19.0,-0.0518,0.6244,1.0586
+"Joplin, Scott","Scarlatti, Domenico",1.2073,183.0,-0.0514,1.1052,1.3178
+"Lange, Gustav","Rzewski, Frederic",1.0067,108.0,-0.0508,0.8642,1.1128
+"Brahms, Johannes","Ravina, Jean Henri",0.7582,15.0,-0.0498,0.6108,1.0839
+"Scott, Cyril","Tchaikovsky, Pyotr",0.8261,39.0,-0.0463,0.4968,1.2075
+"Satie, Erik","Teilman, Christian",0.784,23.0,-0.0455,0.6035,1.0053
+"Godard, Benjamin","Scharwenka, Xaver",0.7275,1.0,-0.0429,0.5945,0.9338
+"Brahms, Johannes","Villa-Lobos, Heitor",0.8698,54.0,-0.0428,0.6455,1.184
+"Busoni, Ferruccio","Villa-Lobos, Heitor",0.7815,21.0,-0.0425,0.5161,1.1936
+"Mozart, Wolfgang Amadeus","Scott, James",1.0715,129.0,-0.0423,0.9805,1.1785
+"Meyer-Helmund, Erik","Satie, Erik",0.7388,5.0,-0.0423,0.621,0.8655
+"Chaminade, Cécile","Tchaikovsky, Pyotr",0.7718,17.0,-0.0415,0.579,1.1367
+"Brahms, Johannes","Mendelssohn, Felix",0.7921,24.0,-0.04,0.585,1.1606
+"Czerny, Carl","Mendelssohn, Felix",0.7762,18.0,-0.0398,0.5113,1.1669
+"Lange, Gustav","Moszkowski, Moritz",0.7924,24.0,-0.0396,0.5997,1.092
+"Schumann, Robert","Victoria, Tomás Luis de",1.4329,262.0,-0.0379,1.2188,1.4978
+"Poulenc, Francis","Wachs, Paul",0.8599,48.0,-0.0365,0.6658,1.0777
+"Poulenc, Francis","Rzewski, Frederic",0.8366,39.0,-0.0357,0.6785,1.0642
+"Joplin, Scott","Lange, Gustav",0.8373,38.0,-0.0324,0.6747,1.0001
+"Busoni, Ferruccio","Debussy, Claude",0.7468,4.0,-0.0316,0.499,1.1385
+"Meyer-Helmund, Erik","Nazareth, Ernesto",0.7417,2.0,-0.0314,0.5358,0.9282
+"Gottschalk, Louis Moreau","Prokofiev, Sergey",0.9042,62.0,-0.0298,0.6969,1.1092
+"Liszt, Franz","Victoria, Tomás Luis de",1.4441,263.0,-0.0293,1.3501,1.4992
+"Medtner, Nikolay","Wachs, Paul",0.8164,29.0,-0.0291,0.6453,1.012
+"Handel, George Frideric","Rebikov, Vladimir",1.2248,181.0,-0.0286,1.1083,1.3424
+"Mendelssohn, Felix","Mozart, Wolfgang Amadeus",0.8844,53.0,-0.0256,0.6619,1.1643
+"Grieg, Edvard","Nazareth, Ernesto",0.7965,20.0,-0.0249,0.5218,1.0644
+"Moszkowski, Moritz","Villa-Lobos, Heitor",0.8317,33.0,-0.0245,0.6086,1.1694
+"Heller, Stephen","Hitz, Franz",0.7846,15.0,-0.0234,0.682,0.9892
+"Alkan, Charles-Valentin","Ravina, Jean Henri",0.758,5.0,-0.0231,0.5118,1.1269
+"Rzewski, Frederic","Tchaikovsky, Pyotr",1.0077,98.0,-0.023,0.809,1.1934
+"Chaminade, Cécile","Villa-Lobos, Heitor",0.8254,30.0,-0.0228,0.6082,1.1266
+"Busoni, Ferruccio","Turina, Joaquín",0.7879,16.0,-0.0227,0.5818,1.1471
+"Joplin, Scott","Raff, Joachim",0.8691,46.0,-0.0221,0.7411,1.026
+"Medtner, Nikolay","Rebikov, Vladimir",0.7841,14.0,-0.0211,0.5897,1.0738
+"Heller, Stephen","Ravina, Jean Henri",0.7602,5.0,-0.0209,0.5793,1.0858
+"Raff, Joachim","Scarlatti, Domenico",1.1158,137.0,-0.0195,0.9802,1.2501
+"Chaminade, Cécile","Nazareth, Ernesto",0.7685,6.0,-0.0153,0.5787,0.977
+"Chaminade, Cécile","Hitz, Franz",0.8311,29.0,-0.0144,0.6698,1.0766
+"Raff, Joachim","Turina, Joaquín",0.9146,60.0,-0.0141,0.7622,1.085
+"Chaminade, Cécile","Mendelssohn, Felix",0.8845,48.0,-0.012,0.6841,1.1412
+"Bach, Johann Sebastian","Joplin, Scott",1.2477,183.0,-0.0111,1.1588,1.3385
+"Nazareth, Ernesto","Raff, Joachim",0.867,41.0,-0.0107,0.7208,1.0892
+"Alkan, Charles-Valentin","Godard, Benjamin",0.855,36.0,-0.0093,0.6956,1.0987
+"Joplin, Scott","Poulenc, Francis",0.8417,31.0,-0.0092,0.6477,1.0716
+"Medtner, Nikolay","Teilman, Christian",0.859,37.0,-0.008,0.7193,1.0343
+"Mozart, Wolfgang Amadeus","Rzewski, Frederic",1.2498,182.0,-0.0063,1.0919,1.3871
+"Chopin, Frédéric","Liszt, Franz",0.7651,1.0,-0.0053,0.627,0.9421
+"Debussy, Claude","Teilman, Christian",0.8135,19.0,-0.0051,0.6257,1.0331
+"Hitz, Franz","Ravina, Jean Henri",0.7903,10.0,-0.0042,0.6269,0.9988
+"Scharwenka, Xaver","Schumann, Robert",0.8718,40.0,-0.0033,0.5142,1.3137
+"Brahms, Johannes","Gottschalk, Louis Moreau",0.7753,4.0,-0.0031,0.6177,1.0771
+"Beethoven, Ludwig van","Czerny, Carl",0.8237,21.0,-0.0003,0.6444,1.1516
+"Balakirev, Mily","Heller, Stephen",0.8335,24.0,0.0014,0.5335,1.19
+"Nazareth, Ernesto","Scarlatti, Domenico",1.2484,178.0,0.003,1.0711,1.4778
+"Hitz, Franz","Rzewski, Frederic",1.0675,110.0,0.0046,0.8792,1.1963
+"Gurlitt, Cornelius","Johnson, Charles Leslie",0.923,56.0,0.005,0.7406,1.1082
+"Alkan, Charles-Valentin","Lange, Gustav",0.8199,17.0,0.0066,0.6325,1.0939
+"Satie, Erik","Scarlatti, Domenico",1.2612,181.0,0.0078,1.0708,1.3983
+"Czerny, Carl","Ravina, Jean Henri",0.8487,27.0,0.0085,0.5403,1.1737
+"Moszkowski, Moritz","Scriabin, Aleksandr",0.8245,18.0,0.0085,0.5289,1.1149
+"Lange, Gustav","Rebikov, Vladimir",0.8732,36.0,0.0089,0.7005,1.0752
+"Bach, Johann Sebastian","Raff, Joachim",1.1461,137.0,0.0107,1.0001,1.2745
+"Alkan, Charles-Valentin","Rzewski, Frederic",1.1144,125.0,0.0113,0.845,1.2879
+"Busoni, Ferruccio","Scott, Cyril",0.8147,13.0,0.0122,0.6272,1.1963
+"Hitz, Franz","Tchaikovsky, Pyotr",0.8123,12.0,0.0125,0.6691,1.0627
+"Scriabin, Aleksandr","Teilman, Christian",0.8582,29.0,0.0127,0.6598,1.0922
+"Czerny, Carl","Handel, George Frideric",1.0649,106.0,0.0128,0.9062,1.2801
+"Chopin, Frédéric","Wachs, Paul",0.8908,41.0,0.0131,0.725,1.0616
+"Debussy, Claude","Satie, Erik",0.7924,4.0,0.014,0.5926,1.0384
+"Poulenc, Francis","Raff, Joachim",0.9885,77.0,0.0142,0.7683,1.2051
+"Busoni, Ferruccio","Rachmaninoff, Sergei",0.8009,7.0,0.0144,0.5844,1.1538
+"Moszkowski, Moritz","Nazareth, Ernesto",0.8074,9.0,0.0156,0.6415,1.1397
+"Ravina, Jean Henri","Scharwenka, Xaver",0.8694,32.0,0.0159,0.6072,1.2191
+"Lack, Théodore","Ravina, Jean Henri",0.8588,28.0,0.016,0.614,1.2312
+"Satie, Erik","Tchaikovsky, Pyotr",0.8537,26.0,0.0162,0.5943,1.144
+"Haydn, Joseph","Hitz, Franz",1.0424,96.0,0.0171,0.8778,1.189
+"Fauré, Gabriel","Mendelssohn, Felix",0.8827,36.0,0.0184,0.5799,1.2299
+"Nazareth, Ernesto","Rachmaninoff, Sergei",0.8153,10.0,0.0208,0.5742,1.1362
+"Chopin, Frédéric","Nazareth, Ernesto",0.9314,53.0,0.0215,0.689,1.1232
+"Liszt, Franz","Scharwenka, Xaver",0.8941,39.0,0.0218,0.7315,1.0838
+"Medtner, Nikolay","Schubert, Franz",1.0123,83.0,0.0219,0.7935,1.2425
+"Hitz, Franz","Lack, Théodore",0.838,18.0,0.0221,0.5746,1.0616
+"Scarlatti, Domenico","Villa-Lobos, Heitor",1.3319,202.0,0.0221,0.9826,1.5034
+"Brahms, Johannes","Schubert, Franz",0.8877,36.0,0.0234,0.699,1.206
+"Medtner, Nikolay","Nazareth, Ernesto",0.8413,17.0,0.028,0.66,1.0421
+"Heller, Stephen","Joplin, Scott",0.9435,55.0,0.0282,0.7096,1.2286
+"Meyer-Helmund, Erik","Tchaikovsky, Pyotr",0.8532,21.0,0.0291,0.5211,1.229
+"Mozart, Wolfgang Amadeus","Satie, Erik",1.0928,110.0,0.03,0.9197,1.2783
+"Poulenc, Francis","Satie, Erik",0.8864,33.0,0.0301,0.5959,1.1684
+"Ravina, Jean Henri","Scott, James",0.9784,67.0,0.0309,0.7119,1.2175
+"Scott, James","Teilman, Christian",0.9116,42.0,0.0312,0.7529,1.0829
+"Alkan, Charles-Valentin","Debussy, Claude",0.9305,49.0,0.0313,0.6663,1.2181
+"Haydn, Joseph","Tchaikovsky, Pyotr",1.0895,108.0,0.032,0.7505,1.3852
+"Liszt, Franz","Mendelssohn, Felix",0.8076,2.0,0.0345,0.6163,1.0697
+"Heller, Stephen","Lange, Gustav",0.849,17.0,0.0357,0.6137,1.1703
+"Fauré, Gabriel","Gottschalk, Louis Moreau",0.847,16.0,0.0364,0.6186,1.0656
+"Scharwenka, Xaver","Teilman, Christian",0.8244,7.0,0.038,0.6366,1.0843
+"Heller, Stephen","Villa-Lobos, Heitor",1.0045,74.0,0.0383,0.6745,1.2831
+"Alkan, Charles-Valentin","Chaminade, Cécile",0.9246,44.0,0.0388,0.6692,1.1559
+"Chaminade, Cécile","Schubert, Franz",0.9715,60.0,0.0428,0.7584,1.1515
+"Liszt, Franz","Wachs, Paul",0.9183,40.0,0.0433,0.7367,1.1366
+"Gurlitt, Cornelius","Hitz, Franz",0.8326,8.0,0.0434,0.6453,1.1076
+"Alkan, Charles-Valentin","Wachs, Paul",0.9142,38.0,0.0445,0.7465,1.1323
+"Gurlitt, Cornelius","Scott, James",0.9873,65.0,0.0452,0.7729,1.1765
+"Gottschalk, Louis Moreau","Heller, Stephen",0.856,16.0,0.0454,0.6341,1.1598
+"Schubert, Franz","Scott, Cyril",1.0335,82.0,0.0457,0.757,1.2274
+"Gurlitt, Cornelius","Scharwenka, Xaver",0.8942,30.0,0.046,0.6471,1.1815
+"Raff, Joachim","Villa-Lobos, Heitor",0.9883,65.0,0.0462,0.7411,1.2574
+"Moszkowski, Moritz","Scott, James",0.8976,31.0,0.0467,0.7082,1.1487
+"Raff, Joachim","Rzewski, Frederic",1.127,116.0,0.0481,0.9323,1.2344
+"Teilman, Christian","Villa-Lobos, Heitor",0.9341,44.0,0.0483,0.7081,1.1991
+"Grieg, Edvard","Hitz, Franz",0.8577,15.0,0.0498,0.6835,1.0668
+"Czerny, Carl","Hitz, Franz",0.917,37.0,0.05,0.7374,1.1133
+"Alkan, Charles-Valentin","Scott, Cyril",0.995,66.0,0.0502,0.7508,1.2872
+"Moszkowski, Moritz","Tchaikovsky, Pyotr",0.8561,14.0,0.0509,0.6398,1.1829
+"Prokofiev, Sergey","Teilman, Christian",0.9474,48.0,0.0509,0.7812,1.1229
+"Gurlitt, Cornelius","Poulenc, Francis",1.0319,79.0,0.0522,0.7387,1.3306
+"Czerny, Carl","Mozart, Wolfgang Amadeus",0.915,35.0,0.0534,0.739,1.2009
+"Meyer-Helmund, Erik","Moszkowski, Moritz",0.8401,7.0,0.0536,0.6255,1.1354
+"Lack, Théodore","Liszt, Franz",0.9158,35.0,0.0542,0.7304,1.1356
+"Liszt, Franz","Tchaikovsky, Pyotr",0.9006,29.0,0.0551,0.6645,1.1875
+"Debussy, Claude","Tchaikovsky, Pyotr",0.8821,22.0,0.0554,0.4766,1.2773
+"Brahms, Johannes","Teilman, Christian",0.8505,10.0,0.056,0.7298,1.0648
+"Moszkowski, Moritz","Schubert, Franz",0.9781,57.0,0.0575,0.7132,1.3566
+"Czerny, Carl","Rzewski, Frederic",1.2214,147.0,0.0592,0.9641,1.3758
+"Bach, Johann Sebastian","Villa-Lobos, Heitor",1.369,202.0,0.0592,1.047,1.5144
+"Hitz, Franz","Schumann, Robert",0.8754,18.0,0.0594,0.7907,1.0496
+"Brahms, Johannes","Lange, Gustav",0.8352,3.0,0.0595,0.6571,1.0871
+"Johnson, Charles Leslie","Teilman, Christian",0.9159,33.0,0.0597,0.7656,1.0735
+"Gottschalk, Louis Moreau","Rzewski, Frederic",1.1208,109.0,0.0606,0.914,1.2796
+"Joplin, Scott","Meyer-Helmund, Erik",0.8478,7.0,0.0613,0.7463,0.9454
+"Fauré, Gabriel","Raff, Joachim",0.8911,23.0,0.0617,0.6908,1.1012
+"Busoni, Ferruccio","Godard, Benjamin",0.8777,17.0,0.0644,0.645,1.2371
+"Rzewski, Frederic","Wachs, Paul",1.0664,87.0,0.0652,0.8795,1.1988
+"Johnson, Charles Leslie","Ravina, Jean Henri",0.9889,58.0,0.0656,0.7072,1.2251
+"Gurlitt, Cornelius","Meyer-Helmund, Erik",0.9434,41.0,0.0657,0.7558,1.1824
+"Mendelssohn, Felix","Rachmaninoff, Sergei",1.0057,64.0,0.0662,0.7254,1.2778
+"Alkan, Charles-Valentin","Hummel, Johann Nepomuk",0.9301,35.0,0.0685,0.7127,1.1978
+"Moszkowski, Moritz","Wachs, Paul",0.8457,3.0,0.0699,0.695,1.0336
+"Rebikov, Vladimir","Tchaikovsky, Pyotr",0.909,26.0,0.0715,0.5537,1.2747
+"Beethoven, Ludwig van","Satie, Erik",1.0975,96.0,0.0722,0.8848,1.278
+"Chopin, Frédéric","Gurlitt, Cornelius",0.8667,10.0,0.0722,0.6386,1.2118
+"Gottschalk, Louis Moreau","Lack, Théodore",0.8868,17.0,0.0735,0.6041,1.1987
+"Gurlitt, Cornelius","Tchaikovsky, Pyotr",0.8955,20.0,0.0741,0.6614,1.2175
+"Chaminade, Cécile","Czerny, Carl",1.0199,66.0,0.0751,0.6929,1.2654
+"Gurlitt, Cornelius","Prokofiev, Sergey",1.0347,71.0,0.0764,0.7816,1.2865
+"Raff, Joachim","Scott, Cyril",0.998,57.0,0.0774,0.8327,1.1791
+"Chaminade, Cécile","Raff, Joachim",0.9395,35.0,0.0779,0.7238,1.18
+"Alkan, Charles-Valentin","Villa-Lobos, Heitor",1.046,74.0,0.0797,0.7547,1.3778
+"Czerny, Carl","Schubert, Franz",0.8642,6.0,0.0804,0.5806,1.1821
+"Hitz, Franz","Scott, Cyril",0.985,51.0,0.0805,0.7333,1.1755
+"Handel, George Frideric","Scharwenka, Xaver",1.2913,165.0,0.0809,1.1409,1.4062
+"Gottschalk, Louis Moreau","Rebikov, Vladimir",0.9497,37.0,0.0827,0.678,1.1622
+"Scriabin, Aleksandr","Tchaikovsky, Pyotr",0.9365,32.0,0.0829,0.4718,1.3807
+"Rzewski, Frederic","Teilman, Christian",1.1059,95.0,0.0833,0.9375,1.2202
+"Chaminade, Cécile","Rebikov, Vladimir",0.8756,9.0,0.0837,0.6549,1.1645
+"Rebikov, Vladimir","Schumann, Robert",1.0018,56.0,0.0839,0.687,1.2767
+"Busoni, Ferruccio","Lange, Gustav",0.9484,36.0,0.0841,0.6648,1.3226
+"Lange, Gustav","Raff, Joachim",0.8736,8.0,0.0844,0.7124,1.0688
+"Schubert, Franz","Turina, Joaquín",1.0814,85.0,0.0856,0.8946,1.2744
+"Hitz, Franz","Satie, Erik",0.9574,38.0,0.0877,0.8258,1.0686
+"Hitz, Franz","Turina, Joaquín",1.0006,54.0,0.088,0.7644,1.1679
+"Czerny, Carl","Poulenc, Francis",1.1466,108.0,0.0891,0.8111,1.4021
+"Ravina, Jean Henri","Tchaikovsky, Pyotr",0.9161,22.0,0.0894,0.639,1.2267
+"Gurlitt, Cornelius","Lack, Théodore",0.9279,26.0,0.0905,0.699,1.1531
+"Handel, George Frideric","Villa-Lobos, Heitor",1.4012,202.0,0.0915,1.1204,1.5342
+"Alkan, Charles-Valentin","Scarlatti, Domenico",1.2028,128.0,0.0917,0.9017,1.4402
+"Hitz, Franz","Medtner, Nikolay",1.001,52.0,0.0938,0.8748,1.1254
+"Gottschalk, Louis Moreau","Scharwenka, Xaver",0.9188,21.0,0.0948,0.6471,1.1733
+"Godard, Benjamin","Scott, James",0.9594,36.0,0.0951,0.8036,1.1371
+"Moszkowski, Moritz","Scarlatti, Domenico",1.3164,169.0,0.0952,0.9872,1.5349
+"Bach, Johann Sebastian","Fauré, Gabriel",1.2924,160.0,0.0953,1.1978,1.3782
+"Bach, Johann Sebastian","Tchaikovsky, Pyotr",1.2792,155.0,0.0956,0.9134,1.5115
+"Heller, Stephen","Scott, James",1.0569,72.0,0.096,0.783,1.3318
+"Liszt, Franz","Teilman, Christian",0.9496,32.0,0.0961,0.765,1.1453
+"Haydn, Joseph","Joplin, Scott",1.2297,136.0,0.0971,1.1232,1.3397
+"Alkan, Charles-Valentin","Grieg, Edvard",0.9455,30.0,0.0973,0.6103,1.2768
+"Satie, Erik","Scriabin, Aleksandr",0.8812,6.0,0.0974,0.6815,1.0641
+"Heller, Stephen","Liszt, Franz",0.8714,2.0,0.0983,0.6096,1.1521
+"Handel, George Frideric","Hitz, Franz",1.25,143.0,0.0985,1.1495,1.3376
+"Grieg, Edvard","Joplin, Scott",0.9335,25.0,0.0987,0.7087,1.1634
+"Gurlitt, Cornelius","Turina, Joaquín",1.0328,62.0,0.0987,0.7882,1.2706
+"Balakirev, Mily","Wachs, Paul",0.9055,14.0,0.1003,0.685,1.1133
+"Grieg, Edvard","Wachs, Paul",0.8901,8.0,0.101,0.6852,1.1319
+"Mendelssohn, Felix","Nazareth, Ernesto",1.0138,54.0,0.1012,0.7625,1.2199
+"Beethoven, Ludwig van","Joplin, Scott",1.1322,98.0,0.1015,0.9927,1.277
+"Gurlitt, Cornelius","Nazareth, Ernesto",0.9861,43.0,0.103,0.7294,1.2881
+"Balakirev, Mily","Teilman, Christian",0.8881,6.0,0.1044,0.7008,1.1158
+"Joplin, Scott","Mozart, Wolfgang Amadeus",1.1731,112.0,0.1049,1.0474,1.276
+"Fauré, Gabriel","Grieg, Edvard",0.8789,2.0,0.1058,0.5705,1.2351
+"Haydn, Joseph","Wachs, Paul",1.1937,119.0,0.1067,1.0191,1.3336
+"Hummel, Johann Nepomuk","Moszkowski, Moritz",1.0797,76.0,0.108,0.789,1.3558
+"Chopin, Frédéric","Hitz, Franz",0.9247,18.0,0.1087,0.7706,1.1013
+"Balakirev, Mily","Raff, Joachim",0.9196,15.0,0.1116,0.7125,1.1568
+"Chopin, Frédéric","Moszkowski, Moritz",0.9974,44.0,0.1117,0.6938,1.2597
+"Debussy, Claude","Raff, Joachim",0.9877,40.0,0.1127,0.798,1.1621
+"Bach, Johann Sebastian","Wachs, Paul",1.3264,166.0,0.1133,1.1598,1.4333
+"Mendelssohn, Felix","Prokofiev, Sergey",1.1012,82.0,0.1135,0.8123,1.3181
+"Joplin, Scott","Moszkowski, Moritz",0.9192,14.0,0.114,0.7306,1.2583
+"Liszt, Franz","Scott, James",1.0813,74.0,0.115,0.9383,1.2137
+"Hitz, Franz","Mozart, Wolfgang Amadeus",1.0778,72.0,0.1169,0.8863,1.2384
+"Joplin, Scott","Schumann, Robert",1.0411,58.0,0.1178,0.8291,1.2363
+"Turina, Joaquín","Wachs, Paul",0.9709,31.0,0.12,0.7991,1.1611
+"Fauré, Gabriel","Handel, George Frideric",1.3172,160.0,0.1201,1.2004,1.4097
+"Beethoven, Ludwig van","Rzewski, Frederic",1.3387,168.0,0.1202,1.1789,1.4753
+"Alkan, Charles-Valentin","Teilman, Christian",0.9715,30.0,0.1233,0.7535,1.1902
+"Schubert, Franz","Schumann, Robert",0.9263,13.0,0.1238,0.6451,1.2484
+"Ravina, Jean Henri","Rebikov, Vladimir",1.0204,48.0,0.1239,0.717,1.3012
+"Medtner, Nikolay","Raff, Joachim",1.0499,58.0,0.1266,0.8732,1.2466
+"Scott, Cyril","Wachs, Paul",0.9699,28.0,0.127,0.7776,1.1573
+"Hitz, Franz","Prokofiev, Sergey",1.0644,63.0,0.1276,0.8608,1.2373
+"Czerny, Carl","Medtner, Nikolay",1.1344,89.0,0.1279,0.793,1.3983
+"Hitz, Franz","Rebikov, Vladimir",0.9983,38.0,0.1287,0.8146,1.1736
+"Beethoven, Ludwig van","Hitz, Franz",1.053,58.0,0.1297,0.8405,1.2272
+"Lack, Théodore","Wachs, Paul",0.911,5.0,0.1299,0.6621,1.1656
+"Chaminade, Cécile","Joplin, Scott",0.9285,11.0,0.1313,0.7708,1.0873
+"Gurlitt, Cornelius","Rzewski, Frederic",1.2165,118.0,0.1321,1.0022,1.3626
+"Rachmaninoff, Sergei","Raff, Joachim",1.0369,51.0,0.1324,0.8635,1.2151
+"Moszkowski, Moritz","Teilman, Christian",0.93,11.0,0.1328,0.7243,1.2156
+"Godard, Benjamin","Raff, Joachim",0.9732,27.0,0.133,0.834,1.1236
+"Bach, Johann Sebastian","Hitz, Franz",1.2844,143.0,0.133,1.1215,1.3794
+"Debussy, Claude","Schubert, Franz",1.0754,65.0,0.1333,0.823,1.2948
+"Hitz, Franz","Villa-Lobos, Heitor",1.0599,59.0,0.1339,0.8471,1.2183
+"Beethoven, Ludwig van","Wachs, Paul",1.1191,81.0,0.134,0.8994,1.3081
+"Rachmaninoff, Sergei","Wachs, Paul",0.9617,22.0,0.135,0.7493,1.2598
+"Gurlitt, Cornelius","Hummel, Johann Nepomuk",1.0156,42.0,0.1353,0.7932,1.2205
+"Beethoven, Ludwig van","Schubert, Franz",0.976,27.0,0.1359,0.7624,1.1933
+"Czerny, Carl","Lange, Gustav",1.0093,39.0,0.1369,0.7494,1.2094
+"Mendelssohn, Felix","Poulenc, Francis",1.1467,90.0,0.1375,0.8679,1.3483
+"Hummel, Johann Nepomuk","Mendelssohn, Felix",0.9885,31.0,0.1376,0.722,1.2624
+"Prokofiev, Sergey","Raff, Joachim",1.0907,69.0,0.1378,0.8543,1.313
+"Alkan, Charles-Valentin","Schumann, Robert",0.9141,3.0,0.1384,0.6684,1.2352
+"Scharwenka, Xaver","Schubert, Franz",1.0489,53.0,0.139,0.7446,1.2914
+"Hitz, Franz","Rachmaninoff, Sergei",1.0288,45.0,0.1403,0.836,1.2408
+"Villa-Lobos, Heitor","Wachs, Paul",1.005,36.0,0.1407,0.8121,1.1899
+"Alkan, Charles-Valentin","Mendelssohn, Felix",0.9207,4.0,0.1423,0.6321,1.2378
+"Grieg, Edvard","Moszkowski, Moritz",0.9397,11.0,0.1425,0.6989,1.2342
+"Balakirev, Mily","Mendelssohn, Felix",0.9859,28.0,0.1431,0.6748,1.2577
+"Godard, Benjamin","Gurlitt, Cornelius",0.9909,29.0,0.1454,0.7793,1.2539
+"Handel, George Frideric","Lack, Théodore",1.3459,161.0,0.1462,1.1643,1.4727
+"Bach, Johann Sebastian","Rebikov, Vladimir",1.4,181.0,0.1466,1.2676,1.5129
+"Rachmaninoff, Sergei","Satie, Erik",0.9332,7.0,0.1467,0.7437,1.1479
+"Gottschalk, Louis Moreau","Tchaikovsky, Pyotr",0.9445,11.0,0.1473,0.72,1.2626
+"Fauré, Gabriel","Heller, Stephen",1.0021,32.0,0.1485,0.6083,1.3166
+"Alkan, Charles-Valentin","Turina, Joaquín",1.1013,69.0,0.1485,0.9016,1.3283
+"Handel, George Frideric","Mendelssohn, Felix",1.2496,124.0,0.1492,1.059,1.3937
+"Busoni, Ferruccio","Grieg, Edvard",0.9796,23.0,0.1502,0.6336,1.2973
+"Mozart, Wolfgang Amadeus","Tchaikovsky, Pyotr",1.144,84.0,0.1508,0.7755,1.4067
+"Scarlatti, Domenico","Schubert, Franz",1.2199,112.0,0.1516,1.0274,1.4093
+"Haydn, Joseph","Lack, Théodore",1.2274,114.0,0.1538,1.006,1.3582
+"Godard, Benjamin","Mendelssohn, Felix",1.0292,40.0,0.1542,0.7832,1.235
+"Raff, Joachim","Wachs, Paul",0.9999,29.0,0.1544,0.7897,1.1747
+"Nazareth, Ernesto","Prokofiev, Sergey",0.9972,28.0,0.1544,0.7488,1.2296
+"Bach, Johann Sebastian","Prokofiev, Sergey",1.476,206.0,0.1555,1.2791,1.5564
+"Hummel, Johann Nepomuk","Nazareth, Ernesto",1.1515,85.0,0.1557,0.9014,1.3872
+"Lange, Gustav","Scott, James",1.0713,55.0,0.156,0.9158,1.1912
+"Alkan, Charles-Valentin","Brahms, Johannes",0.9802,20.0,0.1588,0.6724,1.2571
+"Lack, Théodore","Tchaikovsky, Pyotr",0.9437,6.0,0.16,0.5459,1.3466
+"Godard, Benjamin","Johnson, Charles Leslie",1.001,27.0,0.1609,0.8255,1.1947
+"Handel, George Frideric","Wachs, Paul",1.3755,166.0,0.1624,1.2224,1.477
+"Czerny, Carl","Haydn, Joseph",1.0885,59.0,0.1625,0.869,1.3256
+"Busoni, Ferruccio","Lack, Théodore",0.9855,20.0,0.1642,0.6587,1.2983
+"Liszt, Franz","Rebikov, Vladimir",1.0817,55.0,0.1664,0.8915,1.2281
+"Alkan, Charles-Valentin","Tchaikovsky, Pyotr",1.0077,27.0,0.1676,0.612,1.3514
+"Nazareth, Ernesto","Scott, Cyril",0.9786,16.0,0.168,0.7289,1.1861
+"Czerny, Carl","Villa-Lobos, Heitor",1.1942,96.0,0.1689,0.9141,1.4288
+"Schumann, Robert","Scott, James",1.1379,75.0,0.1689,0.8726,1.3382
+"Brahms, Johannes","Nazareth, Ernesto",1.0173,30.0,0.1691,0.7417,1.2966
+"Heller, Stephen","Johnson, Charles Leslie",1.108,63.0,0.1713,0.8173,1.3907
+"Czerny, Carl","Teilman, Christian",1.0804,52.0,0.1732,0.7778,1.292
+"Godard, Benjamin","Satie, Erik",0.9877,17.0,0.1744,0.8266,1.1651
+"Hummel, Johann Nepomuk","Rzewski, Frederic",1.3724,160.0,0.1754,1.1412,1.4621
+"Handel, George Frideric","Teilman, Christian",1.3698,158.0,0.1781,1.2165,1.4605
+"Joplin, Scott","Prokofiev, Sergey",1.0078,23.0,0.1784,0.7721,1.2181
+"Beethoven, Ludwig van","Nazareth, Ernesto",1.1975,93.0,0.1802,0.9715,1.4249
+"Haydn, Joseph","Villa-Lobos, Heitor",1.3642,155.0,0.1806,0.9847,1.5359
+"Gurlitt, Cornelius","Wachs, Paul",1.032,31.0,0.1811,0.7505,1.2917
+"Busoni, Ferruccio","Scharwenka, Xaver",0.9961,16.0,0.1855,0.671,1.3147
+"Alkan, Charles-Valentin","Bach, Johann Sebastian",1.2972,128.0,0.1861,1.0623,1.4245
+"Joplin, Scott","Satie, Erik",0.9595,2.0,0.1864,0.8141,1.081
+"Johnson, Charles Leslie","Moszkowski, Moritz",1.0135,22.0,0.1868,0.7985,1.283
+"Mendelssohn, Felix","Scriabin, Aleksandr",1.124,63.0,0.1873,0.7719,1.3791
+"Prokofiev, Sergey","Wachs, Paul",1.0625,40.0,0.1875,0.8349,1.2554
+"Chopin, Frédéric","Joplin, Scott",1.111,58.0,0.1877,0.9547,1.2256
+"Brahms, Johannes","Wachs, Paul",1.0062,18.0,0.1902,0.7354,1.2676
+"Scarlatti, Domenico","Schumann, Robert",1.2948,125.0,0.1917,0.8666,1.54
+"Bach, Johann Sebastian","Nazareth, Ernesto",1.4395,178.0,0.1941,1.2789,1.5827
+"Chopin, Frédéric","Mendelssohn, Felix",0.9645,1.0,0.1942,0.6276,1.2225
+"Mozart, Wolfgang Amadeus","Wachs, Paul",1.2183,95.0,0.1957,0.9992,1.3832
+"Balakirev, Mily","Tchaikovsky, Pyotr",0.9715,3.0,0.1958,0.587,1.348
+"Heller, Stephen","Mendelssohn, Felix",0.9749,4.0,0.1964,0.6447,1.2374
+"Haydn, Joseph","Rebikov, Vladimir",1.3239,134.0,0.1967,1.1532,1.4572
+"Medtner, Nikolay","Satie, Erik",1.0028,14.0,0.1976,0.7707,1.1958
+"Busoni, Ferruccio","Mozart, Wolfgang Amadeus",1.2606,110.0,0.1978,0.8879,1.4481
+"Fauré, Gabriel","Scarlatti, Domenico",1.3968,160.0,0.1997,1.2841,1.5152
+"Johnson, Charles Leslie","Lange, Gustav",1.0913,46.0,0.2002,0.9122,1.2011
+"Lange, Gustav","Tchaikovsky, Pyotr",0.9952,10.0,0.2006,0.6504,1.3018
+"Schubert, Franz","Villa-Lobos, Heitor",1.21,90.0,0.2008,0.9001,1.3722
+"Czerny, Carl","Godard, Benjamin",1.1247,58.0,0.2014,0.8534,1.3079
+"Handel, George Frideric","Nazareth, Ernesto",1.448,178.0,0.2027,1.3211,1.5349
+"Czerny, Carl","Prokofiev, Sergey",1.2403,100.0,0.2042,0.9149,1.4509
+"Handel, George Frideric","Turina, Joaquín",1.5012,197.0,0.2049,1.3837,1.5534
+"Liszt, Franz","Schubert, Franz",1.0107,14.0,0.2054,0.7609,1.1972
+"Hitz, Franz","Moszkowski, Moritz",1.0434,26.0,0.206,0.8801,1.1951
+"Joplin, Scott","Liszt, Franz",1.1271,57.0,0.2064,0.9817,1.2463
+"Scarlatti, Domenico","Teilman, Christian",1.3994,158.0,0.2078,1.2065,1.5321
+"Joplin, Scott","Tchaikovsky, Pyotr",1.0506,28.0,0.2078,0.7822,1.3089
+"Bach, Johann Sebastian","Moszkowski, Moritz",1.4292,169.0,0.208,1.1297,1.5847
+"Handel, George Frideric","Prokofiev, Sergey",1.5293,206.0,0.2088,1.3234,1.6043
+"Mendelssohn, Felix","Schubert, Franz",1.0088,12.0,0.2089,0.6532,1.2762
+"Mendelssohn, Felix","Turina, Joaquín",1.1725,73.0,0.2089,0.9196,1.3532
+"Czerny, Carl","Tchaikovsky, Pyotr",1.1084,49.0,0.2092,0.6757,1.4769
+"Busoni, Ferruccio","Haydn, Joseph",1.3374,134.0,0.2101,0.9624,1.5159
+"Mendelssohn, Felix","Scott, James",1.1831,76.0,0.2115,0.9676,1.3699
+"Scott, James","Tchaikovsky, Pyotr",1.1011,45.0,0.2126,0.8028,1.3724
+"Alkan, Charles-Valentin","Hitz, Franz",1.0216,15.0,0.2136,0.8731,1.1787
+"Gurlitt, Cornelius","Rachmaninoff, Sergei",1.1245,53.0,0.2146,0.8204,1.3873
+"Handel, George Frideric","Scriabin, Aleksandr",1.4843,187.0,0.2148,1.3203,1.5734
+"Bach, Johann Sebastian","Poulenc, Francis",1.5569,214.0,0.2149,1.3055,1.6281
+"Alkan, Charles-Valentin","Handel, George Frideric",1.3265,128.0,0.2153,1.1351,1.4419
+"Busoni, Ferruccio","Gottschalk, Louis Moreau",1.0828,37.0,0.2158,0.7611,1.3919
+"Mendelssohn, Felix","Ravina, Jean Henri",1.0079,9.0,0.2161,0.7431,1.2914
+"Brahms, Johannes","Joplin, Scott",1.0783,35.0,0.2166,0.8136,1.269
+"Satie, Erik","Villa-Lobos, Heitor",1.041,21.0,0.2169,0.7036,1.3061
+"Moszkowski, Moritz","Rebikov, Vladimir",1.0168,12.0,0.2169,0.6815,1.2828
+"Medtner, Nikolay","Scarlatti, Domenico",1.508,195.0,0.217,1.2248,1.6603
+"Satie, Erik","Schumann, Robert",1.1366,56.0,0.2186,0.7846,1.3892
+"Heller, Stephen","Scarlatti, Domenico",1.333,128.0,0.2218,0.9449,1.5243
+"Alkan, Charles-Valentin","Meyer-Helmund, Erik",1.1195,48.0,0.223,0.904,1.2798
+"Alkan, Charles-Valentin","Scriabin, Aleksandr",1.1495,59.0,0.2235,0.8205,1.4128
+"Chaminade, Cécile","Scott, James",1.0669,28.0,0.2241,0.8518,1.201
+"Scharwenka, Xaver","Tchaikovsky, Pyotr",1.019,10.0,0.2245,0.5742,1.4693
+"Czerny, Carl","Rachmaninoff, Sergei",1.2123,82.0,0.2245,0.8699,1.4534
+"Bach, Johann Sebastian","Scharwenka, Xaver",1.4361,165.0,0.2256,1.3139,1.5342
+"Johnson, Charles Leslie","Liszt, Franz",1.1679,65.0,0.2258,1.0294,1.2848
+"Balakirev, Mily","Nazareth, Ernesto",1.0634,26.0,0.2259,0.8333,1.2709
+"Busoni, Ferruccio","Heller, Stephen",1.1361,53.0,0.2262,0.8353,1.3597
+"Mendelssohn, Felix","Scott, Cyril",1.1831,70.0,0.2275,0.8643,1.4059
+"Prokofiev, Sergey","Scarlatti, Domenico",1.5503,206.0,0.2298,1.2759,1.6903
+"Schubert, Franz","Scriabin, Aleksandr",1.2015,75.0,0.2326,0.9497,1.3677
+"Hitz, Franz","Mendelssohn, Felix",1.052,19.0,0.2333,0.8879,1.1744
+"Fauré, Gabriel","Wachs, Paul",1.0179,6.0,0.2342,0.7873,1.2477
+"Raff, Joachim","Scriabin, Aleksandr",1.1362,50.0,0.2344,0.9635,1.3129
+"Gurlitt, Cornelius","Scott, Cyril",1.1617,59.0,0.2357,0.9074,1.3363
+"Hummel, Johann Nepomuk","Ravina, Jean Henri",1.1111,40.0,0.236,0.8408,1.3158
+"Bach, Johann Sebastian","Lack, Théodore",1.4375,161.0,0.2378,1.265,1.5587
+"Mozart, Wolfgang Amadeus","Villa-Lobos, Heitor",1.3581,131.0,0.2388,0.9868,1.529
+"Czerny, Carl","Schumann, Robert",1.0576,19.0,0.2389,0.6833,1.4457
+"Haydn, Joseph","Heller, Stephen",1.2247,81.0,0.2396,0.8766,1.4402
+"Haydn, Joseph","Scharwenka, Xaver",1.3248,118.0,0.2405,1.1729,1.4399
+"Mendelssohn, Felix","Teilman, Christian",1.1011,34.0,0.2422,0.8789,1.3207
+"Johnson, Charles Leslie","Tchaikovsky, Pyotr",1.1094,36.0,0.2452,0.8052,1.3751
+"Gottschalk, Louis Moreau","Mendelssohn, Felix",1.0684,20.0,0.247,0.8442,1.2654
+"Alkan, Charles-Valentin","Balakirev, Mily",1.0809,24.0,0.2488,0.78,1.3587
+"Handel, George Frideric","Poulenc, Francis",1.5908,214.0,0.2488,1.3413,1.6665
+"Beethoven, Ludwig van","Busoni, Ferruccio",1.2758,96.0,0.2505,0.9084,1.4694
+"Bach, Johann Sebastian","Medtner, Nikolay",1.5415,195.0,0.2505,1.318,1.6328
+"Hitz, Franz","Scriabin, Aleksandr",1.1368,44.0,0.251,0.8762,1.3456
+"Beethoven, Ludwig van","Raff, Joachim",1.1589,52.0,0.2516,0.9717,1.3286
+"Nazareth, Ernesto","Turina, Joaquín",1.0709,19.0,0.2522,0.8667,1.2428
+"Hitz, Franz","Scharwenka, Xaver",1.0791,22.0,0.2524,0.8612,1.2823
+"Brahms, Johannes","Gurlitt, Cornelius",1.0559,13.0,0.2533,0.7804,1.3018
+"Joplin, Scott","Rebikov, Vladimir",1.028,2.0,0.255,0.835,1.1585
+"Scriabin, Aleksandr","Wachs, Paul",1.0792,21.0,0.2552,0.8733,1.2801
+"Handel, George Frideric","Meyer-Helmund, Erik",1.4953,176.0,0.2554,1.4058,1.5447
+"Debussy, Claude","Mendelssohn, Felix",1.166,53.0,0.2561,0.8598,1.3796
+"Meyer-Helmund, Erik","Raff, Joachim",1.1297,39.0,0.2574,0.9763,1.2588
+"Mendelssohn, Felix","Raff, Joachim",1.0605,13.0,0.2579,0.7976,1.3391
+"Brahms, Johannes","Scott, James",1.1663,52.0,0.2591,0.8544,1.3375
+"Haydn, Joseph","Teilman, Christian",1.3248,111.0,0.2592,1.1299,1.4389
+"Gurlitt, Cornelius","Villa-Lobos, Heitor",1.2073,67.0,0.2598,0.776,1.4368
+"Beethoven, Ludwig van","Villa-Lobos, Heitor",1.3416,117.0,0.26,0.9528,1.5583
+"Fauré, Gabriel","Tchaikovsky, Pyotr",1.0432,5.0,0.262,0.6462,1.3708
+"Grieg, Edvard","Mendelssohn, Felix",1.1226,34.0,0.2636,0.7453,1.3738
+"Johnson, Charles Leslie","Mendelssohn, Felix",1.212,67.0,0.2645,0.9955,1.3807
+"Raff, Joachim","Schumann, Robert",1.065,12.0,0.2651,0.8071,1.2882
+"Lack, Théodore","Schubert, Franz",1.1652,49.0,0.266,0.9077,1.3301
+"Alkan, Charles-Valentin","Heller, Stephen",1.0337,0.0,0.2661,0.6821,1.3461
+"Balakirev, Mily","Hitz, Franz",1.058,9.0,0.2661,0.8233,1.2702
+"Chaminade, Cécile","Scarlatti, Domenico",1.4966,172.0,0.2674,1.1823,1.6643
+"Hummel, Johann Nepomuk","Wachs, Paul",1.233,73.0,0.2694,0.9909,1.4147
+"Haydn, Joseph","Nazareth, Ernesto",1.3928,131.0,0.2736,1.21,1.533
+"Mozart, Wolfgang Amadeus","Nazareth, Ernesto",1.3288,107.0,0.274,1.147,1.4782
+"Johnson, Charles Leslie","Satie, Erik",1.0692,10.0,0.2747,0.9458,1.1841
+"Rzewski, Frederic","Schubert, Franz",1.4215,141.0,0.2754,1.226,1.5264
+"Haydn, Joseph","Schubert, Franz",1.2187,65.0,0.2766,1.0228,1.3919
+"Scarlatti, Domenico","Turina, Joaquín",1.5734,197.0,0.2771,1.4105,1.6612
+"Meyer-Helmund, Erik","Scott, James",1.1099,24.0,0.2778,1.0406,1.1629
+"Mozart, Wolfgang Amadeus","Raff, Joachim",1.2244,66.0,0.2796,1.0552,1.3534
+"Handel, George Frideric","Schubert, Franz",1.3494,112.0,0.2812,1.191,1.4491
+"Joplin, Scott","Medtner, Nikolay",1.0811,12.0,0.2812,0.9163,1.251
+"Czerny, Carl","Turina, Joaquín",1.2934,91.0,0.2816,0.9979,1.4541
+"Lange, Gustav","Mendelssohn, Felix",1.1063,21.0,0.2823,0.785,1.3374
+"Poulenc, Francis","Scott, James",1.0876,14.0,0.2824,0.8636,1.2589
+"Busoni, Ferruccio","Chopin, Frédéric",1.2012,56.0,0.2833,0.8641,1.4665
+"Satie, Erik","Scott, James",1.1034,19.0,0.2848,0.9586,1.2094
+"Poulenc, Francis","Scarlatti, Domenico",1.6273,214.0,0.2854,1.3502,1.7132
+"Balakirev, Mily","Satie, Erik",1.1313,29.0,0.2858,0.9044,1.346
+"Fauré, Gabriel","Haydn, Joseph",1.3576,113.0,0.2867,1.229,1.4787
+"Haydn, Joseph","Raff, Joachim",1.2962,90.0,0.287,1.1404,1.4403
+"Hummel, Johann Nepomuk","Schubert, Franz",1.106,19.0,0.2873,0.8461,1.2844
+"Johnson, Charles Leslie","Schumann, Robert",1.2325,66.0,0.2877,0.95,1.4121
+"Haydn, Joseph","Prokofiev, Sergey",1.4837,159.0,0.2894,1.2166,1.5792
+"Bach, Johann Sebastian","Turina, Joaquín",1.587,197.0,0.2906,1.4422,1.6448
+"Rebikov, Vladimir","Scarlatti, Domenico",1.5448,181.0,0.2914,1.4009,1.6067
+"Handel, George Frideric","Moszkowski, Moritz",1.514,169.0,0.2928,1.258,1.6093
+"Joplin, Scott","Scott, Cyril",1.09,11.0,0.2928,0.8561,1.2537
+"Busoni, Ferruccio","Wachs, Paul",1.1014,15.0,0.2934,0.8487,1.3156
+"Mozart, Wolfgang Amadeus","Schubert, Franz",1.1728,41.0,0.2951,0.9989,1.3314
+"Brahms, Johannes","Hitz, Franz",1.0778,5.0,0.2967,0.8341,1.2544
+"Gurlitt, Cornelius","Scriabin, Aleksandr",1.2055,52.0,0.2982,0.8917,1.4396
+"Hitz, Franz","Hummel, Johann Nepomuk",1.2019,50.0,0.3,0.9803,1.3548
+"Grieg, Edvard","Scott, James",1.1819,42.0,0.3015,0.9397,1.3231
+"Gurlitt, Cornelius","Lange, Gustav",1.0964,10.0,0.3019,0.7737,1.3655
+"Handel, George Frideric","Scott, Cyril",1.5909,194.0,0.3026,1.4373,1.6416
+"Debussy, Claude","Nazareth, Ernesto",1.0733,1.0,0.3029,0.7989,1.2603
+"Debussy, Claude","Hitz, Franz",1.1628,34.0,0.3038,0.9464,1.3044
+"Hitz, Franz","Liszt, Franz",1.1176,17.0,0.3043,0.9699,1.2388
+"Johnson, Charles Leslie","Poulenc, Francis",1.134,23.0,0.3046,0.9012,1.2842
+"Bach, Johann Sebastian","Scriabin, Aleksandr",1.5769,187.0,0.3073,1.4552,1.6455
+"Alkan, Charles-Valentin","Beethoven, Ludwig van",1.1909,43.0,0.3078,0.8732,1.4075
+"Beethoven, Ludwig van","Moszkowski, Moritz",1.3011,84.0,0.308,0.967,1.5211
+"Fauré, Gabriel","Satie, Erik",1.1323,21.0,0.3082,0.8603,1.3509
+"Busoni, Ferruccio","Meyer-Helmund, Erik",1.0896,5.0,0.3085,0.8573,1.3922
+"Lack, Théodore","Mendelssohn, Felix",1.1771,37.0,0.3101,0.8108,1.3973
+"Haydn, Joseph","Turina, Joaquín",1.4804,150.0,0.3102,1.3283,1.5611
+"Alkan, Charles-Valentin","Rebikov, Vladimir",1.2202,53.0,0.3103,0.9408,1.4592
+"Grieg, Edvard","Johnson, Charles Leslie",1.1705,33.0,0.3143,0.8913,1.3578
+"Nazareth, Ernesto","Rebikov, Vladimir",1.0903,3.0,0.3146,0.8324,1.2668
+"Bach, Johann Sebastian","Schubert, Franz",1.3846,112.0,0.3164,1.2113,1.5078
+"Debussy, Claude","Wachs, Paul",1.1153,11.0,0.318,0.8843,1.2839
+"Chaminade, Cécile","Satie, Erik",1.1101,9.0,0.3183,0.8392,1.3177
+"Nazareth, Ernesto","Rzewski, Frederic",1.2872,75.0,0.3183,1.0208,1.4284
+"Lack, Théodore","Scarlatti, Domenico",1.5194,161.0,0.3197,1.3088,1.6134
+"Beethoven, Ludwig van","Heller, Stephen",1.2029,43.0,0.3199,0.8235,1.4776
+"Nazareth, Ernesto","Villa-Lobos, Heitor",1.1543,24.0,0.3222,0.8484,1.3306
+"Lange, Gustav","Satie, Erik",1.1866,36.0,0.3223,0.9519,1.3642
+"Moszkowski, Moritz","Scharwenka, Xaver",1.1008,4.0,0.3223,0.7227,1.4051
+"Joplin, Scott","Rachmaninoff, Sergei",1.1034,5.0,0.3223,0.9058,1.3144
+"Joplin, Scott","Turina, Joaquín",1.1281,14.0,0.3229,0.9891,1.2543
+"Czerny, Carl","Scott, Cyril",1.3271,88.0,0.3232,1.0056,1.4927
+"Chaminade, Cécile","Johnson, Charles Leslie",1.1464,19.0,0.3277,0.9431,1.2826
+"Debussy, Claude","Gurlitt, Cornelius",1.209,42.0,0.3286,0.9048,1.388
+"Rebikov, Vladimir","Wachs, Paul",1.1366,15.0,0.3287,0.9663,1.2556
+"Raff, Joachim","Schubert, Franz",1.164,25.0,0.3293,0.9054,1.3392
+"Hummel, Johann Nepomuk","Villa-Lobos, Heitor",1.3913,109.0,0.3311,1.0595,1.4792
+"Fauré, Gabriel","Teilman, Christian",1.1052,2.0,0.3322,0.8829,1.255
+"Chopin, Frédéric","Scott, James",1.302,75.0,0.333,1.1762,1.3722
+"Handel, George Frideric","Tchaikovsky, Pyotr",1.5185,155.0,0.3348,1.1673,1.622
+"Hummel, Johann Nepomuk","Liszt, Franz",1.1911,33.0,0.3349,0.9219,1.3974
+"Bach, Johann Sebastian","Teilman, Christian",1.528,158.0,0.3363,1.3736,1.607
+"Brahms, Johannes","Scarlatti, Domenico",1.5022,148.0,0.3374,1.158,1.5998
+"Joplin, Scott","Mendelssohn, Felix",1.265,59.0,0.3389,1.0379,1.3796
+"Lack, Théodore","Moszkowski, Moritz",1.1292,8.0,0.3401,0.789,1.3932
+"Johnson, Charles Leslie","Prokofiev, Sergey",1.1524,15.0,0.3445,0.9027,1.3283
+"Bach, Johann Sebastian","Schumann, Robert",1.4481,125.0,0.345,1.14,1.5739
+"Prokofiev, Sergey","Scott, James",1.129,6.0,0.3452,0.8557,1.3344
+"Chopin, Frédéric","Haydn, Joseph",1.3243,78.0,0.3473,1.1646,1.4494
+"Johnson, Charles Leslie","Meyer-Helmund, Erik",1.1563,15.0,0.3484,1.0884,1.2229
+"Satie, Erik","Wachs, Paul",1.1572,15.0,0.3492,0.951,1.3271
+"Hummel, Johann Nepomuk","Poulenc, Francis",1.4436,121.0,0.3512,1.1074,1.5421
+"Gottschalk, Louis Moreau","Hummel, Johann Nepomuk",1.2558,51.0,0.3512,0.9883,1.448
+"Busoni, Ferruccio","Scott, James",1.1715,19.0,0.3528,0.834,1.4095
+"Debussy, Claude","Handel, George Frideric",1.5955,177.0,0.3528,1.434,1.6672
+"Handel, George Frideric","Lange, Gustav",1.5106,145.0,0.3538,1.3853,1.5734
+"Brahms, Johannes","Raff, Joachim",1.1518,11.0,0.3546,0.8767,1.3695
+"Balakirev, Mily","Handel, George Frideric",1.5313,152.0,0.3557,1.3531,1.6075
+"Beethoven, Ludwig van","Prokofiev, Sergey",1.4484,121.0,0.356,1.1524,1.565
+"Hummel, Johann Nepomuk","Turina, Joaquín",1.403,104.0,0.3563,1.1532,1.5258
+"Mendelssohn, Felix","Meyer-Helmund, Erik",1.2652,52.0,0.358,0.9366,1.4309
+"Balakirev, Mily","Schubert, Franz",1.2338,40.0,0.3588,0.9563,1.3875
+"Rebikov, Vladimir","Scott, James",1.182,19.0,0.3633,1.0165,1.2741
+"Beethoven, Ludwig van","Teilman, Christian",1.3304,73.0,0.3668,1.1296,1.459
+"Chopin, Frédéric","Handel, George Frideric",1.4703,125.0,0.3672,1.345,1.5441
+"Czerny, Carl","Debussy, Claude",1.3265,71.0,0.3683,1.0198,1.5082
+"Lack, Théodore","Nazareth, Ernesto",1.1818,17.0,0.3685,0.8869,1.3683
+"Beethoven, Ludwig van","Schumann, Robert",1.2438,40.0,0.3688,0.8697,1.4857
+"Bach, Johann Sebastian","Brahms, Johannes",1.5345,148.0,0.3696,1.2608,1.6107
+"Hummel, Johann Nepomuk","Prokofiev, Sergey",1.4407,113.0,0.3698,1.1093,1.5484
+"Mozart, Wolfgang Amadeus","Teilman, Christian",1.3713,87.0,0.3702,1.1934,1.486
+"Ravina, Jean Henri","Scarlatti, Domenico",1.497,133.0,0.3724,1.1346,1.6503
+"Nazareth, Ernesto","Satie, Erik",1.1482,3.0,0.3725,0.9664,1.2986
+"Johnson, Charles Leslie","Rebikov, Vladimir",1.1677,10.0,0.3731,1.0067,1.271
+"Raff, Joachim","Teilman, Christian",1.1973,21.0,0.3733,0.9954,1.3263
+"Chopin, Frédéric","Johnson, Charles Leslie",1.3187,66.0,0.3739,1.1865,1.3855
+"Gottschalk, Louis Moreau","Scarlatti, Domenico",1.5283,144.0,0.3742,1.2798,1.6673
+"Mozart, Wolfgang Amadeus","Rebikov, Vladimir",1.4376,110.0,0.3747,1.2689,1.5683
+"Bach, Johann Sebastian","Balakirev, Mily",1.5519,152.0,0.3763,1.3387,1.6342
+"Haydn, Joseph","Scriabin, Aleksandr",1.52,140.0,0.3766,1.3489,1.6252
+"Joplin, Scott","Lack, Théodore",1.2039,22.0,0.3771,1.0,1.3322
+"Nazareth, Ernesto","Scriabin, Aleksandr",1.1708,9.0,0.379,0.9236,1.3555
+"Hummel, Johann Nepomuk","Lange, Gustav",1.287,52.0,0.3798,1.0378,1.4272
+"Czerny, Carl","Heller, Stephen",1.2074,22.0,0.3807,0.828,1.4893
+"Grieg, Edvard","Handel, George Frideric",1.5734,158.0,0.3817,1.3788,1.6555
+"Busoni, Ferruccio","Tchaikovsky, Pyotr",1.2193,26.0,0.3818,0.8884,1.4092
+"Bach, Johann Sebastian","Rachmaninoff, Sergei",1.6542,188.0,0.382,1.4833,1.6844
+"Brahms, Johannes","Handel, George Frideric",1.5488,148.0,0.3839,1.2793,1.6135
+"Lack, Théodore","Mozart, Wolfgang Amadeus",1.3941,90.0,0.3849,1.1912,1.5223
+"Balakirev, Mily","Joplin, Scott",1.2363,31.0,0.3854,1.069,1.3657
+"Gottschalk, Louis Moreau","Satie, Erik",1.2559,37.0,0.389,0.9514,1.4279
+"Beethoven, Ludwig van","Brahms, Johannes",1.3264,63.0,0.3897,1.0281,1.4726
+"Bach, Johann Sebastian","Scott, Cyril",1.6793,194.0,0.391,1.5393,1.6971
+"Fauré, Gabriel","Hummel, Johann Nepomuk",1.3386,67.0,0.3911,1.0257,1.5211
+"Gurlitt, Cornelius","Medtner, Nikolay",1.3205,60.0,0.3918,1.0393,1.4827
+"Hummel, Johann Nepomuk","Satie, Erik",1.3969,88.0,0.3931,1.1192,1.5463
+"Handel, George Frideric","Heller, Stephen",1.5045,128.0,0.3933,1.2563,1.5636
+"Alkan, Charles-Valentin","Mozart, Wolfgang Amadeus",1.3142,57.0,0.3936,1.059,1.4678
+"Fauré, Gabriel","Hitz, Franz",1.2069,17.0,0.3936,0.9236,1.4152
+"Mendelssohn, Felix","Satie, Erik",1.3143,57.0,0.3937,0.8099,1.5148
+"Joplin, Scott","Rzewski, Frederic",1.3514,70.0,0.3958,1.1632,1.4528
+"Czerny, Carl","Meyer-Helmund, Erik",1.3515,70.0,0.396,1.1328,1.4739
+"Mozart, Wolfgang Amadeus","Prokofiev, Sergey",1.5268,135.0,0.3968,1.2597,1.6281
+"Bach, Johann Sebastian","Chaminade, Cécile",1.6267,172.0,0.3974,1.3996,1.6768
+"Chaminade, Cécile","Hummel, Johann Nepomuk",1.3771,79.0,0.3974,1.0878,1.4851
+"Joplin, Scott","Scharwenka, Xaver",1.2148,18.0,0.3988,1.0472,1.3385
+"Handel, George Frideric","Medtner, Nikolay",1.6915,195.0,0.4005,1.5295,1.7018
+"Bach, Johann Sebastian","Heller, Stephen",1.5121,128.0,0.4009,1.1756,1.6201
+"Handel, George Frideric","Rachmaninoff, Sergei",1.6763,188.0,0.4042,1.4363,1.721
+"Hitz, Franz","Raff, Joachim",1.1901,6.0,0.4063,1.0801,1.2807
+"Medtner, Nikolay","Scott, James",1.1881,5.0,0.407,0.9643,1.3794
+"Rachmaninoff, Sergei","Scarlatti, Domenico",1.6837,188.0,0.4115,1.4937,1.7136
+"Gurlitt, Cornelius","Mendelssohn, Felix",1.2105,11.0,0.4133,0.8197,1.4107
+"Brahms, Johannes","Czerny, Carl",1.2937,42.0,0.4133,0.8986,1.5241
+"Brahms, Johannes","Johnson, Charles Leslie",1.297,43.0,0.414,1.0062,1.4383
+"Brahms, Johannes","Haydn, Joseph",1.4529,101.0,0.4142,1.164,1.5294
+"Haydn, Joseph","Meyer-Helmund, Erik",1.5295,129.0,0.4157,1.4335,1.5779
+"Ravina, Jean Henri","Satie, Erik",1.3122,48.0,0.4157,0.9555,1.4983
+"Gurlitt, Cornelius","Schumann, Robert",1.2129,10.0,0.4184,0.8884,1.436
+"Liszt, Franz","Scarlatti, Domenico",1.5244,126.0,0.4186,1.3861,1.6383
+"Busoni, Ferruccio","Johnson, Charles Leslie",1.2136,10.0,0.4191,0.88,1.4279
+"Beethoven, Ludwig van","Turina, Joaquín",1.4877,112.0,0.4194,1.3221,1.5874
+"Alkan, Charles-Valentin","Satie, Erik",1.3302,53.0,0.4203,1.0085,1.5419
+"Chaminade, Cécile","Haydn, Joseph",1.5234,125.0,0.4203,1.272,1.5991
+"Alkan, Charles-Valentin","Fauré, Gabriel",1.2758,32.0,0.4222,0.9674,1.4739
+"Hummel, Johann Nepomuk","Teilman, Christian",1.3644,65.0,0.4223,1.1042,1.4604
+"Busoni, Ferruccio","Hitz, Franz",1.2925,38.0,0.4228,1.0362,1.4171
+"Chopin, Frédéric","Scarlatti, Domenico",1.5267,125.0,0.4236,1.4035,1.5926
+"Grieg, Edvard","Haydn, Joseph",1.4898,111.0,0.4243,1.2487,1.5991
+"Chaminade, Cécile","Gurlitt, Cornelius",1.2917,37.0,0.4248,0.9876,1.4436
+"Gottschalk, Louis Moreau","Gurlitt, Cornelius",1.2188,9.0,0.4269,0.9427,1.3928
+"Scarlatti, Domenico","Scharwenka, Xaver",1.6382,165.0,0.4277,1.5367,1.685
+"Raff, Joachim","Rebikov, Vladimir",1.314,44.0,0.4283,1.1606,1.4382
+"Balakirev, Mily","Czerny, Carl",1.3199,46.0,0.4288,0.9938,1.5194
+"Rzewski, Frederic","Scott, James",1.3404,53.0,0.4305,1.1531,1.4538
+"Bach, Johann Sebastian","Meyer-Helmund, Erik",1.6707,176.0,0.4307,1.6202,1.692
+"Beethoven, Ludwig van","Rebikov, Vladimir",1.4573,96.0,0.432,1.2544,1.5839
+"Nazareth, Ernesto","Scharwenka, Xaver",1.235,13.0,0.4324,0.922,1.4247
+"Heller, Stephen","Mozart, Wolfgang Amadeus",1.3533,57.0,0.4326,0.9995,1.5226
+"Mozart, Wolfgang Amadeus","Scharwenka, Xaver",1.4527,94.0,0.4328,1.2576,1.5645
+"Alkan, Charles-Valentin","Scharwenka, Xaver",1.3005,37.0,0.4335,0.9642,1.5451
+"Busoni, Ferruccio","Nazareth, Ernesto",1.2098,3.0,0.4341,0.8854,1.4617
+"Gottschalk, Louis Moreau","Handel, George Frideric",1.5888,144.0,0.4346,1.4445,1.625
+"Bach, Johann Sebastian","Chopin, Frédéric",1.5389,125.0,0.4358,1.4341,1.6085
+"Scott, Cyril","Scott, James",1.2224,6.0,0.4386,0.9724,1.3562
+"Chaminade, Cécile","Handel, George Frideric",1.6689,172.0,0.4396,1.5268,1.6841
+"Godard, Benjamin","Handel, George Frideric",1.6483,164.0,0.4405,1.5272,1.6766
+"Heller, Stephen","Raff, Joachim",1.2324,9.0,0.4405,0.9213,1.3929
+"Scarlatti, Domenico","Scriabin, Aleksandr",1.7102,187.0,0.4407,1.618,1.758
+"Czerny, Carl","Fauré, Gabriel",1.3535,54.0,0.4409,1.0794,1.5549
+"Czerny, Carl","Grieg, Edvard",1.3506,52.0,0.4433,0.9117,1.5481
+"Debussy, Claude","Joplin, Scott",1.2295,6.0,0.4457,1.0008,1.352
+"Busoni, Ferruccio","Teilman, Christian",1.2759,23.0,0.4465,0.9733,1.4155
+"Scarlatti, Domenico","Scott, Cyril",1.735,194.0,0.4467,1.4791,1.7742
+"Gurlitt, Cornelius","Ravina, Jean Henri",1.2202,2.0,0.4472,0.8102,1.4095
+"Rachmaninoff, Sergei","Scott, James",1.2484,12.0,0.4485,1.037,1.4307
+"Meyer-Helmund, Erik","Scarlatti, Domenico",1.689,176.0,0.449,1.6316,1.7148
+"Mendelssohn, Felix","Scharwenka, Xaver",1.3268,41.0,0.4491,0.8144,1.5419
+"Busoni, Ferruccio","Joplin, Scott",1.2226,2.0,0.4495,0.895,1.4655
+"Grieg, Edvard","Raff, Joachim",1.2737,21.0,0.4496,0.9448,1.4251
+"Bach, Johann Sebastian","Debussy, Claude",1.693,177.0,0.4504,1.5643,1.7307
+"Balakirev, Mily","Scarlatti, Domenico",1.6266,152.0,0.4511,1.4463,1.7088
+"Handel, George Frideric","Ravina, Jean Henri",1.5771,133.0,0.4526,1.319,1.6233
+"Fauré, Gabriel","Mozart, Wolfgang Amadeus",1.4602,89.0,0.4537,1.3209,1.5559
+"Hummel, Johann Nepomuk","Tchaikovsky, Pyotr",1.3912,62.0,0.4571,0.9979,1.5347
+"Haydn, Joseph","Poulenc, Francis",1.6736,167.0,0.4578,1.4177,1.714
+"Johnson, Charles Leslie","Rzewski, Frederic",1.3923,62.0,0.4582,1.2321,1.4907
+"Godard, Benjamin","Scarlatti, Domenico",1.6674,164.0,0.4597,1.537,1.7256
+"Scharwenka, Xaver","Wachs, Paul",1.2303,1.0,0.46,1.0496,1.3867
+"Alkan, Charles-Valentin","Gurlitt, Cornelius",1.2474,7.0,0.461,0.9055,1.4849
+"Bach, Johann Sebastian","Grieg, Edvard",1.6534,158.0,0.4617,1.4386,1.6891
+"Mozart, Wolfgang Amadeus","Poulenc, Francis",1.6139,143.0,0.4624,1.3552,1.6698
+"Grieg, Edvard","Scarlatti, Domenico",1.6549,158.0,0.4632,1.3223,1.7283
+"Balakirev, Mily","Scott, James",1.3606,48.0,0.4641,1.2075,1.451
+"Alkan, Charles-Valentin","Chopin, Frédéric",1.2419,3.0,0.4661,0.9949,1.4115
+"Beethoven, Ludwig van","Fauré, Gabriel",1.4388,75.0,0.4698,1.2343,1.5749
+"Busoni, Ferruccio","Schubert, Franz",1.4247,69.0,0.4719,1.0584,1.5579
+"Haydn, Joseph","Medtner, Nikolay",1.6384,148.0,0.4736,1.4129,1.7123
+"Beethoven, Ludwig van","Medtner, Nikolay",1.5374,110.0,0.4745,1.2494,1.6527
+"Lange, Gustav","Scarlatti, Domenico",1.6332,145.0,0.4764,1.4706,1.6957
+"Czerny, Carl","Gurlitt, Cornelius",1.3235,29.0,0.478,0.9319,1.5323
+"Haydn, Joseph","Schumann, Robert",1.4573,78.0,0.4803,1.1732,1.5427
+"Haydn, Joseph","Moszkowski, Moritz",1.5787,122.0,0.4836,1.2247,1.6822
+"Busoni, Ferruccio","Rebikov, Vladimir",1.253,0.0,0.4853,0.8988,1.4763
+"Debussy, Claude","Scott, James",1.316,23.0,0.4866,1.1433,1.4034
+"Mozart, Wolfgang Amadeus","Turina, Joaquín",1.6026,126.0,0.4967,1.4379,1.6577
+"Moszkowski, Moritz","Mozart, Wolfgang Amadeus",1.5286,98.0,0.4979,1.2293,1.6571
+"Lack, Théodore","Scott, James",1.3713,39.0,0.499,1.203,1.4568
+"Moszkowski, Moritz","Satie, Erik",1.2993,12.0,0.4994,0.9749,1.4972
+"Bach, Johann Sebastian","Lange, Gustav",1.6565,145.0,0.4997,1.5328,1.6891
+"Haydn, Joseph","Ravina, Jean Henri",1.4994,86.0,0.501,1.1815,1.5974
+"Debussy, Claude","Scarlatti, Domenico",1.7437,177.0,0.5011,1.5639,1.7916
+"Bach, Johann Sebastian","Ravina, Jean Henri",1.6271,133.0,0.5025,1.3379,1.675
+"Haydn, Joseph","Scott, Cyril",1.6651,147.0,0.5029,1.459,1.7226
+"Scott, James","Turina, Joaquín",1.2786,3.0,0.5029,1.1708,1.365
+"Bach, Johann Sebastian","Godard, Benjamin",1.711,164.0,0.5032,1.5973,1.7394
+"Johnson, Charles Leslie","Medtner, Nikolay",1.2841,4.0,0.5057,1.0685,1.4327
+"Johnson, Charles Leslie","Scott, Cyril",1.2829,3.0,0.5072,1.0452,1.4206
+"Beethoven, Ludwig van","Poulenc, Francis",1.6216,129.0,0.5078,1.3242,1.6768
+"Hummel, Johann Nepomuk","Rebikov, Vladimir",1.5137,88.0,0.5098,1.2031,1.6173
+"Hummel, Johann Nepomuk","Rachmaninoff, Sergei",1.5333,95.0,0.5107,1.1795,1.5923
+"Alkan, Charles-Valentin","Haydn, Joseph",1.4961,81.0,0.511,1.2144,1.6076
+"Gurlitt, Cornelius","Moszkowski, Moritz",1.3718,34.0,0.5129,1.0652,1.5263
+"Heller, Stephen","Hummel, Johann Nepomuk",1.3747,35.0,0.5131,1.0629,1.4941
+"Godard, Benjamin","Hummel, Johann Nepomuk",1.4719,71.0,0.5137,1.2097,1.5624
+"Fauré, Gabriel","Nazareth, Ernesto",1.3297,18.0,0.5137,1.14,1.4324
+"Johnson, Charles Leslie","Rachmaninoff, Sergei",1.2909,3.0,0.5152,1.0662,1.4532
+"Beethoven, Ludwig van","Chopin, Frédéric",1.3926,40.0,0.5176,1.2052,1.4974
+"Hummel, Johann Nepomuk","Medtner, Nikolay",1.5601,102.0,0.5187,1.22,1.597
+"Brahms, Johannes","Hummel, Johann Nepomuk",1.4342,55.0,0.519,1.1271,1.5157
+"Balakirev, Mily","Haydn, Joseph",1.5693,105.0,0.5198,1.3543,1.6783
+"Debussy, Claude","Haydn, Joseph",1.637,130.0,0.5204,1.4539,1.724
+"Czerny, Carl","Scriabin, Aleksandr",1.5067,81.0,0.5216,1.1851,1.6463
+"Raff, Joachim","Scharwenka, Xaver",1.3647,28.0,0.5219,1.2048,1.4808
+"Scharwenka, Xaver","Scott, James",1.3853,35.0,0.5236,1.2985,1.4557
+"Hummel, Johann Nepomuk","Schumann, Robert",1.3781,32.0,0.5245,1.0647,1.4861
+"Haydn, Joseph","Lange, Gustav",1.5584,98.0,0.5277,1.3902,1.6146
+"Liszt, Franz","Satie, Erik",1.4438,55.0,0.5285,1.24,1.5438
+"Chaminade, Cécile","Mozart, Wolfgang Amadeus",1.5721,101.0,0.5334,1.3013,1.6464
+"Mendelssohn, Felix","Rebikov, Vladimir",1.455,57.0,0.5344,0.9607,1.6067
+"Handel, George Frideric","Liszt, Franz",1.6405,126.0,0.5347,1.5294,1.7191
+"Balakirev, Mily","Hummel, Johann Nepomuk",1.4639,59.0,0.5379,1.1041,1.6016
+"Medtner, Nikolay","Mozart, Wolfgang Amadeus",1.6445,124.0,0.5441,1.3607,1.712
+"Beethoven, Ludwig van","Ravina, Jean Henri",1.4427,48.0,0.5462,1.09,1.5626
+"Bach, Johann Sebastian","Liszt, Franz",1.6528,126.0,0.547,1.5294,1.721
+"Balakirev, Mily","Gurlitt, Cornelius",1.3606,17.0,0.5473,1.0211,1.5197
+"Mozart, Wolfgang Amadeus","Scriabin, Aleksandr",1.6278,116.0,0.5488,1.4576,1.7114
+"Bach, Johann Sebastian","Gottschalk, Louis Moreau",1.7059,144.0,0.5518,1.5477,1.7491
+"Fauré, Gabriel","Gurlitt, Cornelius",1.3868,25.0,0.552,0.9831,1.5706
+"Handel, George Frideric","Schumann, Robert",1.6554,125.0,0.5523,1.3656,1.6892
+"Hummel, Johann Nepomuk","Scott, Cyril",1.5921,101.0,0.5534,1.2762,1.6659
+"Lange, Gustav","Mozart, Wolfgang Amadeus",1.5232,74.0,0.557,1.3545,1.5924
+"Beethoven, Ludwig van","Gottschalk, Louis Moreau",1.4833,59.0,0.5573,1.2467,1.6322
+"Johnson, Charles Leslie","Lack, Théodore",1.4058,30.0,0.5576,1.2514,1.4732
+"Gottschalk, Louis Moreau","Haydn, Joseph",1.5864,97.0,0.5584,1.4001,1.6565
+"Grieg, Edvard","Mozart, Wolfgang Amadeus",1.5607,87.0,0.5595,1.2956,1.6209
+"Balakirev, Mily","Johnson, Charles Leslie",1.4327,39.0,0.5603,1.276,1.5115
+"Chopin, Frédéric","Mozart, Wolfgang Amadeus",1.4732,54.0,0.5606,1.3228,1.5645
+"Debussy, Claude","Hummel, Johann Nepomuk",1.5556,84.0,0.5625,1.1698,1.6563
+"Meyer-Helmund, Erik","Mozart, Wolfgang Amadeus",1.6121,105.0,0.5626,1.512,1.6626
+"Beethoven, Ludwig van","Lack, Théodore",1.5343,76.0,0.5627,1.2669,1.6398
+"Hummel, Johann Nepomuk","Meyer-Helmund, Erik",1.5546,83.0,0.5642,1.2773,1.6075
+"Joplin, Scott","Scriabin, Aleksandr",1.3446,4.0,0.5662,1.2128,1.4259
+"Chopin, Frédéric","Raff, Joachim",1.3691,12.0,0.5692,1.1657,1.4764
+"Busoni, Ferruccio","Satie, Erik",1.3379,0.0,0.5703,0.935,1.5442
+"Beethoven, Ludwig van","Rachmaninoff, Sergei",1.6146,103.0,0.5705,1.3932,1.6459
+"Beethoven, Ludwig van","Chaminade, Cécile",1.5728,87.0,0.5716,1.2805,1.6777
+"Hummel, Johann Nepomuk","Scriabin, Aleksandr",1.5953,94.0,0.5754,1.2068,1.6986
+"Mozart, Wolfgang Amadeus","Ravina, Jean Henri",1.5096,62.0,0.5755,1.2213,1.6047
+"Haydn, Joseph","Rachmaninoff, Sergei",1.7216,141.0,0.5756,1.4921,1.7535
+"Alkan, Charles-Valentin","Lack, Théodore",1.4319,33.0,0.5757,1.0835,1.6186
+"Johnson, Charles Leslie","Scharwenka, Xaver",1.4143,26.0,0.5769,1.316,1.4862
+"Fauré, Gabriel","Schubert, Franz",1.4736,48.0,0.5771,1.1842,1.585
+"Johnson, Charles Leslie","Turina, Joaquín",1.361,6.0,0.5772,1.2688,1.433
+"Raff, Joachim","Tchaikovsky, Pyotr",1.3935,18.0,0.5775,1.0514,1.5042
+"Debussy, Claude","Johnson, Charles Leslie",1.3833,14.0,0.5781,1.2095,1.472
+"Lack, Théodore","Raff, Joachim",1.4102,24.0,0.5781,1.2131,1.5357
+"Beethoven, Ludwig van","Liszt, Franz",1.466,41.0,0.5883,1.2752,1.6105
+"Hummel, Johann Nepomuk","Scharwenka, Xaver",1.5498,72.0,0.5889,1.1511,1.671
+"Czerny, Carl","Rebikov, Vladimir",1.558,75.0,0.5891,1.2884,1.6489
+"Busoni, Ferruccio","Gurlitt, Cornelius",1.4836,46.0,0.5925,1.0184,1.5318
+"Godard, Benjamin","Haydn, Joseph",1.6751,117.0,0.5935,1.5447,1.7031
+"Grieg, Edvard","Hummel, Johann Nepomuk",1.5373,65.0,0.5952,1.2027,1.6052
+"Mozart, Wolfgang Amadeus","Schumann, Robert",1.5088,54.0,0.5962,1.144,1.6238
+"Brahms, Johannes","Mozart, Wolfgang Amadeus",1.5708,77.0,0.5965,1.2636,1.6195
+"Beethoven, Ludwig van","Scharwenka, Xaver",1.5801,80.0,0.5977,1.3924,1.6712
+"Joplin, Scott","Villa-Lobos, Heitor",1.4182,19.0,0.5995,1.1587,1.5017
+"Gottschalk, Louis Moreau","Mozart, Wolfgang Amadeus",1.5667,73.0,0.6031,1.345,1.6565
+"Fauré, Gabriel","Scott, James",1.4789,40.0,0.6039,1.3881,1.522
+"Beethoven, Ludwig van","Grieg, Edvard",1.5711,73.0,0.6075,1.2528,1.6503
+"Beethoven, Ludwig van","Godard, Benjamin",1.5904,79.0,0.6107,1.4198,1.6602
+"Fauré, Gabriel","Joplin, Scott",1.4437,23.0,0.6143,1.3369,1.5065
+"Czerny, Carl","Satie, Erik",1.5895,75.0,0.6206,1.3418,1.6882
+"Mozart, Wolfgang Amadeus","Scott, Cyril",1.7206,123.0,0.6228,1.5334,1.7323
+"Mozart, Wolfgang Amadeus","Rachmaninoff, Sergei",1.7063,117.0,0.6247,1.4926,1.7337
+"Hummel, Johann Nepomuk","Lack, Théodore",1.5926,68.0,0.6424,1.2414,1.6633
+"Gurlitt, Cornelius","Raff, Joachim",1.4155,2.0,0.6424,1.1279,1.5234
+"Debussy, Claude","Mozart, Wolfgang Amadeus",1.7008,106.0,0.6486,1.5256,1.7567
+"Raff, Joachim","Satie, Erik",1.5382,44.0,0.6525,1.3925,1.614
+"Johnson, Charles Leslie","Villa-Lobos, Heitor",1.4505,11.0,0.6532,1.2258,1.5014
+"Beethoven, Ludwig van","Lange, Gustav",1.5837,60.0,0.655,1.3705,1.6655
+"Haydn, Joseph","Liszt, Franz",1.6381,79.0,0.6585,1.4989,1.7104
+"Scott, James","Scriabin, Aleksandr",1.464,13.0,0.6614,1.3873,1.5151
+"Beethoven, Ludwig van","Scriabin, Aleksandr",1.7054,102.0,0.664,1.5426,1.7755
+"Fauré, Gabriel","Johnson, Charles Leslie",1.5206,31.0,0.6697,1.4352,1.5553
+"Beethoven, Ludwig van","Scott, Cyril",1.7313,109.0,0.6711,1.4275,1.7757
+"Godard, Benjamin","Mozart, Wolfgang Amadeus",1.6941,93.0,0.6768,1.559,1.7203
+"Balakirev, Mily","Mozart, Wolfgang Amadeus",1.6635,81.0,0.6784,1.4921,1.7311
+"Beethoven, Ludwig van","Meyer-Helmund, Erik",1.7015,91.0,0.6896,1.605,1.7236
+"Chopin, Frédéric","Hummel, Johann Nepomuk",1.5447,32.0,0.6911,1.2363,1.6094
+"Chopin, Frédéric","Czerny, Carl",1.5104,19.0,0.6917,1.2441,1.5987
+"Balakirev, Mily","Beethoven, Ludwig van",1.6399,67.0,0.6924,1.4326,1.7227
+"Beethoven, Ludwig van","Debussy, Claude",1.7078,92.0,0.6933,1.5127,1.7669
+"Liszt, Franz","Mozart, Wolfgang Amadeus",1.6132,55.0,0.6979,1.4565,1.6948
+"Scott, James","Villa-Lobos, Heitor",1.4821,2.0,0.709,1.2567,1.5183
+"Gurlitt, Cornelius","Liszt, Franz",1.5038,9.0,0.7119,1.171,1.5843
+"Johnson, Charles Leslie","Scriabin, Aleksandr",1.5071,4.0,0.7287,1.4293,1.551
+"Czerny, Carl","Lack, Théodore",1.6597,55.0,0.7444,1.4122,1.7437
+"Czerny, Carl","Scharwenka, Xaver",1.6816,59.0,0.7556,1.424,1.7369

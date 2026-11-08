@@ -1,0 +1,51 @@
+composer,t,dist_ao_segmento,birth,periodo
+"Mozart, Wolfgang Amadeus",0.298,0.2876,1756.0,Clássico
+"Tchaikovsky, Pyotr",0.767,0.3246,1840.0,Romântico
+"Beethoven, Ludwig van",0.387,0.3268,1770.0,Clássico
+"Schubert, Franz",0.763,0.3339,1797.0,Romântico
+"Grieg, Edvard",0.915,0.3347,1843.0,Romântico
+"Heller, Stephen",0.793,0.3383,1813.0,Romântico
+"Schumann, Robert",0.797,0.3427,1810.0,Romântico
+"Ravina, Jean Henri",0.858,0.3546,1818.0,Romântico
+"Scarlatti, Domenico",0.156,0.3553,1685.0,Barroco
+"Brahms, Johannes",0.878,0.3554,1833.0,Romântico
+"Gurlitt, Cornelius",0.665,0.3585,1820.0,Romântico
+"Hummel, Johann Nepomuk",0.46,0.3646,1778.0,Clássico
+"Chaminade, Cécile",0.877,0.3653,1857.0,Romântico
+"Handel, George Frideric",0.106,0.3722,1685.0,Barroco
+"Mendelssohn, Felix",0.638,0.3759,1809.0,Romântico
+"Haydn, Joseph",0.248,0.389,1732.0,Clássico
+"Rachmaninoff, Sergei",0.979,0.392,1873.0,Moderno
+"Villa-Lobos, Heitor",0.812,0.3977,1887.0,Moderno
+"Poulenc, Francis",0.878,0.4014,1899.0,Moderno
+"Lack, Théodore",0.944,0.4025,1846.0,Romântico
+"Medtner, Nikolay",0.901,0.4093,1880.0,Moderno
+"Prokofiev, Sergey",0.833,0.4193,1891.0,Moderno
+"Liszt, Franz",0.857,0.4247,1811.0,Romântico
+"Busoni, Ferruccio",0.632,0.4255,1866.0,Romântico
+"Balakirev, Mily",1.017,0.4262,1837.0,Romântico
+"Rebikov, Vladimir",0.893,0.4263,1866.0,Romântico
+"Scriabin, Aleksandr",1.081,0.4303,1872.0,Moderno
+"Godard, Benjamin",1.064,0.4408,1849.0,Romântico
+"Moszkowski, Moritz",0.756,0.4478,1854.0,Romântico
+"Gottschalk, Louis Moreau",0.966,0.4567,1829.0,Romântico
+"Scott, Cyril",1.01,0.4571,1879.0,Moderno
+"Teilman, Christian",0.896,0.4574,1843.0,Romântico
+"Debussy, Claude",1.017,0.4599,1862.0,Romântico
+"Czerny, Carl",0.562,0.4726,1791.0,Romântico
+"Alkan, Charles-Valentin",0.684,0.4729,1813.0,Romântico
+"Satie, Erik",0.743,0.4878,1866.0,Romântico
+"Turina, Joaquín",0.953,0.5009,1882.0,Moderno
+"Lange, Gustav",1.082,0.5416,1830.0,Romântico
+"Scharwenka, Xaver",1.079,0.5464,1850.0,Romântico
+"Fauré, Gabriel",0.92,0.5601,1845.0,Romântico
+"Wachs, Paul",0.812,0.5917,1851.0,Romântico
+"Hitz, Franz",0.79,0.6114,1828.0,Romântico
+"Raff, Joachim",0.616,0.6339,1822.0,Romântico
+"Nazareth, Ernesto",0.863,0.6489,1863.0,Romântico
+"Rzewski, Frederic",0.756,0.6491,1938.0,Moderno
+"Meyer-Helmund, Erik",1.309,0.6731,1861.0,Romântico
+"Joplin, Scott",0.749,0.8171,1868.0,Romântico
+"Victoria, Tomás Luis de",0.235,0.8962,1548.0,Renascimento
+"Scott, James",0.582,0.936,1885.0,Moderno
+"Johnson, Charles Leslie",0.538,0.9471,1876.0,Moderno

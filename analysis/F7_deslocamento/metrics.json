@@ -1,0 +1,58 @@
+{
+ "layer": 6,
+ "pooling": "mean",
+ "a_caminho": {
+  "mais_proximos_do_segmento": [
+   {
+    "composer": "Mozart, Wolfgang Amadeus",
+    "t": 0.298,
+    "dist_ao_segmento": 0.2876,
+    "periodo": "Clássico"
+   },
+   {
+    "composer": "Tchaikovsky, Pyotr",
+    "t": 0.767,
+    "dist_ao_segmento": 0.3246,
+    "periodo": "Romântico"
+   },
+   {
+    "composer": "Beethoven, Ludwig van",
+    "t": 0.387,
+    "dist_ao_segmento": 0.3268,
+    "periodo": "Clássico"
+   },
+   {
+    "composer": "Schubert, Franz",
+    "t": 0.763,
+    "dist_ao_segmento": 0.3339,
+    "periodo": "Romântico"
+   },
+   {
+    "composer": "Grieg, Edvard",
+    "t": 0.915,
+    "dist_ao_segmento": 0.3347,
+    "periodo": "Romântico"
+   },
+   {
+    "composer": "Heller, Stephen",
+    "t": 0.793,
+    "dist_ao_segmento": 0.3383,
+    "periodo": "Romântico"
+   },
+   {
+    "composer": "Schumann, Robert",
+    "t": 0.797,
+    "dist_ao_segmento": 0.3427,
+    "periodo": "Romântico"
+   },
+   {
+    "composer": "Ravina, Jean Henri",
+    "t": 0.858,
+    "dist_ao_segmento": 0.3546,
+    "periodo": "Romântico"
+   }
+  ],
+  "rho_t_vs_nascimento_dentro_do_segmento": 0.53,
+  "dist_bach_chopin": 0.8802
+ }
+}
