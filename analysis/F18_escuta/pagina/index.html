@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escuta: o que o vetor do compositor faz com a música</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..700&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+  :root { --ink:#1C2230; --paper:#F4F0E8; --alt:#E9E3D6; --rust:#9C4221; --muted:#5A5F6B; --line:#D6CDBB; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:'IBM Plex Sans', Arial, sans-serif; line-height:1.5; }
+  main { max-width: 920px; margin: 0 auto; padding: 56px 24px 80px; }
+  .eyebrow { font-size:13px; font-weight:600; letter-spacing:2.5px; color:var(--rust); text-transform:uppercase; margin:0 0 10px; }
+  h1 { font-family:'EB Garamond', Georgia, serif; font-weight:500; font-size:44px; line-height:1.1; margin:0 0 16px; }
+  h2 { font-family:'EB Garamond', Georgia, serif; font-weight:600; font-size:28px; line-height:1.2; margin:0 0 6px; }
+  .lead { font-size:18px; color:#333a48; max-width: 720px; }
+  .note { background:var(--alt); border-left:4px solid var(--rust); padding:16px 20px; border-radius:6px; margin:28px 0 40px; font-size:15px; }
+  .note p { margin:6px 0; }
+  section.group { background:#FBF9F4; border:1px solid var(--line); border-radius:12px; padding:28px; margin-bottom:28px; }
+  .what { color:var(--muted); font-size:15px; margin:0 0 18px; }
+  .track { display:grid; grid-template-columns: 210px 1fr; gap:16px; align-items:center; padding:10px 0; border-top:1px solid #ECE5D7; }
+  .track:first-of-type { border-top:none; }
+  .label b { display:block; font-size:15px; }
+  .label span { font-size:13px; color:var(--muted); }
+  audio { width:100%; height:40px; }
+  .listen { margin:16px 0 0; font-size:15px; }
+  .listen b { color:var(--rust); }
+  table { border-collapse:collapse; font-size:14px; margin-top:14px; width:100%; }
+  th, td { text-align:left; padding:6px 10px 6px 0; border-bottom:1px solid #ECE5D7; }
+  th { color:var(--muted); font-weight:600; }
+  td.num, th.num { text-align:right; font-variant-numeric: tabular-nums; }
+  footer { color:var(--muted); font-size:13px; margin-top:40px; }
+  @media (max-width: 640px) { .track { grid-template-columns: 1fr; gap:6px; } h1 { font-size:34px; } }
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">Composer Vector · Artes e Ciência, IMPA Tech</p>
+<h1>Escuta: o que o vetor do compositor faz com a música</h1>
+<p class="lead">O modelo recebe o começo de uma peça real (50 notas) e continua sozinho por mais 120 notas. Em cada grupo, a mesma continuação é gerada sem vetor e com o vetor de um compositor somado ao estado interno do modelo na camada 6. É o mesmo procedimento do slide 9, agora para ouvir.</p>
+
+<div class="note">
+<p><b>Como ouvir:</b> cada faixa começa com a semente real e só depois vem a parte gerada. O ponto em que a continuação começa está indicado em cada grupo.</p>
+<p><b>O som:</b> piano General MIDI sintetizado, sem dinâmica nem pedal, porque o modelo não gera essas informações. O que importa é a escrita (notas, ritmo, textura), não o timbre.</p>
+<p><b>Seleção:</b> com vetor, as continuações muitas vezes degeneram: o tempo volta para trás ou as notas se empilham em acordes. Em cada grupo usei o primeiro sorteio em que nenhuma versão degenerou, o mesmo sorteio para todas as versões do grupo. Isso é ilustração, não medida de efeito.</p>
+</div>
+
+<section class="group">
+<p class="eyebrow">Grupo 1 · o experimento do slide 9</p>
+<h2>Bach, Invenção em lá menor (BWV 784) + vetor de Chopin</h2>
+<p class="what">A continuação começa aos 7,8 s. Três intensidades do vetor de Chopin e um vetor aleatório de mesmo tamanho, como controle.</p>
+<div class="track"><div class="label"><b>Semente</b><span>só as 50 notas reais</span></div><audio controls preload="none" src="audio/00_semente_bach.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b><span>o modelo continua Bach</span></div><audio controls preload="none" src="audio/01_bach_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Vetor de Chopin, α = 1</b><span>intensidade do experimento</span></div><audio controls preload="none" src="audio/02_bach_chopin_a1.mp3"></audio></div>
+<div class="track"><div class="label"><b>Vetor de Chopin, α = 2</b><span>o dobro</span></div><audio controls preload="none" src="audio/03_bach_chopin_a2.mp3"></audio></div>
+<div class="track"><div class="label"><b>Vetor aleatório, α = 1,5</b><span>controle: um empurrão qualquer</span></div><audio controls preload="none" src="audio/04_bach_aleatorio_a1_5.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> com o vetor de Chopin, a escrita fica mais lenta e as notas mais longas, e o efeito cresce com α. Com o vetor aleatório, quase nada muda. É o mesmo padrão do experimento com 7 sementes.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">notas soando juntas</th></tr>
+<tr><td>Sem vetor</td><td class="num">11,8</td><td class="num">0,19 s</td><td class="num">2,9</td></tr>
+<tr><td>Chopin, α = 1</td><td class="num">4,2</td><td class="num">0,49 s</td><td class="num">3,4</td></tr>
+<tr><td>Chopin, α = 2</td><td class="num">3,4</td><td class="num">0,96 s</td><td class="num">3,9</td></tr>
+<tr><td>Aleatório, α = 1,5</td><td class="num">9,7</td><td class="num">0,17 s</td><td class="num">2,3</td></tr>
+</table>
+</section>
+
+<section class="group">
+<p class="eyebrow">Grupo 2 · clássico para impressionista</p>
+<h2>Mozart, Sonata K. 331 + vetor de Debussy</h2>
+<p class="what">A continuação começa aos 9,1 s. É o tema com variações que abre a sonata.</p>
+<div class="track"><div class="label"><b>Semente</b><span>só as 50 notas reais</span></div><audio controls preload="none" src="audio/00_semente_mozart.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b><span>o modelo continua Mozart</span></div><audio controls preload="none" src="audio/05_mozart_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Vetor de Debussy, α = 1</b></div><audio controls preload="none" src="audio/06_mozart_debussy_a1.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> com Debussy, as notas ficam bem mais longas e se sobrepõem. Em média soam quase 9 ao mesmo tempo, contra 3 sem vetor. É uma textura de ressonância, como se houvesse pedal, embora o modelo não tenha pedal.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">notas soando juntas</th></tr>
+<tr><td>Sem vetor</td><td class="num">9,1</td><td class="num">0,20 s</td><td class="num">3,0</td></tr>
+<tr><td>Debussy, α = 1</td><td class="num">5,8</td><td class="num">0,87 s</td><td class="num">8,6</td></tr>
+</table>
+</section>
+
+<section class="group">
+<p class="eyebrow">Grupo 3 · noturno para ragtime</p>
+<h2>Chopin, Noturno em mi menor (op. 72 n.º 1) + vetor de Joplin</h2>
+<p class="what">A continuação começa aos 14,6 s. No experimento, a direção Joplin → Chopin falhou; aqui é o sentido contrário.</p>
+<div class="track"><div class="label"><b>Semente</b><span>só as 50 notas reais</span></div><audio controls preload="none" src="audio/00_semente_chopin.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b><span>o modelo continua Chopin</span></div><audio controls preload="none" src="audio/07_chopin_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Vetor de Joplin, α = 1</b></div><audio controls preload="none" src="audio/08_chopin_joplin_a1.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> com Joplin, o andamento dispara, de 5 para 17 notas por segundo. Mas as notas continuam longas e se acumulam numa massa sonora, sem o baixo alternado e a síncope do ragtime. A densidade segue o alvo; o resto não.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">notas soando juntas</th></tr>
+<tr><td>Sem vetor</td><td class="num">5,2</td><td class="num">0,80 s</td><td class="num">5,5</td></tr>
+<tr><td>Joplin, α = 1</td><td class="num">17,4</td><td class="num">0,44 s</td><td class="num">23,1</td></tr>
+</table>
+</section>
+
+<section class="group">
+<p class="eyebrow">Grupo 4 · o caso brasileiro</p>
+<h2>Nazareth, Odeon + vetor de Chopin</h2>
+<p class="what">A continuação começa aos 3,7 s. No mapa, os tangos de Nazareth ficam perto do ragtime e as valsas dele perto de Chopin. O que acontece se empurramos um tango na direção de Chopin?</p>
+<div class="track"><div class="label"><b>Semente</b><span>só as 50 notas reais</span></div><audio controls preload="none" src="audio/00_semente_odeon.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b><span>o modelo continua o tango</span></div><audio controls preload="none" src="audio/09_odeon_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Vetor de Chopin, α = 1,5</b></div><audio controls preload="none" src="audio/10_odeon_chopin_a1_5.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> o tango desacelera (de 12 para 5 notas por segundo) e as notas se alongam. Vale prestar atenção se a síncope sobrevive.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">notas soando juntas</th></tr>
+<tr><td>Sem vetor</td><td class="num">11,9</td><td class="num">0,18 s</td><td class="num">3,6</td></tr>
+<tr><td>Chopin, α = 1,5</td><td class="num">4,7</td><td class="num">0,39 s</td><td class="num">3,1</td></tr>
+</table>
+</section>
+
+<section class="group">
+<p class="eyebrow">Grupo 5 · uma brincadeira</p>
+<h2>Abreu, Tico-Tico no Fubá + vetor de Satie</h2>
+<p class="what">A continuação começa aos 3,7 s. A região “despojada” do mapa encontra o choro. Com α maior que 0,6, todas as tentativas degeneraram.</p>
+<div class="track"><div class="label"><b>Semente</b><span>só as 50 notas reais</span></div><audio controls preload="none" src="audio/00_semente_ticotico.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b><span>o modelo continua o choro</span></div><audio controls preload="none" src="audio/11_ticotico_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Vetor de Satie, α = 0,6</b></div><audio controls preload="none" src="audio/12_ticotico_satie_a0_6.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> o choro fica mais lento e desce de registro (altura média de 73 para 60, cerca de uma oitava), mas as notas continuam curtas e picadas. Não vira Satie.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">altura média (MIDI)</th></tr>
+<tr><td>Sem vetor</td><td class="num">9,7</td><td class="num">0,15 s</td><td class="num">73</td></tr>
+<tr><td>Satie, α = 0,6</td><td class="num">5,6</td><td class="num">0,05 s</td><td class="num">60</td></tr>
+</table>
+</section>
+
+<footer>Modelo: Anticipatory Music Transformer (small), treinado no Lakh MIDI. Sementes: começo das peças do GiantMIDI-Piano. Geração: top-p 0,98, 120 notas. Código: <code>analysis/F18_escuta/gerar.py</code> no repositório do grupo.</footer>
+</main>
+</body>
+</html>

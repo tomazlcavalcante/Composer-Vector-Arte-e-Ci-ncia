@@ -1,0 +1,5 @@
+bach	sorteio 1
+mozart	sorteio 1
+chopin	sorteio 5
+odeon	sorteio 3
+ticotico	falhou

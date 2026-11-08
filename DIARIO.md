@@ -238,3 +238,7 @@ Conclusões inalteradas. A sonda era a mais inflada pelas cópias. F6 (transposi
 ## 2026-11-08, 11:05 — fechamento antes das 13h
 
 Revisão 3 de coerência feita. Cópia atualizada (34 arquivos) em `Projetos/Composer_Vector/Resultados_08-11/`. **Decisão:** não abrir novos ciclos antes das 13h, para guardar tokens para a montagem da apresentação com o Tomaz.
+
+## 2026-11-08, 16:15 — F18: continuações para escuta
+Gerei 12 continuações (5 sementes: Bach BWV 784, Mozart K. 331, Chopin op. 72 n.º 1, Nazareth Odeon, Tico-Tico) com e sem vetor, para ouvir. Página: https://claude.ai/artifact/1qb392h9e4GL9ySkB6pq1W. Código: `analysis/F18_escuta/gerar.py`.
+Observação nova: com vetor, muitas continuações degeneram (o tempo volta para trás, ou poucos ataques distintos). Ex.: Tico-Tico + Satie degenerou em 8 de 8 sorteios com α = 1 e em 4 de 5 com α = 0,6; Odeon + Chopin α = 1,5 em 3 de 4. O F7 mediu degeneração só por repetição de trigramas, então esse tipo de falha não foi checado lá. Fica como ponto aberto: conferir a monotonicidade do tempo nas continuações do F7. Seleção para escuta = primeiro sorteio sem degeneração; não usar como medida.
