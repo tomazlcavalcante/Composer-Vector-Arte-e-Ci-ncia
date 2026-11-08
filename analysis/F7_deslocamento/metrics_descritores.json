@@ -1,0 +1,263 @@
+{
+ "config": {
+  "camada": 6,
+  "alpha": 1.0,
+  "novos": 120,
+  "reps": 2,
+  "n_sementes": 7
+ },
+ "referencia": {
+  "Bach, Johann Sebastian": {
+   "notas_por_s": {
+    "media": 7.954368504836983,
+    "dp": 2.980748196447205,
+    "n": 129
+   },
+   "altura_media": {
+    "media": 63.32674067691253,
+    "dp": 2.422965340454212,
+    "n": 129
+   },
+   "altura_dp": {
+    "media": 10.22240042037323,
+    "dp": 1.5576475218041086,
+    "n": 129
+   },
+   "extensao_p95_p5": {
+    "media": 31.789147286821706,
+    "dp": 4.476767114609561,
+    "n": 129
+   },
+   "dur_media_s": {
+    "media": 0.37291247538762995,
+    "dp": 0.23375520124498292,
+    "n": 129
+   },
+   "polifonia_media": {
+    "media": 2.4356728238742527,
+    "dp": 0.8179703037393946,
+    "n": 129
+   }
+  },
+  "Chopin, Frédéric": {
+   "notas_por_s": {
+    "media": 9.340976546940437,
+    "dp": 4.135469250658912,
+    "n": 96
+   },
+   "altura_media": {
+    "media": 63.78031216548468,
+    "dp": 4.107001813100201,
+    "n": 96
+   },
+   "altura_dp": {
+    "media": 11.449621765306489,
+    "dp": 1.94940196698215,
+    "n": 96
+   },
+   "extensao_p95_p5": {
+    "media": 36.782291666666666,
+    "dp": 6.642256984706116,
+    "n": 96
+   },
+   "dur_media_s": {
+    "media": 0.6300318221358577,
+    "dp": 0.33606494101715123,
+    "n": 96
+   },
+   "polifonia_media": {
+    "media": 4.803443450117201,
+    "dp": 1.4677731254693636,
+    "n": 96
+   }
+  }
+ },
+ "steering": {
+  "notas_por_s": {
+   "bach_ref": {
+    "media": 7.954368504836983,
+    "dp": 2.980748196447205,
+    "n": 129
+   },
+   "chopin_ref": {
+    "media": 9.340976546940437,
+    "dp": 4.135469250658912,
+    "n": 96
+   },
+   "direcao_chopin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 9.336830733754862,
+    "centrado": 4.838318281430895,
+    "nenhum": 9.043757254356427
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": -4.205438972925532,
+    "sementes_na_direcao_chopin": 0,
+    "sementes_contra": 7,
+    "wilcoxon_p": 0.015625
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": -4.498512452323966,
+    "sementes_na_direcao_chopin": 0,
+    "sementes_contra": 7,
+    "wilcoxon_p": 0.015625
+   }
+  },
+  "altura_media": {
+   "bach_ref": {
+    "media": 63.32674067691253,
+    "dp": 2.422965340454212,
+    "n": 129
+   },
+   "chopin_ref": {
+    "media": 63.78031216548468,
+    "dp": 4.107001813100201,
+    "n": 96
+   },
+   "direcao_chopin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 64.475,
+    "centrado": 60.68571428571429,
+    "nenhum": 63.60000000000001
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": -2.914285714285714,
+    "sementes_na_direcao_chopin": 1,
+    "sementes_contra": 6,
+    "wilcoxon_p": 0.03125
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": -3.789285714285712,
+    "sementes_na_direcao_chopin": 1,
+    "sementes_contra": 6,
+    "wilcoxon_p": 0.03125
+   }
+  },
+  "altura_dp": {
+   "bach_ref": {
+    "media": 10.22240042037323,
+    "dp": 1.5576475218041086,
+    "n": 129
+   },
+   "chopin_ref": {
+    "media": 11.449621765306489,
+    "dp": 1.94940196698215,
+    "n": 96
+   },
+   "direcao_chopin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 7.681908476249894,
+    "centrado": 9.519438937617338,
+    "nenhum": 8.895177372351812
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 0.6242615652655241,
+    "sementes_na_direcao_chopin": 5,
+    "sementes_contra": 2,
+    "wilcoxon_p": 0.21875
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 1.8375304613674424,
+    "sementes_na_direcao_chopin": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   }
+  },
+  "extensao_p95_p5": {
+   "bach_ref": {
+    "media": 31.789147286821706,
+    "dp": 4.476767114609561,
+    "n": 129
+   },
+   "chopin_ref": {
+    "media": 36.782291666666666,
+    "dp": 6.642256984706116,
+    "n": 96
+   },
+   "direcao_chopin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 23.4,
+    "centrado": 28.842857142857138,
+    "nenhum": 26.428571428571423
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 2.4142857142857133,
+    "sementes_na_direcao_chopin": 4,
+    "sementes_contra": 3,
+    "wilcoxon_p": 0.21875
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 5.442857142857142,
+    "sementes_na_direcao_chopin": 6,
+    "sementes_contra": 1,
+    "wilcoxon_p": 0.03125
+   }
+  },
+  "dur_media_s": {
+   "bach_ref": {
+    "media": 0.37291247538762995,
+    "dp": 0.23375520124498292,
+    "n": 129
+   },
+   "chopin_ref": {
+    "media": 0.6300318221358577,
+    "dp": 0.33606494101715123,
+    "n": 96
+   },
+   "direcao_chopin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 0.2773928571428571,
+    "centrado": 0.6522499999999999,
+    "nenhum": 0.2999107142857143
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 0.35233928571428574,
+    "sementes_na_direcao_chopin": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 0.3748571428571429,
+    "sementes_na_direcao_chopin": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   }
+  },
+  "polifonia_media": {
+   "bach_ref": {
+    "media": 2.4356728238742527,
+    "dp": 0.8179703037393946,
+    "n": 129
+   },
+   "chopin_ref": {
+    "media": 4.803443450117201,
+    "dp": 1.4677731254693636,
+    "n": 96
+   },
+   "direcao_chopin": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 2.3483676914831277,
+    "centrado": 2.9511387310392316,
+    "nenhum": 2.3778337498007898
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 0.5733049812384419,
+    "sementes_na_direcao_chopin": 6,
+    "sementes_contra": 1,
+    "wilcoxon_p": 0.078125
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 0.6027710395561032,
+    "sementes_na_direcao_chopin": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   }
+  }
+ }
+}

@@ -145,3 +145,7 @@ Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a
 
 - Diagramas dos slides 2 e 10: `analysis/figs_apresentacao/pipeline.png` (o fluxo do trabalho para leigos) e `meyer_niveis.png` (os níveis de estilo e o achado de cada um). O APRESENTACAO.md já aponta para eles.
 - Exemplos em MIDI: `analysis/F7_deslocamento/exemplos_midi/`. Semente da Sinfonia BWV 796 de Bach, continuada sem steering, com vetor de Chopin em α = 1 e com α = 1,5. São ilustração (1 semente, 1 amostra), não evidência. Observação a conferir ouvindo: as versões com Chopin saíram 2 a 3 vezes mais lentas (32 s e 24 s, contra 10 s, para as mesmas 130 notas). Pode ser acaso. Se for sistemático, é um caminho interessante, mas fora do escopo agora.
+
+## 2026-11-08, 08:45 — descritores independentes do steering (princípio 7 do plano)
+
+`analysis/F7_deslocamento/descritores.py`, com 7 sementes de Bach × 2 amostras × {nenhum, aleatório, centrado de Chopin α = 1}, descritores só da continuação. O vetor de Chopin alonga as notas (0,30 → 0,65 s; Chopin 0,63; 7/7) e aumenta a polifonia (2,4 → 3,0), na direção de Chopin. Mas reduz as notas por segundo (9,0 → 4,8; 7/7) e a altura média, **contra** a direção de Chopin. A lentidão dos exemplos MIDI é sistemática e vem de notas mais longas e espaçadas. **Decisão:** relatar como "o vetor muda a textura de forma parcialmente compatível com Chopin". RESULTADOS (Q4) e o slide 7 foram atualizados.

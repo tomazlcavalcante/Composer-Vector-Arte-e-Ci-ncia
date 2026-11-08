@@ -93,3 +93,21 @@ Mesmas condições de `steering_forte.csv`, origem Chopin e alvo Bach, α = 1, 7
 - Outros eixos de medida (distância ao centróide em vez de projeção).
 - Avaliação auditiva do que é gerado (fora do escopo do ensaio).
 - Mais pontos no caminho (t = 0,25; 0,75).
+
+## Descritores independentes (`descritores.py`; `descritores_ref.csv`, `descritores_steering.csv`, `metrics_descritores.json`)
+Descritores simbólicos calculados direto dos tokens (sem o modelo): notas/s (notas ÷ intervalo do primeiro ataque ao último fim), altura MIDI média e desvio, extensão (p95 − p5), duração média (s) e polifonia média (grade de 50 ms). Referência: janela do meio (341 eventos) de 129 peças de Bach e 96 de Chopin (média ± desvio entre peças). Steering: mesma geração de `steering_forte` (camada 6, α = 1, 7 sementes de Bach × 2 amostras, 120 tokens novos = 40 notas), descritores só da continuação; diferenças pareadas por semente (média das 2 amostras). "Direção de Chopin" = sinal de média_Chopin − média_Bach na referência (todas positivas aqui). Sementes na direção de Chopin e p (Wilcoxon) para centrado − nenhum / centrado − aleatório:
+
+| descritor | Bach | Chopin | nenhum | aleatório | centrado | sementes na direção (vs nenhum; vs aleatório) | p (vs nenhum; vs aleatório) |
+|---|---|---|---|---|---|---|---|
+| notas por s | 7,95 ± 2,98 | 9,34 ± 4,14 | 9,04 | 9,34 | 4,84 | 0/7; 0/7 | 0,016; 0,016 |
+| altura média | 63,3 ± 2,4 | 63,8 ± 4,1 | 63,6 | 64,5 | 60,7 | 1/7; 1/7 | 0,031; 0,031 |
+| desvio da altura | 10,2 ± 1,6 | 11,5 ± 2,0 | 8,90 | 7,68 | 9,52 | 5/7; 7/7 | 0,22; 0,016 |
+| extensão p95−p5 | 31,8 ± 4,5 | 36,8 ± 6,6 | 26,4 | 23,4 | 28,8 | 4/7; 6/7 | 0,22; 0,031 |
+| duração média (s) | 0,37 ± 0,23 | 0,63 ± 0,34 | 0,30 | 0,28 | 0,65 | 7/7; 7/7 | 0,016; 0,016 |
+| polifonia média | 2,44 ± 0,82 | 4,80 ± 1,47 | 2,38 | 2,35 | 2,95 | 6/7; 7/7 | 0,078; 0,016 |
+
+Interpretação (cautelosa):
+- **A lentidão dos exemplos MIDI é sistemática neste conjunto**: notas por segundo cai em 7 de 7 sementes (4,8 contra 9,0 sem steering). Mas isso é contra a referência: Chopin tem *mais* notas/s que Bach (9,3 contra 8,0, com dispersão grande), então a queda é *oposta* à direção da referência e não é "efeito Chopin" no sentido simbólico. A duração média das notas sobe para 0,65 s (Chopin de referência: 0,63 s; Bach: 0,37 s), em 7 de 7, e a polifonia sobe um pouco (2,95 contra 2,4; Chopin 4,8). Leitura plausível: o vetor produz notas longas e sustentadas, espaçadas, o que reduz notas/s e se aproxima de Chopin só em duração e (parcialmente) polifonia.
+- Altura média desloca para baixo (60,7), contra a referência (diferença Bach–Chopin é pequena, 0,5 semitom). Desvio e extensão da altura sobem em relação ao aleatório (7/7, 6/7), mas não de forma distinguível de "nenhum" (p = 0,22); os dois controles (nenhum, aleatório) têm valores abaixo da referência de Bach, ou seja, a continuação gerada é mais estreita que a janela real em qualquer condição.
+- Convergência parcial, então: duração e polifonia (e, contra o aleatório, dispersão de altura) acompanham a direção de Chopin; notas/s e altura média não.
+- Ressalvas: n = 7 sementes (p mínimo 0,016), um só par e uma só camada/α; as 2 amostras por semente não são independentes; descritores simples, que não capturam harmonia ou textura; a referência é uma janela de 341 eventos, a continuação tem só 40 notas (descritores mais ruidosos, e notas/s e polifonia dependem do intervalo medido); a polifonia pode subir só porque durações maiores sobrepõem mais, e o aumento de duração e a queda de notas/s são um mesmo fenômeno de andamento; sem controle de comprimento do trecho; sem verificação auditiva.

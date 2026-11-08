@@ -124,6 +124,11 @@ Pegamos um modelo que aprendeu a prever música, o Anticipatory Music Transforme
 - Que não há quebra: não vimos aumento da repetição até α = 1,5, mas isso não garante música coerente. Não houve escuta nem outro par, outro eixo ou outra métrica. O eixo de medida é o mesmo que o vetor centrado empurra.
 - Que os pontos intermediários caem perto dos clássicos: isso só foi visto na geometria, não no steering.
 
+**Checagem com descritores independentes do modelo** (`analysis/F7_deslocamento/metrics_descritores.json`; 7 sementes de Bach × 2 amostras, continuações de 40 notas, vetor centrado de Chopin com α = 1). Medimos a música gerada sem usar o modelo, com estatísticas simples das notas. O resultado é misto:
+- **Vão na direção de Chopin:** a duração média das notas sobe de 0,30 s para 0,65 s em 7 de 7 sementes (referência: Bach 0,37 s, Chopin 0,63 s). A polifonia sobe de 2,4 para 3,0 (6 de 7 contra a condição sem steering; 7 de 7 contra o aleatório). A dispersão das alturas aumenta em relação ao vetor aleatório (7 de 7).
+- **Vão contra:** as notas por segundo caem de 9,0 para 4,8 (7 de 7), embora Chopin seja mais denso que Bach na referência (9,3 contra 8,0). A altura média cai cerca de 3 semitons.
+- **Leitura cautelosa:** o vetor muda de fato a textura (notas mais longas, mais sobrepostas, música mais "lenta"), e parte dessa mudança coincide com o perfil de Chopin. Mas não é uma imitação de Chopin em todos os aspectos. Com 7 sementes, um par só e descritores simples, isso é indício, não prova.
+
 ## Q5. Expectativa: o quanto o modelo se surpreende? (F8)
 
 **Resposta.** A surpresa do modelo varia entre compositores e cresce, em média, com a época; isso é surpresa **para este modelo**, não expectativa de um ouvinte.
