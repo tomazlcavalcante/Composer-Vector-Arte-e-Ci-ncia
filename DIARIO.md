@@ -234,3 +234,7 @@ Conclusões inalteradas. A sonda era a mais inflada pelas cópias. F6 (transposi
 ### Resultado do ciclo 5 (10:50)
 
 - **H21 não confirmada (F17).** Em 9 compositores-alvo, o opus não acompanha o PC1: 5 de 9 com ρ > 0, média ponderada de 0,008, sinal p = 0,50. Scriabin, a previsão mais forte, dá ρ = 0,05 (p = 0,69). A única exceção é Chopin (opus ≤ 65; ρ = 0,44, p = 0,002), que não era alvo e pode refletir gênero. **Leitura:** o eixo "do tempo" do modelo separa épocas, isto é, texturas compartilhadas, mas não acompanha a evolução dentro da carreira de um compositor. No vocabulário de Meyer, ele capta melhor o dialeto da época que a mudança dentro do idioma. Ressalvas: o opus é um proxy imperfeito (publicação ≠ composição) e há poucas peças por compositor.
+
+## 2026-11-08, 11:05 — fechamento antes das 13h
+
+Revisão 3 de coerência feita. Cópia atualizada (34 arquivos) em `Projetos/Composer_Vector/Resultados_08-11/`. **Decisão:** não abrir novos ciclos antes das 13h, para guardar tokens para a montagem da apresentação com o Tomaz.
