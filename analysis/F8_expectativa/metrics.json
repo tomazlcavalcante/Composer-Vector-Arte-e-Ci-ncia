@@ -1,0 +1,95 @@
+{
+  "config": {
+    "janelas": [
+      1,
+      2
+    ],
+    "bootstrap": 1000,
+    "seed": 0,
+    "n_janelas": 4366,
+    "n_pecas": 2183,
+    "n_compositores": 52,
+    "unidade_perda": "nats/token (média da janela)"
+  },
+  "geral": {
+    "media_pecas": 2.4898446789587303,
+    "dp_pecas": 0.4788523591221318,
+    "min_compositor": [
+      "Victoria, Tomás Luis de",
+      1.7386229991912843
+    ],
+    "max_compositor": [
+      "Scharwenka, Xaver",
+      3.3221609438619306
+    ],
+    "dp_entre_compositores": 0.3121130050639686
+  },
+  "epoca": {
+    "spearman_compositor": {
+      "rho": 0.5071198449007873,
+      "p": 0.00012470152975903244,
+      "ic95_bootstrap": [
+        0.22942501572762877,
+        0.726241440778434
+      ],
+      "n": 52
+    },
+    "spearman_peca": {
+      "rho": 0.34181273290015546,
+      "p": 7.168259092107713e-61,
+      "n": 2183
+    },
+    "kruskal_peca": {
+      "H": 243.06631311544555,
+      "p": 2.0280299302223032e-51,
+      "epsilon2": 0.10976414743592541,
+      "p_nulo_permutando_periodo_entre_compositores": 0.007984031936127744
+    },
+    "por_periodo": {
+      "Barroco": {
+        "n_pecas": 326,
+        "media": 2.254486830322289,
+        "mediana": 2.213336944580078,
+        "n_compositores": 3
+      },
+      "Clássico": {
+        "n_pecas": 238,
+        "media": 2.317631456030517,
+        "mediana": 2.312302350997925,
+        "n_compositores": 4
+      },
+      "Moderno": {
+        "n_pecas": 327,
+        "media": 2.6971081232805862,
+        "mediana": 2.666619896888733,
+        "n_compositores": 11
+      },
+      "Renascimento": {
+        "n_pecas": 20,
+        "media": 1.7386229991912843,
+        "mediana": 1.7138519585132599,
+        "n_compositores": 1
+      },
+      "Romântico": {
+        "n_pecas": 1272,
+        "media": 2.540915978498429,
+        "mediana": 2.524320900440216,
+        "n_compositores": 33
+      }
+    }
+  },
+  "controles": {
+    "n_tokens": {
+      "min": 241,
+      "max": 1024,
+      "mediana": 1024.0
+    },
+    "eta2_compositor": 0.3695063802352291,
+    "eta2_nulo_media": 0.023624532640353847,
+    "eta2_nulo_p95": 0.03198552443725383,
+    "spearman_janela1_janela2_dentro_da_peca": 0.7161807477112594,
+    "spearman_compositor_j1_j2": 0.97669256381798,
+    "cv_intra_mediano": 0.1366364902237015,
+    "razao_dp_intra_sobre_dp_entre": 1.1419379751379932
+  }
+}
