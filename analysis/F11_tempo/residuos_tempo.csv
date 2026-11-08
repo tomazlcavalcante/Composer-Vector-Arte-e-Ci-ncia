@@ -1,53 +1,53 @@
 composer,nome,nascimento,periodo,n_pecas,pc1,residuo,ic_lo,ic_hi,significativo,direcao
-"Victoria, Tomás Luis de",Victoria,1548,Renascimento,20,-0.3053,0.4605,0.4479,0.4741,True,mais moderno que a data
-"Meyer-Helmund, Erik",Meyer-Helmund,1861,Romântico,30,0.499,0.4057,0.3868,0.4226,True,mais moderno que a data
-"Scharwenka, Xaver",Scharwenka,1850,Romântico,31,0.4302,0.3671,0.2675,0.4476,True,mais moderno que a data
-"Fauré, Gabriel",Fauré,1845,Romântico,30,0.3995,0.3501,0.2868,0.4053,True,mais moderno que a data
-"Balakirev, Mily",Balakirev,1837,Romântico,30,0.3754,0.3479,0.2307,0.4395,True,mais moderno que a data
-"Scriabin, Aleksandr",Scriabin,1872,Moderno,67,0.4608,0.3373,0.2933,0.3768,True,mais moderno que a data
-"Lange, Gustav",Lange,1830,Romântico,20,0.2956,0.2873,0.1687,0.3901,True,mais moderno que a data
-"Debussy, Claude",Debussy,1862,Romântico,27,0.378,0.282,0.1746,0.3807,True,mais moderno que a data
-"Chopin, Frédéric",Chopin,1810,Romântico,96,0.188,0.2347,0.175,0.2867,True,mais moderno que a data
-"Scott, Cyril",C. Scott,1879,Moderno,20,0.367,0.2243,0.1005,0.3344,True,mais moderno que a data
-"Brahms, Johannes",Brahms,1833,Romântico,22,0.229,0.2126,0.096,0.3211,True,mais moderno que a data
-"Godard, Benjamin",Godard,1849,Romântico,28,0.2593,0.1989,0.1017,0.2892,True,mais moderno que a data
-"Liszt, Franz",Liszt,1811,Romântico,141,0.1374,0.1813,0.1292,0.2276,True,mais moderno que a data
-"Turina, Joaquín",Turina,1882,Moderno,37,0.3285,0.1775,0.1064,0.2466,True,mais moderno que a data
-"Lack, Théodore",Lack,1846,Romântico,38,0.2138,0.1617,0.0421,0.2693,True,mais moderno que a data
-"Rachmaninoff, Sergei",Rachmaninoff,1873,Moderno,21,0.2706,0.1443,0.0336,0.2478,True,mais moderno que a data
-"Grieg, Edvard",Grieg,1843,Romântico,24,0.1825,0.1386,0.0256,0.2481,True,mais moderno que a data
-"Schumann, Robert",Schumann,1810,Romântico,33,0.0912,0.1379,0.0327,0.2336,True,mais moderno que a data
-"Medtner, Nikolay",Medtner,1880,Moderno,34,0.2553,0.1099,-0.0131,0.2127,False,
-"Rebikov, Vladimir",Rebikov,1866,Romântico,54,0.2056,0.0985,0.0211,0.1731,True,mais moderno que a data
-"Ravina, Jean Henri",Ravina,1818,Romântico,27,0.0278,0.0525,-0.0759,0.1898,False,
-"Gottschalk, Louis Moreau",Gottschalk,1829,Romântico,29,0.0538,0.0483,-0.0799,0.1714,False,
-"Heller, Stephen",Heller,1813,Romântico,35,-0.012,0.0264,-0.0807,0.1304,False,
-"Chaminade, Cécile",Chaminade,1857,Romântico,45,0.1086,0.0263,-0.0801,0.1212,False,
-"Teilman, Christian",Teilman,1845,Romântico,30,0.06,0.0106,-0.0892,0.1112,False,
-"Busoni, Ferruccio",Busoni,1866,Romântico,21,0.0955,-0.0115,-0.1594,0.1294,False,
-"Schubert, Franz",Schubert,1797,Romântico,96,-0.107,-0.0247,-0.0865,0.0316,False,
-"Mendelssohn, Felix",Mendelssohn,1809,Romântico,24,-0.0765,-0.0271,-0.1526,0.0967,False,
-"Moszkowski, Moritz",Moszkowski,1854,Romântico,32,0.0441,-0.03,-0.1413,0.0743,False,
-"Prokofiev, Sergey",Prokofiev,1891,Moderno,26,0.1399,-0.0358,-0.1408,0.0671,False,
-"Alkan, Charles-Valentin",Alkan,1813,Romântico,39,-0.0842,-0.0458,-0.1475,0.0443,False,
-"Villa-Lobos, Heitor",Villa-Lobos,1887,Moderno,22,0.1073,-0.0574,-0.2184,0.1112,False,
-"Tchaikovsky, Pyotr",Tchaikovsky,1840,Romântico,26,-0.0327,-0.0684,-0.2088,0.0733,False,
-"Poulenc, Francis",Poulenc,1899,Moderno,26,0.1105,-0.0871,-0.2193,0.04,False,
-"Rzewski, Frederic",Rzewski,1938,Moderno,22,0.2022,-0.1024,-0.1965,-0.0086,True,mais antigo que a data
-"Handel, George Frideric",Handel,1685,Barroco,57,-0.5125,-0.1228,-0.197,-0.0347,True,mais antigo que a data
-"Satie, Erik",Satie,1866,Romântico,52,-0.0164,-0.1234,-0.2114,-0.0347,True,mais antigo que a data
-"Gurlitt, Cornelius",Gurlitt,1820,Romântico,20,-0.1532,-0.134,-0.2396,-0.0177,True,mais antigo que a data
-"Wachs, Paul",Wachs,1851,Romântico,23,-0.0812,-0.1471,-0.2659,-0.0371,True,mais antigo que a data
-"Czerny, Carl",Czerny,1791,Romântico,58,-0.2669,-0.1681,-0.2463,-0.0847,True,mais antigo que a data
-"Hitz, Franz",Hitz,1828,Romântico,21,-0.1732,-0.1759,-0.2867,-0.0574,True,mais antigo que a data
-"Raff, Joachim",Raff,1822,Romântico,37,-0.1952,-0.1815,-0.2764,-0.0998,True,mais antigo que a data
-"Scarlatti, Domenico",Scarlatti,1685,Barroco,140,-0.5734,-0.1836,-0.2257,-0.1389,True,mais antigo que a data
-"Hummel, Johann Nepomuk",Hummel,1778,Clássico,36,-0.324,-0.1895,-0.2871,-0.0701,True,mais antigo que a data
-"Bach, Johann Sebastian",Bach,1685,Barroco,129,-0.5797,-0.19,-0.2329,-0.1495,True,mais antigo que a data
-"Nazareth, Ernesto",Nazareth,1863,Romântico,22,-0.1202,-0.219,-0.3467,-0.0849,True,mais antigo que a data
-"Mozart, Wolfgang Amadeus",Mozart,1756,Clássico,72,-0.4858,-0.2909,-0.3529,-0.2235,True,mais antigo que a data
-"Beethoven, Ludwig van",Beethoven,1770,Clássico,76,-0.4597,-0.3032,-0.3572,-0.2422,True,mais antigo que a data
-"Haydn, Joseph",Haydn,1732,Clássico,54,-0.6133,-0.3525,-0.3929,-0.3094,True,mais antigo que a data
-"Joplin, Scott",Joplin,1868,Romântico,31,-0.3127,-0.4252,-0.4897,-0.3577,True,mais antigo que a data
-"Scott, James",J. Scott,1885,Moderno,20,-0.4831,-0.6423,-0.6926,-0.5821,True,mais antigo que a data
-"Johnson, Charles Leslie",Johnson,1876,Moderno,32,-0.5482,-0.6827,-0.7219,-0.632,True,mais antigo que a data
+"Victoria, Tomás Luis de",Victoria,1548,Renascimento,20,-0.2895,0.445,0.432,0.4569,True,mais moderno que a data
+"Scharwenka, Xaver",Scharwenka,1850,Romântico,29,0.4593,0.3988,0.2987,0.4761,True,mais moderno que a data
+"Meyer-Helmund, Erik",Meyer-Helmund,1861,Romântico,6,0.4797,0.3902,0.3251,0.4516,True,mais moderno que a data
+"Fauré, Gabriel",Fauré,1845,Romântico,30,0.4132,0.3658,0.2999,0.4216,True,mais moderno que a data
+"Balakirev, Mily",Balakirev,1837,Romântico,30,0.379,0.3526,0.2364,0.4525,True,mais moderno que a data
+"Scriabin, Aleksandr",Scriabin,1872,Moderno,66,0.4695,0.351,0.3083,0.3943,True,mais moderno que a data
+"Debussy, Claude",Debussy,1862,Romântico,27,0.3831,0.2909,0.176,0.3858,True,mais moderno que a data
+"Lange, Gustav",Lange,1830,Romântico,20,0.2906,0.2827,0.1624,0.3868,True,mais moderno que a data
+"Chopin, Frédéric",Chopin,1810,Romântico,96,0.1874,0.2321,0.1733,0.2935,True,mais moderno que a data
+"Godard, Benjamin",Godard,1849,Romântico,20,0.2759,0.218,0.1028,0.3268,True,mais moderno que a data
+"Scott, Cyril",C. Scott,1879,Moderno,19,0.3512,0.2142,0.0861,0.3294,True,mais moderno que a data
+"Brahms, Johannes",Brahms,1833,Romântico,22,0.2285,0.2127,0.1,0.3137,True,mais moderno que a data
+"Turina, Joaquín",Turina,1882,Moderno,37,0.3295,0.1847,0.1095,0.2502,True,mais moderno que a data
+"Liszt, Franz",Liszt,1811,Romântico,138,0.1416,0.1838,0.1276,0.2314,True,mais moderno que a data
+"Lack, Théodore",Lack,1846,Romântico,38,0.2156,0.1656,0.0445,0.2803,True,mais moderno que a data
+"Rachmaninoff, Sergei",Rachmaninoff,1873,Moderno,20,0.2796,0.1585,0.0481,0.2711,True,mais moderno que a data
+"Grieg, Edvard",Grieg,1843,Romântico,24,0.1796,0.1375,0.0188,0.2403,True,mais moderno que a data
+"Schumann, Robert",Schumann,1810,Romântico,33,0.0914,0.1362,0.0322,0.2471,True,mais moderno que a data
+"Medtner, Nikolay",Medtner,1880,Moderno,34,0.2555,0.1159,0.0037,0.2276,True,mais moderno que a data
+"Rebikov, Vladimir",Rebikov,1866,Romântico,53,0.2042,0.1015,0.0177,0.1794,True,mais moderno que a data
+"Chaminade, Cécile",Chaminade,1857,Romântico,43,0.1289,0.0499,-0.0453,0.1461,False,
+"Ravina, Jean Henri",Ravina,1818,Romântico,27,0.0236,0.0473,-0.0911,0.1856,False,
+"Gottschalk, Louis Moreau",Gottschalk,1829,Romântico,29,0.0427,0.0374,-0.0925,0.161,False,
+"Heller, Stephen",Heller,1813,Romântico,35,-0.0151,0.0218,-0.088,0.1207,False,
+"Teilman, Christian",Teilman,1845,Romântico,28,0.0569,0.0095,-0.1026,0.1081,False,
+"Busoni, Ferruccio",Busoni,1866,Romântico,21,0.1043,0.0016,-0.1344,0.1382,False,
+"Mendelssohn, Felix",Mendelssohn,1809,Romântico,24,-0.0749,-0.0275,-0.1579,0.0938,False,
+"Prokofiev, Sergey",Prokofiev,1891,Moderno,26,0.1373,-0.0311,-0.138,0.0762,False,
+"Schubert, Franz",Schubert,1797,Romântico,96,-0.1145,-0.0355,-0.0956,0.0241,False,
+"Villa-Lobos, Heitor",Villa-Lobos,1887,Moderno,22,0.1138,-0.0442,-0.2138,0.1242,False,
+"Moszkowski, Moritz",Moszkowski,1854,Romântico,30,0.0265,-0.0445,-0.1614,0.0638,False,
+"Alkan, Charles-Valentin",Alkan,1813,Romântico,39,-0.0887,-0.0518,-0.1548,0.0461,False,
+"Tchaikovsky, Pyotr",Tchaikovsky,1840,Romântico,26,-0.0381,-0.0724,-0.2122,0.065,False,
+"Handel, George Frideric",Handel,1685,Barroco,42,-0.4516,-0.0777,-0.1681,0.0333,False,
+"Poulenc, Francis",Poulenc,1899,Moderno,26,0.1067,-0.0829,-0.2229,0.0452,False,
+"Rzewski, Frederic",Rzewski,1938,Moderno,21,0.2068,-0.0854,-0.1758,0.0073,False,
+"Satie, Erik",Satie,1866,Romântico,51,-0.0184,-0.121,-0.206,-0.0421,True,mais antigo que a data
+"Gurlitt, Cornelius",Gurlitt,1820,Romântico,20,-0.1551,-0.1367,-0.2521,-0.0166,True,mais antigo que a data
+"Hummel, Johann Nepomuk",Hummel,1778,Clássico,34,-0.3041,-0.1751,-0.2857,-0.0592,True,mais antigo que a data
+"Raff, Joachim",Raff,1822,Romântico,36,-0.1891,-0.1759,-0.2683,-0.078,True,mais antigo que a data
+"Czerny, Carl",Czerny,1791,Romântico,55,-0.277,-0.1822,-0.2625,-0.0889,True,mais antigo que a data
+"Bach, Johann Sebastian",Bach,1685,Barroco,129,-0.5629,-0.189,-0.2278,-0.1466,True,mais antigo que a data
+"Scarlatti, Domenico",Scarlatti,1685,Barroco,140,-0.564,-0.1902,-0.2276,-0.1474,True,mais antigo que a data
+"Hitz, Franz",Hitz,1828,Romântico,20,-0.2012,-0.2039,-0.3191,-0.0831,True,mais antigo que a data
+"Wachs, Paul",Wachs,1851,Romântico,18,-0.1444,-0.2075,-0.3525,-0.0699,True,mais antigo que a data
+"Nazareth, Ernesto",Nazareth,1863,Romântico,22,-0.1403,-0.2351,-0.3562,-0.0893,True,mais antigo que a data
+"Mozart, Wolfgang Amadeus",Mozart,1756,Clássico,70,-0.4684,-0.2815,-0.3443,-0.2111,True,mais antigo que a data
+"Beethoven, Ludwig van",Beethoven,1770,Clássico,76,-0.4538,-0.3038,-0.3603,-0.2399,True,mais antigo que a data
+"Haydn, Joseph",Haydn,1732,Clássico,52,-0.5953,-0.3452,-0.3848,-0.2988,True,mais antigo que a data
+"Joplin, Scott",Joplin,1868,Romântico,31,-0.337,-0.4449,-0.5126,-0.381,True,mais antigo que a data
+"Scott, James",J. Scott,1885,Moderno,20,-0.5074,-0.6601,-0.7085,-0.5957,True,mais antigo que a data
+"Johnson, Charles Leslie",Johnson,1876,Moderno,32,-0.5711,-0.7002,-0.7369,-0.6506,True,mais antigo que a data

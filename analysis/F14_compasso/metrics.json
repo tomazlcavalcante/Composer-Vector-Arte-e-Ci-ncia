@@ -1,0 +1,606 @@
+{
+ "config": {
+  "layer": 6,
+  "pooling": "mean",
+  "windows": [
+   1,
+   2
+  ],
+  "n_pecas": 2103
+ },
+ "contagem_classes": {
+  "valsa": 80,
+  "outras ternárias": 108,
+  "binárias": 85
+ },
+ "titulos_em_mais_de_uma_regex": [],
+ "pecas_variacoes_excluidas": 5,
+ "midis_duplicados": {
+  "grupos": 0,
+  "pecas": 0,
+  "pecas_com_classe_regex": 0,
+  "pecas_usadas_apos_dedup": {
+   "valsa": 78,
+   "outras ternárias": 106,
+   "binárias": 84
+  }
+ },
+ "parte2_dentro_compositor": {
+  "todos": [
+   {
+    "comparacao": "(a) V-T vs V-B",
+    "n_compositores": 10,
+    "media_a": 0.745250703394413,
+    "media_b": 0.7544065594673157,
+    "dif_media": -0.009155856072902679,
+    "dif_mediana": -0.05609846115112305,
+    "n_a_menor": 7,
+    "p_bilateral": 0.431640625,
+    "p_a_menor": 0.2158203125,
+    "ic95_dif": [
+     -0.08010869428515434,
+     0.08276924252510069
+    ]
+   },
+   {
+    "comparacao": "(b) T-B vs V-B",
+    "n_compositores": 10,
+    "media_a": 0.6414962515234948,
+    "media_b": 0.7544065594673157,
+    "dif_media": -0.11291030794382095,
+    "dif_mediana": -0.06540989875793457,
+    "n_a_menor": 7,
+    "p_bilateral": 0.16015625,
+    "p_a_menor": 0.080078125,
+    "ic95_dif": [
+     -0.2731673038005829,
+     0.04530550476163626
+    ]
+   },
+   {
+    "comparacao": "(c) V-V vs V-T",
+    "n_compositores": 12,
+    "media_a": 0.6676166666050752,
+    "media_b": 0.7540699504315853,
+    "dif_media": -0.08645328382651012,
+    "dif_mediana": -0.06293067336082458,
+    "n_a_menor": 11,
+    "p_bilateral": 0.0009765625,
+    "p_a_menor": 0.00048828125,
+    "ic95_dif": [
+     -0.13421735900143783,
+     -0.04463032955924671
+    ]
+   },
+   {
+    "comparacao": "(d) V-V vs V-B",
+    "n_compositores": 12,
+    "media_a": 0.6498713878293833,
+    "media_b": 0.760091615219911,
+    "dif_media": -0.11022022739052773,
+    "dif_mediana": -0.11104384064674377,
+    "n_a_menor": 9,
+    "p_bilateral": 0.01611328125,
+    "p_a_menor": 0.008056640625,
+    "ic95_dif": [
+     -0.17709330754975477,
+     -0.04067785289759438
+    ]
+   },
+   {
+    "comparacao": "(e) T-T vs T-B",
+    "n_compositores": 10,
+    "media_a": 0.6506918698549271,
+    "media_b": 0.6064791455864906,
+    "dif_media": 0.044212724268436435,
+    "dif_mediana": 0.0007957592606544495,
+    "n_a_menor": 5,
+    "p_bilateral": 0.845703125,
+    "p_a_menor": 0.615234375,
+    "ic95_dif": [
+     -0.06379480455070734,
+     0.18015610985457886
+    ]
+   }
+  ],
+  "tres_classes": [
+   {
+    "comparacao": "(a) V-T vs V-B",
+    "n_compositores": 10,
+    "media_a": 0.745250703394413,
+    "media_b": 0.7544065594673157,
+    "dif_media": -0.009155856072902679,
+    "dif_mediana": -0.05609846115112305,
+    "n_a_menor": 7,
+    "p_bilateral": 0.431640625,
+    "p_a_menor": 0.2158203125,
+    "ic95_dif": [
+     -0.08078702509403228,
+     0.08138954684138287
+    ]
+   },
+   {
+    "comparacao": "(b) T-B vs V-B",
+    "n_compositores": 10,
+    "media_a": 0.6414962515234948,
+    "media_b": 0.7544065594673157,
+    "dif_media": -0.11291030794382095,
+    "dif_mediana": -0.06540989875793457,
+    "n_a_menor": 7,
+    "p_bilateral": 0.16015625,
+    "p_a_menor": 0.080078125,
+    "ic95_dif": [
+     -0.27058627407997843,
+     0.04944112867116896
+    ]
+   },
+   {
+    "comparacao": "(c) V-V vs V-T",
+    "n_compositores": 10,
+    "media_a": 0.6573266044259072,
+    "media_b": 0.745250703394413,
+    "dif_media": -0.08792409896850586,
+    "dif_mediana": -0.06293067336082458,
+    "n_a_menor": 9,
+    "p_bilateral": 0.00390625,
+    "p_a_menor": 0.001953125,
+    "ic95_dif": [
+     -0.1420115703344345,
+     -0.039076112508773804
+    ]
+   },
+   {
+    "comparacao": "(d) V-V vs V-B",
+    "n_compositores": 10,
+    "media_a": 0.6573266044259072,
+    "media_b": 0.7544065594673157,
+    "dif_media": -0.09707995504140854,
+    "dif_mediana": -0.11099004745483398,
+    "n_a_menor": 7,
+    "p_bilateral": 0.048828125,
+    "p_a_menor": 0.0244140625,
+    "ic95_dif": [
+     -0.17123764522373677,
+     -0.020723762623965768
+    ]
+   },
+   {
+    "comparacao": "(e) T-T vs T-B",
+    "n_compositores": 8,
+    "media_a": 0.6462723724544048,
+    "media_b": 0.5995013099163771,
+    "dif_media": 0.04677106253802776,
+    "dif_mediana": 0.0007957592606544495,
+    "n_a_menor": 4,
+    "p_bilateral": 0.9453125,
+    "p_a_menor": 0.578125,
+    "ic95_dif": [
+     -0.0857330281753093,
+     0.20341384881176044
+    ]
+   }
+  ],
+  "sem_chopin": [
+   {
+    "comparacao": "(a) V-T vs V-B",
+    "n_compositores": 9,
+    "media_a": 0.7379593402147293,
+    "media_b": 0.7348729504479302,
+    "dif_media": 0.0030863897667990792,
+    "dif_mediana": -0.04937446117401123,
+    "n_a_menor": 6,
+    "p_bilateral": 0.65234375,
+    "p_a_menor": 0.326171875,
+    "ic95_dif": [
+     -0.07466883754564657,
+     0.10437593352463509
+    ]
+   },
+   {
+    "comparacao": "(b) T-B vs V-B",
+    "n_compositores": 9,
+    "media_a": 0.6119959801435471,
+    "media_b": 0.7348729504479302,
+    "dif_media": -0.12287697030438317,
+    "dif_mediana": -0.10760945081710815,
+    "n_a_menor": 6,
+    "p_bilateral": 0.203125,
+    "p_a_menor": 0.1015625,
+    "ic95_dif": [
+     -0.303579413311349,
+     0.04952067323029036
+    ]
+   },
+   {
+    "comparacao": "(c) V-V vs V-T",
+    "n_compositores": 11,
+    "media_a": 0.6550039012323726,
+    "media_b": 0.7489060393788598,
+    "dif_media": -0.09390213814648715,
+    "dif_mediana": -0.06372946500778198,
+    "n_a_menor": 10,
+    "p_bilateral": 0.001953125,
+    "p_a_menor": 0.0009765625,
+    "ic95_dif": [
+     -0.1469892770051956,
+     -0.050411027669906634
+    ]
+   },
+   {
+    "comparacao": "(d) V-V vs V-B",
+    "n_compositores": 11,
+    "media_a": 0.6356454152952541,
+    "media_b": 0.7446263947270133,
+    "dif_media": -0.10898097943175923,
+    "dif_mediana": -0.09823572635650635,
+    "n_a_menor": 8,
+    "p_bilateral": 0.0322265625,
+    "p_a_menor": 0.01611328125,
+    "ic95_dif": [
+     -0.18359307619658383,
+     -0.03579351918941195
+    ]
+   },
+   {
+    "comparacao": "(e) T-T vs T-B",
+    "n_compositores": 9,
+    "media_a": 0.6456285681989458,
+    "media_b": 0.573088084657987,
+    "dif_media": 0.07254048354095882,
+    "dif_mediana": 0.039429500699043274,
+    "n_a_menor": 4,
+    "p_bilateral": 0.49609375,
+    "p_a_menor": 0.787109375,
+    "ic95_dif": [
+     -0.035937178466055125,
+     0.20880224141809675
+    ]
+   }
+  ],
+  "regex_literal_sem_dedup": [
+   {
+    "comparacao": "(a) V-T vs V-B",
+    "n_compositores": 10,
+    "media_a": 0.7506282165646553,
+    "media_b": 0.7449064910411834,
+    "dif_media": 0.005721725523471832,
+    "dif_mediana": -0.04230552911758423,
+    "n_a_menor": 7,
+    "p_bilateral": 0.6953125,
+    "p_a_menor": 0.34765625,
+    "ic95_dif": [
+     -0.059362466931343075,
+     0.09262695454061032
+    ]
+   },
+   {
+    "comparacao": "(b) T-B vs V-B",
+    "n_compositores": 10,
+    "media_a": 0.6438266679644584,
+    "media_b": 0.7449064910411834,
+    "dif_media": -0.101079823076725,
+    "dif_mediana": -0.06540989875793457,
+    "n_a_menor": 7,
+    "p_bilateral": 0.193359375,
+    "p_a_menor": 0.0966796875,
+    "ic95_dif": [
+     -0.25829484321177004,
+     0.05129258453845949
+    ]
+   },
+   {
+    "comparacao": "(c) V-V vs V-T",
+    "n_compositores": 12,
+    "media_a": 0.6733423334856828,
+    "media_b": 0.7585512114067873,
+    "dif_media": -0.08520887792110443,
+    "dif_mediana": -0.05824211239814758,
+    "n_a_menor": 11,
+    "p_bilateral": 0.0009765625,
+    "p_a_menor": 0.00048828125,
+    "ic95_dif": [
+     -0.133676931510369,
+     -0.04282277934253216
+    ]
+   },
+   {
+    "comparacao": "(d) V-V vs V-B",
+    "n_compositores": 12,
+    "media_a": 0.6555970547099909,
+    "media_b": 0.7521748915314674,
+    "dif_media": -0.09657783682147662,
+    "dif_mediana": -0.09925290942192078,
+    "n_a_menor": 9,
+    "p_bilateral": 0.02099609375,
+    "p_a_menor": 0.010498046875,
+    "ic95_dif": [
+     -0.16162602932502826,
+     -0.0329300959284107
+    ]
+   },
+   {
+    "comparacao": "(e) T-T vs T-B",
+    "n_compositores": 10,
+    "media_a": 0.6495697349309921,
+    "media_b": 0.6088095620274544,
+    "dif_media": 0.04076017290353775,
+    "dif_mediana": 0.0007957592606544495,
+    "n_a_menor": 5,
+    "p_bilateral": 0.845703125,
+    "p_a_menor": 0.615234375,
+    "ic95_dif": [
+     -0.06885987851768731,
+     0.1709897985681891
+    ]
+   }
+  ],
+  "compositores_tres_classes": [
+   "Balakirev, Mily",
+   "Beethoven, Ludwig van",
+   "Chaminade, Cécile",
+   "Chopin, Frédéric",
+   "Godard, Benjamin",
+   "Lack, Théodore",
+   "Liszt, Franz",
+   "Raff, Joachim",
+   "Scharwenka, Xaver",
+   "Schubert, Franz"
+  ],
+  "T_so_minueto_landler_sarabande": [
+   {
+    "comparacao": "(a) V-T vs V-B",
+    "n_compositores": 5,
+    "media_a": 0.8384323239326477,
+    "media_b": 0.914939284324646,
+    "dif_media": -0.0765069603919983,
+    "dif_mediana": -0.06282246112823486,
+    "n_a_menor": 5,
+    "p_bilateral": 0.0625,
+    "p_a_menor": 0.03125,
+    "ic95_dif": [
+     -0.11544593572616577,
+     -0.03918936252593994
+    ]
+   },
+   {
+    "comparacao": "(b) T-B vs V-B",
+    "n_compositores": 5,
+    "media_a": 0.6993557661771774,
+    "media_b": 0.914939284324646,
+    "dif_media": -0.21558351814746857,
+    "dif_mediana": -0.22598421573638916,
+    "n_a_menor": 4,
+    "p_bilateral": 0.3125,
+    "p_a_menor": 0.15625,
+    "ic95_dif": [
+     -0.45469264686107635,
+     0.06117511987686157
+    ]
+   },
+   {
+    "comparacao": "(c) V-V vs V-T",
+    "n_compositores": 6,
+    "media_a": 0.747948944568634,
+    "media_b": 0.8524466156959534,
+    "dif_media": -0.10449767112731934,
+    "dif_mediana": -0.10000035166740417,
+    "n_a_menor": 5,
+    "p_bilateral": 0.0625,
+    "p_a_menor": 0.03125,
+    "ic95_dif": [
+     -0.17420550187428793,
+     -0.04195054372151693
+    ]
+   },
+   {
+    "comparacao": "(d) V-V vs V-B",
+    "n_compositores": 12,
+    "media_a": 0.6498713878293833,
+    "media_b": 0.760091615219911,
+    "dif_media": -0.11022022739052773,
+    "dif_mediana": -0.11104384064674377,
+    "n_a_menor": 9,
+    "p_bilateral": 0.01611328125,
+    "p_a_menor": 0.008056640625,
+    "ic95_dif": [
+     -0.1765768863260746,
+     -0.0417122534476221
+    ]
+   },
+   {
+    "comparacao": "(e) T-T vs T-B",
+    "n_compositores": 5,
+    "media_a": 0.5703372180461883,
+    "media_b": 0.6254062265157699,
+    "dif_media": -0.055069008469581605,
+    "dif_mediana": -0.051815152168273926,
+    "n_a_menor": 3,
+    "p_bilateral": 0.625,
+    "p_a_menor": 0.3125,
+    "ic95_dif": [
+     -0.20347838699817658,
+     0.07806011140346528
+    ]
+   }
+  ]
+ },
+ "parte3_chopin": {
+  "outros:binária": {
+   "n_pecas": 82,
+   "n_compositores": 23,
+   "d_valsaCho": 0.9485457791867326,
+   "d_mazCho": 0.9500665815444891,
+   "dif_pecas": -0.00152080235775651,
+   "dif_compositores": 0.01649130933404999,
+   "frac_pecas_mais_perto_valsa": 0.524390243902439,
+   "n_comp_mais_perto_valsa": 10,
+   "p_wilcoxon_dif_compositores": 0.5009052753448486
+  },
+  "outros:mazurca": {
+   "n_pecas": 22,
+   "n_compositores": 12,
+   "d_valsaCho": 0.7666026678105647,
+   "d_mazCho": 0.6896230690181255,
+   "dif_pecas": 0.07697959879243915,
+   "dif_compositores": 0.04329063872703248,
+   "frac_pecas_mais_perto_valsa": 0.22727272727272727,
+   "n_comp_mais_perto_valsa": 4,
+   "p_wilcoxon_dif_compositores": 0.30126953125
+  },
+  "outros:minueto": {
+   "n_pecas": 29,
+   "n_compositores": 12,
+   "d_valsaCho": 1.0167432283693603,
+   "d_mazCho": 1.033136486942912,
+   "dif_pecas": -0.01639325857355163,
+   "dif_compositores": 0.07594428972585038,
+   "frac_pecas_mais_perto_valsa": 0.5862068965517241,
+   "n_comp_mais_perto_valsa": 4,
+   "p_wilcoxon_dif_compositores": 0.20361328125
+  },
+  "outros:outra ternária": {
+   "n_pecas": 21,
+   "n_compositores": 9,
+   "d_valsaCho": 0.9033037639622178,
+   "d_mazCho": 0.8317006002402022,
+   "dif_pecas": 0.07160316372201556,
+   "dif_compositores": 0.09037101746502299,
+   "frac_pecas_mais_perto_valsa": 0.38095238095238093,
+   "n_comp_mais_perto_valsa": 3,
+   "p_wilcoxon_dif_compositores": 0.09765625
+  },
+  "outros:valsa": {
+   "n_pecas": 69,
+   "n_compositores": 22,
+   "d_valsaCho": 0.7692247224478996,
+   "d_mazCho": 0.8141565499827266,
+   "dif_pecas": -0.04493182753482698,
+   "dif_compositores": -0.05250955971788069,
+   "frac_pecas_mais_perto_valsa": 0.5652173913043478,
+   "n_comp_mais_perto_valsa": 14,
+   "p_wilcoxon_dif_compositores": 0.03907346725463867
+  },
+  "Chopin(LOO):binária": {
+   "n_pecas": 2,
+   "n_compositores": 1,
+   "d_valsaCho": 0.8688637688755989,
+   "d_mazCho": 0.7758873105049133,
+   "dif_pecas": 0.09297645837068558,
+   "dif_compositores": 0.09297645837068558,
+   "frac_pecas_mais_perto_valsa": 0.0,
+   "n_comp_mais_perto_valsa": 0
+  },
+  "Chopin(LOO):mazurca": {
+   "n_pecas": 23,
+   "n_compositores": 1,
+   "d_valsaCho": 0.6188507366763509,
+   "d_mazCho": 0.39713277902109956,
+   "dif_pecas": 0.22171795765525135,
+   "dif_compositores": 0.22171795765525135,
+   "frac_pecas_mais_perto_valsa": 0.043478260869565216,
+   "n_comp_mais_perto_valsa": 0
+  },
+  "Chopin(LOO):outra ternária": {
+   "n_pecas": 11,
+   "n_compositores": 1,
+   "d_valsaCho": 0.6985400915145874,
+   "d_mazCho": 0.6631975717080588,
+   "dif_pecas": 0.03534251980652863,
+   "dif_compositores": 0.03534251980652863,
+   "frac_pecas_mais_perto_valsa": 0.36363636363636365,
+   "n_comp_mais_perto_valsa": 0
+  },
+  "Chopin(LOO):valsa": {
+   "n_pecas": 9,
+   "n_compositores": 1,
+   "d_valsaCho": 0.6387527353233762,
+   "d_mazCho": 0.6843132913733522,
+   "dif_pecas": -0.04556055604997608,
+   "dif_compositores": -0.04556055604997608,
+   "frac_pecas_mais_perto_valsa": 0.6666666666666666,
+   "n_comp_mais_perto_valsa": 1
+  }
+ },
+ "parte3_minuetos": {
+  "Mozart, Wolfgang Amadeus": {
+   "n_minuetos": 7,
+   "valsa_cedo": 0.9293160438537598,
+   "n_valsa_cedo": 11,
+   "ncomp_valsa_cedo": 2,
+   "valsa_tarde": 1.1777265071868896,
+   "n_valsa_tarde": 67,
+   "ncomp_valsa_tarde": 21,
+   "bin_cedo": 0.9927949905395508,
+   "n_bin_cedo": 13,
+   "ncomp_bin_cedo": 5,
+   "bin_tarde": 0.9813342690467834,
+   "n_bin_tarde": 71,
+   "ncomp_bin_tarde": 19,
+   "efeito_compasso_cedo": 0.06347894668579102,
+   "efeito_compasso_tarde": -0.1963922381401062,
+   "efeito_epoca_valsa": 0.24841046333312988,
+   "efeito_epoca_bin": -0.011460721492767334
+  },
+  "Bach, Johann Sebastian": {
+   "n_minuetos": 4,
+   "valsa_cedo": 0.9507637619972229,
+   "n_valsa_cedo": 11,
+   "ncomp_valsa_cedo": 2,
+   "valsa_tarde": 1.1979490518569946,
+   "n_valsa_tarde": 67,
+   "ncomp_valsa_tarde": 21,
+   "bin_cedo": 1.1560746431350708,
+   "n_bin_cedo": 12,
+   "ncomp_bin_cedo": 4,
+   "bin_tarde": 1.0265071392059326,
+   "n_bin_tarde": 71,
+   "ncomp_bin_tarde": 19,
+   "efeito_compasso_cedo": 0.2053108811378479,
+   "efeito_compasso_tarde": -0.171441912651062,
+   "efeito_epoca_valsa": 0.24718528985977173,
+   "efeito_epoca_bin": -0.12956750392913818
+  },
+  "Beethoven, Ludwig van": {
+   "n_minuetos": 1,
+   "valsa_cedo": 0.819868266582489,
+   "n_valsa_cedo": 8,
+   "ncomp_valsa_cedo": 1,
+   "valsa_tarde": 1.0262919664382935,
+   "n_valsa_tarde": 67,
+   "ncomp_valsa_tarde": 21,
+   "bin_cedo": 0.8972823619842529,
+   "n_bin_cedo": 12,
+   "ncomp_bin_cedo": 4,
+   "bin_tarde": 0.9288224577903748,
+   "n_bin_tarde": 71,
+   "ncomp_bin_tarde": 19,
+   "efeito_compasso_cedo": 0.07741409540176392,
+   "efeito_compasso_tarde": -0.0974695086479187,
+   "efeito_epoca_valsa": 0.20642369985580444,
+   "efeito_epoca_bin": 0.031540095806121826
+  },
+  "Handel, George Frideric": {
+   "n_minuetos": 7,
+   "valsa_cedo": 0.9462065100669861,
+   "n_valsa_cedo": 11,
+   "ncomp_valsa_cedo": 2,
+   "valsa_tarde": 1.1509243249893188,
+   "n_valsa_tarde": 67,
+   "ncomp_valsa_tarde": 21,
+   "bin_cedo": 1.03458833694458,
+   "n_bin_cedo": 13,
+   "ncomp_bin_cedo": 5,
+   "bin_tarde": 1.0191601514816284,
+   "n_bin_tarde": 71,
+   "ncomp_bin_tarde": 19,
+   "efeito_compasso_cedo": 0.088381826877594,
+   "efeito_compasso_tarde": -0.13176417350769043,
+   "efeito_epoca_valsa": 0.20471781492233276,
+   "efeito_epoca_bin": -0.01542818546295166
+  }
+ },
+ "ref_chopin": {
+  "n_valsas": 9,
+  "n_mazurcas": 23
+ }
+}

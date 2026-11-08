@@ -1,9 +1,9 @@
 {
  "camada6_mean": {
-  "H1_mantel": 0.505,
+  "H1_mantel": 0.502,
   "H1_p": 0.001,
-  "H2_nat_parcial": 0.039,
-  "H3_R2": 0.275,
+  "H2_nat_parcial": 0.04,
+  "H3_R2": 0.268,
   "grupo_menor_k2": [
    "Bach",
    "Beethoven",
@@ -15,10 +15,10 @@
   ]
  },
  "camada5_mean": {
-  "H1_mantel": 0.492,
+  "H1_mantel": 0.488,
   "H1_p": 0.001,
-  "H2_nat_parcial": 0.04,
-  "H3_R2": 0.264,
+  "H2_nat_parcial": 0.041,
+  "H3_R2": 0.257,
   "grupo_menor_k2": [
    "Bach",
    "Beethoven",
@@ -30,10 +30,10 @@
   ]
  },
  "camada12_mean": {
-  "H1_mantel": 0.424,
+  "H1_mantel": 0.422,
   "H1_p": 0.001,
-  "H2_nat_parcial": 0.04,
-  "H3_R2": 0.22,
+  "H2_nat_parcial": 0.043,
+  "H3_R2": 0.207,
   "grupo_menor_k2": [
    "Bach",
    "Beethoven",
@@ -44,24 +44,33 @@
    "Johnson",
    "Mozart",
    "Raff",
+   "Satie",
    "Scarlatti",
    "Scott",
    "Victoria"
   ]
  },
  "camada6_last": {
-  "H1_mantel": 0.414,
+  "H1_mantel": 0.415,
   "H1_p": 0.001,
-  "H2_nat_parcial": 0.012,
-  "H3_R2": 0.124,
+  "H2_nat_parcial": 0.014,
+  "H3_R2": 0.119,
   "grupo_menor_k2": [
+   "Alkan",
    "Bach",
    "Beethoven",
+   "Czerny",
    "Handel",
    "Haydn",
    "Hummel",
+   "Johnson",
+   "Joplin",
+   "Moszkowski",
    "Mozart",
+   "Nazareth",
+   "Raff",
    "Scarlatti",
+   "Scott",
    "Victoria"
   ]
  }

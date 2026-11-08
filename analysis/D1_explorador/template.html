@@ -109,7 +109,7 @@ function stats(){
   const s = DADOS.info;
   document.getElementById('stats').innerHTML = [
     ['52','compositores'],[s.n_pecas.toLocaleString('pt-BR'),'peças'],
-    ['ρ = 0,50','distância × diferença de época'],['28%','da variação explicada pelo compositor']
+    ['ρ = 0,50','distância × diferença de época'],['27%','da variação explicada pelo compositor']
   ].map(([b,t])=>`<div class="stat"><b>${b}</b> ${t}</div>`).join('');
   document.getElementById('nota').textContent = `Mapa: as duas direções principais (PCA) dos centróides, que explicam ${Math.round(DADOS.pca_expl[0]*100)}% e ${Math.round(DADOS.pca_expl[1]*100)}% da variância; o eixo horizontal acompanha, em parte, o ano de nascimento (ρ ≈ 0,53). A projeção em 2D distorce as distâncias (Spearman 0,76 entre as distâncias reais e as do desenho). Os vizinhos listados são calculados no espaço completo de 768 dimensões, não no desenho. Modelo: ${s.modelo}, camada ${s.camada}, média sobre cada trecho, ${s.janelas} trechos por peça. A estrela é o Tico-Tico no Fubá (Zequinha de Abreu), uma peça só, incluída como ilustração. Surpresa = perda média do modelo (nats/token): previsibilidade para este modelo, não para um ouvinte.`;
 }
@@ -177,7 +177,7 @@ function intro(){
    <li><b>Embaixo à esquerda</b> fica um bloco pré-romântico (Bach a Beethoven) que se separa do resto em quase toda reamostragem.</li>
    <li><b>No alto</b>, a música de dança sincopada: ragtime (Joplin, J. Scott, Johnson), Nazareth e o Tico-Tico.</li>
    <li>Pinte <b>por nacionalidade</b>: as cores se misturam. Controlando a época, não há evidência de efeito da nacionalidade.</li>
-   <li>Clique num compositor: as peças dele se espalham bastante. O compositor explica só cerca de 28% da variação entre peças, então o estilo é mais nuvem que ponto.</li>
+   <li>Clique num compositor: as peças dele se espalham bastante. O compositor explica só cerca de 27% da variação entre peças, então o estilo é mais nuvem que ponto.</li>
   </ul>`;
 }
 document.getElementById('cor').addEventListener('change',e=>{modo=e.target.value;legend();draw();});

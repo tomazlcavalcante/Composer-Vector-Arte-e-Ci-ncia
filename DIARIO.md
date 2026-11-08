@@ -181,3 +181,32 @@ Itens B1–B8 concluídos, mais os extras: diagramas, exemplos MIDI, descritores
 - E1: RESULTADOS (Q6, Q7, H8–H14) e roteiro (13 slides + reserva) atualizados.
 - E2: revisão independente (Revisão 2 em REVISAO_FINAL.md). Números conferem; a linguagem ficou mais cautelosa nas valsas ("talvez pelo compasso 3/4") e nos controles.
 - E3: cópia de documentos, figuras, explorador e MIDIs em `Projetos/Composer_Vector/Resultados_08-11/` no notebook do Tomaz.
+
+## 2026-11-08, 09:45 — Dedup: 80 cópias removidas
+
+A F14 encontrou peças com representações idênticas. São **37 grupos de MIDIs idênticos byte a byte** (117 peças): a mesma gravação aparece sob títulos diferentes. Os grupos estão concentrados em Meyer-Helmund (28), Handel (19) e Godard (11).
+
+**Decisão:** remover as cópias na leitura comum (`analysis/data/duplicatas_remover.txt`, aplicado em `emb.load`; mantém a primeira de cada grupo). A base passa a ter **2.103 peças**. Todas as análises foram refeitas.
+- Na F2, as camadas 5 a 9 ficam empatadas (o critério difere em cerca de 0,01). **Mantida a camada 6**, escolhida antes da descoberta das duplicatas: a regra (escrita no `run.py`) é mantê-la se estiver a até 0,02 da melhor, o que evita reabrir a escolha depois de ver os dados.
+
+| Medida | Com cópias | Sem cópias |
+|---|---|---|
+| Sonda (acurácia balanceada) | 0,349 | 0,311 |
+| H1 Mantel | 0,505 | 0,502 |
+| Nacionalidade parcial | 0,041 | 0,040 |
+| R² do compositor | 0,275 | 0,268 |
+| Sobreposição | 65% | 67% |
+| Bloco pré-romântico (k = 2) | 7 compositores | idêntico |
+| Tico-Tico: vizinhos | Johnson, J. Scott, Nazareth | idênticos |
+| F9: Mantel só descritores / sem descritores / RSA | 0,204 / 0,340 / 0,642 | 0,207 / 0,356 / 0,650 |
+| F10: Mantel sem gênero | 0,379 | 0,374 |
+| F8: surpresa × época (compositor) | 0,507 | 0,499 |
+| F13: valsas de Nazareth (distância ao ragtime / a Chopin) | 1,10 / 0,43 | 1,10 / 0,42 |
+
+Conclusões inalteradas. A sonda era a mais inflada pelas cópias. F6 (transposição) e F7 (steering) não foram refeitas: as gerações não dependem da base e o efeito nos centróides é desprezível. Figuras e explorador regenerados.
+
+## Ciclo de hipóteses 3 (registradas antes de rodar)
+
+- [ ] **H17 (o que o eixo do tempo "ouve"):** a posição das peças no eixo cronológico do mapa (PC1) correlaciona com descritores ligados à história da harmonia e da textura: entropia de classes de altura (cromatismo), polifonia, extensão. Espera-se ρ positivo para os três. O PC2 (eixo da dança) correlaciona com notas/s e com a regularidade rítmica.
+- [ ] **H18 (dialeto nacional dentro de uma época):** restrito aos românticos (cerca de 30 compositores), a mesma nacionalidade aproxima os centróides (Mantel parcial > 0, controlando o nascimento). Motivo: o H2 global teve pouca potência.
+- [ ] **H19 (descritores em outro par):** no steering Mozart → Debussy, o vetor de Debussy desloca os descritores da música gerada na direção do perfil de Debussy (entropia de classes de altura, polifonia, duração) em mais de 4 de 7 sementes.

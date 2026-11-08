@@ -1,53 +1,53 @@
 composer,dispersao,periodo,n_pecas
-"Victoria, Tomás Luis de",0.0845,Renascimento,20
-"Johnson, Charles Leslie",0.258,Moderno,32
-"Meyer-Helmund, Erik",0.2772,Romântico,30
-"Scott, James",0.2973,Moderno,20
-"Joplin, Scott",0.424,Romântico,31
-"Scharwenka, Xaver",0.501,Romântico,31
-"Haydn, Joseph",0.5143,Clássico,54
-"Fauré, Gabriel",0.5148,Romântico,30
-"Bach, Johann Sebastian",0.5536,Barroco,129
-"Rzewski, Frederic",0.5723,Moderno,22
-"Scriabin, Aleksandr",0.587,Moderno,67
-"Lange, Gustav",0.6027,Romântico,20
-"Hitz, Franz",0.6089,Romântico,21
-"Handel, George Frideric",0.6089,Barroco,57
-"Scarlatti, Domenico",0.6243,Barroco,140
+"Victoria, Tomás Luis de",0.0844,Renascimento,20
+"Johnson, Charles Leslie",0.2512,Moderno,32
+"Scott, James",0.2968,Moderno,20
+"Meyer-Helmund, Erik",0.3175,Romântico,6
+"Joplin, Scott",0.423,Romântico,31
+"Scharwenka, Xaver",0.4491,Romântico,29
+"Fauré, Gabriel",0.5167,Romântico,30
+"Haydn, Joseph",0.5203,Clássico,52
+"Bach, Johann Sebastian",0.551,Barroco,129
+"Rzewski, Frederic",0.5814,Moderno,21
+"Scriabin, Aleksandr",0.5852,Moderno,66
+"Lange, Gustav",0.5989,Romântico,20
+"Hitz, Franz",0.6075,Romântico,20
+"Scarlatti, Domenico",0.6218,Barroco,140
 "Turina, Joaquín",0.6448,Moderno,37
-"Nazareth, Ernesto",0.6683,Romântico,22
-"Godard, Benjamin",0.6697,Romântico,28
-"Balakirev, Mily",0.6727,Romântico,30
-"Wachs, Paul",0.6731,Romântico,23
-"Debussy, Claude",0.6849,Romântico,27
-"Rebikov, Vladimir",0.6849,Romântico,54
-"Raff, Joachim",0.6865,Romântico,37
-"Scott, Cyril",0.6973,Moderno,20
-"Satie, Erik",0.7305,Romântico,52
-"Medtner, Nikolay",0.739,Moderno,34
-"Teilman, Christian",0.7424,Romântico,30
-"Mozart, Wolfgang Amadeus",0.7483,Clássico,72
-"Beethoven, Ludwig van",0.7632,Clássico,76
-"Rachmaninoff, Sergei",0.7659,Moderno,21
-"Lack, Théodore",0.7708,Romântico,38
-"Chopin, Frédéric",0.7916,Romântico,96
-"Brahms, Johannes",0.7968,Romântico,22
-"Gottschalk, Louis Moreau",0.7997,Romântico,29
-"Prokofiev, Sergey",0.8003,Moderno,26
-"Liszt, Franz",0.8178,Romântico,141
-"Villa-Lobos, Heitor",0.8269,Moderno,22
-"Schumann, Robert",0.8292,Romântico,33
-"Busoni, Ferruccio",0.8303,Romântico,21
-"Grieg, Edvard",0.8452,Romântico,24
-"Chaminade, Cécile",0.8471,Romântico,45
-"Alkan, Charles-Valentin",0.8523,Romântico,39
-"Tchaikovsky, Pyotr",0.8529,Romântico,26
-"Czerny, Carl",0.8536,Romântico,58
-"Poulenc, Francis",0.8631,Moderno,26
-"Hummel, Johann Nepomuk",0.8644,Clássico,36
-"Schubert, Franz",0.8706,Romântico,96
-"Mendelssohn, Felix",0.8709,Romântico,24
-"Moszkowski, Moritz",0.8719,Romântico,32
-"Gurlitt, Cornelius",0.8857,Romântico,20
-"Ravina, Jean Henri",0.8973,Romântico,27
-"Heller, Stephen",0.9002,Romântico,35
+"Nazareth, Ernesto",0.6626,Romântico,22
+"Scott, Cyril",0.6672,Moderno,19
+"Balakirev, Mily",0.6722,Romântico,30
+"Handel, George Frideric",0.6723,Barroco,42
+"Wachs, Paul",0.6766,Romântico,18
+"Debussy, Claude",0.6801,Romântico,27
+"Rebikov, Vladimir",0.6862,Romântico,53
+"Raff, Joachim",0.6891,Romântico,36
+"Godard, Benjamin",0.6948,Romântico,20
+"Satie, Erik",0.7327,Romântico,51
+"Teilman, Christian",0.7369,Romântico,28
+"Medtner, Nikolay",0.741,Moderno,34
+"Mozart, Wolfgang Amadeus",0.7603,Clássico,70
+"Rachmaninoff, Sergei",0.7658,Moderno,20
+"Beethoven, Ludwig van",0.7672,Clássico,76
+"Lack, Théodore",0.7705,Romântico,38
+"Chopin, Frédéric",0.7889,Romântico,96
+"Gottschalk, Louis Moreau",0.7941,Romântico,29
+"Brahms, Johannes",0.7965,Romântico,22
+"Prokofiev, Sergey",0.8022,Moderno,26
+"Liszt, Franz",0.8204,Romântico,138
+"Villa-Lobos, Heitor",0.8304,Moderno,22
+"Busoni, Ferruccio",0.8306,Romântico,21
+"Chaminade, Cécile",0.8308,Romântico,43
+"Schumann, Robert",0.8343,Romântico,33
+"Grieg, Edvard",0.8437,Romântico,24
+"Alkan, Charles-Valentin",0.8459,Romântico,39
+"Tchaikovsky, Pyotr",0.852,Romântico,26
+"Poulenc, Francis",0.8648,Moderno,26
+"Schubert, Franz",0.8665,Romântico,96
+"Czerny, Carl",0.8666,Romântico,55
+"Moszkowski, Moritz",0.8675,Romântico,30
+"Hummel, Johann Nepomuk",0.8745,Clássico,34
+"Mendelssohn, Felix",0.8759,Romântico,24
+"Gurlitt, Cornelius",0.8841,Romântico,20
+"Ravina, Jean Henri",0.8936,Romântico,27
+"Heller, Stephen",0.9024,Romântico,35

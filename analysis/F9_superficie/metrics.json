@@ -1,5 +1,5 @@
 {
- "n_pecas": 2183,
+ "n_pecas": 2103,
  "descritores": [
   "n_notas",
   "span_s",
@@ -27,31 +27,31 @@
   "entropia_pc"
  ],
  "modelo": {
-  "H1_mantel": 0.505,
+  "H1_mantel": 0.502,
   "p": 0.0001999600079984003,
-  "R2": 0.275,
-  "sonda": 0.349
+  "R2": 0.268,
+  "sonda": 0.311
  },
  "A2_descritores": {
-  "H8_mantel": 0.204,
+  "H8_mantel": 0.207,
   "p": 0.0001999600079984003,
-  "R2": 0.187,
-  "sonda": 0.249,
-  "H9_rsa_modelo_vs_descritores": 0.642
+  "R2": 0.182,
+  "sonda": 0.223,
+  "H9_rsa_modelo_vs_descritores": 0.65
  },
  "A3_residuos": {
-  "H10_mantel": 0.34,
+  "H10_mantel": 0.356,
   "p": 0.0001999600079984003,
-  "R2": 0.156,
-  "sonda": 0.31,
+  "R2": 0.152,
+  "sonda": 0.28,
   "frac_variancia_do_modelo_explicada_pelos_descritores": 0.504
  },
  "A4_surpresa": {
-  "rho_compositor_bruto": 0.505,
-  "rho_compositor_controlado": 0.411,
-  "rho_peca_bruto": 0.341,
+  "rho_compositor_bruto": 0.499,
+  "rho_compositor_controlado": 0.404,
+  "rho_peca_bruto": 0.329,
   "rho_peca_controlado": 0.21,
-  "R2_surpresa_explicada_pelos_descritores": 0.722,
-  "p_compositor_controlado": 0.0021995600879824036
+  "R2_surpresa_explicada_pelos_descritores": 0.72,
+  "p_compositor_controlado": 0.003199360127974405
  }
 }

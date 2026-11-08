@@ -1,0 +1,40 @@
+composer,valsa (regex),outras ternárias (regex),binárias (regex),"valsa (únicas, usadas)","outras ternárias (únicas, usadas)","binárias (únicas, usadas)",total regex,total usadas
+"Alkan, Charles-Valentin",0,1,3,0,1,3,4,4
+"Bach, Johann Sebastian",0,6,1,0,6,1,7,7
+"Balakirev, Mily",3,6,1,3,6,1,10,10
+"Beethoven, Ludwig van",3,4,2,3,3,1,9,7
+"Brahms, Johannes",1,1,0,1,1,0,2,2
+"Busoni, Ferruccio",0,1,0,0,1,0,1,1
+"Chaminade, Cécile",4,1,1,4,1,1,6,6
+"Chopin, Frédéric",9,34,2,9,34,2,45,45
+"Czerny, Carl",0,1,1,0,1,1,2,2
+"Debussy, Claude",1,1,0,1,1,0,2,2
+"Fauré, Gabriel",1,1,0,1,1,0,2,2
+"Godard, Benjamin",5,1,1,5,1,1,7,7
+"Gottschalk, Louis Moreau",0,0,2,0,0,2,2,2
+"Handel, George Frideric",0,7,0,0,7,0,7,7
+"Heller, Stephen",2,0,0,2,0,0,2,2
+"Hummel, Johann Nepomuk",0,0,1,0,0,1,1,1
+"Johnson, Charles Leslie",1,0,13,1,0,13,14,14
+"Joplin, Scott",3,0,11,3,0,11,14,14
+"Lack, Théodore",4,3,2,4,3,2,9,9
+"Lange, Gustav",0,1,0,0,1,0,1,1
+"Liszt, Franz",10,5,6,9,5,6,21,20
+"Moszkowski, Moritz",1,1,0,1,1,0,2,2
+"Mozart, Wolfgang Amadeus",0,8,0,0,7,0,8,7
+"Nazareth, Ernesto",0,0,1,0,0,1,1,1
+"Poulenc, Francis",1,0,1,1,0,1,2,2
+"Prokofiev, Sergey",1,0,0,1,0,0,1,1
+"Rachmaninoff, Sergei",0,0,1,0,0,1,1,1
+"Raff, Joachim",4,2,3,4,2,3,9,9
+"Ravina, Jean Henri",0,2,1,0,2,1,3,3
+"Satie, Erik",3,1,0,3,1,0,4,4
+"Scharwenka, Xaver",4,3,1,4,3,1,8,8
+"Schubert, Franz",9,8,9,8,8,9,26,25
+"Schumann, Robert",0,0,1,0,0,1,1,1
+"Scott, James",0,0,18,0,0,18,18,18
+"Scriabin, Aleksandr",4,7,0,4,7,0,11,11
+"Tchaikovsky, Pyotr",3,0,2,3,0,2,5,5
+"Teilman, Christian",0,2,0,0,2,0,2,2
+"Wachs, Paul",3,0,0,3,0,0,3,3
+TOTAL,80,108,85,78,106,84,273,268

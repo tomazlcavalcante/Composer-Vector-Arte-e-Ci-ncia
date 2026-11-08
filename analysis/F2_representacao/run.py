@@ -63,5 +63,13 @@ for pooling in ["mean", "last"]:
 chance = 1 / results[0]["n_composers"]
 best = max(results, key=lambda r: r["bal_acc"] + (0 if np.isnan(r["stability"]) else r["stability"]))
 # critério: acurácia balanceada + estabilidade (ambos em [0, 1], mesmo peso)
-(HERE / "metrics.json").write_text(json.dumps(dict(results=results, chance=chance, best=best), indent=1))
-print("escolhida:", best)
+# Decisão registrada em 08/11 (DIARIO): a camada 6 foi escolhida por este critério antes da remoção de duplicatas.
+# Depois dela, as camadas 5–9 ficam empatadas (diferença de ~0,01 no critério, dentro do ruído das metades
+# aleatórias). Mantemos a camada 6 se ela estiver a até 0,02 da melhor, para não reabrir a escolha após ver os dados.
+best_crit = best
+c6 = next(r for r in results if r["pooling"] == "mean" and r["layer"] == 6)
+crit = lambda r: r["bal_acc"] + (0 if np.isnan(r["stability"]) else r["stability"])
+if crit(best) - crit(c6) <= 0.02:
+    best = c6
+(HERE / "metrics.json").write_text(json.dumps(dict(results=results, chance=chance, best=best, melhor_pelo_criterio=best_crit), indent=1))
+print("escolhida:", best, "| melhor pelo criterio:", best_crit["layer"], best_crit["pooling"])

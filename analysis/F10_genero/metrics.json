@@ -6,33 +6,33 @@
    1,
    2
   ],
-  "n_pieces": 2183,
+  "n_pieces": 2103,
   "n_composers": 52
  },
  "n_pecas_por_genero": {
-  "sonata": 337,
-  "estudo": 62,
-  "valsa": 87,
+  "sonata": 335,
+  "estudo": 61,
+  "valsa": 80,
   "mazurca": 45,
   "noturno": 41,
-  "prelúdio": 93,
+  "prelúdio": 91,
   "fuga": 30,
   "rag": 40,
-  "variações": 57,
-  "dança/minueto": 113,
-  "romance/canção": 57,
+  "variações": 56,
+  "dança/minueto": 96,
+  "romance/canção": 35,
   "rapsódia": 13,
   "improviso": 20,
-  "suíte": 33,
+  "suíte": 32,
   "tango/choro": 1,
   "marcha": 24,
-  "outro": 1130
+  "outro": 1103
  },
- "frac_variancia_explicada_pelo_genero": 0.0869,
+ "frac_variancia_explicada_pelo_genero": 0.0828,
  "sem_controle": {
-  "mantel_rho": 0.5049,
+  "mantel_rho": 0.5024,
   "mantel_p": 0.0001999600079984003,
-  "R2_compositor": 0.2754,
+  "R2_compositor": 0.268,
   "k2": {
    "1": [
     "Bach",
@@ -108,9 +108,9 @@
   ]
  },
  "residuos_de_genero": {
-  "mantel_rho": 0.3791,
+  "mantel_rho": 0.3735,
   "mantel_p": 0.0001999600079984003,
-  "R2_compositor": 0.1979,
+  "R2_compositor": 0.1937,
   "k2": {
    "1": [
     "Balakirev",
@@ -120,10 +120,13 @@
     "Chopin",
     "Debussy",
     "Fauré",
+    "Godard",
     "Grieg",
     "Lack",
+    "Lange",
     "Liszt",
     "Medtner",
+    "Meyer-Helmund",
     "Poulenc",
     "Prokofiev",
     "Rachmaninoff",
@@ -141,7 +144,6 @@
     "Bach",
     "Beethoven",
     "Czerny",
-    "Godard",
     "Gottschalk",
     "Gurlitt",
     "Handel",
@@ -151,9 +153,7 @@
     "Hummel",
     "Johnson",
     "Joplin",
-    "Lange",
     "Mendelssohn",
-    "Meyer-Helmund",
     "Moszkowski",
     "Mozart",
     "Nazareth",
@@ -174,7 +174,6 @@
    "Bach",
    "Beethoven",
    "Czerny",
-   "Godard",
    "Gottschalk",
    "Gurlitt",
    "Handel",
@@ -185,9 +184,7 @@
    "J. Scott",
    "Johnson",
    "Joplin",
-   "Lange",
    "Mendelssohn",
-   "Meyer-Helmund",
    "Moszkowski",
    "Mozart",
    "Nazareth",
@@ -205,7 +202,6 @@
   "extras_alem_do_bloco_esperado": [
    "Alkan",
    "Czerny",
-   "Godard",
    "Gottschalk",
    "Gurlitt",
    "Heller",
@@ -213,9 +209,7 @@
    "J. Scott",
    "Johnson",
    "Joplin",
-   "Lange",
    "Mendelssohn",
-   "Meyer-Helmund",
    "Moszkowski",
    "Nazareth",
    "Raff",
@@ -228,11 +222,11 @@
    "Wachs"
   ],
   "tamanhos_k2": [
-   22,
-   30
+   25,
+   27
   ]
  },
- "spearman_distancias_base_vs_residuos": 0.9121,
+ "spearman_distancias_base_vs_residuos": 0.9142,
  "H12": {
   "cronologia_sobrevive": true,
   "bloco_continua": true

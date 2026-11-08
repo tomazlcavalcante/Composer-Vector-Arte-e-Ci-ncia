@@ -1,29 +1,29 @@
 {
  "layer": 6,
  "pooling": "mean",
- "H3_R2_compositor": 0.2754,
- "H3_R2_nulo_media": 0.0235,
- "H3_R2_nulo_p95": 0.0254,
- "sobreposicao_frac_pecas_mais_perto_de_outro": 0.6532,
+ "H3_R2_compositor": 0.268,
+ "H3_R2_nulo_media": 0.0243,
+ "H3_R2_nulo_p95": 0.0267,
+ "sobreposicao_frac_pecas_mais_perto_de_outro": 0.669,
  "H4": {
-  "mesmo_compositor_genero_diferente": 0.7788615822792053,
-  "mesmo_genero_compositor_diferente": 0.9404037594795227,
-  "mesmo_compositor_mesmo_genero": 0.6347289681434631,
-  "tudo_diferente": 1.0183686017990112,
-  "n_pecas_com_genero": 1053,
-  "R2_genero": 0.16400491920667984,
-  "R2_compositor_mesmas_pecas": 0.31651584923264225
+  "mesmo_compositor_genero_diferente": 0.7791114449501038,
+  "mesmo_genero_compositor_diferente": 0.9436454772949219,
+  "mesmo_compositor_mesmo_genero": 0.6480254530906677,
+  "tudo_diferente": 1.017425298690796,
+  "n_pecas_com_genero": 1000,
+  "R2_genero": 0.15534704177414568,
+  "R2_compositor_mesmas_pecas": 0.3026274367542016
  },
  "mais_compactos": [
   "Victoria, Tomás Luis de",
   "Johnson, Charles Leslie",
-  "Meyer-Helmund, Erik",
   "Scott, James",
+  "Meyer-Helmund, Erik",
   "Joplin, Scott"
  ],
  "mais_espalhados": [
+  "Hummel, Johann Nepomuk",
   "Mendelssohn, Felix",
-  "Moszkowski, Moritz",
   "Gurlitt, Cornelius",
   "Ravina, Jean Henri",
   "Heller, Stephen"

@@ -1,53 +1,53 @@
 composer_key,n_pecas,birth,periodo,surpresa_media,ic95_lo,ic95_hi,dp_intra,mediana
-"Victoria, Tomás Luis de",20,1548,Renascimento,1.7386,1.684,1.8006,0.1378,1.7139
+"Victoria, Tomás Luis de",20,1548,Renascimento,1.7386,1.6841,1.7999,0.1378,1.7139
 "Bach, Johann Sebastian",129,1685,Barroco,2.2809,2.2133,2.3502,0.423,2.286
-"Handel, George Frideric",57,1685,Barroco,2.2135,2.1153,2.3175,0.4026,2.0468
-"Scarlatti, Domenico",140,1685,Barroco,2.2469,2.1922,2.2998,0.3299,2.2207
-"Haydn, Joseph",54,1732,Clássico,2.3393,2.2562,2.4238,0.3187,2.3801
-"Mozart, Wolfgang Amadeus",72,1756,Clássico,2.3841,2.2875,2.479,0.3946,2.404
+"Handel, George Frideric",42,1685,Barroco,2.2869,2.1653,2.4243,0.4186,2.1414
+"Scarlatti, Domenico",140,1685,Barroco,2.2469,2.192,2.3008,0.3299,2.2207
+"Haydn, Joseph",52,1732,Clássico,2.3511,2.2625,2.4372,0.3176,2.3865
+"Mozart, Wolfgang Amadeus",70,1756,Clássico,2.3888,2.2975,2.4761,0.3958,2.404
 "Beethoven, Ludwig van",76,1770,Clássico,2.2488,2.1654,2.3284,0.3627,2.2066
-"Hummel, Johann Nepomuk",36,1778,Clássico,2.2975,2.1753,2.4174,0.376,2.3469
-"Czerny, Carl",58,1791,Romântico,2.2439,2.135,2.3464,0.4266,2.2451
-"Schubert, Franz",96,1797,Romântico,2.3369,2.2654,2.4135,0.3973,2.2958
-"Mendelssohn, Felix",24,1809,Romântico,2.4795,2.3586,2.6005,0.3027,2.4946
-"Chopin, Frédéric",96,1810,Romântico,2.6065,2.5386,2.6806,0.3562,2.6415
-"Schumann, Robert",33,1810,Romântico,2.5756,2.4785,2.6692,0.3,2.5266
-"Liszt, Franz",141,1811,Romântico,2.5055,2.425,2.5905,0.5017,2.4794
+"Hummel, Johann Nepomuk",34,1778,Clássico,2.3234,2.2063,2.438,0.3685,2.3523
+"Czerny, Carl",55,1791,Romântico,2.2438,2.1288,2.3588,0.4383,2.2515
+"Schubert, Franz",96,1797,Romântico,2.3369,2.2593,2.4154,0.3973,2.2958
+"Mendelssohn, Felix",24,1809,Romântico,2.4795,2.3597,2.597,0.3027,2.4946
+"Chopin, Frédéric",96,1810,Romântico,2.6065,2.5335,2.6774,0.3562,2.6415
+"Schumann, Robert",33,1810,Romântico,2.5756,2.4795,2.6781,0.3,2.5266
+"Liszt, Franz",138,1811,Romântico,2.5082,2.4274,2.5942,0.5048,2.4847
 "Alkan, Charles-Valentin",39,1813,Romântico,2.2773,2.1625,2.4122,0.4181,2.2255
-"Heller, Stephen",35,1813,Romântico,2.4819,2.3719,2.5969,0.3691,2.4044
-"Ravina, Jean Henri",27,1818,Romântico,2.4307,2.288,2.558,0.3905,2.4649
-"Gurlitt, Cornelius",20,1820,Romântico,2.4703,2.3255,2.6117,0.3566,2.3816
-"Raff, Joachim",37,1822,Romântico,1.9429,1.7946,2.0859,0.4782,1.7748
-"Hitz, Franz",21,1828,Romântico,2.402,2.3273,2.48,0.1863,2.3405
-"Gottschalk, Louis Moreau",29,1829,Romântico,2.4075,2.2734,2.5371,0.381,2.371
-"Lange, Gustav",20,1830,Romântico,2.5964,2.5135,2.6715,0.2065,2.6234
+"Heller, Stephen",35,1813,Romântico,2.4819,2.37,2.5952,0.3691,2.4044
+"Ravina, Jean Henri",27,1818,Romântico,2.4307,2.2774,2.5722,0.3905,2.4649
+"Gurlitt, Cornelius",20,1820,Romântico,2.4703,2.33,2.6317,0.3566,2.3816
+"Raff, Joachim",36,1822,Romântico,1.9498,1.7999,2.1036,0.4832,1.7967
+"Hitz, Franz",20,1828,Romântico,2.3997,2.3147,2.4856,0.1908,2.3393
+"Gottschalk, Louis Moreau",29,1829,Romântico,2.4075,2.267,2.5403,0.381,2.371
+"Lange, Gustav",20,1830,Romântico,2.5964,2.509,2.6857,0.2065,2.6234
 "Brahms, Johannes",22,1833,Romântico,2.6902,2.5823,2.8264,0.2912,2.6294
 "Balakirev, Mily",30,1837,Romântico,2.8249,2.7359,2.9135,0.2637,2.8973
-"Tchaikovsky, Pyotr",26,1840,Romântico,2.4437,2.3306,2.5554,0.2843,2.4521
-"Grieg, Edvard",24,1843,Romântico,2.6175,2.4898,2.7279,0.309,2.6956
-"Teilman, Christian",30,1843,Romântico,2.3894,2.322,2.4649,0.2086,2.3224
-"Fauré, Gabriel",30,1845,Romântico,2.9081,2.8405,2.9727,0.1943,2.8962
-"Lack, Théodore",38,1846,Romântico,3.1608,2.9302,3.3889,0.687,2.9273
-"Godard, Benjamin",28,1849,Romântico,2.5382,2.4641,2.623,0.2215,2.5712
-"Scharwenka, Xaver",31,1850,Romântico,3.3222,3.1172,3.505,0.5825,3.4915
-"Wachs, Paul",23,1851,Romântico,2.4423,2.3583,2.5277,0.2108,2.5063
-"Moszkowski, Moritz",32,1854,Romântico,2.5054,2.2965,2.7098,0.6282,2.3975
-"Chaminade, Cécile",45,1857,Romântico,2.6442,2.5572,2.7309,0.3057,2.6888
-"Meyer-Helmund, Erik",30,1861,Romântico,2.724,2.6958,2.7479,0.0756,2.7554
-"Debussy, Claude",27,1862,Romântico,2.7597,2.6261,2.8831,0.3585,2.8688
-"Nazareth, Ernesto",22,1863,Romântico,2.1982,2.037,2.3617,0.4037,2.1238
+"Tchaikovsky, Pyotr",26,1840,Romântico,2.4437,2.3378,2.5436,0.2843,2.4521
+"Grieg, Edvard",24,1843,Romântico,2.6175,2.4928,2.7327,0.309,2.6956
+"Fauré, Gabriel",30,1845,Romântico,2.9081,2.8353,2.9765,0.1943,2.8962
+"Teilman, Christian",28,1845,Romântico,2.3944,2.3184,2.4752,0.2154,2.3281
+"Lack, Théodore",38,1846,Romântico,3.1608,2.9523,3.388,0.687,2.9273
+"Godard, Benjamin",20,1849,Romântico,2.594,2.5054,2.6842,0.2054,2.5797
+"Scharwenka, Xaver",29,1850,Romântico,3.383,3.1939,3.5681,0.5515,3.5423
+"Wachs, Paul",18,1851,Romântico,2.4256,2.3268,2.5132,0.2115,2.4891
+"Moszkowski, Moritz",30,1854,Romântico,2.5131,2.2876,2.7571,0.6488,2.4465
+"Chaminade, Cécile",43,1857,Romântico,2.6521,2.5567,2.7418,0.3029,2.6888
+"Meyer-Helmund, Erik",6,1861,Romântico,2.7143,2.6412,2.7834,0.0961,2.7433
+"Debussy, Claude",27,1862,Romântico,2.7597,2.6253,2.8861,0.3585,2.8688
+"Nazareth, Ernesto",22,1863,Romântico,2.1982,2.0512,2.3786,0.4037,2.1238
 "Busoni, Ferruccio",21,1866,Romântico,2.6306,2.4826,2.7825,0.3779,2.7339
-"Rebikov, Vladimir",54,1866,Romântico,2.7702,2.6652,2.8839,0.417,2.7558
-"Satie, Erik",52,1866,Romântico,2.6601,2.535,2.785,0.4592,2.4927
-"Joplin, Scott",31,1868,Romântico,2.2029,2.1392,2.2672,0.1866,2.1507
-"Scriabin, Aleksandr",67,1872,Moderno,3.1719,3.069,3.2938,0.4729,3.1587
-"Rachmaninoff, Sergei",21,1873,Moderno,2.6708,2.5341,2.7964,0.3066,2.6985
-"Johnson, Charles Leslie",32,1876,Moderno,1.9425,1.8863,1.9976,0.1646,1.9551
-"Scott, Cyril",20,1879,Moderno,2.7147,2.5327,2.8814,0.4168,2.7848
-"Medtner, Nikolay",34,1880,Moderno,2.7811,2.6817,2.8791,0.3002,2.7751
-"Turina, Joaquín",37,1882,Moderno,2.5391,2.4614,2.6185,0.2676,2.5128
-"Scott, James",20,1885,Moderno,2.0816,2.0029,2.1712,0.1944,2.0839
-"Villa-Lobos, Heitor",22,1887,Moderno,2.5615,2.4403,2.6779,0.2964,2.5132
-"Prokofiev, Sergey",26,1891,Moderno,2.7077,2.6006,2.8151,0.3021,2.7299
-"Poulenc, Francis",26,1899,Moderno,2.6645,2.531,2.8002,0.364,2.6724
-"Rzewski, Frederic",22,1938,Moderno,3.2149,2.9996,3.4323,0.5191,3.2517
+"Rebikov, Vladimir",53,1866,Romântico,2.7619,2.6496,2.8806,0.4164,2.739
+"Satie, Erik",51,1866,Romântico,2.6635,2.5476,2.794,0.4631,2.4994
+"Joplin, Scott",31,1868,Romântico,2.2029,2.1343,2.2685,0.1866,2.1507
+"Scriabin, Aleksandr",66,1872,Moderno,3.1562,3.0501,3.2635,0.4587,3.1424
+"Rachmaninoff, Sergei",20,1873,Moderno,2.6812,2.5442,2.8165,0.3108,2.7208
+"Johnson, Charles Leslie",32,1876,Moderno,1.9425,1.8801,1.9988,0.1646,1.9551
+"Scott, Cyril",19,1879,Moderno,2.6771,2.5011,2.8445,0.3918,2.7611
+"Medtner, Nikolay",34,1880,Moderno,2.7811,2.6876,2.8834,0.3002,2.7751
+"Turina, Joaquín",37,1882,Moderno,2.5391,2.451,2.6214,0.2676,2.5128
+"Scott, James",20,1885,Moderno,2.0816,2.0024,2.1665,0.1944,2.0839
+"Villa-Lobos, Heitor",22,1887,Moderno,2.5615,2.4453,2.6774,0.2964,2.5132
+"Prokofiev, Sergey",26,1891,Moderno,2.7077,2.5917,2.8233,0.3021,2.7299
+"Poulenc, Francis",26,1899,Moderno,2.6645,2.5345,2.7942,0.364,2.6724
+"Rzewski, Frederic",21,1938,Moderno,3.1878,2.974,3.4009,0.5156,3.2489

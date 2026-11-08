@@ -1,15 +1,15 @@
 {
  "layer": 6,
  "pooling": "mean",
- "h0_maior_barra": 0.5147,
- "h0_mediana": 0.2909,
- "gap_ratio": 1.769,
- "gap_ratio_nulo_p95": 2.31,
+ "h0_maior_barra": 0.5533,
+ "h0_mediana": 0.2895,
+ "gap_ratio": 1.911,
+ "gap_ratio_nulo_p95": 2.376,
  "ari_bootstrap": {
-  "2": 0.782,
-  "3": 0.436,
-  "4": 0.567,
-  "5": 0.565
+  "2": 0.787,
+  "3": 0.682,
+  "4": 0.715,
+  "5": 0.726
  },
  "grupos_ligacao_media": {
   "2": {
@@ -81,28 +81,30 @@
     "Scarlatti"
    ],
    "2": [
-    "Gurlitt",
-    "Rebikov",
-    "Satie",
-    "Victoria"
+    "Alkan",
+    "Czerny",
+    "Hitz",
+    "Johnson",
+    "Joplin",
+    "Nazareth",
+    "Raff",
+    "Schubert",
+    "J. Scott",
+    "Wachs"
    ],
    "3": [
-    "Alkan",
     "Balakirev",
     "Brahms",
     "Busoni",
     "Chaminade",
     "Chopin",
-    "Czerny",
     "Debussy",
     "Fauré",
     "Godard",
     "Gottschalk",
     "Grieg",
+    "Gurlitt",
     "Heller",
-    "Hitz",
-    "Johnson",
-    "Joplin",
     "Lack",
     "Lange",
     "Liszt",
@@ -110,24 +112,22 @@
     "Mendelssohn",
     "Meyer-Helmund",
     "Moszkowski",
-    "Nazareth",
     "Poulenc",
     "Prokofiev",
     "Rachmaninoff",
-    "Raff",
     "Ravina",
+    "Rebikov",
     "Rzewski",
+    "Satie",
     "Scharwenka",
-    "Schubert",
     "Schumann",
     "C. Scott",
-    "J. Scott",
     "Scriabin",
     "Tchaikovsky",
     "Teilman",
     "Turina",
-    "Villa-Lobos",
-    "Wachs"
+    "Victoria",
+    "Villa-Lobos"
    ]
   },
   "4": {
@@ -141,12 +141,24 @@
     "Scarlatti"
    ],
    "2": [
+    "Alkan",
+    "Czerny",
+    "Hitz",
+    "Johnson",
+    "Joplin",
+    "Nazareth",
+    "Raff",
+    "Schubert",
+    "J. Scott",
+    "Wachs"
+   ],
+   "3": [
     "Gurlitt",
     "Rebikov",
     "Satie",
     "Victoria"
    ],
-   "3": [
+   "4": [
     "Balakirev",
     "Brahms",
     "Busoni",
@@ -154,42 +166,30 @@
     "Chopin",
     "Debussy",
     "Fauré",
+    "Godard",
+    "Gottschalk",
     "Grieg",
     "Heller",
     "Lack",
+    "Lange",
     "Liszt",
     "Medtner",
     "Mendelssohn",
+    "Meyer-Helmund",
     "Moszkowski",
     "Poulenc",
     "Prokofiev",
     "Rachmaninoff",
+    "Ravina",
     "Rzewski",
     "Scharwenka",
     "Schumann",
     "C. Scott",
     "Scriabin",
     "Tchaikovsky",
+    "Teilman",
     "Turina",
     "Villa-Lobos"
-   ],
-   "4": [
-    "Alkan",
-    "Czerny",
-    "Godard",
-    "Gottschalk",
-    "Hitz",
-    "Johnson",
-    "Joplin",
-    "Lange",
-    "Meyer-Helmund",
-    "Nazareth",
-    "Raff",
-    "Ravina",
-    "Schubert",
-    "J. Scott",
-    "Teilman",
-    "Wachs"
    ]
   }
  }

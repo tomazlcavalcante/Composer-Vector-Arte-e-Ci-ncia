@@ -6,62 +6,62 @@
     ],
     "bootstrap": 1000,
     "seed": 0,
-    "n_janelas": 4366,
-    "n_pecas": 2183,
+    "n_janelas": 4206,
+    "n_pecas": 2103,
     "n_compositores": 52,
     "unidade_perda": "nats/token (média da janela)"
   },
   "geral": {
-    "media_pecas": 2.4898446789587303,
-    "dp_pecas": 0.4788523591221318,
+    "media_pecas": 2.491205089102458,
+    "dp_pecas": 0.48019346525704987,
     "min_compositor": [
       "Victoria, Tomás Luis de",
       1.7386229991912843
     ],
     "max_compositor": [
       "Scharwenka, Xaver",
-      3.3221609438619306
+      3.383006013672927
     ],
-    "dp_entre_compositores": 0.3121130050639686
+    "dp_entre_compositores": 0.31123983021707285
   },
   "epoca": {
     "spearman_compositor": {
-      "rho": 0.5071198449007873,
-      "p": 0.00012470152975903244,
+      "rho": 0.499178084258239,
+      "p": 0.00016522600466375864,
       "ic95_bootstrap": [
-        0.22942501572762877,
-        0.726241440778434
+        0.24219607571839627,
+        0.7353038347815266
       ],
       "n": 52
     },
     "spearman_peca": {
-      "rho": 0.34181273290015546,
-      "p": 7.168259092107713e-61,
-      "n": 2183
+      "rho": 0.328733081021148,
+      "p": 3.5233245941240187e-54,
+      "n": 2103
     },
     "kruskal_peca": {
-      "H": 243.06631311544555,
-      "p": 2.0280299302223032e-51,
-      "epsilon2": 0.10976414743592541,
+      "H": 219.70338538938813,
+      "p": 2.171492651921563e-46,
+      "epsilon2": 0.10281381572420788,
       "p_nulo_permutando_periodo_entre_compositores": 0.007984031936127744
     },
     "por_periodo": {
       "Barroco": {
-        "n_pecas": 326,
-        "media": 2.254486830322289,
-        "mediana": 2.213336944580078,
+        "n_pecas": 311,
+        "media": 2.2663811236332467,
+        "mediana": 2.2324169874191284,
         "n_compositores": 3
       },
       "Clássico": {
-        "n_pecas": 238,
-        "media": 2.317631456030517,
-        "mediana": 2.312302350997925,
+        "n_pecas": 232,
+        "media": 2.324915849186223,
+        "mediana": 2.3210045397281647,
         "n_compositores": 4
       },
       "Moderno": {
-        "n_pecas": 327,
-        "media": 2.6971081232805862,
-        "mediana": 2.666619896888733,
+        "n_pecas": 323,
+        "media": 2.6875219024002734,
+        "mediana": 2.6656945943832397,
         "n_compositores": 11
       },
       "Renascimento": {
@@ -71,9 +71,9 @@
         "n_compositores": 1
       },
       "Romântico": {
-        "n_pecas": 1272,
-        "media": 2.540915978498429,
-        "mediana": 2.524320900440216,
+        "n_pecas": 1217,
+        "media": 2.5406222362055972,
+        "mediana": 2.519212484359741,
         "n_compositores": 33
       }
     }
@@ -84,12 +84,12 @@
       "max": 1024,
       "mediana": 1024.0
     },
-    "eta2_compositor": 0.3695063802352291,
-    "eta2_nulo_media": 0.023624532640353847,
-    "eta2_nulo_p95": 0.03198552443725383,
-    "spearman_janela1_janela2_dentro_da_peca": 0.7161807477112594,
-    "spearman_compositor_j1_j2": 0.97669256381798,
+    "eta2_compositor": 0.3662704050742993,
+    "eta2_nulo_media": 0.02421464224671624,
+    "eta2_nulo_p95": 0.03331317032239113,
+    "spearman_janela1_janela2_dentro_da_peca": 0.7132440681020465,
+    "spearman_compositor_j1_j2": 0.9688380431998633,
     "cv_intra_mediano": 0.1366364902237015,
-    "razao_dp_intra_sobre_dp_entre": 1.1419379751379932
+    "razao_dp_intra_sobre_dp_entre": 1.1451416509525898
   }
 }

@@ -32,6 +32,13 @@ def load(layer: int, pooling: str = "mean", windows=None, include_extra=False):
                          loss=float(z["loss"]), title=str(z["title"])))
     df = pd.DataFrame(rows)
     X = np.stack(vecs) if vecs else np.zeros((0, 768), np.float32)
+    # remove cópias: MIDIs idênticos byte a byte publicados sob títulos diferentes (ver analysis/data/duplicatas.csv)
+    if os.environ.get("CV_DEDUP", "1") == "1":
+        drop_path = ROOT / "analysis" / "data" / "duplicatas_remover.txt"
+        if drop_path.exists() and len(df):
+            drop = set(l.strip() for l in drop_path.read_text().splitlines() if l.strip())
+            ok = ~df.piece_id.isin(drop).values
+            X, df = X[ok], df[ok].reset_index(drop=True)
     meta = load_meta()
     keep = df.composer_key.isin(meta.loc[meta.incluir == 1, "composer_key"])
     if not include_extra:
