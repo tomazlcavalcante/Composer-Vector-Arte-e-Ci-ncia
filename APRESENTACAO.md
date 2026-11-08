@@ -37,7 +37,7 @@ Tempo: cerca de 1 minuto por slide (slides 1 e 12 mais curtos; 4, 5 e 7 podem pa
 
 ## Slide 5. O compositor explica só 28% do que o modelo vê: o estilo é mais nuvem do que ponto
 
-- **Visual:** texto ou diagrama simples: um ponto grande por compositor sobreposto a "nuvens" que se cruzam (desenho esquemático). Alternativa de apoio: `analysis/F4_nuvens/figs/dispersao.png` (só depois de conferir os rótulos "Scott"; ver lista de ajustes).
+- **Visual:** texto ou diagrama simples: um ponto grande por compositor sobreposto a "nuvens" que se cruzam (desenho esquemático). Alternativa de apoio: `analysis/F4_nuvens/figs/dispersao.png` (rótulos J. Scott e C. Scott já corrigidos).
 - **O número que importa:** R² = 0,275 (nulo: 0,0235); 65,3% das peças ficam mais perto do centróide de outro compositor.
 - **Fala:** Cada peça é um ponto, e cada compositor é uma nuvem de peças. O compositor explica cerca de 28% da variação entre peças, e dois terços das peças estão mais perto da média de outro compositor do que da própria. Mesmo assim, o modelo acerta o compositor muito acima do acaso. O estilo existe, mas é frouxo: as nuvens se sobrepõem. Uns são compactos (Victoria, ragtime), outros muito espalhados (Heller, Ravina).
 - **Cuidado:** o valor depende da representação (de 0,12 a 0,28), mas é sempre uma minoria bem acima do nulo. Os 72% restantes não são "variação de estilo da obra": incluem gênero, forma, tonalidade e ruído de transcrição. A compacidade de Victoria e dos ragtimes pode vir do tipo de arquivo MIDI (não testado). Não dizer que o compositor é "não identificável" (35% de acerto em 52 classes é muito acima do acaso). O compositor pesa mais que o gênero (R² 0,317 contra 0,164, em 1.053 peças), mas isso enfraquece (gênero por palavra do título é impreciso).
@@ -99,7 +99,7 @@ Tempo: cerca de 1 minuto por slide (slides 1 e 12 mais curtos; 4, 5 e 7 podem pa
 2. `analysis/F7_deslocamento/figs/steering.png`: título agora cauteloso ("...sem chegar lá") e subtítulo com a ressalva; vírgulas decimais corrigidas. Considerar remover as três condições de "caminho" (t = 0, 0,5, 1) no slide: carregam a leitura "Bach domina", que não foi testada.
 3. `analysis/F7_deslocamento/figs/steering_alfa.png`: subtítulo agora diz "Repetição de trigramas não aumenta até α = 1,5". Mostrar só se houver tempo; lembrar que só 4 de 7 trajetórias são monótonas.
 4. `analysis/F7_deslocamento/figs/steering_dois_sentidos.png`: não usada no roteiro; se for mostrada, não atribuir a assimetria ao vetor (mistura eixos, sementes, bases de centróides e n).
-5. `analysis/F4_nuvens/figs/dispersao.png`: só há um rótulo "Scott" (parece C. Scott); J. Scott (0,297) não aparece como barra própria. Conferir o `run.py` ou usar `dispersao.csv` antes de mostrar.
+5. `analysis/F4_nuvens/figs/dispersao.png`: rótulos corrigidos (J. Scott e C. Scott separados). Falta só uma legenda de cores por período.
 6. `analysis/F3_geometria/figs/mapa_apresentacao.png`: regerada e conferida (52 compositores, PC1 34%, distorção 0,76). Para projetar, considerar fonte maior nos rótulos; o mapa tem muitos pontos para um slide. Opcional: destacar em cor os cinco ou seis nomes citados na fala.
 7. `analysis/F5_topologia/figs/dendrograma.png`: distingue J. Scott de C. Scott; os cortes finos (k ≥ 3) são instáveis, não comentar. Conferir legibilidade dos rótulos em tela.
 8. `analysis/F8_expectativa/figs/surpresa_por_compositor.png`: deixar explícito no título ou legenda que é a surpresa do modelo. Os IC variam bastante entre compositores.
