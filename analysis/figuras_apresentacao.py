@@ -110,7 +110,7 @@ def steering():
         col = "#1f77b4" if c in ("centrado", "caminho_t1") else "#888888"
         ax.errorbar(j, g.loc[c, "mean"], yerr=g.loc[c, "se"], fmt="o", ms=10, color=col, ecolor=col, capsize=5, lw=2,
                     markeredgecolor="white", zorder=3)
-        ax.text(j + 0.12, g.loc[c, "mean"], f"{g.loc[c, 'mean']:.2f}", va="center", fontsize=11, color=INK)
+        ax.text(j + 0.12, g.loc[c, "mean"], f"{g.loc[c, 'mean']:.2f}".replace(".", ","), va="center", fontsize=11, color=INK)
     ax.axhline(0, color=MUTED, lw=1, ls="--"); ax.axhline(1, color=MUTED, lw=1, ls="--")
     ax.text(len(order) - 0.45, 0.015, "origem (centróide de Bach)", ha="right", va="bottom", fontsize=10, color=MUTED)
     ax.text(len(order) - 0.45, 0.985, "alvo (centróide de Chopin)", ha="right", va="top", fontsize=10, color=MUTED)
@@ -118,10 +118,10 @@ def steering():
     ax.set_ylim(-0.1, 1.1); ax.set_xlim(-0.5, len(order) - 0.4)
     ax.set_ylabel("progresso na direção Bach → Chopin")
     n = int(g["count"].iloc[0])
-    ax.set_title("Somar o vetor de Chopin leva a música para o lado de Chopin; um vetor aleatório não", fontsize=14,
-                 loc="left", fontweight="bold", pad=24)
-    ax.text(0, 1.02, f"Média ± erro padrão, n = {n} continuações por condição (7 sementes de Bach × 2), α = 1, camada 6. "
-            "Progresso relido sem steering.", transform=ax.transAxes, fontsize=9.5, color=MUTED)
+    ax.set_title("Somar o vetor de Chopin empurra a música gerada na direção de Chopin,\nsem chegar lá", fontsize=14,
+                 loc="left", fontweight="bold", pad=44)
+    ax.text(0, 1.015, f"Média ± erro padrão, n = {n} continuações por condição (7 sementes de Bach × 2), α = 1, camada 6.\n"
+            "Progresso relido sem steering. A distância ao centróide de Chopin continua alta.", transform=ax.transAxes, fontsize=9.5, color=MUTED, va="bottom")
     fig.tight_layout()
     fig.savefig(HERE / "F7_deslocamento/figs/steering.png", dpi=150)
     plt.close(fig)
@@ -153,11 +153,11 @@ def steering_alfa():
     ax.set_xticks([0, 0.25, 0.5, 1, 1.5]); ax.set_xticklabels(["0\n(sem steering)", "0,25", "0,5", "1", "1,5"])
     ax.set_xlim(-0.2, 1.7); ax.set_ylim(-0.1, 1.1)
     ax.set_xlabel("intensidade α do vetor somado"); ax.set_ylabel("progresso na direção Bach → Chopin")
-    ax.legend(frameon=False, loc="lower right", bbox_to_anchor=(1, 0.12))
+    ax.legend(frameon=False, loc="lower right", bbox_to_anchor=(1, 0.17))
     ax.set_title("Quanto mais forte o vetor de Chopin, mais a música avança; o aleatório não", fontsize=14,
-                 loc="left", fontweight="bold", pad=24)
-    ax.text(0, 1.02, "Média ± erro padrão, 7 sementes de Bach × 1 amostra por α, camada 6, continuações relidas sem "
-            "steering. Sem quebra até α = 1,5.", transform=ax.transAxes, fontsize=9.5, color=MUTED)
+                 loc="left", fontweight="bold", pad=34)
+    ax.text(0, 1.015, "Média ± erro padrão, 7 sementes de Bach × 1 amostra por α, camada 6, continuações relidas sem steering.\n"
+            "Repetição de trigramas não aumenta até α = 1,5.", transform=ax.transAxes, fontsize=9.5, color=MUTED, va="bottom")
     fig.tight_layout()
     fig.savefig(HERE / "F7_deslocamento/figs/steering_alfa.png", dpi=150)
     plt.close(fig)
@@ -199,13 +199,13 @@ def camadas():
         s = r[r.pooling == pool].sort_values("layer")
         ax.plot(s.layer, s.bal_acc, "o-", color=col, lw=2, ms=7, markeredgecolor="white", label=lab)
         k = s.loc[s.bal_acc.idxmax()]
-        ax.annotate(f"melhor: camada {int(k.layer)} ({k.bal_acc:.2f})", (k.layer, k.bal_acc), xytext=(0, 12),
+        ax.annotate(f"melhor: camada {int(k.layer)} ({k.bal_acc:.2f})", (k.layer, k.bal_acc), xytext=(0, 9),
                     textcoords="offset points", ha="center", fontsize=10, color=INK)
     ax.axhline(m["chance"], color=MUTED, ls="--", lw=1)
     ax.text(12.1, m["chance"] + 0.006, f"acaso = 1/52 = {m['chance']:.3f}", ha="right", fontsize=10, color=MUTED)
     ax.set_xticks(range(13)); ax.set_xlabel("camada (0 = embeddings, 12 = última)")
     ax.set_ylabel("acurácia balanceada (validação cruzada, 5 dobras)")
-    ax.set_ylim(0, 0.36); ax.legend(frameon=False, loc="upper right", bbox_to_anchor=(1, 0.9))
+    ax.set_ylim(0, 0.40); ax.legend(frameon=False, loc="upper right", bbox_to_anchor=(0.98, 0.52))
     ax.set_title("As camadas do meio separam melhor os compositores que a última", fontsize=14, loc="left",
                  fontweight="bold", pad=24)
     ax.text(0, 1.02, "2.183 peças, 52 compositores, regressão logística, espaço centrado.", transform=ax.transAxes,

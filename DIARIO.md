@@ -95,7 +95,7 @@ Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a
 - [x] B4. Corrigir o que a revisão apontar.
 - [ ] B5. Refazer F2–F5 com 3 janelas, se a B1 terminar; registrar a estabilidade.
 - [x] B6. RESULTADOS.md: conclusões por hipótese, números finais e limitações.
-- [ ] B7. APRESENTACAO.md: roteiro slide a slide (mensagem, figura, número, fala), para o grupo montar o deck às 13h.
+- [x] B7. APRESENTACAO.md: roteiro slide a slide (mensagem, figura, número, fala), para o grupo montar o deck às 13h.
 - [ ] B8. Revisão final de RESULTADOS e APRESENTACAO por um subagente independente.
 
 ## 2026-11-08, ~08:00 — errata da revisão independente (B4)
