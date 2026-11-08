@@ -158,3 +158,11 @@ Três pares novos, cada um com 7 sementes, 1 amostra e α = 1: Haydn → Mozart 
 - Haydn → Mozart: não interpretável. A distância entre os centróides é de 0,10, então o eixo fica mal definido e o progresso sai de 0–1.
 
 **Decisão:** H6 passa a "vale em 3 de 4 direções interpretáveis, todas entre compositores distantes", com veredito "enfraquece" na VALIDADE (linha 9b). Resumo em `pares_resumo.csv`; RESULTADOS, REPORT da F7 e slide 7 atualizados.
+
+## 2026-11-08, 08:45 — backlog concluído
+
+Itens B1–B8 concluídos, mais os extras: diagramas, exemplos MIDI, descritores independentes e 3 pares novos de steering. O que fica para o grupo decidir às 13h:
+- **Slide 7:** o título e a fala ainda giram em torno de Bach → Chopin; o campo "cuidado" e a figura de apoio já refletem os 4 pares.
+- **Metadados:** os compositores conhecidos seguem sem URL de fonte. Só os 9 de baixa confiança foram conferidos no IMSLP.
+- **Exemplos MIDI:** ouvir antes de usar.
+- **Deck:** montar a partir do APRESENTACAO.md.
