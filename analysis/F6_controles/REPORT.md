@@ -10,6 +10,7 @@ Nenhuma hipótese própria na seção 5 do PLANO.md. A frente serve de controle 
 - Tamanho amostral: Spearman entre nº de peças e (a) distância à média geral, (b) z de originalidade, (c) dispersão (F3 e F4).
 - Transposição: 45 peças (sorteadas, `random_state=0`), transpostas ±2 e ±5 semitons (180 linhas em `transposicao.csv`). A janela do meio é relida pelo modelo e mede-se o deslocamento cosseno e se o centróide mais próximo muda.
 - Camada 6, pooling média.
+- **Passada 1:** esta frente continua com os centróides e a janela do meio da passada 1 (1 janela por peça); não foi refeita com as 2 janelas (DIARIO, 2026-11-08). Os números de F3 e F4 usados no controle de tamanho amostral e as referências (0,942 e 0,542) são os da passada 1.
 
 ## Resultado
 - n × distância à média geral: ρ = −0,11.

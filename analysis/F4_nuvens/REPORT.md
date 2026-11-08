@@ -8,7 +8,7 @@ Quanto da variação entre peças é explicado pelo compositor? O estilo é um p
 - **H4:** o gênero da peça rivaliza com o compositor na organização local.
 
 ## Configuração
-- Camada 6, pooling média, nível de peça (2.183 peças, 52 compositores), espaço centrado, norma 1.
+- Camada 6, pooling média, nível de peça (2.183 peças, 52 compositores; cada peça é a média de 2 janelas, passada 2, números finais do ensaio), espaço centrado, norma 1.
 - Variância explicada: R² multivariado (traço entre / traço total). Nulo: 200 permutações de rótulos.
 - Dispersão por compositor com n igualado: 200 sorteios de 20 peças.
 - Sobreposição: fração das peças mais perto do centróide de outro compositor (o centróide próprio é recalculado sem a peça).
@@ -16,30 +16,49 @@ Quanto da variação entre peças é explicado pelo compositor? O estilo é um p
 - Obras atípicas: z da distância da peça ao próprio centróide, dentro do compositor.
 
 ## Resultado
-- **H3:** R² do compositor = 0,230. Nulo: média 0,0235, p95 0,0254.
-- **Sobreposição:** 68,8% das peças ficam mais perto do centróide de outro compositor. Em `acerto_centroide.csv`, o acerto médio por compositor é 0,314.
-  - Acerto de 1,00 em Victoria, 0,97 em Meyer-Helmund, 0,88 em C. L. Johnson, 0,80 em J. Scott, 0,77 em Joplin.
-  - Acerto de 0 em Brahms, Busoni, Ravina, Schumann e Tchaikovsky, entre outros.
+- **H3:** R² do compositor = 0,275. Nulo: média 0,0235, p95 0,0254.
+- **Sobreposição:** 65,3% das peças ficam mais perto do centróide de outro compositor. Em `acerto_centroide.csv`, o acerto médio por compositor é 0,346.
+  - Acerto de 1,00 em Victoria, 0,97 em Meyer-Helmund, 0,81 em C. L. Johnson, 0,76 em Hitz, 0,75 em J. Scott, 0,74 em Joplin.
+  - Acerto de 0 em Lack e Ravina; Schumann (0,03), Villa-Lobos, Rachmaninoff e Busoni (0,05) quase nunca acertam.
 - **H4** (1.053 peças com gênero):
-  - R² do gênero = 0,133; R² do compositor nas mesmas peças = 0,269.
-  - Distância média entre peças: mesmo compositor e mesmo gênero 0,689; mesmo compositor e gênero diferente 0,817; mesmo gênero e compositor diferente 0,965; tudo diferente 1,014.
-- **Dispersão (n = 20):** mais compactos Victoria (0,098), C. L. Johnson (0,287), J. Scott (0,325), Meyer-Helmund (0,332), Joplin (0,480). Mais espalhados Schubert (0,899), Schumann (0,902), Tchaikovsky (0,903), Busoni (0,906), Heller (0,914).
-- **Atípicas:** a mais atípica é "Wedding of the Fairies Waltz" de Johnson (z = 4,45, mais perto de Nazareth). Segue a Fantasia em sol menor BWV 920 de Bach (z = 3,85, mais perto de Debussy).
+  - R² do gênero = 0,164; R² do compositor nas mesmas peças = 0,317.
+  - Distância média entre peças: mesmo compositor e mesmo gênero 0,635; mesmo compositor e gênero diferente 0,779; mesmo gênero e compositor diferente 0,940; tudo diferente 1,018.
+- **Dispersão (n = 20):** mais compactos Victoria (0,085), C. L. Johnson (0,258), Meyer-Helmund (0,277), J. Scott (0,297), Joplin (0,424). Mais espalhados Heller (0,900), Ravina (0,897), Gurlitt (0,886), Moszkowski (0,872), Mendelssohn (0,871).
+- **Atípicas** (`obras_atipicas.csv`): a mais atípica continua sendo "Wedding of the Fairies Waltz" de Johnson (z = 4,47, mais perto de Nazareth). Seguem "Solace" de Joplin (z = 4,25, mais perto de Rebikov) e a Fuga em lá menor B.144 de Chopin (z = 3,66, mais perto de Raff).
+- **Passada 1 (1 janela), para comparar:** R² do compositor 0,230; sobreposição 68,8%; H4 com R² do gênero 0,133 e do compositor nas mesmas peças 0,269. Os mais compactos são os mesmos cinco (Victoria, Johnson, Meyer-Helmund, J. Scott, Joplin). Os mais espalhados mudaram em parte (antes Schubert, Schumann, Tchaikovsky, Busoni, Heller; agora só Heller se mantém), então a ordem dos espalhados é menos estável que a dos compactos. As conclusões de H3 e H4 não mudaram.
 
 ## Comparação com o nulo
-- R² do compositor (0,230) é cerca de 10 vezes o nulo (0,0235) e fica muito acima do p95 do nulo (0,0254).
+- R² do compositor (0,275) é mais de 11 vezes o nulo (0,0235) e fica muito acima do p95 do nulo (0,0254).
 - H4 não tem nulo próprio.
 
 ## O que não se pode concluir
-- H3: o compositor explica 23% da variância. "Minoria" vale, e o efeito é real contra o nulo. Mas 77% restante inclui gênero, forma, tonalidade e ruído de transcrição, sem decomposição aqui.
-- Os 68,8% não significam que o compositor não é identificável. O acerto de 31% é muito maior que o acaso de cerca de 1,9% (1/52). Mostram que a nuvem de um compositor se sobrepõe às de outros.
-- H4 "não se confirma": o compositor pesa mais que o gênero (0,269 contra 0,133; 0,817 contra 0,965 nas distâncias). Cuidados:
+- H3: o compositor explica 28% da variância. "Minoria" vale, e o efeito é real contra o nulo. Mas os 72% restantes inclui gênero, forma, tonalidade e ruído de transcrição, sem decomposição aqui.
+- Os 65,3% não significam que o compositor não é identificável. O acerto de 35% é muito maior que o acaso de cerca de 1,9% (1/52). Mostram que a nuvem de um compositor se sobrepõe às de outros.
+- H4 "não se confirma": o compositor pesa mais que o gênero (0,317 contra 0,164; 0,779 contra 0,940 nas distâncias). Cuidados:
   - o R² cresce com o número de grupos (52 compositores contra 16 gêneros) e não foi ajustado; as distâncias não têm esse problema;
   - o gênero vem de palavra-chave no título e só cobre 1.053 das 2.183 peças;
   - não há intervalo de confiança.
 - Compacto não quer dizer estilo coeso. Victoria tem exatamente 20 peças, e não se sabe se a compacidade vem da música ou do tipo de arquivo MIDI. Isso não foi testado.
-- A dispersão depende do n igualado em 20. Outro n pode mudar a ordem.
+- A dispersão depende do n igualado em 20. Outro n pode mudar a ordem; entre as passadas 1 e 2, a lista dos espalhados já mudou.
 - As obras atípicas são para leitura qualitativa. Não foram verificadas à mão.
+
+## Estilo interno da obra (Meyer)
+Pergunta: quanto do "estilo" já está dentro de uma única obra? Análise `intra_obra.py` → `metrics_intra_obra.json`, com as peças que têm 2 janelas (a do meio e a de 1/6; todas as 2.183), camada 6, média, espaço centrado, cosseno.
+
+| distância cosseno média | valor |
+|---|---|
+| entre janelas da mesma peça | 0,434 |
+| entre peças diferentes do mesmo compositor | 0,789 |
+| entre compositores diferentes | 1,005 |
+
+- Variância entre janelas explicada pela peça: R² = 0,783. Explicada pelo compositor: R² = 0,224.
+- Conferência no nível de peça com 2 janelas: R² do compositor = 0,275 (é o número de H3 acima).
+
+**Leitura (cautelosa):**
+- Duas janelas da mesma obra ficam bem mais perto uma da outra (0,43) do que duas obras do mesmo compositor (0,79), e estas só um pouco mais perto do que obras de compositores diferentes (1,01). Cada obra tem identidade própria forte; o compositor aparece como um agrupamento mais frouxo dessas identidades.
+- Isso é coerente com a imagem de "nuvem" de H3: parte da dispersão do compositor é variação entre obras, não ruído dentro delas.
+- Limites: o R² por peça se apoia em só 2 janelas por peça, não tem nulo próprio e não tem IC. As duas janelas de uma peça compartilham tonalidade, textura, andamento e o arquivo MIDI, então "identidade da obra" mistura estilo da obra com características do arquivo; isso não foi separado. O R² do compositor entre janelas (0,224) e entre peças (0,275) têm unidades diferentes (janela contra média de 2 janelas) e não devem ser lidos como a mesma quantidade.
+- Não é uma medida direta do "estilo interno" no sentido musical de Meyer (expectativas dentro da obra), e sim da variação do vetor do modelo entre trechos de uma mesma peça.
 
 ## Figuras
 - [Dispersão por compositor](figs/dispersao.png)
@@ -47,4 +66,5 @@ Quanto da variação entre peças é explicado pelo compositor? O estilo é um p
 ## Ideias fora do escopo
 - Direções de desvio por compositor; gênero contra compositor com modelo misto (previstos como "depois").
 - IC bootstrap para o R² e para o R² do gênero, com nulo de mesmo número de grupos.
+- Janela da passada 3 (5/6) para três pontos por peça no estudo do estilo interno, se houver.
 - Checar se os compositores mais compactos têm arquivos MIDI mais homogêneos (duração, polifonia).

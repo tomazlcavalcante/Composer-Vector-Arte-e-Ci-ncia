@@ -9,6 +9,7 @@ Somar o vetor de um compositor move a música na direção esperada? O que há e
 
 ## Configuração
 - Camada 6, pooling média. Um único par: Bach → Chopin.
+- **Passada 1:** esta frente continua com os centróides da passada 1 (1 janela por peça); não foi refeita com as 2 janelas (DIARIO, 2026-11-08, que registra a direção Bach → Chopin como quase inalterada). Os números abaixo (inclusive 0,880, 0,942 e a ρ = 0,53 de t × nascimento) são os da passada 1.
 - **(a) Geométrico:** distância de cada outro centróide ao segmento Bach → Chopin e parâmetro t da projeção. Distância Bach–Chopin: 0,880.
 - **(b) Steering:** vetor somado na camada 6 (forma h ← (h + αv)|h|/|h + αv|), norma igual à mediana de ‖h‖. 120 tokens novos a partir de 50 eventos de semente. Continuação relida sem steering.
 - Progresso = projeção na direção Bach → Chopin (0 = centróide de Bach, 1 = centróide de Chopin).
