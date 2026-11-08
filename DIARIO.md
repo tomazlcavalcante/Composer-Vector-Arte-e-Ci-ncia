@@ -149,3 +149,12 @@ Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a
 ## 2026-11-08, 08:45 — descritores independentes do steering (princípio 7 do plano)
 
 `analysis/F7_deslocamento/descritores.py`, com 7 sementes de Bach × 2 amostras × {nenhum, aleatório, centrado de Chopin α = 1}, descritores só da continuação. O vetor de Chopin alonga as notas (0,30 → 0,65 s; Chopin 0,63; 7/7) e aumenta a polifonia (2,4 → 3,0), na direção de Chopin. Mas reduz as notas por segundo (9,0 → 4,8; 7/7) e a altura média, **contra** a direção de Chopin. A lentidão dos exemplos MIDI é sistemática e vem de notas mais longas e espaçadas. **Decisão:** relatar como "o vetor muda a textura de forma parcialmente compatível com Chopin". RESULTADOS (Q4) e o slide 7 foram atualizados.
+
+## 2026-11-08, 08:55 — steering em outros pares (generalização de H6)
+
+Três pares novos, cada um com 7 sementes, 1 amostra e α = 1: Haydn → Mozart (próximos), Mozart → Debussy (distantes) e Joplin → Chopin (intermediários).
+- Mozart → Debussy: o centrado supera o aleatório em 6 de 7 sementes (p = 0,031).
+- Joplin → Chopin: 5 de 7 (p = 0,69), sem efeito claro.
+- Haydn → Mozart: não interpretável. A distância entre os centróides é de 0,10, então o eixo fica mal definido e o progresso sai de 0–1.
+
+**Decisão:** H6 passa a "vale em 3 de 4 direções interpretáveis, todas entre compositores distantes", com veredito "enfraquece" na VALIDADE (linha 9b). Resumo em `pares_resumo.csv`; RESULTADOS, REPORT da F7 e slide 7 atualizados.

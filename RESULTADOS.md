@@ -124,6 +124,18 @@ Pegamos um modelo que aprendeu a prever música, o Anticipatory Music Transforme
 - Que não há quebra: não vimos aumento da repetição até α = 1,5, mas isso não garante música coerente. Não houve escuta nem outro par, outro eixo ou outra métrica. O eixo de medida é o mesmo que o vetor centrado empurra.
 - Que os pontos intermediários caem perto dos clássicos: isso só foi visto na geometria, não no steering.
 
+**Outros pares** (`analysis/F7_deslocamento/pares_resumo.csv`; 7 sementes, 1 amostra por condição, α = 1, centróides de 2 janelas, exceto Bach → Chopin, que usa a base "forte" de 1 janela):
+
+| Par | Distância entre centróides | Nenhum | Aleatório | Centrado | Centrado > aleatório |
+|---|---|---|---|---|---|
+| Bach → Chopin | 1,60 | 0,39 | 0,43 | 0,68 | 7/7 (p = 0,016) |
+| Chopin → Bach | 1,60 | 0,33 | 0,29 | 0,46 | 7/7 (p = 0,016) |
+| Mozart → Debussy | 1,71 | 0,23 | 0,28 | 0,50 | 6/7 (p = 0,031) |
+| Joplin → Chopin | 1,11 | 0,44 | 0,49 | 0,55 | 5/7 (p = 0,69) |
+| Haydn → Mozart | 0,10 | — | — | — | não interpretável |
+
+O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → Chopin. Haydn e Mozart estão quase sobrepostos no mapa (distância de 0,10), então o eixo "origem → alvo" não está bem definido e o progresso sai do intervalo 0–1. **Leitura:** H6 deixa de depender de um par só, mas não vale para qualquer par. Nos três pares em que funcionou, os compositores estão distantes no mapa (distância ≥ 1,6). Com 4 pares, a relação entre distância e efeito é só sugestiva.
+
 **Checagem com descritores independentes do modelo** (`analysis/F7_deslocamento/metrics_descritores.json`; 7 sementes de Bach × 2 amostras, continuações de 40 notas, vetor centrado de Chopin com α = 1). Medimos a música gerada sem usar o modelo, com estatísticas simples das notas. O resultado é misto:
 - **Vão na direção de Chopin:** a duração média das notas sobe de 0,30 s para 0,65 s em 7 de 7 sementes (referência: Bach 0,37 s, Chopin 0,63 s). A polifonia sobe de 2,4 para 3,0 (6 de 7 contra a condição sem steering; 7 de 7 contra o aleatório). A dispersão das alturas aumenta em relação ao vetor aleatório (7 de 7).
 - **Vão contra:** as notas por segundo caem de 9,0 para 4,8 (7 de 7), embora Chopin seja mais denso que Bach na referência (9,3 contra 8,0). A altura média cai cerca de 3 semitons.

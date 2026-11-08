@@ -1,0 +1,6 @@
+par,dist_centroides,nenhum,aleatorio,centrado,ganho_vs_nenhum,sementes_pos,p_vs_aleat,t05
+Bach→Chopin,1.5963,0.392,0.433,0.684,0.292,7/7,0.016,0.338
+Chopin→Bach,1.5963,0.325,0.287,0.461,0.136,7/7,0.016,0.408
+Haydn→Mozart,0.1012,1.92,1.874,1.698,-0.222,3/7,0.219,1.763
+Mozart→Debussy,1.7146,0.225,0.278,0.497,0.272,6/7,0.031,0.332
+Joplin→Chopin,1.1067,0.441,0.489,0.545,0.103,5/7,0.688,0.421

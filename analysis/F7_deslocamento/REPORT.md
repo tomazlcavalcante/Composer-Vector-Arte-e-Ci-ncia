@@ -111,3 +111,17 @@ Interpretação (cautelosa):
 - Altura média desloca para baixo (60,7), contra a referência (diferença Bach–Chopin é pequena, 0,5 semitom). Desvio e extensão da altura sobem em relação ao aleatório (7/7, 6/7), mas não de forma distinguível de "nenhum" (p = 0,22); os dois controles (nenhum, aleatório) têm valores abaixo da referência de Bach, ou seja, a continuação gerada é mais estreita que a janela real em qualquer condição.
 - Convergência parcial, então: duração e polifonia (e, contra o aleatório, dispersão de altura) acompanham a direção de Chopin; notas/s e altura média não.
 - Ressalvas: n = 7 sementes (p mínimo 0,016), um só par e uma só camada/α; as 2 amostras por semente não são independentes; descritores simples, que não capturam harmonia ou textura; a referência é uma janela de 341 eventos, a continuação tem só 40 notas (descritores mais ruidosos, e notas/s e polifonia dependem do intervalo medido); a polifonia pode subir só porque durações maiores sobrepõem mais, e o aumento de duração e a queda de notas/s são um mesmo fenômeno de andamento; sem controle de comprimento do trecho; sem verificação auditiva.
+
+## Outros pares (rodada contínua, 08/11)
+
+**Outros pares** (`analysis/F7_deslocamento/pares_resumo.csv`; 7 sementes, 1 amostra por condição, α = 1, centróides de 2 janelas, exceto Bach → Chopin, que usa a base "forte" de 1 janela):
+
+| Par | Distância entre centróides | Nenhum | Aleatório | Centrado | Centrado > aleatório |
+|---|---|---|---|---|---|
+| Bach → Chopin | 1,60 | 0,39 | 0,43 | 0,68 | 7/7 (p = 0,016) |
+| Chopin → Bach | 1,60 | 0,33 | 0,29 | 0,46 | 7/7 (p = 0,016) |
+| Mozart → Debussy | 1,71 | 0,23 | 0,28 | 0,50 | 6/7 (p = 0,031) |
+| Joplin → Chopin | 1,11 | 0,44 | 0,49 | 0,55 | 5/7 (p = 0,69) |
+| Haydn → Mozart | 0,10 | — | — | — | não interpretável |
+
+O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → Chopin. Haydn e Mozart estão quase sobrepostos no mapa (distância de 0,10), então o eixo "origem → alvo" não está bem definido e o progresso sai do intervalo 0–1. **Leitura:** H6 deixa de depender de um par só, mas não vale para qualquer par. Nos três pares em que funcionou, os compositores estão distantes no mapa (distância ≥ 1,6). Com 4 pares, a relação entre distância e efeito é só sugestiva.

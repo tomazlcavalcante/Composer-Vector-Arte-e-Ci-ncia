@@ -58,6 +58,8 @@ Tempo: cerca de 1 minuto por slide (slides 1 e 12 mais curtos; 4, 5 e 7 podem pa
 
 - **Reforço com medida independente:** com o vetor de Chopin, as notas da música gerada ficam mais longas (0,30 s → 0,65 s; Chopin tem 0,63 s) em 7 de 7 sementes. Ao mesmo tempo ela fica menos densa (contra o perfil de Chopin). Frase sugerida: "o vetor muda a textura de um jeito que lembra Chopin em parte, mas não o imita".
 
+- **Generalização:** o efeito se repete em Chopin → Bach e Mozart → Debussy, mas falha em Joplin → Chopin (5/7, p = 0,69). Haydn → Mozart não é interpretável (estão sobrepostos no mapa). Dizer: "funciona entre estilos distantes; não é garantido para qualquer par".
+
 ## Slide 8. A surpresa do modelo cresce, em média, com a época, mas é a surpresa deste modelo, não a de um ouvinte
 
 - **Visual:** `analysis/F8_expectativa/figs/surpresa_por_compositor.png`. Apontar Victoria, os barrocos e o ragtime à esquerda da média; Scharwenka, Rzewski, Scriabin e Lack à direita.

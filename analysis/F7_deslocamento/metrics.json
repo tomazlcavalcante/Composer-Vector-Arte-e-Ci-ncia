@@ -298,5 +298,170 @@
     "n": 7
    }
   ]
+ },
+ "b_forte_Haydn_Mozart": {
+  "origem": "Haydn, Joseph",
+  "alvo": "Mozart, Wolfgang Amadeus",
+  "n_novos_tokens": 120,
+  "resumo": [
+   {
+    "cond": "aleatorio",
+    "alpha": 1.0,
+    "progresso": 1.874,
+    "progresso_dp": 0.305,
+    "repeticao": 0.15,
+    "n": 7
+   },
+   {
+    "cond": "caminho_t0",
+    "alpha": 1.0,
+    "progresso": 1.699,
+    "progresso_dp": 0.253,
+    "repeticao": 0.105,
+    "n": 7
+   },
+   {
+    "cond": "caminho_t0.5",
+    "alpha": 1.0,
+    "progresso": 1.763,
+    "progresso_dp": 0.243,
+    "repeticao": 0.083,
+    "n": 7
+   },
+   {
+    "cond": "caminho_t1",
+    "alpha": 1.0,
+    "progresso": 1.767,
+    "progresso_dp": 0.222,
+    "repeticao": 0.071,
+    "n": 7
+   },
+   {
+    "cond": "centrado",
+    "alpha": 1.0,
+    "progresso": 1.698,
+    "progresso_dp": 0.147,
+    "repeticao": 0.18,
+    "n": 7
+   },
+   {
+    "cond": "nenhum",
+    "alpha": 0.0,
+    "progresso": 1.92,
+    "progresso_dp": 0.345,
+    "repeticao": 0.068,
+    "n": 7
+   }
+  ]
+ },
+ "b_forte_Mozart_Debussy": {
+  "origem": "Mozart, Wolfgang Amadeus",
+  "alvo": "Debussy, Claude",
+  "n_novos_tokens": 120,
+  "resumo": [
+   {
+    "cond": "aleatorio",
+    "alpha": 1.0,
+    "progresso": 0.278,
+    "progresso_dp": 0.147,
+    "repeticao": 0.068,
+    "n": 7
+   },
+   {
+    "cond": "caminho_t0",
+    "alpha": 1.0,
+    "progresso": 0.15,
+    "progresso_dp": 0.161,
+    "repeticao": 0.049,
+    "n": 7
+   },
+   {
+    "cond": "caminho_t0.5",
+    "alpha": 1.0,
+    "progresso": 0.332,
+    "progresso_dp": 0.148,
+    "repeticao": 0.075,
+    "n": 7
+   },
+   {
+    "cond": "caminho_t1",
+    "alpha": 1.0,
+    "progresso": 0.533,
+    "progresso_dp": 0.128,
+    "repeticao": 0.004,
+    "n": 7
+   },
+   {
+    "cond": "centrado",
+    "alpha": 1.0,
+    "progresso": 0.497,
+    "progresso_dp": 0.085,
+    "repeticao": 0.117,
+    "n": 7
+   },
+   {
+    "cond": "nenhum",
+    "alpha": 0.0,
+    "progresso": 0.225,
+    "progresso_dp": 0.171,
+    "repeticao": 0.086,
+    "n": 7
+   }
+  ]
+ },
+ "b_forte_Joplin_Chopin": {
+  "origem": "Joplin, Scott",
+  "alvo": "Chopin, Frédéric",
+  "n_novos_tokens": 120,
+  "resumo": [
+   {
+    "cond": "aleatorio",
+    "alpha": 1.0,
+    "progresso": 0.489,
+    "progresso_dp": 0.114,
+    "repeticao": 0.015,
+    "n": 7
+   },
+   {
+    "cond": "caminho_t0",
+    "alpha": 1.0,
+    "progresso": 0.408,
+    "progresso_dp": 0.111,
+    "repeticao": 0.011,
+    "n": 7
+   },
+   {
+    "cond": "caminho_t0.5",
+    "alpha": 1.0,
+    "progresso": 0.421,
+    "progresso_dp": 0.122,
+    "repeticao": 0.015,
+    "n": 7
+   },
+   {
+    "cond": "caminho_t1",
+    "alpha": 1.0,
+    "progresso": 0.6,
+    "progresso_dp": 0.125,
+    "repeticao": 0.015,
+    "n": 7
+   },
+   {
+    "cond": "centrado",
+    "alpha": 1.0,
+    "progresso": 0.545,
+    "progresso_dp": 0.142,
+    "repeticao": 0.015,
+    "n": 7
+   },
+   {
+    "cond": "nenhum",
+    "alpha": 0.0,
+    "progresso": 0.441,
+    "progresso_dp": 0.087,
+    "repeticao": 0.015,
+    "n": 7
+   }
+  ]
  }
 }
