@@ -1,0 +1,30 @@
+{
+ "n_romanticos": 33,
+ "n_pecas": 1217,
+ "n_pares": 528,
+ "n_pares_mesma_nac": 72,
+ "contagem_nacionalidades": {
+  "Francês": 9,
+  "Alemão": 8,
+  "Russo": 3,
+  "Austríaco": 2,
+  "Americano": 2,
+  "Norueguês": 2,
+  "Húngaro": 2,
+  "Suíço": 2,
+  "Italiano": 1,
+  "Polonês": 1,
+  "Brasileiro": 1
+ },
+ "rho_dist_vs_dnasc": 0.1643,
+ "coef_linear": [
+  0.0035816884959307435,
+  0.7003845910957379
+ ],
+ "rho_nac_bruto": 0.0126,
+ "rho_parcial": -0.0069,
+ "p_unicaudal": 0.5198960207958409,
+ "nulo_media": 0.0001,
+ "nulo_p95": 0.0936,
+ "n_perm": 5000
+}

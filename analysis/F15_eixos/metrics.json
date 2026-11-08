@@ -1,0 +1,10 @@
+{
+ "n_pecas": 2103,
+ "n_pecas_sem_descritor": 0,
+ "n_compositores": 52,
+ "pca_explicada": [
+  0.3384999930858612,
+  0.19329999387264252
+ ],
+ "n_perm": 10000
+}

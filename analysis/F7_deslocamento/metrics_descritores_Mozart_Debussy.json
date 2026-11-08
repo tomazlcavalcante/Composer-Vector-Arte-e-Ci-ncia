@@ -1,0 +1,304 @@
+{
+ "config": {
+  "camada": 6,
+  "alpha": 1.0,
+  "novos": 120,
+  "reps": 2,
+  "n_sementes": 7
+ },
+ "referencia": {
+  "Debussy, Claude": {
+   "notas_por_s": {
+    "media": 8.901523754618156,
+    "dp": 4.6879730226430825,
+    "n": 27
+   },
+   "altura_media": {
+    "media": 64.92038666232214,
+    "dp": 5.094008825410191,
+    "n": 27
+   },
+   "altura_dp": {
+    "media": 12.13719256571021,
+    "dp": 2.4502955875408783,
+    "n": 27
+   },
+   "extensao_p95_p5": {
+    "media": 39.592592592592595,
+    "dp": 9.30781003433824,
+    "n": 27
+   },
+   "dur_media_s": {
+    "media": 0.9452470946019332,
+    "dp": 0.48816612916607705,
+    "n": 27
+   },
+   "polifonia_media": {
+    "media": 6.902565472280604,
+    "dp": 2.455989701799626,
+    "n": 27
+   },
+   "entropia_classes": {
+    "media": 3.1532348984952527,
+    "dp": 0.2626716385761826,
+    "n": 27
+   }
+  },
+  "Mozart, Wolfgang Amadeus": {
+   "notas_por_s": {
+    "media": 8.137940144406198,
+    "dp": 2.9814814114333283,
+    "n": 72
+   },
+   "altura_media": {
+    "media": 65.52275948595621,
+    "dp": 3.5034806802986944,
+    "n": 72
+   },
+   "altura_dp": {
+    "media": 10.538824509959243,
+    "dp": 2.0693199885342555,
+    "n": 72
+   },
+   "extensao_p95_p5": {
+    "media": 33.556250000000006,
+    "dp": 7.072287403642355,
+    "n": 72
+   },
+   "dur_media_s": {
+    "media": 0.3833408641958299,
+    "dp": 0.21846323429953773,
+    "n": 72
+   },
+   "polifonia_media": {
+    "media": 2.752301794717644,
+    "dp": 1.0341501736619945,
+    "n": 72
+   },
+   "entropia_classes": {
+    "media": 3.052183514100311,
+    "dp": 0.21209555833704097,
+    "n": 72
+   }
+  }
+ },
+ "steering": {
+  "notas_por_s": {
+   "mozart_ref": {
+    "media": 8.137940144406198,
+    "dp": 2.9814814114333283,
+    "n": 72
+   },
+   "debussy_ref": {
+    "media": 8.901523754618156,
+    "dp": 4.6879730226430825,
+    "n": 27
+   },
+   "direcao_debussy": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 10.330446464799754,
+    "centrado": 7.043701798139687,
+    "nenhum": 9.524074208655785
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": -2.4803724105160976,
+    "sementes_na_direcao_debussy": 1,
+    "sementes_contra": 6,
+    "wilcoxon_p": 0.15625
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": -3.2867446666600677,
+    "sementes_na_direcao_debussy": 1,
+    "sementes_contra": 6,
+    "wilcoxon_p": 0.03125
+   }
+  },
+  "altura_media": {
+   "mozart_ref": {
+    "media": 65.52275948595621,
+    "dp": 3.5034806802986944,
+    "n": 72
+   },
+   "debussy_ref": {
+    "media": 64.92038666232214,
+    "dp": 5.094008825410191,
+    "n": 27
+   },
+   "direcao_debussy": -1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 66.13392857142856,
+    "centrado": 63.81964285714286,
+    "nenhum": 65.72142857142856
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": -1.9017857142857122,
+    "sementes_na_direcao_debussy": 4,
+    "sementes_contra": 3,
+    "wilcoxon_p": 0.46875
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": -2.3142857142857074,
+    "sementes_na_direcao_debussy": 5,
+    "sementes_contra": 2,
+    "wilcoxon_p": 0.109375
+   }
+  },
+  "altura_dp": {
+   "mozart_ref": {
+    "media": 10.538824509959243,
+    "dp": 2.0693199885342555,
+    "n": 72
+   },
+   "debussy_ref": {
+    "media": 12.13719256571021,
+    "dp": 2.4502955875408783,
+    "n": 27
+   },
+   "direcao_debussy": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 9.63009483057054,
+    "centrado": 13.939649707994645,
+    "nenhum": 10.310855912761326
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 3.62879379523332,
+    "sementes_na_direcao_debussy": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 4.3095548774241035,
+    "sementes_na_direcao_debussy": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   }
+  },
+  "extensao_p95_p5": {
+   "mozart_ref": {
+    "media": 33.556250000000006,
+    "dp": 7.072287403642355,
+    "n": 72
+   },
+   "debussy_ref": {
+    "media": 39.592592592592595,
+    "dp": 9.30781003433824,
+    "n": 27
+   },
+   "direcao_debussy": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 30.232142857142854,
+    "centrado": 45.64642857142856,
+    "nenhum": 31.767857142857142
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 13.878571428571428,
+    "sementes_na_direcao_debussy": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 15.414285714285711,
+    "sementes_na_direcao_debussy": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   }
+  },
+  "dur_media_s": {
+   "mozart_ref": {
+    "media": 0.3833408641958299,
+    "dp": 0.21846323429953773,
+    "n": 72
+   },
+   "debussy_ref": {
+    "media": 0.9452470946019332,
+    "dp": 0.48816612916607705,
+    "n": 27
+   },
+   "direcao_debussy": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 0.2845357142857143,
+    "centrado": 1.0542321428571428,
+    "nenhum": 0.28864285714285715
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 0.7655892857142856,
+    "sementes_na_direcao_debussy": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 0.7696964285714285,
+    "sementes_na_direcao_debussy": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   }
+  },
+  "polifonia_media": {
+   "mozart_ref": {
+    "media": 2.752301794717644,
+    "dp": 1.0341501736619945,
+    "n": 72
+   },
+   "debussy_ref": {
+    "media": 6.902565472280604,
+    "dp": 2.455989701799626,
+    "n": 27
+   },
+   "direcao_debussy": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 2.2983113205882444,
+    "centrado": 4.585897138467219,
+    "nenhum": 2.3718423411532146
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": 2.2140547973140046,
+    "sementes_na_direcao_debussy": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 2.2875858178789743,
+    "sementes_na_direcao_debussy": 7,
+    "sementes_contra": 0,
+    "wilcoxon_p": 0.015625
+   }
+  },
+  "entropia_classes": {
+   "mozart_ref": {
+    "media": 3.052183514100311,
+    "dp": 0.21209555833704097,
+    "n": 72
+   },
+   "debussy_ref": {
+    "media": 3.1532348984952527,
+    "dp": 0.2626716385761826,
+    "n": 27
+   },
+   "direcao_debussy": 1.0,
+   "n_sementes": 7,
+   "media_cond": {
+    "aleatorio": 2.582817674586436,
+    "centrado": 2.661171170907854,
+    "nenhum": 2.7641876169418147
+   },
+   "centrado_menos_nenhum": {
+    "diff_media": -0.1030164460339604,
+    "sementes_na_direcao_debussy": 1,
+    "sementes_contra": 6,
+    "wilcoxon_p": 0.21875
+   },
+   "centrado_menos_aleatorio": {
+    "diff_media": 0.07835349632141904,
+    "sementes_na_direcao_debussy": 4,
+    "sementes_contra": 3,
+    "wilcoxon_p": 0.8125
+   }
+  }
+ }
+}

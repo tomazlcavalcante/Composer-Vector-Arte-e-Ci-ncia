@@ -125,3 +125,20 @@ Interpretação (cautelosa):
 | Haydn → Mozart | 0,10 | — | — | — | não interpretável |
 
 O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → Chopin. Haydn e Mozart estão quase sobrepostos no mapa (distância de 0,10), então o eixo "origem → alvo" não está bem definido e o progresso sai do intervalo 0–1. **Leitura:** H6 deixa de depender de um par só, mas não vale para qualquer par. Nos três pares em que funcionou, os compositores estão distantes no mapa (distância ≥ 1,6). Com 4 pares, a relação entre distância e efeito é só sugestiva.
+
+## Descritores em Mozart → Debussy (H19; `descritores.py --src "Mozart, Wolfgang Amadeus" --tgt "Debussy, Claude"`; `*_Mozart_Debussy.*`)
+Mesmo procedimento da seção anterior (camada 6, α = 1, 7 sementes de Mozart × 2 amostras, 120 tokens novos, descritores só da continuação, 2 janelas por peça nos centróides). Referência: janela do meio de todas as peças de Mozart e de Debussy. Foi acrescentada a entropia de classes de altura (bits, máx. 3,58), só nos pares novos; o padrão Bach → Chopin continua com 6 descritores. "Direção de Debussy" = sinal de média_Debussy − média_Mozart. Sementes na direção (vs nenhum; vs aleatório) e p de Wilcoxon (centrado − nenhum; centrado − aleatório):
+
+| descritor | Mozart | Debussy | nenhum | aleatório | centrado | sementes na direção de Debussy | p |
+|---|---|---|---|---|---|---|---|
+| entropia de classes | 3,05 ± 0,21 | 3,15 ± 0,26 | 2,76 | 2,58 | 2,66 | 1/7; 4/7 | 0,22; 0,81 |
+| polifonia média | 2,75 ± 1,03 | 6,90 ± 2,46 | 2,37 | 2,30 | 4,59 | 7/7; 7/7 | 0,016; 0,016 |
+| duração média (s) | 0,38 ± 0,22 | 0,95 ± 0,49 | 0,29 | 0,28 | 1,05 | 7/7; 7/7 | 0,016; 0,016 |
+| notas por s | 8,14 ± 2,98 | 8,90 ± 4,69 | 9,52 | 10,33 | 7,04 | 1/7; 1/7 | 0,16; 0,031 |
+| altura média | 65,5 ± 3,5 | 64,9 ± 5,1 | 65,7 | 66,1 | 63,8 | 4/7 (direção -); 5/7 | 0,47; 0,11 |
+| desvio da altura | 10,5 ± 2,1 | 12,1 ± 2,5 | 10,3 | 9,6 | 13,9 | 7/7; 7/7 | 0,016; 0,016 |
+| extensão p95−p5 | 33,6 ± 7,1 | 39,6 ± 9,3 | 31,8 | 30,2 | 45,7 | 7/7; 7/7 | 0,016; 0,016 |
+
+- **H19 parcialmente apoiada.** Dos três descritores nomeados, polifonia e duração vão na direção de Debussy em 7/7 sementes contra os dois controles. A entropia de classes de altura **não**: 1/7 contra nenhum e 4/7 contra aleatório (p ≥ 0,22), e o centrado (2,66) fica abaixo do nenhum (2,76).
+- **Genérico × específico.** O padrão se parece muito com o de Bach → Chopin: notas bem mais longas (0,29 → 1,05 s; Bach → Chopin 0,30 → 0,65), mais sobrepostas (2,4 → 4,6; antes 2,4 → 3,0), menos notas por segundo (9,5 → 7,0, contra a direção da referência, como antes) e altura média mais baixa (65,7 → 63,8; antes 63,6 → 60,7). Os mesmos descritores mudam do mesmo jeito em dois alvos diferentes, o que é o que se espera de um efeito genérico do steering ("notas longas, sustentadas, espaçadas"). A direção de Debussy coincide com essa mudança em duração e polifonia só porque Debussy também tem notas longas e muito sobrepostas; o que seria específico do alvo, a entropia de classes (cromatismo), não se move. A diferença que sobra é de intensidade (duração e polifonia sobem mais aqui, e Debussy tem valores de referência maiores) e a dispersão/extensão de altura, que aqui sobem em 7/7 contra o nenhum e o aleatório (antes, só contra o aleatório). Leitura: **mais genérico que específico**; compatível com Debussy em duração e polifonia, mas sem evidência de que o conteúdo harmônico do alvo seja transportado.
+- Ressalvas: o argumento depende de comparar dois pares; sem um alvo de controle com perfil oposto (notas curtas e pouco sobrepostas, p. ex. um barroco ou ragtime) não dá para separar efeito genérico de efeito do alvo. Mesmas limitações da seção anterior (n = 7, amostras não independentes, continuação de 40 notas, polifonia e notas/s ligadas à duração, sem escuta). A referência usa `list_pieces` sem a remoção de duplicatas, o que não afeta este experimento. A referência de Mozart/Debussy tem diferenças de entropia pequenas (3,05 contra 3,15), então o teste de entropia tem pouca margem em qualquer caso.

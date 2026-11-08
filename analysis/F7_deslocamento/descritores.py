@@ -5,8 +5,10 @@ notas/s, altura média, desvio da altura, extensão (p95-p5), duração média (
 1) referência: janela do meio (fração 0,5) de todas as peças de Bach e de Chopin;
 2) experimento: continuação gerada (lógica de run.py --set forte) nas condições nenhum, aleatório α=1, centrado Chopin α=1;
 3) comparação pareada por semente (média das amostras), Wilcoxon e nº de sementes na direção de Chopin.
-Uso: CV_WINDOWS=1,2 python descritores.py
+Uso: CV_WINDOWS=1,2 python descritores.py [--src "Bach, Johann Sebastian"] [--tgt "Chopin, Frédéric"]
+Padrão Bach -> Chopin (arquivos sem sufixo); outros pares gravam com sufixo _Origem_Alvo (sobrenomes).
 """
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -25,16 +27,25 @@ from anticipation.convert import midi_to_events  # noqa: E402
 from anticipation.vocab import AUTOREGRESS, TIME_OFFSET, DUR_OFFSET, NOTE_OFFSET  # noqa: E402
 from extract_amt import window  # noqa: E402
 
-SRC, TGT = "Bach, Johann Sebastian", "Chopin, Frédéric"
+ap = argparse.ArgumentParser()
+ap.add_argument("--src", default="Bach, Johann Sebastian")
+ap.add_argument("--tgt", default="Chopin, Frédéric")
+args = ap.parse_args()
+SRC, TGT = args.src, args.tgt
+SN, TN = SRC.split(",")[0].strip(), TGT.split(",")[0].strip()
+SUF = "" if (SRC, TGT) == ("Bach, Johann Sebastian", "Chopin, Frédéric") else f"_{SN}_{TN}"
+SL, TL = SN.lower(), TN.lower()
 NEW, NSEED, REPS, ALPHA = 120, 7, 2, 1.0
 DESC = ["notas_por_s", "altura_media", "altura_dp", "extensao_p95_p5", "dur_media_s", "polifonia_media"]
+if SUF:  # pares novos incluem a entropia de classes de altura (H19); o padrão Bach -> Chopin fica como era
+    DESC.append("entropia_classes")
 
 
 def descritores(tokens):
     """tokens: lista de eventos (múltiplo de 3), tempo relativo ao início."""
     n = len(tokens) // 3
     if n < 3:
-        return {k: np.nan for k in DESC}
+        return {k: np.nan for k in DESC + ["entropia_classes"]}
     t = np.array(tokens[0:3 * n:3], float) - TIME_OFFSET
     d = np.array(tokens[1:3 * n:3], float) - DUR_OFFSET
     p = (np.array(tokens[2:3 * n:3]) - NOTE_OFFSET) % 128
@@ -43,7 +54,9 @@ def descritores(tokens):
     span = max(t1 - t0, 1e-6)
     grid = np.arange(t0, t1, 0.05)
     poly = ((on[None, :] <= grid[:, None]) & (grid[:, None] < off[None, :])).sum(1).mean() if len(grid) else np.nan
-    return dict(notas_por_s=n / span, altura_media=p.mean(), altura_dp=p.std(),
+    h = np.bincount((p % 12).astype(int), minlength=12) / n
+    ent = float(-(h[h > 0] * np.log2(h[h > 0])).sum())
+    return dict(entropia_classes=ent, notas_por_s=n / span, altura_media=p.mean(), altura_dp=p.std(),
                 extensao_p95_p5=np.percentile(p, 95) - np.percentile(p, 5), dur_media_s=(d * 0.01).mean(),
                 polifonia_media=poly)
 
@@ -61,7 +74,7 @@ for p in pieces:
         continue
     rows.append(dict(piece_id=p.piece_id, composer=p.composer_key, **descritores(ev)))
 ref = pd.DataFrame(rows)
-ref.to_csv(HERE / "descritores_ref.csv", index=False)
+ref.to_csv(HERE / f"descritores_ref{SUF}.csv", index=False)
 refsum = {c: {d: dict(media=float(g[d].mean()), dp=float(g[d].std()), n=int(g[d].notna().sum())) for d in DESC}
           for c, g in ref.groupby("composer")}
 print(json.dumps(refsum, indent=1, ensure_ascii=False), flush=True)
@@ -148,24 +161,24 @@ for sid in seeds_ids:
             rows.append(dict(seed=sid, cond=name, rep=rep, **descritores(cont)))
             print(rows[-1], flush=True)
 st = pd.DataFrame(rows)
-st.to_csv(HERE / "descritores_steering.csv", index=False)
+st.to_csv(HERE / f"descritores_steering{SUF}.csv", index=False)
 
 # ---------------- comparações pareadas ----------------
 m = st.groupby(["seed", "cond"])[DESC].mean().reset_index()
 res = {}
 for d in DESC:
     w = m.pivot(index="seed", columns="cond", values=d).dropna()
-    r = dict(bach_ref=refsum[SRC][d], chopin_ref=refsum[TGT][d], direcao_chopin=direcao[d], n_sementes=len(w),
-             media_cond={c: float(w[c].mean()) for c in w.columns})
+    r = {f"{SL}_ref": refsum[SRC][d], f"{TL}_ref": refsum[TGT][d], f"direcao_{TL}": direcao[d], "n_sementes": len(w),
+             "media_cond": {c: float(w[c].mean()) for c in w.columns}}
     for nome, base in (("centrado_menos_nenhum", "nenhum"), ("centrado_menos_aleatorio", "aleatorio")):
         diff = (w["centrado"] - w[base]).values
         try:
             pv = float(wilcoxon(diff).pvalue)
         except ValueError:
             pv = float("nan")
-        r[nome] = dict(diff_media=float(diff.mean()), sementes_na_direcao_chopin=int((diff * direcao[d] > 0).sum()),
-                       sementes_contra=int((diff * direcao[d] < 0).sum()), wilcoxon_p=pv)
+        r[nome] = {"diff_media": float(diff.mean()), f"sementes_na_direcao_{TL}": int((diff * direcao[d] > 0).sum()),
+                   "sementes_contra": int((diff * direcao[d] < 0).sum()), "wilcoxon_p": pv}
     res[d] = r
-(HERE / "metrics_descritores.json").write_text(json.dumps(dict(config=dict(camada=LAYER, alpha=ALPHA, novos=NEW, reps=REPS, n_sementes=NSEED),
+(HERE / f"metrics_descritores{SUF}.json").write_text(json.dumps(dict(config=dict(camada=LAYER, alpha=ALPHA, novos=NEW, reps=REPS, n_sementes=NSEED),
                                                            referencia=refsum, steering=res), indent=1, ensure_ascii=False))
 print(json.dumps(res, indent=1, ensure_ascii=False))

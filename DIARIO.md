@@ -207,6 +207,16 @@ Conclusões inalteradas. A sonda era a mais inflada pelas cópias. F6 (transposi
 
 ## Ciclo de hipóteses 3 (registradas antes de rodar)
 
-- [ ] **H17 (o que o eixo do tempo "ouve"):** a posição das peças no eixo cronológico do mapa (PC1) correlaciona com descritores ligados à história da harmonia e da textura: entropia de classes de altura (cromatismo), polifonia, extensão. Espera-se ρ positivo para os três. O PC2 (eixo da dança) correlaciona com notas/s e com a regularidade rítmica.
-- [ ] **H18 (dialeto nacional dentro de uma época):** restrito aos românticos (cerca de 30 compositores), a mesma nacionalidade aproxima os centróides (Mantel parcial > 0, controlando o nascimento). Motivo: o H2 global teve pouca potência.
-- [ ] **H19 (descritores em outro par):** no steering Mozart → Debussy, o vetor de Debussy desloca os descritores da música gerada na direção do perfil de Debussy (entropia de classes de altura, polifonia, duração) em mais de 4 de 7 sementes.
+- [x] **H17 (o que o eixo do tempo "ouve"):** a posição das peças no eixo cronológico do mapa (PC1) correlaciona com descritores ligados à história da harmonia e da textura: entropia de classes de altura (cromatismo), polifonia, extensão. Espera-se ρ positivo para os três. O PC2 (eixo da dança) correlaciona com notas/s e com a regularidade rítmica.
+- [x] **H18 (dialeto nacional dentro de uma época):** restrito aos românticos (cerca de 30 compositores), a mesma nacionalidade aproxima os centróides (Mantel parcial > 0, controlando o nascimento). Motivo: o H2 global teve pouca potência.
+- [x] **H19 (descritores em outro par):** no steering Mozart → Debussy, o vetor de Debussy desloca os descritores da música gerada na direção do perfil de Debussy (entropia de classes de altura, polifonia, duração) em mais de 4 de 7 sementes.
+
+### Resultados do ciclo 3 (10:05)
+
+- **H17 confirmada (F15).** O eixo cronológico do mapa (PC1) acompanha sobretudo a polifonia (ρ = 0,85 entre compositores) e a duração das notas (0,85). Acompanha menos o cromatismo, pela entropia de classes de altura (0,60), e a extensão (0,43). O eixo da dança (PC2) acompanha notas/s (0,67), acordes (0,65) e intervalos melódicos (0,61). **Leitura:** para o modelo, "mais recente" é sobretudo mais notas soando juntas e sustentadas. O cromatismo entra, mas pesa menos.
+- **H18 não confirmada (F16).** Entre os 33 românticos, a nacionalidade não aproxima os compositores (ρ parcial = −0,01, p = 0,52). Francês, Alemão e Russo não são mais coesos que a média. É ausência de evidência, com potência baixa.
+- **H19 parcial (Mozart → Debussy).** Polifonia, duração, extensão e desvio da altura vão na direção de Debussy (7 de 7 sementes), mas a entropia de classes de altura não. O padrão é igual ao de Bach → Chopin, o que levanta a suspeita de um efeito genérico do steering ("notas longas e sustentadas").
+
+## Ciclo 4
+
+- [ ] **H20 (controle de perfil oposto):** steering de Chopin para Joplin, cujas notas são curtas e pouco sobrepostas. Se o efeito for específico do alvo, a duração e a polifonia caem e as notas/s sobem. Se for genérico, a duração e a polifonia sobem mesmo assim.
