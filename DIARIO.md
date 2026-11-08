@@ -60,3 +60,10 @@ Cada peça agora é a média de duas janelas (o meio e 1/6). As métricas da pas
 - F5: contínuo (razão 1,77, contra p95 do nulo de 2,31). A divisão em 2 grupos é estável (ARI = 0,78), com o mesmo bloco pré-romântico {Bach, Handel, Scarlatti, Haydn, Mozart, Beethoven, Hummel}.
 - F6 e F7 usaram os centróides da passada 1, com a mesma configuração. Não foram refeitos: a direção Bach → Chopin quase não muda.
 - Cuidados levantados na revisão dos REPORTs: (1) em F7, progresso de 0,68 é projeção no eixo Bach → Chopin, não "chegar a Chopin"; a distância ao centróide de Chopin segue alta (cerca de 0,93). (2) t = 0,5 fica abaixo da continuação sem steering. (3) A monotonia em α só tem o piloto (3 sementes).
+
+### Pendências para as próximas rodadas (em ordem)
+
+1. **F7:** varredura de α ∈ {0; 0,25; 0,5; 1; 1,5} com vetor centrado e aleatório, 7 sementes (testa a monotonia de H6 e acha a faixa de quebra pela taxa de repetição); par inverso Chopin → Bach; exemplo ilustrativo Tico-Tico + Nazareth. Comandos de até 10 min.
+2. **F4b:** nulo para a comparação mesma peça × mesmo compositor (permutar janelas entre peças do mesmo compositor) e IC bootstrap.
+3. **Revisão independente** (subagente que só vê REPORTs, figuras e números) e correções.
+4. **RESULTADOS.md:** conclusões por hipótese H1–H7, figuras candidatas para a apresentação e limitações.
