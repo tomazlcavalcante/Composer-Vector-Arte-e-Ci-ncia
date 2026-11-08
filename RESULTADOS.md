@@ -4,12 +4,13 @@ Ensaio para Artes e Ciência (IMPA Tech). Este texto reúne o que o estudo encon
 
 ## Abertura
 
-Pegamos um modelo que aprendeu a prever música, o Anticipatory Music Transformer small, treinado no Lakh MIDI. Pedimos a ele a "impressão digital" de 2.183 peças de piano do acervo GiantMIDI, de 52 compositores, e fizemos a média por compositor. Em seguida olhamos como o modelo organiza esses compositores no seu espaço interno. A resposta principal: o modelo organiza os compositores de forma parcialmente cronológica, com um bloco pré-romântico (Bach a Beethoven) à parte, mas sem grupos nítidos. O compositor explica só uma minoria (28%) da variação entre peças, então o estilo, nesse espaço, é mais nuvem do que ponto. Somar o vetor de Chopin aumenta, de forma parcial, a projeção da música gerada no eixo Bach → Chopin (mais do que um vetor aleatório). Testado em 4 pares, o efeito vale em 3 de 4 direções interpretáveis, todas entre compositores distantes, e falha em Joplin → Chopin.
+Pegamos um modelo que aprendeu a prever música, o Anticipatory Music Transformer small, treinado no Lakh MIDI. Pedimos a ele a "impressão digital" de 2.183 peças de piano do acervo GiantMIDI, de 52 compositores, e fizemos a média por compositor. Em seguida olhamos como o modelo organiza esses compositores no seu espaço interno. A resposta principal: o modelo organiza os compositores de forma parcialmente cronológica, com um bloco pré-romântico (Bach a Beethoven) à parte, mas sem grupos nítidos. O compositor explica só uma minoria (28%) da variação entre peças, então o estilo, nesse espaço, é mais nuvem do que ponto. Somar o vetor de Chopin aumenta, de forma parcial, a projeção da música gerada no eixo Bach → Chopin (mais do que um vetor aleatório). Testado em 4 pares, o efeito vale em 3 de 4 direções interpretáveis, todas entre compositores distantes, e falha em Joplin → Chopin. A cronologia sobrevive quando se retiram as estatísticas simples de superfície (Mantel ρ de 0,505 para 0,340) e o gênero do título (0,379), então o modelo capta mais do que densidade, registro ou forma, embora perca de um quarto a um terço do ρ. Em análise exploratória e com poucas peças, as valsas de Nazareth, Joplin e Johnson caem perto de Chopin e longe do ragtime, ao contrário dos tangos e polcas de Nazareth: para o modelo, a "valsa" atravessa culturas. Há um explorador interativo do mapa: https://claude.ai/artifact/NeP4zc74AncnZsXsZuLvvo.
 
 ## Como ler os vereditos
 
 - **Sobrevive:** nenhum controle ameaça a afirmação.
 - **Enfraquece:** vale, com ressalva.
+- **Cai:** não se sustenta.
 - "Camada 6, média" é a representação escolhida na F2 (a menos que se diga outra).
 
 ## Q0. Qual representação do modelo usar? (F2)
@@ -157,8 +158,59 @@ O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → C
 
 **O que NÃO se pode concluir.**
 - Que perda baixa é "música simples" ou "esperada por Meyer": é previsibilidade para um modelo treinado no Lakh.
-- Que a regularidade de tonalidade e ritmo explica a ordem: não foi medida (nenhum controle de densidade de notas). Compatível com ragtime e maxixe no extremo previsível, mas Raff e Victoria também estão lá, e os mais surpreendentes (Scharwenka, Lack, Rzewski) não formam um bloco estilístico óbvio.
+- Que a regularidade de tonalidade e ritmo explica a ordem: não foi medida com precisão (o controle por descritores simples está em Q6: 0,51 → 0,41). Compatível com ragtime e maxixe no extremo previsível, mas Raff e Victoria também estão lá, e os mais surpreendentes (Scharwenka, Lack, Rzewski) não formam um bloco estilístico óbvio.
 - A tendência com a época pode refletir quanto cada repertório aparece no Lakh, o ruído da transcrição automática, o gênero e o tamanho do acervo (Renascimento tem 1 compositor, Barroco 3, Clássico 4).
+
+## Q6. O modelo sabe mais que estatística de superfície? (F9, F10)
+
+**Resposta.** Sim, em parte. A cronologia continua depois de retirar descritores simples de superfície e o gênero do título, com queda de um quarto a um terço do ρ. O mapa feito só com os descritores acompanha a época bem menos que o do modelo.
+
+**Números** (camada 6, média, 2 janelas; 52 compositores, 2.183 peças; 24 descritores simbólicos sem o modelo: notas por segundo, altura, duração, polifonia, intervalos, classes de altura).
+
+| | Mantel ρ | R² do compositor | Sonda |
+|---|---|---|---|
+| Modelo (base) | 0,505 | 0,275 | 0,349 |
+| Só descritores (sem o modelo) | 0,204 | 0,187 | 0,249 |
+| Modelo sem descritores | 0,340 | 0,156 | 0,310 |
+| Modelo sem gênero (título) | 0,379 | 0,198 | n/d |
+
+- Os descritores explicam cerca de 50% (0,504) da variância das representações. RSA modelo × descritores = 0,642.
+- Surpresa × época (compositor): 0,505 → 0,411 com os descritores controlados (p = 0,002); por peça, 0,341 → 0,210. Os descritores explicam 72% da surpresa.
+- Gênero (regex do título; explica 8,7% da variância das peças): Spearman entre as matrizes de distância, base × resíduos, 0,91. O k = 2 deixa de isolar os sete pré-românticos (grupos de 30 e 22), mas os sete seguem no mesmo ramo.
+- Nulo: 1.000 permutações dos nascimentos dão p95 ≈ 0,104. Todos os ρ ficam acima; Mantel p = 0,0002 é o mínimo possível e não distingue entre eles.
+
+**Hipóteses (registradas antes, PLANO_V2).**
+- **H8** (mapa só de descritores acompanha a época, menos que o modelo): 0,204 contra 0,505. Confirmada.
+- **H9** (RSA < 0,7): 0,642. Confirmada, mas os dois mapas compartilham muito.
+- **H10** (cronologia sobrevive, ρ > 0,3): 0,340. Confirmada, com queda; a sonda cai pouco (0,349 → 0,310), o R² do compositor cai mais.
+- **H11** (surpresa × época cai, mas não some): 0,51 → 0,41. Confirmada.
+- **H12** (cronologia sobrevive ao gênero, ρ > 0,3, e o bloco continua): 0,379 confirma a primeira parte; o bloco só na leitura fraca.
+
+**Veredito (VALIDADE, linhas 13–16).** H8/H9: **sobrevive**. H10: **sobrevive, com queda**. H11: **enfraquece**. H12: **sobrevive** para a cronologia; bloco pré-romântico **enfraquece**.
+
+**O que NÃO se pode concluir.**
+- Que a cronologia independe da superfície: os descritores levam cerca de 1/3 do ρ e 72% da surpresa. A queda de 0,505 para 0,340 não foi testada (sem nulo nem IC).
+- Que o controle é completo: é linear e com descritores simples; superfície mais rica ou não linear poderia reduzir mais. As classes de altura não são transpostas, então o controle inclui tonalidade.
+- Que o gênero foi removido: 52% das peças caem em "outro" no regex do título. Gênero e época se correlacionam (fuga é barroca), então a queda não separa "gênero confundindo" de "gênero como parte do estilo da época".
+- Que o ρ restante é "conhecimento de história": pode ser gênero, instrumentação, gravação ou transcrição.
+- Controle simultâneo de gênero e descritores não foi feito; bootstrap do k = 2 sob resíduos de gênero também não.
+
+## Q7. Relações novas (F11–F13)
+
+**Finais de obra (F12, H13).** Hipótese: o final fica mais perto do centróide do período que o início (mais "convencional", no espírito de Meyer). **Cai.**
+- Δ distância ao centróide do período (final − início) = −0,0072, cerca de 1% da distância (53,1% das peças; Wilcoxon unilateral p = 0,0012). Ao centróide do compositor, −0,0054 (p = 0,016).
+- Por compositor, o sinal é só marginal (33 de 52, p = 0,035, para o período) ou nulo (26 de 52, p = 0,56, para o compositor). O sentido é oposto no Barroco e no Clássico (+0,020 e +0,033) e a favor no Romântico (−0,015) e no Moderno (−0,032).
+- A perda média quase não muda (início 2,475; final 2,472), e a correlação entre Δ distância e Δ perda é −0,16: parte do efeito parece previsibilidade ou textura simples, não "convenção". Sem correção para comparações múltiplas; pseudo-replicação por peça. Veredito (linha 17): **cai**.
+
+**Fio brasileiro e valsas (F13, H14, exploratório).** H14 (tangos e maxixes de Nazareth mais perto do ragtime que as valsas) não era testável pelo título (1 tango, 0 valsa). Os gêneros de 13 das 22 peças foram verificados em fontes externas (IMSLP, Musica Brasilis, Nazareth 150 anos, e uma fonte comercial para Rosa Maria).
+- Nazareth, 4 valsas contra 8 tangos e polcas: distância ao ragtime 1,104 contra 0,546; a Chopin 0,425 contra 1,087. Mann-Whitney unilateral p = 0,002 (separação completa, o menor p possível; sem Rosa Maria, p = 0,006).
+- Ragtime: as 4 peças com "waltz" no título (3 de Joplin, 1 de C. L. Johnson) contra 79 rags: a Chopin 0,833 contra 1,215 (p = 0,0003); ao ragtime 0,455 contra 0,217 (p = 0,0005). Na figura, o efeito não é uniforme: só duas das quatro ficam bem perto de Chopin.
+- Descritivo: Nazareth (22 peças) é o compositor mais próximo do centróide do ragtime entre os 49 fora do grupo (0,354; o 2º é Czerny, 0,579). Villa-Lobos fica longe (1,171; 47º de 49): não há fio de ragtime nele neste espaço. Tico-Tico: 0,437 ao ragtime e 1,409 a Chopin.
+- **Leitura:** para o modelo, a valsa atravessa culturas. Ressalva: valsa é 3/4 e tango e rag são 2/4, e o modelo pode estar captando só o compasso, sem "reconhecer" a valsa como categoria estilística; andamento lento, textura romântica e transcrição também não estão descartados. n muito pequeno; 9 títulos de Nazareth não verificados; valsas de ragtime identificadas só pela palavra "waltz". Veredito (linha 18): **sobrevive, exploratório**.
+
+**"À frente ou atrás do tempo" (F11), só como ilustração.** Resíduo do PC1 do mapa contra o ano de nascimento (PC1 explica 33,5%; Spearman 0,52; R² da reta 0,35), com IC95% por bootstrap de peças.
+- 37 de 52 têm IC que exclui zero. Soam mais "modernos" que a data: 19 (Victoria 0,46, Meyer-Helmund 0,41, Scharwenka 0,37, Fauré, Balakirev, Scriabin, Debussy, Chopin...). Mais "antigos": 18 (Johnson −0,68, J. Scott −0,64, Joplin −0,43, Haydn −0,35, Beethoven −0,30, Mozart −0,29...). O padrão: ragtime e clássicos abaixo da reta; romantismo médio e tardio acima.
+- **Ressalva (decisão: só ilustração).** O IC mede só a amostragem das peças; não inclui a incerteza da reta nem da PCA, e não há nulo. Com R² de 0,35, um desvio de grupo (todo o Classicismo, o ragtime) gera resíduos "significativos" em bloco, então 37 de 52 não são 37 casos notáveis. Victoria (1548) tem alavancagem e extrapolação. É posição no espaço do modelo, não juízo histórico sobre inovação. Fora da VALIDADE.
 
 ## Hipóteses
 
@@ -172,6 +224,13 @@ O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → C
 | H5 | O espaço é um contínuo; o ramo destacado, se houver, é o Barroco | Razão 1,769 contra p95 do nulo 2,31; corte em 2 estável (ARI 0,782), bloco de 7 pré-românticos | Contínuo sobrevive; ramo é pré-romântico, não só Barroco; k ≥ 3 cai |
 | H6 | O vetor centrado desloca mais que o aleatório e que nenhum, de forma monótona em α | 0,684 contra 0,433 e 0,392 (α = 1); 7 de 7 sementes, p = 0,016; média sobe até α = 1,5 (0,755), mas só 4 de 7 trajetórias são monótonas | Sobrevive, como deslocamento parcial; em 3 de 4 direções interpretáveis (falha em Joplin → Chopin: 5/7, p = 0,69; Haydn → Mozart não interpretável) |
 | H7 | O progresso Bach → Chopin é monótono; intermediários perto dos clássicos é pergunta aberta | t = 0 → 0,277; 0,5 → 0,338; 1 → 0,688 (monótono, não linear); Mozart e Beethoven são os clássicos mais próximos do segmento (geometria) | Enfraquece (só Bach ↔ Chopin; sem teste para "Bach domina") |
+| H8 | O mapa só de descritores acompanha a época, menos que o do modelo | Mantel ρ = 0,204 contra 0,505 | Sobrevive |
+| H9 | RSA modelo × descritores < 0,7 | 0,642; descritores explicam cerca de 50% da variância | Sobrevive |
+| H10 | A cronologia sobrevive sem os descritores (ρ > 0,3) | 0,340 (p = 0,0002, piso); sonda 0,349 → 0,310 | Sobrevive, com queda (controle linear) |
+| H11 | Surpresa × época cai com os descritores, mas não some | 0,505 → 0,411 (p = 0,002); por peça 0,341 → 0,210; descritores explicam 72% da surpresa | Enfraquece |
+| H12 | A cronologia sobrevive ao gênero (ρ > 0,3); o bloco pré-romântico continua | 0,379 (p = 0,0002); bloco no mesmo ramo, mas o k = 2 deixa de isolá-lo (30 contra 22) | Cronologia sobrevive; bloco enfraquece |
+| H13 | Os finais são mais convencionais que os inícios | Δ período −0,0072 (cerca de 1%; 53,1% das peças); por compositor 33/52 e 26/52; sinal oposto no Barroco e no Clássico | Cai |
+| H14 | As valsas de Nazareth ficam longe do ragtime e perto de Chopin | 4 valsas contra 8 tangos e polcas: 1,104 contra 0,546 (ragtime), 0,425 contra 1,087 (Chopin); p = 0,002 (piso) | Sobrevive (exploratório, n muito pequeno) |
 
 ## Leitura à luz de Meyer
 
@@ -181,7 +240,8 @@ Esta seção é interpretação. Usa a ideia geral de que o estilo se organiza e
 - **Idioma do compositor (H3):** o compositor explica uma minoria da variação (R² = 0,275, nulo 0,0235), e o acerto médio de 0,346 é muito acima do acaso. Isso sugere que há um idioma reconhecível por compositor, mas frouxo: a nuvem de cada um se sobrepõe à dos vizinhos. É uma leitura do modelo, que vê só notas e tempos.
 - **Estilo interno da obra:** janelas da mesma peça são mais próximas entre si do que de outras peças do mesmo compositor (52 de 52). É compatível com a ideia de que cada obra tem uma coerência própria. Mas nossa medida mistura essa coerência com a gravação e o arquivo MIDI, e não mede as expectativas dentro da obra. Por isso fica como indício fraco.
 - **Escolhas dentro de restrições (H6, H7):** somar o vetor de Chopin move a continuação no eixo (0,684 contra 0,392 sem steering; 7 de 7 sementes), mas a música não chega ao centróide dele (distância 0,930). Uma leitura possível, sem teste direto, é que o vetor médio captura uma parte da restrição de um estilo, e a música gerada ainda faz escolhas que o vetor não fixa. O vetor também desloca em Mozart → Debussy e Chopin → Bach, mas não em Joplin → Chopin. Nos descritores independentes, as notas ficam mais longas e mais sobrepostas (na direção de Chopin) e menos densas (contra). O caminho Bach → Chopin só foi testado em Bach ↔ Chopin.
-- **Expectativa (F8):** a surpresa do modelo cresce, em média, com a época (ρ = 0,51, IC95% 0,23–0,73), e os ragtimes e os barrocos estão entre os mais previsíveis. Não distinguimos entre repertório mais ou menos presente no Lakh e regularidade da própria música. Mas a expectativa aqui é a de um modelo treinado no Lakh, não a de um ouvinte, e a regularidade de tonalidade e ritmo não foi medida.
+- **Convenções compartilhadas (F13, exploratório):** o gênero de dança agrupa obras de culturas diferentes. Para o modelo, as valsas de Nazareth, Joplin e Johnson ficam mais perto de Chopin que dos tangos e rags de seus próprios autores (0,425 contra 1,087 em Nazareth; p = 0,002). Uma leitura possível é que o gênero funciona como uma convenção compartilhada acima do compositor, o que seria compatível com a ideia de estilo em níveis. Mas n é muito pequeno, e o compasso 3/4 pode ser tudo o que o modelo capta; não se conclui que ele reconhece a valsa como categoria estilística. Finais de obra (H13) não deram suporte a uma leitura de "convenção" no nível da obra.
+- **Expectativa (F8):** a surpresa do modelo cresce, em média, com a época (ρ = 0,51, IC95% 0,23–0,73), e os ragtimes e os barrocos estão entre os mais previsíveis. Não distinguimos entre repertório mais ou menos presente no Lakh e regularidade da própria música. Mas a expectativa aqui é a de um modelo treinado no Lakh, não a de um ouvinte, e a regularidade de tonalidade e ritmo não foi medida de forma própria. Com descritores simples controlados, a relação cai de 0,51 para 0,41, mas não some (Q6).
 
 ## O que o modelo não vê / limitações
 
@@ -193,7 +253,7 @@ Esta seção é interpretação. Usa a ideia geral de que o estilo se organiza e
 - **Mapa 2D.** Distorce as distâncias (Spearman 0,76). Serve para ilustrar; as medidas são feitas no espaço original.
 - **Escolha de representação.** Camada, pooling e número de janelas mudam parte dos números (o R² do compositor vai de 0,12 a 0,28). A camada foi escolhida e avaliada nos mesmos dados.
 - **Steering.** Quatro pares interpretáveis, sete sementes cada (no principal, sementes de Bach, uma peça por semente), sem escuta. O progresso é uma projeção num eixo.
-- **Controles que faltam.** Andamento, dinâmica e linha de base simbólica (histograma de intervalos, duração, densidade). Também faltam IC e nulo para vários números (F2, transposição, vizinhos).
+- **Controles que faltam.** Andamento e dinâmica. A linha de base simbólica foi feita (F9), mas é linear e simples; controle conjunto de gênero e descritores não foi feito. Também faltam IC e nulo para vários números (F2, transposição, vizinhos).
 - **Nomes.** Várias listas usam só o sobrenome; "Scott" pode ser J. Scott ou C. Scott.
 - **Estabilidade (teste com 3 janelas por peça; fonte: `analysis/F6_controles/metrics_3janelas.json`).** O núcleo pré-romântico se mantém, mas o bloco do corte em k = 2 ganha Mendelssohn e Victoria (9 compositores, ARI 0,753, razão de lacuna 1,732 contra p95 2,372). Fora isso, os resultados mudam pouco: camada 6 média com acurácia balanceada 0,368; Mantel ρ = 0,506 (p = 0,0002); nacionalidade parcial ρ = 0,041 (p = 0,114); R² do compositor 0,299 (63,9% das peças mais perto de outro centróide); H4: R² do gênero 0,179 contra 0,337. A base principal continua sendo 2 janelas.
 
@@ -210,7 +270,13 @@ Todas foram abertas e conferidas.
 7. `analysis/F7_deslocamento/figs/steering_alfa.png`. Varredura de α. Mensagem: quanto mais forte o vetor de Chopin, mais a continuação avança no eixo Bach → Chopin (0,38 a 0,75), e o vetor aleatório fica plano (0,38 a 0,47). O subtítulo diz "Repetição de trigramas não aumenta até α = 1,5", o que não garante música coerente. Por semente, só 4 de 7 são monótonas.
 8. `analysis/F7_deslocamento/figs/steering.png`. Progresso por condição, α = 1, n = 14. Mensagem: o vetor centrado (0,68) fica bem acima do aleatório (0,43) e de nenhum (0,39), e o vetor de Bach sozinho piora (0,28). O título ("empurra a música gerada na direção de Chopin, sem chegar lá") já traz a ressalva: a música não chega ao alvo (a linha tracejada em 1,0). As colunas "caminho" repetem o centrado (t = 1) e levam à leitura "Bach domina", não testada.
 9. `analysis/F7_deslocamento/figs/steering_dois_sentidos.png`. Bach → Chopin e Chopin → Bach. Mensagem: o efeito aparece nos dois sentidos (o título da figura diz "mais de Bach para Chopin", que é descritivo) (0,68 contra 0,39 e 0,43; 0,46 contra 0,33 e 0,29), menor no inverso. A comparação mistura eixos, sementes e n (14 contra 7); mostrar sem atribuir a assimetria ao vetor.
-10. `analysis/F7_deslocamento/figs/steering_pares.png`. Progresso por condição nos 4 pares interpretáveis (média por semente ± erro padrão, 7 sementes). Mensagem: o vetor centrado fica acima do aleatório e de nenhum em Bach → Chopin (0,68), Chopin → Bach (0,46) e Mozart → Debussy (0,50), mas não em Joplin → Chopin (0,54 contra 0,49 e 0,44; 5 de 7, p = 0,69). Haydn → Mozart fica de fora (centróides a 0,10; não interpretável), citado na nota de rodapé. Figura de apoio ao slide 7.
+10. `analysis/F7_deslocamento/figs/steering_pares.png`. Progresso por condição nos 4 pares interpretáveis (média por semente ± erro padrão, 7 sementes). Mensagem: o vetor centrado fica acima do aleatório e de nenhum em Bach → Chopin (0,68), Chopin → Bach (0,46) e Mozart → Debussy (0,50), mas não em Joplin → Chopin (0,54 contra 0,49 e 0,44; 5 de 7, p = 0,69). Haydn → Mozart fica de fora (centróides a 0,10; não interpretável), citado na nota de rodapé. Figura de apoio ao slide 8 da apresentação.
 11. `analysis/F8_expectativa/figs/surpresa_por_compositor.png`. Surpresa do modelo por compositor, em ordem de nascimento. Mensagem: Victoria, barrocos e ragtime ficam à esquerda da média (2,49), e Scharwenka, Rzewski, Scriabin e Lack ficam bem à direita; a tendência com a época é moderada (ρ = 0,51, IC95% 0,23–0,73). É surpresa para este modelo. Os IC variam bastante entre compositores.
+12. `analysis/F9_superficie/figs/controles_cronologia.png`. Barras do Mantel ρ por controle: modelo (base) 0,505; sem gênero 0,379; sem estatísticas de superfície 0,340; só estatísticas de superfície, sem o modelo, 0,204; linha tracejada no p95 do nulo (≈ 0,104). Mensagem: a cronologia sobrevive aos controles e a superfície sozinha acompanha a época bem menos. Ressalva: o nulo foi calculado no espaço do modelo (referência de ordem de grandeza para a barra cinza) e as quedas não foram testadas. Para o slide "O modelo sabe mais que estatística simples".
+13. `analysis/F13_brasil/figs/valsas.png`. Dispersão: distância ao ragtime (x) × distância a Chopin (y), por peça. As 4 valsas de Nazareth ficam embaixo à direita (longe do ragtime, perto de Chopin), os tangos e polcas em laranja no centro e no alto, os 79 rags em cinza no canto superior esquerdo e a estrela do Tico-Tico no alto. As 4 valsas de ragtime (losangos) ficam espalhadas: Binks' e Wedding of the Fairies bem mais perto de Chopin, Augustan Club e Harmony Club não. Ressalva: o título da figura cita Joplin, mas uma das valsas de ragtime é de C. L. Johnson; exploratório, n pequeno, rótulo de Rosa Maria de fonte comercial.
+14. `analysis/F4_nuvens/figs/nuvens_pecas.png`. As 2.183 peças em cinza e as nuvens de Bach (n = 129), Mozart (72), Chopin (96) e Joplin (31), com elipse de 1 desvio-padrão e centróide. Mensagem: Bach e Mozart se sobrepõem bastante; Chopin e Joplin ficam isolados; o subtítulo traz 28% de variação explicada (nulo 2%) e 65% das peças mais perto de outro centróide. Ressalva da própria figura: a projeção 2D distorce as distâncias, então a sobreposição visual não mede a do espaço original.
+15. `analysis/F11_tempo/figs/tempo_vs_mapa.png`. Ano de nascimento × PC1, com reta tracejada, cor por período, barras de IC e contorno preto (asterisco) nos 37 compositores com IC do resíduo fora de zero. Mensagem: o eixo segue a cronologia (Spearman 0,52), mas o ragtime (Joplin, J. Scott, Johnson) e os clássicos ficam abaixo da reta e o romantismo médio e tardio, acima. Só como ilustração (ver Q7). Limitações visuais: rótulos de Meyer-Helmund e Scriabin se sobrepõem no alto e Victoria está isolada em 1548 (alavancagem).
+
+**Explorador interativo** (mapa dos 52 compositores com cor por período, nacionalidade ou surpresa; vizinhos, nuvens de peças, Tico-Tico e as setas do steering): https://claude.ai/artifact/NeP4zc74AncnZsXsZuLvvo. Material para quem quiser explorar; vale as mesmas ressalvas do mapa 2D.
 
 Não recomendada: `analysis/F3_geometria/figs/mapa_pca.png` é a versão de trabalho do mapa. Tem rótulos sobrepostos e dois "Scott" sem distinção; usar a de apresentação.

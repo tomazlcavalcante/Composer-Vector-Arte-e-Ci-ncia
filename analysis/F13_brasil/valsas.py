@@ -96,7 +96,7 @@ for r in pd.concat([nv, rw]).itertuples():
                 arrowprops=dict(arrowstyle="-", color="#555", lw=.6), zorder=6)
 ax.set_xlabel("distância ao ragtime (cosseno, centróide dos rags sem valsas)")
 ax.set_ylabel("distância a Chopin (cosseno)")
-ax.set_title("Para o modelo, valsas de Nazareth e de Joplin soam mais perto de Chopin\nque dos seus próprios tangos e rags", fontsize=13)
+ax.set_title("Para o modelo, valsas de Nazareth e do ragtime soam mais perto de Chopin\nque dos seus próprios tangos e rags", fontsize=13)
 ax.legend(fontsize=8, loc="upper right", framealpha=.9)
 ax.grid(alpha=.2); ax.set_xlim(0.02, 1.4); ax.set_ylim(0.3, 1.5)
 fig.text(.01, .005, "Camada 6, mean, 2 janelas; espaço centrado e normalizado. Centróide do ragtime = 79 rags (Joplin, J. Scott, Johnson) sem as 4 valsas; rags: sem a própria peça.\n"
