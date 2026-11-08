@@ -31,7 +31,7 @@ Amostra de compositores com ≥ 20 peças (sem os contemporâneos de YouTube) e 
 - **Metadados:** curados com conhecimento geral e marcados "verificar". Corrigidos os erros do GiantMIDI (Bach, Handel, Satie, Fauré, Brahms, Poulenc estavam como "British"). Período pela regra mecânica: nascimento + 30, cortes em 1600 / 1750 / 1820 / 1900, com a coluna `fronteira`.
 - **Comando para retomar:** `python3 analysis/F0_infra/extract_amt.py --pass 1 --budget-min 9`. O script é retomável e pula o que já foi feito.
 
-## 2026-11-07, ~23:30 — passada 1 concluída e primeiras análises
+## 2026-11-07, 22:40 — passada 1 concluída e primeiras análises
 
 Base: 2.183 peças, 52 compositores, 1 janela (o meio) por peça.
 
