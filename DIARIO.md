@@ -90,10 +90,31 @@ Ambiente intacto: dados, modelo e as 4.368 janelas extraídas. O modelo do Thiag
 Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a subagentes baratos. Marque [x] ao concluir.
 
 - [ ] B1. Passada 3 de extração (janela a 5/6), em segundo plano, para 3 janelas por peça.
-- [ ] B2. Revisão independente (F9): um subagente confere REPORTs, VALIDADE e DIARIO contra os metrics e CSVs.
-- [ ] B3. Expectativa (Meyer): surpresa média do modelo (perda) por compositor e período, a partir da perda já salva por janela.
-- [ ] B4. Corrigir o que a revisão apontar.
+- [x] B2. Revisão independente (F9): um subagente confere REPORTs, VALIDADE e DIARIO contra os metrics e CSVs.
+- [x] B3. Expectativa (Meyer): surpresa média do modelo (perda) por compositor e período, a partir da perda já salva por janela.
+- [x] B4. Corrigir o que a revisão apontar.
 - [ ] B5. Refazer F2–F5 com 3 janelas, se a B1 terminar; registrar a estabilidade.
 - [ ] B6. RESULTADOS.md: conclusões por hipótese, números finais e limitações.
 - [ ] B7. APRESENTACAO.md: roteiro slide a slide (mensagem, figura, número, fala), para o grupo montar o deck às 13h.
 - [ ] B8. Revisão final de RESULTADOS e APRESENTACAO por um subagente independente.
+
+## 2026-11-08, ~08:00 — errata da revisão independente (B4)
+
+- F6/REPORT: texto na base da passada 1 (n×dist −0,11; refs 0,942/0,542; "não foi refeita") → números atuais de `metrics.json` (2 janelas: −0,116; z 0,461; dispersão 0,043; refs 0,9315/0,4938); percentuais do deslocamento 4,5–5,4% e 2,4–2,9%.
+- F6/REPORT e VALIDADE: "transposição refeita com 2 janelas" → a transposição usa só a janela do meio de 45 peças (1 janela); só as referências e os centróides são de 2 janelas.
+- F6/VALIDADE e DIARIO 22:40: "12% / 9% das peças trocam de centróide" → são linhas: 9,4% das linhas peça × transposição (17 de 180) e 29% das peças (13 de 45) em ao menos uma transposição; 12,2% (22 de 180) na passada 1.
+- F3/REPORT, VALIDADE: "Satie ↔ Rebikov" → Satie → Rebikov, não mútuo (vizinho de Rebikov: Scharwenka, 0,267).
+- F3/REPORT, DIARIO 00:00: PC1 × ano ρ = 0,53 → 0,525 (PC2 × ano 0,26).
+- F4/REPORT, DIARIO 00:00: "a peça explica 78%, o compositor 22%" → R² bruto 0,78 com nulo de 0,50 por construção (2 janelas por peça), corrigido 0,57; compositor por janela 0,224 com nulo 0,013, corrigido 0,214; os dois não são comparáveis. Resultado robusto mantido: 52 de 52 compositores com janelas da mesma peça mais próximas (diferença 0,33, IC95% 0,29–0,36), confundido com a gravação/arquivo. "Identidade própria forte" retirado.
+- F4/REPORT: lista dos cinco mais espalhados depende de empate (Schubert 0,8706 vs Mendelssohn 0,8709).
+- VALIDADE linha 1: "p = 0,001" → p = 0,0002 (Mantel, 5.000 permutações, F3) ou ≤ 0,001 (1.000 permutações, `secundaria.py`).
+- VALIDADE linha 2: "nacionalidade não organiza o mapa" → sem evidência de efeito (ρ parcial 0,04, p = 0,12; ausência de evidência, pouca potência).
+- VALIDADE linha 4: "H4 refutada" → "não se confirma" (como na F4).
+- VALIDADE linha 8: Tico-Tico "estável" → só os 3 primeiros vizinhos; 4º e 5º mudam e a distância a Nazareth vai de 0,546 para 0,488.
+- VALIDADE linha 12: "separa estilo e não tonalidade / Sobrevive" → deslocamento pequeno em 45 peças, 1 janela, sem nulo nem IC; 13 de 45 peças trocam de centróide; veredito "Enfraquece".
+- VALIDADE linha 1/3/6 e DIARIO 06:30: "H1, H2, H3, H5 não dependem da representação" → H1, H2 e o contínuo se mantêm; o R² de H3 varia (0,12–0,28) e o bloco de H5 ganha intrusos nas camadas 12 e com último token.
+- VALIDADE linhas 5, 9, 10: redação de "identidade própria forte", "desloca a música em direção a ele" e "mistura se comporta como Bach" suavizada (efeito no eixo e no modelo usados; observação descritiva sem teste).
+- F7/REPORT: tabela do par inverso comparava bases diferentes sem aviso → cabeçalhos marcam 1 janela (forte, n = 14) vs 2 janelas (inverso, n = 7); assimetria e "Bach domina" são observações descritivas, sem teste.
+- F7/REPORT: "repetição de trigramas ≤ 4% em todas" (e DIARIO 00:40 "≤ 6% em tudo") → médias 1,5–4,1% no forte (nenhum 4,14%); máximos por continuação 28,9% (forte), 23,7% (varredura), 39,5% (inverso); aleatório α = 1,5 tem média 6,4%.
+- F7/REPORT: "monótono em α" → a média cresce, mas por semente só 4 de 7 são monótonas; "sem quebra até α = 1,5" → sem aumento sistemático da repetição de trigramas (única medida de degeneração).
+- Não aplicado: DIARIO 21:20 (51 compositores / 2.184 peças vs 52 / 2.183), por ser entrada antiga e fora dos arquivos editáveis.

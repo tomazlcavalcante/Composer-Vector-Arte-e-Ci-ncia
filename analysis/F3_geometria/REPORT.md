@@ -27,11 +27,11 @@ Quem fica perto de quem? A proximidade acompanha período e nacionalidade?
   - Debussy ↔ C. Scott: 0,157 [0,123; 0,385]
   - J. Scott ↔ C. L. Johnson: 0,075 [0,066; 0,117]
   - Joplin → J. Scott: 0,133 [0,100; 0,212]
-  - Satie ↔ Rebikov: 0,284 [0,221; 0,456]
+  - Satie → Rebikov: 0,284 [0,221; 0,456]. Não é mútuo: o vizinho de Rebikov é Scharwenka (0,267).
   - Medtner ↔ Schumann: 0,236 [0,210; 0,508]
   - Chopin → Grieg: 0,322 [0,249; 0,614]. Na passada 1 o vizinho de Chopin era Scriabin; agora Scriabin está a 0,336 [0,244; 0,490] de Chopin, e o vizinho de Scriabin é Balakirev (0,136). Nenhuma das duas relações com Chopin é mútua (o vizinho de Grieg é Chopin; o de Scriabin é Balakirev).
 - Tico-Tico (uma peça): vizinhos C. L. Johnson (0,417), J. Scott (0,444), Nazareth (0,488), Czerny (0,540), Joplin (0,541). Passada 1: os três primeiros iguais; 4º e 5º eram Wachs e Scarlatti.
-- Calculado a partir dos centróides em `figuras_apresentacao.py` (não está no `metrics.json`; valor registrado no DIARIO para 2 janelas): Spearman entre PC1 e ano de nascimento = 0,53. O sinal do PC1 foi invertido na figura de apresentação para o tempo crescer para a direita. O PC2 não foi recalculado para este REPORT.
+- Calculado a partir dos centróides em `figuras_apresentacao.py` (não está no `metrics.json`; valor registrado no DIARIO para 2 janelas): Spearman entre PC1 e ano de nascimento = 0,525 (recalculado pela revisão independente; PC2 × ano = 0,26). O sinal do PC1 foi invertido na figura de apresentação para o tempo crescer para a direita. O PC2 não foi recalculado para este REPORT.
 
 ## Comparação com o nulo
 - Mantel: o p vem de permutar a ordem dos compositores nas matrizes. Com 5.000 permutações, 0,0002 é o menor p possível (1/5001).
@@ -41,7 +41,7 @@ Quem fica perto de quem? A proximidade acompanha período e nacionalidade?
 ## O que não se pode concluir
 - H1 está confirmada, mas ρ = 0,50 é moderado. O ano de nascimento não explica a maior parte da ordem das distâncias.
 - H2: "some ao controlar a época" vale para o teste parcial (p = 0,12). Não é prova de ausência de efeito.
-- O mapa 2D distorce (ρ = 0,76). Distâncias no desenho não são as distâncias reais. Por isso o título da figura de apresentação diz que o eixo principal "acompanha, em parte, a cronologia" (PC1 × ano de nascimento, ρ = 0,53): há relação com o tempo, mas não é uma linha do tempo.
+- O mapa 2D distorce (ρ = 0,76). Distâncias no desenho não são as distâncias reais. Por isso o título da figura de apresentação diz que o eixo principal "acompanha, em parte, a cronologia" (PC1 × ano de nascimento, ρ = 0,525): há relação com o tempo, mas não é uma linha do tempo.
 - Os IC de vários pares são largos (ex.: Debussy ↔ C. Scott vai de 0,123 a 0,385; Chopin → Grieg, de 0,249 a 0,614). "Vizinho mais próximo" pode mudar com outra amostra de peças.
 - Nacionalidade e nascimento foram curados à mão e não verificados em fonte externa.
 - O Tico-Tico é uma peça só. Vizinhança de uma peça não é estilo de um compositor.
