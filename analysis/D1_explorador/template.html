@@ -63,7 +63,7 @@ aside li{margin:2px 0}
 </header>
 <div class="controls">
   <label for="cor">Cor</label>
-  <select id="cor"><option value="periodo">por período</option><option value="nac">por nacionalidade</option><option value="surpresa">por surpresa do modelo</option><option value="dispersao">por dispersão da obra</option></select>
+  <select id="cor"><option value="periodo">por período</option><option value="nac">por nacionalidade</option><option value="surpresa">por surpresa do modelo</option><option value="dispersao">por dispersão da obra</option><option value="grupo">por região estável (4 grupos)</option></select>
   <label for="busca">Buscar</label>
   <input id="busca" list="nomes" placeholder="ex.: Chopin">
   <datalist id="nomes"></datalist>
@@ -95,6 +95,7 @@ const NS = 'http://www.w3.org/2000/svg';
 const el = (t, a={}, p=svg) => { const e=document.createElementNS(NS,t); for(const k in a) e.setAttribute(k,a[k]); p.appendChild(e); return e; };
 let sel = null, modo = 'periodo';
 const nacs = [...new Set(C.map(c=>c.nac))].sort();
+const GCOR = {'pré-romântico':'#d62728','regular e dançante':'#ff7f0e','despojado':'#8c564b','romântico tardio e moderno':'#1f77b4'};
 const NACOR = ['#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f','#edc948','#b07aa1','#ff9da7','#9c755f','#bab0ac','#1b9e77','#d95f02','#7570b3','#e7298a'];
 function lerp(a,b,t){return Math.round(a+(b-a)*t)}
 function ramp(v, lo, hi){ const t=Math.max(0,Math.min(1,(v-lo)/(hi-lo))); return `rgb(${lerp(43,214,t)},${lerp(76,96,t)},${lerp(155,39,t)})`; }
@@ -103,6 +104,7 @@ function cor(c){
   if(modo==='periodo') return css(PER[c.periodo]||'--muted');
   if(modo==='nac') return NACOR[nacs.indexOf(c.nac)%NACOR.length];
   if(modo==='surpresa') return ramp(c.surpresa, Math.min(...sv), Math.max(...sv));
+  if(modo==='grupo') return GCOR[c.grupo]||css('--muted');
   return ramp(c.dispersao, Math.min(...dv), Math.max(...dv));
 }
 function stats(){
@@ -116,6 +118,7 @@ function stats(){
 function legend(){
   const L = document.getElementById('legend');
   if(modo==='periodo') L.innerHTML = Object.keys(PER).map(p=>`<span><i class="sw" style="background:${css(PER[p])}"></i>${p}</span>`).join('') + '<span>tamanho = nº de peças</span><span>★ Tico-Tico no Fubá</span>';
+  else if(modo==='grupo') L.innerHTML = Object.entries(GCOR).map(([g,c])=>`<span><i class="sw" style="background:${c}"></i>${g}</span>`).join('') + '<span>grupos da ligação média, estáveis em reamostragem (ARI ≈ 0,7); regiões de um contínuo, não ilhas</span>';
   else if(modo==='nac') L.innerHTML = nacs.map((n,i)=>`<span><i class="sw" style="background:${NACOR[i%NACOR.length]}"></i>${n}</span>`).join('');
   else { const a = modo==='surpresa'? 'menos surpresa (mais previsível para o modelo)' : 'obra mais concentrada'; const b = modo==='surpresa'? 'mais surpresa' : 'obra mais espalhada';
     L.innerHTML = `<span><i class="sw" style="background:${ramp(0,0,1)}"></i>${a}</span><span><i class="sw" style="background:${ramp(1,0,1)}"></i>${b}</span>`; }
@@ -156,7 +159,7 @@ function draw(){
 const fmt = v => Number.isFinite(v)? v.toFixed(2).replace('.',',') : '—';
 function place(ev){ const r = svg.parentElement.getBoundingClientRect(); tip.style.display='block'; tip.style.left=Math.min(ev.clientX-r.left+14, r.width-270)+'px'; tip.style.top=(ev.clientY-r.top+14)+'px'; }
 function showTip(ev,c){
-  tip.innerHTML=`<b>${c.key}</b><br>${c.nasc}–${c.morte??''} · ${c.nac} · ${c.periodo}<br>${c.n} peças · surpresa ${fmt(c.surpresa)}<br>vizinhos: ${c.viz.map(v=>C[v.i].nome).join(', ')}`; place(ev);
+  tip.innerHTML=`<b>${c.key}</b><br>${c.nasc}–${c.morte??''} · ${c.nac} · ${c.periodo}<br>${c.n} peças · surpresa ${fmt(c.surpresa)}<br>região: ${c.grupo}<br>vizinhos: ${c.viz.map(v=>C[v.i].nome).join(', ')}`; place(ev);
 }
 function select(i){
   sel = i; const c = C[i];
