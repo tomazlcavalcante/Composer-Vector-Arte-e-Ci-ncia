@@ -30,7 +30,7 @@ plt.rcParams.update({"font.size": 11, "axes.spines.top": False, "axes.spines.rig
 def mapa():
     cfg = json.loads((HERE / "F2_representacao/metrics.json").read_text())["best"]
     L, P = cfg["layer"], cfg["pooling"]
-    X, df = load(L, P, windows=(1,))
+    X, df = load(L, P, windows=(1, 2))
     Xp, dp = piece_level(X, df)
     Xc, mu = center(Xp)
     Z = l2norm(Xc)
@@ -59,7 +59,7 @@ def mapa():
         sob = k.split(",")[0]
         lab = {"Scott, James": "J. Scott", "Scott, Cyril": "C. Scott"}.get(k, sob)
         (manual if sob in ('Bach', 'Johnson', 'Alkan') else texts).append(ax.text(*P2[i], lab, fontsize=10, color=INK, zorder=4))
-    Xe, de = load(L, P, windows=(1,), include_extra=True)
+    Xe, de = load(L, P, windows=(1, 2), include_extra=True)
     tt = de.composer_key.str.startswith("Abreu").values
     pts = [t.get_position() for t in texts]
     if tt.any():
@@ -88,7 +88,7 @@ def mapa():
     ax.legend(loc="upper right", fontsize=10, frameon=False, title="Período (cor)  ·  nº de peças (tamanho)")
     ax.set_xlabel(f"PC1 ({expl[0]:.0%} da variância dos centróides) · mais antigo à esquerda", color=MUTED)
     ax.set_ylabel(f"PC2 ({expl[1]:.0%})", color=MUTED)
-    ax.set_title("O eixo principal do mapa acompanha a cronologia", fontsize=17, loc="left", fontweight="bold", pad=22)
+    ax.set_title("O eixo principal do mapa acompanha, em parte, a cronologia", fontsize=17, loc="left", fontweight="bold", pad=22)
     ax.text(0, 1.015, f"Centróides de {len(keys)} compositores, modelo AMT, camada {L}, pooling {P}. "
             f"Distorção da projeção: Spearman {dist:.2f}.", transform=ax.transAxes, fontsize=10, color=MUTED)
     ax.set_xticks([]); ax.set_yticks([])

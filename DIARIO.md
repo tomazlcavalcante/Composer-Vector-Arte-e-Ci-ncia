@@ -48,3 +48,15 @@ Base: 2.183 peças, 52 compositores, 1 janela (o meio) por peça.
 - **Metadados:** a verificação web por subagente foi bloqueada (Wikipedia e IMSLP fora da lista de domínios); só Hitz foi confirmado. `fronteira` recalculada pela regra mecânica. Os valores seguem como "conhecimento geral (verificar)".
 
 Próximos passos: passada 2 (janela a 1/6) para medir a variação dentro da obra (o estilo interno de Meyer) e reforçar a média por peça; REPORTs por frente; figuras para a apresentação; revisão independente.
+
+## 2026-11-08, 00:00 — passada 2 concluída; análises refeitas com 2 janelas por peça
+
+Cada peça agora é a média de duas janelas (o meio e 1/6). As métricas da passada 1 estão guardadas em `metrics_passada1.json`, em cada pasta. **Decisão:** os números finais do ensaio são os de 2 janelas. Configuração inalterada: camada 6, com média.
+
+- F2: acurácia balanceada de 0,35 (antes 0,30); estabilidade de 0,83.
+- F3: H1, Mantel ρ = 0,50 (p < 0,001). H2: nacionalidade ρ = 0,08 (p = 0,02), que cai para 0,04 (p = 0,12) ao controlar a época. Distorção da PCA: 0,76. PC1 × ano de nascimento: ρ = 0,53, então a figura passou a dizer "acompanha, em parte, a cronologia". Os vizinhos mais próximos não mudaram. Tico-Tico: C. L. Johnson, J. Scott, Nazareth, Czerny, Joplin.
+- F4: R² do compositor = 0,28 (nulo 0,02); 65% das peças ficam mais perto de outro centróide; o compositor pesa mais que o gênero (R² de 0,28 contra 0,16, nas mesmas peças).
+- F4b (estilo interno da obra, Meyer): distância entre janelas da **mesma peça** = 0,43; entre peças do mesmo compositor = 0,79; entre compositores = 1,01. A peça explica 78% da variância entre janelas, e o compositor 22%. Cada obra tem identidade própria forte; o compositor é um agrupamento mais frouxo dessas identidades.
+- F5: contínuo (razão 1,77, contra p95 do nulo de 2,31). A divisão em 2 grupos é estável (ARI = 0,78), com o mesmo bloco pré-romântico {Bach, Handel, Scarlatti, Haydn, Mozart, Beethoven, Hummel}.
+- F6 e F7 usaram os centróides da passada 1, com a mesma configuração. Não foram refeitos: a direção Bach → Chopin quase não muda.
+- Cuidados levantados na revisão dos REPORTs: (1) em F7, progresso de 0,68 é projeção no eixo Bach → Chopin, não "chegar a Chopin"; a distância ao centróide de Chopin segue alta (cerca de 0,93). (2) t = 0,5 fica abaixo da continuação sem steering. (3) A monotonia em α só tem o piloto (3 sementes).

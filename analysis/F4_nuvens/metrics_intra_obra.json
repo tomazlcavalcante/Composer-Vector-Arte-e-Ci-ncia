@@ -1,0 +1,9 @@
+{
+ "n_pecas_com_2_janelas": 2183,
+ "dist_mesma_peca": 0.4339,
+ "dist_mesmo_compositor_outra_peca": 0.7888,
+ "dist_compositores_diferentes": 1.0051,
+ "R2_janelas_por_peca": 0.7828,
+ "R2_janelas_por_compositor": 0.2242,
+ "R2_compositor_nivel_peca_2janelas": 0.2754
+}

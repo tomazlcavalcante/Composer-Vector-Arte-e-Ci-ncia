@@ -3,38 +3,38 @@
  "pooling": "mean",
  "n_composers": 52,
  "n_pieces": 2183,
- "H1_mantel_rho": 0.4847,
+ "H1_mantel_rho": 0.5048,
  "H1_p": 0.0001999600079984003,
- "H2_nat_rho": 0.0815,
- "H2_nat_p": 0.01859628074385123,
- "H2_nat_parcial_rho": 0.0407,
- "H2_nat_parcial_p": 0.11057788442311538,
+ "H2_nat_rho": 0.0807,
+ "H2_nat_p": 0.021995600879824034,
+ "H2_nat_parcial_rho": 0.0389,
+ "H2_nat_parcial_p": 0.1225754849030194,
  "pca_explicada": [
-  0.3181999921798706,
-  0.2053000032901764
+  0.3352999985218048,
+  0.195700004696846
  ],
- "pca_distorcao_spearman": 0.7168,
+ "pca_distorcao_spearman": 0.7577,
  "tico_tico_vizinhos": [
   {
    "composer": "Johnson, Charles Leslie",
-   "dist": 0.4176
+   "dist": 0.4168
   },
   {
    "composer": "Scott, James",
-   "dist": 0.4491
+   "dist": 0.4441
   },
   {
    "composer": "Nazareth, Ernesto",
-   "dist": 0.546
+   "dist": 0.4877
   },
   {
-   "composer": "Wachs, Paul",
-   "dist": 0.5545
+   "composer": "Czerny, Carl",
+   "dist": 0.54
   },
   {
-   "composer": "Scarlatti, Domenico",
-   "dist": 0.5551
+   "composer": "Joplin, Scott",
+   "dist": 0.5406
   }
  ],
- "dist_media_entre_centroides": 0.9421
+ "dist_media_entre_centroides": 0.9315
 }
