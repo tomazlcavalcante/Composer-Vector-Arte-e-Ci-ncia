@@ -1,0 +1,205 @@
+{
+ "n_pieces_3w": 2183,
+ "layer": 6,
+ "pooling": "mean",
+ "diff_comp": {
+  "todos": {
+   "n": 2183,
+   "mean_diff": -0.005433086305856705,
+   "median_diff": -0.002347588539123535,
+   "frac_final_closer": 0.5098488318827302,
+   "wilcoxon_p_two": 0.031943224370479584,
+   "wilcoxon_p_less": 0.015971612185239792,
+   "n_composers": 52,
+   "composers_final_closer": 26,
+   "sign_p_two": 1.0,
+   "sign_p_less": 0.5550580173617314
+  },
+  "Barroco": {
+   "n": 326,
+   "mean_diff": 0.018100488930940628,
+   "median_diff": 0.006201267242431641,
+   "frac_final_closer": 0.4294478527607362,
+   "wilcoxon_p_two": 0.009693332016468048,
+   "wilcoxon_p_less": 0.9951533079147339,
+   "n_composers": 3,
+   "composers_final_closer": 1,
+   "sign_p_two": 1.0,
+   "sign_p_less": 0.875
+  },
+  "Clássico": {
+   "n": 238,
+   "mean_diff": 0.038439422845840454,
+   "median_diff": 0.012977182865142822,
+   "frac_final_closer": 0.38235294117647056,
+   "wilcoxon_p_two": 0.002831856720149517,
+   "wilcoxon_p_less": 0.9985840916633606,
+   "n_composers": 4,
+   "composers_final_closer": 1,
+   "sign_p_two": 0.625,
+   "sign_p_less": 0.9375
+  },
+  "Moderno": {
+   "n": 327,
+   "mean_diff": -0.01252566184848547,
+   "median_diff": -0.004458248615264893,
+   "frac_final_closer": 0.5168195718654435,
+   "wilcoxon_p_two": 0.13670112192630768,
+   "wilcoxon_p_less": 0.06835056096315384,
+   "n_composers": 11,
+   "composers_final_closer": 6,
+   "sign_p_two": 1.0,
+   "sign_p_less": 0.5
+  },
+  "Renascimento": {
+   "n": 20,
+   "mean_diff": -0.011467203497886658,
+   "median_diff": -0.02062833309173584,
+   "frac_final_closer": 0.7,
+   "wilcoxon_p_two": 0.20244979858398438,
+   "wilcoxon_p_less": 0.10122489929199219,
+   "n_composers": 1,
+   "composers_final_closer": 1,
+   "sign_p_two": 1.0,
+   "sign_p_less": 0.5
+  },
+  "Romântico": {
+   "n": 1272,
+   "mean_diff": -0.017755135893821716,
+   "median_diff": -0.01727968454360962,
+   "frac_final_closer": 0.5495283018867925,
+   "wilcoxon_p_two": 2.2396581698558293e-05,
+   "wilcoxon_p_less": 1.1198290849279147e-05,
+   "n_composers": 33,
+   "composers_final_closer": 17,
+   "sign_p_two": 1.0,
+   "sign_p_less": 0.5
+  }
+ },
+ "diff_per": {
+  "todos": {
+   "n": 2183,
+   "mean_diff": -0.007194034289568663,
+   "median_diff": -0.008494555950164795,
+   "frac_final_closer": 0.5309207512597343,
+   "wilcoxon_p_two": 0.002367038745433092,
+   "wilcoxon_p_less": 0.001183519372716546,
+   "n_composers": 52,
+   "composers_final_closer": 33,
+   "sign_p_two": 0.07039422106706228,
+   "sign_p_less": 0.03519711053353114
+  },
+  "Barroco": {
+   "n": 326,
+   "mean_diff": 0.02019716240465641,
+   "median_diff": 0.006024003028869629,
+   "frac_final_closer": 0.4325153374233129,
+   "wilcoxon_p_two": 0.01803748868405819,
+   "wilcoxon_p_less": 0.9909812808036804,
+   "n_composers": 3,
+   "composers_final_closer": 2,
+   "sign_p_two": 1.0,
+   "sign_p_less": 0.5
+  },
+  "Clássico": {
+   "n": 238,
+   "mean_diff": 0.03281266614794731,
+   "median_diff": 0.004954248666763306,
+   "frac_final_closer": 0.39915966386554624,
+   "wilcoxon_p_two": 0.013407854363322258,
+   "wilcoxon_p_less": 0.9932960867881775,
+   "n_composers": 4,
+   "composers_final_closer": 1,
+   "sign_p_two": 0.625,
+   "sign_p_less": 0.9375
+  },
+  "Moderno": {
+   "n": 327,
+   "mean_diff": -0.03234164044260979,
+   "median_diff": -0.04007995128631592,
+   "frac_final_closer": 0.6085626911314985,
+   "wilcoxon_p_two": 0.00021646005916409194,
+   "wilcoxon_p_less": 0.00010823002958204597,
+   "n_composers": 11,
+   "composers_final_closer": 9,
+   "sign_p_two": 0.0654296875,
+   "sign_p_less": 0.03271484375
+  },
+  "Renascimento": {
+   "n": 20,
+   "mean_diff": -0.011467203497886658,
+   "median_diff": -0.02062833309173584,
+   "frac_final_closer": 0.7,
+   "wilcoxon_p_two": 0.20244979858398438,
+   "wilcoxon_p_less": 0.10122489929199219,
+   "n_composers": 1,
+   "composers_final_closer": 1,
+   "sign_p_two": 1.0,
+   "sign_p_less": 0.5
+  },
+  "Romântico": {
+   "n": 1272,
+   "mean_diff": -0.015167614445090294,
+   "median_diff": -0.016869306564331055,
+   "frac_final_closer": 0.5581761006289309,
+   "wilcoxon_p_two": 7.908142288215458e-05,
+   "wilcoxon_p_less": 3.954071144107729e-05,
+   "n_composers": 33,
+   "composers_final_closer": 20,
+   "sign_p_two": 0.296206368599087,
+   "sign_p_less": 0.1481031842995435
+  }
+ },
+ "dist_media_comp": {
+  "w1": 0.5809210538864136,
+  "w2": 0.582629919052124,
+  "w3": 0.5771968364715576
+ },
+ "dist_media_per": {
+  "w1": 0.7209804654121399,
+  "w2": 0.7216366529464722,
+  "w3": 0.7144427299499512
+ },
+ "dist_intra": {
+  "start_end": 0.4165879786014557,
+  "start_mid": 0.4347272515296936,
+  "mid_end": 0.43320536613464355,
+  "wilcoxon_mid_end_vs_start_mid_p": 0.9408106207847595
+ },
+ "loss": {
+  "start": 2.4750966609643785,
+  "mid": 2.504592696953082,
+  "end": 2.472436878804597,
+  "frac_end_lower_than_start": 0.4342647732478241,
+  "wilcoxon_end_vs_start_p": 0.007871464156505577,
+  "mean_diff_end_minus_start": -0.0026597821597817073
+ },
+ "spearman_diffper_vs_lossdiff": -0.15820023312304904,
+ "por_periodo_media": {
+  "Barroco": {
+   "per_w1": 0.4677470326423645,
+   "per_w2": 0.4605647325515747,
+   "per_w3": 0.48076188564300537
+  },
+  "Clássico": {
+   "per_w1": 0.6452836394309998,
+   "per_w2": 0.5591002106666565,
+   "per_w3": 0.5919129252433777
+  },
+  "Moderno": {
+   "per_w1": 0.7326138615608215,
+   "per_w2": 0.7608932852745056,
+   "per_w3": 0.7285516262054443
+  },
+  "Renascimento": {
+   "per_w1": 0.057063113898038864,
+   "per_w2": 0.08185021579265594,
+   "per_w3": 0.07038301974534988
+  },
+  "Romântico": {
+   "per_w1": 0.8074932098388672,
+   "per_w2": 0.8189259767532349,
+   "per_w3": 0.8037583231925964
+  }
+ }
+}

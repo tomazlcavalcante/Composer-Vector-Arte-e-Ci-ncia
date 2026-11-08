@@ -1,0 +1,114 @@
+{
+ "layer": 6,
+ "pooling": "mean",
+ "windows": [
+  1,
+  2
+ ],
+ "ragtime_composers": [
+  "Joplin, Scott",
+  "Scott, James",
+  "Johnson, Charles Leslie"
+ ],
+ "n_ragtime_pieces": 83,
+ "n_tico_tico_pieces": 1,
+ "nazareth_classes": {
+  "outro": 21,
+  "tango/maxixe/choro": 1
+ },
+ "nazareth_titulos_tango_valsa": {
+  "tango/maxixe/choro": [
+   "Tango Habanera"
+  ],
+  "valsa": []
+ },
+ "resumo": {
+  "Nazareth": {
+   "n": 22,
+   "d_ragtime": 0.6281043145466935,
+   "d_chopin": 0.9335468701848929,
+   "d_rag_minus_chopin": -0.3054425556381995,
+   "frac_mais_perto_ragtime_que_chopin": 0.8181818181818182
+  },
+  "Tico-Tico": {
+   "n": 1,
+   "d_ragtime": 0.44100719690322876,
+   "d_chopin": 1.4092711210250854,
+   "d_rag_minus_chopin": -0.9682639241218567,
+   "frac_mais_perto_ragtime_que_chopin": 1.0
+  },
+  "Villa-Lobos": {
+   "n": 22,
+   "d_ragtime": 1.1710120210085402,
+   "d_chopin": 0.8985888001255014,
+   "d_rag_minus_chopin": 0.2724232208830389,
+   "frac_mais_perto_ragtime_que_chopin": 0.4090909090909091
+  },
+  "ragtime (ref.)": {
+   "n": 83,
+   "d_ragtime": 0.2280356991721923,
+   "d_chopin": 1.196133631045919,
+   "d_rag_minus_chopin": -0.9680979318737265,
+   "frac_mais_perto_ragtime_que_chopin": 0.9879518072289156
+  },
+  "Nazareth/outro": {
+   "n": 21,
+   "d_ragtime": 0.6259438441622824,
+   "d_chopin": 0.9322502917299668,
+   "d_rag_minus_chopin": -0.3063064475676843,
+   "frac_mais_perto_ragtime_que_chopin": 0.8095238095238095
+  },
+  "Nazareth/tango/maxixe/choro": {
+   "n": 1,
+   "d_ragtime": 0.6734741926193237,
+   "d_chopin": 0.9607750177383423,
+   "d_rag_minus_chopin": -0.28730082511901855,
+   "frac_mais_perto_ragtime_que_chopin": 1.0
+  }
+ },
+ "H14_mannwhitney": {
+  "n_tango": 1,
+  "n_valsa": 0,
+  "nota": "teste impossível: classes por título quase vazias"
+ },
+ "nazareth_dist_LOO_media": 0.47664853219281544,
+ "tico_tico": [
+  {
+   "d_ragtime": 0.44100719690322876,
+   "d_chopin": 1.4092711210250854,
+   "d_nazareth_loo": 0.4877051115036011
+  }
+ ],
+ "villa_lobos_mais_perto_ragtime_que_nazareth": 0.5429077064618467,
+ "ranking_compositores_por_dist_ao_ragtime": {
+  "posicao_nazareth": 1,
+  "posicao_villa_lobos": 47,
+  "n": 49,
+  "mais_proximos": [
+   [
+    "Nazareth, Ernesto",
+    0.354
+   ],
+   [
+    "Czerny, Carl",
+    0.579
+   ],
+   [
+    "Hitz, Franz",
+    0.586
+   ],
+   [
+    "Schubert, Franz",
+    0.6
+   ],
+   [
+    "Wachs, Paul",
+    0.633
+   ],
+   [
+    "Gottschalk, Louis Moreau",
+    0.644
+   ]
+  ]
+ }
+}

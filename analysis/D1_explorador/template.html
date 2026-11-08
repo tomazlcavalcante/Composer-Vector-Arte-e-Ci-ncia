@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa dos compositores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* layout: barra de cabeçalho com números-chave; mapa à esquerda, painel do compositor à direita */
+  --bg:#f4f5f7; --panel:#ffffff; --ink:#1d2433; --muted:#5d6577; --line:#d9dde5; --accent:#2b4c9b;
+  --renasc:#8c564b; --barroco:#d62728; --classico:#ff7f0e; --romantico:#1f77b4; --moderno:#2ca02c;
+  --display:"Spectral", Georgia, serif; --body:"IBM Plex Sans", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#12151c; --panel:#1b2029; --ink:#e7eaf0; --muted:#a2a9b8; --line:#2d3441; --accent:#8fb0ff;
+  --renasc:#c08a7c; --barroco:#ff6b6b; --classico:#ffa94d; --romantico:#5aa9e6; --moderno:#63c76a; color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --bg:#12151c; --panel:#1b2029; --ink:#e7eaf0; --muted:#a2a9b8; --line:#2d3441; --accent:#8fb0ff;
+  --renasc:#c08a7c; --barroco:#ff6b6b; --classico:#ffa94d; --romantico:#5aa9e6; --moderno:#63c76a; color-scheme:dark; }
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45}
+header{padding:20px 24px 8px;display:grid;gap:10px}
+h1{font-family:var(--display);font-weight:700;font-size:1.8rem;margin:0;text-wrap:balance}
+.lead{max-width:72ch;margin:0;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:10px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-variant-numeric:tabular-nums}
+.stat b{font-size:1.1rem}
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:4px 24px 10px}
+.controls label{color:var(--muted);font-size:.9rem}
+select,input,button{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+button{cursor:pointer}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+main{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;padding:0 24px 24px}
+@media (max-width:900px){main{grid-template-columns:1fr}}
+.map{background:var(--panel);border:1px solid var(--line);border-radius:10px;position:relative;overflow:hidden}
+svg{display:block;width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:12px;padding:8px 12px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:11px;height:11px;border-radius:50%;display:inline-block}
+aside{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;max-height:760px;overflow:auto}
+aside h2{font-family:var(--display);margin:0;font-size:1.35rem}
+aside .meta{color:var(--muted);font-size:.9rem}
+aside ul{margin:0;padding-left:18px}
+aside li{margin:2px 0}
+.chip{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.8rem;color:#fff}
+.nb{color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:2px;background:none;border:0;padding:0;font:inherit}
+.tip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:6px 9px;font-size:.85rem;box-shadow:0 4px 14px rgba(0,0,0,.12);display:none;max-width:260px}
+.note{font-size:.82rem;color:var(--muted);padding:0 24px 24px;max-width:110ch}
+.lbl{font-size:10.5px;fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:var(--panel);stroke-width:3px;stroke-linejoin:round}
+.axis{fill:var(--muted);font-size:12px}
+.pieces li{font-size:.85rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Como um modelo de música organiza 52 compositores</h1>
+  <p class="lead">Cada ponto é a média das "impressões digitais" que um modelo de música (o Anticipatory Music Transformer, treinado em música popular, sem nenhum nome de compositor) produz para as peças de piano de um compositor do acervo GiantMIDI. Pontos próximos soam parecidos para o modelo. Passe o mouse para ver os detalhes; clique para ver as peças e os vizinhos.</p>
+  <div class="stats" id="stats"></div>
+</header>
+<div class="controls">
+  <label for="cor">Cor</label>
+  <select id="cor"><option value="periodo">por período</option><option value="nac">por nacionalidade</option><option value="surpresa">por surpresa do modelo</option><option value="dispersao">por dispersão da obra</option></select>
+  <label for="busca">Buscar</label>
+  <input id="busca" list="nomes" placeholder="ex.: Chopin">
+  <datalist id="nomes"></datalist>
+  <label><input type="checkbox" id="todas"> mostrar todas as peças</label>
+  <label><input type="checkbox" id="rede"> rede de vizinhos</label>
+  <button id="limpar" type="button">Limpar seleção</button>
+</div>
+<main>
+  <div class="map">
+    <svg id="svg" viewBox="0 0 900 640" role="img" aria-label="Mapa dos compositores"></svg>
+    <div class="tip" id="tip"></div>
+    <div class="legend" id="legend"></div>
+  </div>
+  <aside id="painel"></aside>
+</main>
+<p class="note" id="nota"></p>
+<script>
+const DADOS = __DADOS__;
+const C = DADOS.compositores, P = DADOS.pecas, T = DADOS.tico;
+const svg = document.getElementById('svg'), tip = document.getElementById('tip');
+const W = 900, H = 640, M = 40;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const PER = {"Renascimento":"--renasc","Barroco":"--barroco","Clássico":"--classico","Romântico":"--romantico","Moderno":"--moderno"};
+const xs = C.map(c=>c.x).concat([T.x]), ys = C.map(c=>c.y).concat([T.y]);
+const pad = .08, x0=Math.min(...xs), x1=Math.max(...xs), y0=Math.min(...ys), y1=Math.max(...ys);
+const sx = v => M + (v - x0 + pad*(x1-x0)) / ((x1-x0)*(1+2*pad)) * (W-2*M);
+const sy = v => H - M - (v - y0 + pad*(y1-y0)) / ((y1-y0)*(1+2*pad)) * (H-2*M);
+const NS = 'http://www.w3.org/2000/svg';
+const el = (t, a={}, p=svg) => { const e=document.createElementNS(NS,t); for(const k in a) e.setAttribute(k,a[k]); p.appendChild(e); return e; };
+let sel = null, modo = 'periodo';
+const nacs = [...new Set(C.map(c=>c.nac))].sort();
+const NACOR = ['#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f','#edc948','#b07aa1','#ff9da7','#9c755f','#bab0ac','#1b9e77','#d95f02','#7570b3','#e7298a'];
+function lerp(a,b,t){return Math.round(a+(b-a)*t)}
+function ramp(v, lo, hi){ const t=Math.max(0,Math.min(1,(v-lo)/(hi-lo))); return `rgb(${lerp(43,214,t)},${lerp(76,96,t)},${lerp(155,39,t)})`; }
+const sv = C.map(c=>c.surpresa).filter(Number.isFinite), dv = C.map(c=>c.dispersao).filter(Number.isFinite);
+function cor(c){
+  if(modo==='periodo') return css(PER[c.periodo]||'--muted');
+  if(modo==='nac') return NACOR[nacs.indexOf(c.nac)%NACOR.length];
+  if(modo==='surpresa') return ramp(c.surpresa, Math.min(...sv), Math.max(...sv));
+  return ramp(c.dispersao, Math.min(...dv), Math.max(...dv));
+}
+function stats(){
+  const s = DADOS.info;
+  document.getElementById('stats').innerHTML = [
+    ['52','compositores'],[s.n_pecas.toLocaleString('pt-BR'),'peças'],
+    ['ρ = 0,50','distância × diferença de época'],['28%','da variação explicada pelo compositor']
+  ].map(([b,t])=>`<div class="stat"><b>${b}</b> ${t}</div>`).join('');
+  document.getElementById('nota').textContent = `Mapa: as duas direções principais (PCA) dos centróides, que explicam ${Math.round(DADOS.pca_expl[0]*100)}% e ${Math.round(DADOS.pca_expl[1]*100)}% da variância; o eixo horizontal acompanha, em parte, o ano de nascimento (ρ ≈ 0,53). A projeção em 2D distorce as distâncias (Spearman 0,76 entre as distâncias reais e as do desenho). Os vizinhos listados são calculados no espaço completo de 768 dimensões, não no desenho. Modelo: ${s.modelo}, camada ${s.camada}, média sobre cada trecho, ${s.janelas} trechos por peça. A estrela é o Tico-Tico no Fubá (Zequinha de Abreu), uma peça só, incluída como ilustração. Surpresa = perda média do modelo (nats/token): previsibilidade para este modelo, não para um ouvinte.`;
+}
+function legend(){
+  const L = document.getElementById('legend');
+  if(modo==='periodo') L.innerHTML = Object.keys(PER).map(p=>`<span><i class="sw" style="background:${css(PER[p])}"></i>${p}</span>`).join('') + '<span>tamanho = nº de peças</span><span>★ Tico-Tico no Fubá</span>';
+  else if(modo==='nac') L.innerHTML = nacs.map((n,i)=>`<span><i class="sw" style="background:${NACOR[i%NACOR.length]}"></i>${n}</span>`).join('');
+  else { const a = modo==='surpresa'? 'menos surpresa (mais previsível para o modelo)' : 'obra mais concentrada'; const b = modo==='surpresa'? 'mais surpresa' : 'obra mais espalhada';
+    L.innerHTML = `<span><i class="sw" style="background:${ramp(0,0,1)}"></i>${a}</span><span><i class="sw" style="background:${ramp(1,0,1)}"></i>${b}</span>`; }
+}
+function draw(){
+  svg.innerHTML='';
+  el('text',{x:W/2,y:H-10,'text-anchor':'middle',class:'axis'}).textContent='← mais antigo          eixo principal do mapa          mais recente →';
+  const gP = el('g');
+  const todas = document.getElementById('todas').checked;
+  P.forEach(p=>{ if(todas || (sel!==null && p.c===sel)) el('circle',{cx:sx(p.x),cy:sy(p.y),r: sel!==null&&p.c===sel?3:1.6,fill:cor(C[p.c]),opacity: sel!==null&&p.c===sel?.75:.22},gP); });
+  const gE = el('g');
+  if(document.getElementById('rede').checked){
+    C.forEach((c,i)=>c.viz.slice(0,2).forEach(v=>{ const mutuo = C[v.i].viz.slice(0,2).some(w=>w.i===i); if(mutuo && i<v.i) el('line',{x1:sx(c.x),y1:sy(c.y),x2:sx(C[v.i].x),y2:sy(C[v.i].y),stroke:css('--muted'),'stroke-width':1.2,opacity:.55},gE); }));
+  }
+  if(sel!==null){ const c=C[sel]; c.viz.forEach(v=>el('line',{x1:sx(c.x),y1:sy(c.y),x2:sx(C[v.i].x),y2:sy(C[v.i].y),stroke:css('--accent'),'stroke-width':2,'stroke-dasharray':'4 3'},gE)); }
+  const gC = el('g');
+  // rótulos sem sobreposição: os compositores com mais peças têm prioridade; o selecionado e seus vizinhos sempre aparecem
+  const boxes=[]; const keep=new Set();
+  const order=C.map((c,i)=>i).sort((a,b)=>{const pa=(a===sel||(sel!==null&&C[sel].viz.some(v=>v.i===a)))?1e6:C[a].n; const pb=(b===sel||(sel!==null&&C[sel].viz.some(v=>v.i===b)))?1e6:C[b].n; return pb-pa;});
+  order.forEach(i=>{const c=C[i]; const w=c.nome.length*6.2+4, x=sx(c.x)+7, y=sy(c.y)-16; const bx=[x,y,x+w,y+13];
+    if(!boxes.some(b=>!(bx[2]<b[0]||bx[0]>b[2]||bx[3]<b[1]||bx[1]>b[3]))){boxes.push(bx);keep.add(i);}});
+  window.showLabel = i => keep.has(i);
+  C.forEach((c,i)=>{
+    const g = el('g',{tabindex:0,role:'button','aria-label':c.nome},gC);
+    el('circle',{cx:sx(c.x),cy:sy(c.y),r:4+Math.sqrt(c.n)*1.1,fill:cor(c),stroke: i===sel?css('--ink'):css('--panel'),'stroke-width': i===sel?2.5:1.2,opacity: sel===null||i===sel||C[sel].viz.some(v=>v.i===i)?1:.35},g);
+    if(showLabel(i)) el('text',{x:sx(c.x)+7,y:sy(c.y)-6,class:'lbl'},g).textContent=c.nome;
+    g.addEventListener('mousemove',ev=>showTip(ev,c));
+    g.addEventListener('mouseleave',()=>tip.style.display='none');
+    g.addEventListener('click',()=>select(i));
+    g.addEventListener('keydown',ev=>{if(ev.key==='Enter')select(i)});
+  });
+  const st = el('text',{x:sx(T.x),y:sy(T.y)+7,'text-anchor':'middle','font-size':22,fill:css('--ink'),style:'cursor:pointer'});
+  st.textContent='★';
+  el('text',{x:sx(T.x)+12,y:sy(T.y)-8,class:'lbl','font-weight':600}).textContent='Tico-Tico no Fubá';
+  st.addEventListener('mousemove',ev=>{tip.innerHTML=`<b>Tico-Tico no Fubá</b> (Zequinha de Abreu)<br>uma peça só, ilustração<br>mais perto de: ${T.viz.map(v=>C[v.i].nome+' ('+fmt(v.d)+')').join(', ')}`;place(ev)});
+  st.addEventListener('mouseleave',()=>tip.style.display='none');
+}
+const fmt = v => Number.isFinite(v)? v.toFixed(2).replace('.',',') : '—';
+function place(ev){ const r = svg.parentElement.getBoundingClientRect(); tip.style.display='block'; tip.style.left=Math.min(ev.clientX-r.left+14, r.width-270)+'px'; tip.style.top=(ev.clientY-r.top+14)+'px'; }
+function showTip(ev,c){
+  tip.innerHTML=`<b>${c.key}</b><br>${c.nasc}–${c.morte??''} · ${c.nac} · ${c.periodo}<br>${c.n} peças · surpresa ${fmt(c.surpresa)}<br>vizinhos: ${c.viz.map(v=>C[v.i].nome).join(', ')}`; place(ev);
+}
+function select(i){
+  sel = i; const c = C[i];
+  const pecas = P.filter(p=>p.c===i).map(p=>p.t).sort();
+  document.getElementById('painel').innerHTML = `
+    <h2>${c.key}</h2>
+    <div class="meta">${c.nasc}–${c.morte??''} · ${c.nac} · <span class="chip" style="background:${css(PER[c.periodo]||'--muted')}">${c.periodo}</span></div>
+    <div><b>${c.n}</b> peças no acervo · surpresa média <b>${fmt(c.surpresa)}</b> · dispersão <b>${fmt(c.dispersao)}</b></div>
+    <div><b>Vizinhos mais próximos</b> (distância cosseno, espaço completo)<ul>${c.viz.map(v=>`<li><button class="nb" data-i="${v.i}">${C[v.i].key}</button> · ${fmt(v.d)}</li>`).join('')}</ul></div>
+    <div><b>Peças</b> (pontos pequenos no mapa)<ul class="pieces">${pecas.map(t=>`<li>${t}</li>`).join('')}</ul></div>`;
+  document.querySelectorAll('.nb').forEach(b=>b.addEventListener('click',()=>select(+b.dataset.i)));
+  draw();
+}
+function intro(){
+  document.getElementById('painel').innerHTML = `<h2>O que olhar</h2>
+  <ul>
+   <li><b>Da esquerda para a direita</b>, o tempo passa: Victoria, Bach e Handel à esquerda; Scriabin, Debussy e Fauré à direita.</li>
+   <li><b>Embaixo à esquerda</b> fica um bloco pré-romântico (Bach a Beethoven) que se separa do resto em quase toda reamostragem.</li>
+   <li><b>No alto</b>, a música de dança sincopada: ragtime (Joplin, J. Scott, Johnson), Nazareth e o Tico-Tico.</li>
+   <li>Pinte <b>por nacionalidade</b>: as cores se misturam. Controlando a época, não há evidência de efeito da nacionalidade.</li>
+   <li>Clique num compositor: as peças dele se espalham bastante. O compositor explica só cerca de 28% da variação entre peças, então o estilo é mais nuvem que ponto.</li>
+  </ul>`;
+}
+document.getElementById('cor').addEventListener('change',e=>{modo=e.target.value;legend();draw();});
+document.getElementById('todas').addEventListener('change',draw);
+document.getElementById('rede').addEventListener('change',draw);
+document.getElementById('limpar').addEventListener('click',()=>{sel=null;intro();draw();});
+const dl = document.getElementById('nomes'); C.forEach(c=>{const o=document.createElement('option');o.value=c.key;dl.appendChild(o);});
+document.getElementById('busca').addEventListener('change',e=>{const i=C.findIndex(c=>c.key.toLowerCase().includes(e.target.value.toLowerCase()));if(i>=0)select(i);});
+stats(); legend(); intro(); draw();
+</script>
+</body>
+</html>
