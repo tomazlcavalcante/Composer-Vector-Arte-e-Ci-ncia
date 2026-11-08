@@ -67,6 +67,10 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     todo = [p for p in pieces if not (out / f"{p.piece_id}__w{args.p}.npz").exists()
             and not (out / f"{p.piece_id}__w{args.p}.skip").exists()]
+    # ordem embaralhada (semente fixa): se a passada for interrompida, a amostra parcial
+    # continua cobrindo todos os compositores
+    import random
+    random.Random(0).shuffle(todo)
     print(f"pass {args.p}: {len(pieces)} peças, faltam {len(todo)}", flush=True)
 
     model = AutoModelForCausalLM.from_pretrained(args.model).eval()
