@@ -4,7 +4,7 @@ Ensaio para Artes e Ciência (IMPA Tech). Este texto reúne o que o estudo encon
 
 ## Abertura
 
-Pegamos um modelo que aprendeu a prever música, o Anticipatory Music Transformer small, treinado no Lakh MIDI. Pedimos a ele a "impressão digital" de 2.183 peças de piano do acervo GiantMIDI, de 52 compositores, e fizemos a média por compositor. Em seguida olhamos como o modelo organiza esses compositores no seu espaço interno. A resposta principal: o modelo organiza os compositores de forma parcialmente cronológica, com um bloco pré-romântico (Bach a Beethoven) à parte, mas sem grupos nítidos. O compositor explica só uma minoria (28%) da variação entre peças, então o estilo, nesse espaço, é mais nuvem do que ponto. Somar o vetor de Chopin aumenta, de forma parcial, a projeção da música gerada no eixo Bach → Chopin (mais do que um vetor aleatório), e isso foi medido com um único par de compositores.
+Pegamos um modelo que aprendeu a prever música, o Anticipatory Music Transformer small, treinado no Lakh MIDI. Pedimos a ele a "impressão digital" de 2.183 peças de piano do acervo GiantMIDI, de 52 compositores, e fizemos a média por compositor. Em seguida olhamos como o modelo organiza esses compositores no seu espaço interno. A resposta principal: o modelo organiza os compositores de forma parcialmente cronológica, com um bloco pré-romântico (Bach a Beethoven) à parte, mas sem grupos nítidos. O compositor explica só uma minoria (28%) da variação entre peças, então o estilo, nesse espaço, é mais nuvem do que ponto. Somar o vetor de Chopin aumenta, de forma parcial, a projeção da música gerada no eixo Bach → Chopin (mais do que um vetor aleatório). Testado em 4 pares, o efeito vale em 3 de 4 direções interpretáveis, todas entre compositores distantes, e falha em Joplin → Chopin.
 
 ## Como ler os vereditos
 
@@ -101,7 +101,7 @@ Pegamos um modelo que aprendeu a prever música, o Anticipatory Music Transforme
 
 ## Q4. Somar o vetor de um compositor desloca a música? (F7)
 
-**Resposta.** Somar o vetor centrado de Chopin na camada 6 aumenta a projeção da continuação, relida sem steering, no eixo Bach → Chopin, mais do que um vetor aleatório ou nenhum vetor. O deslocamento é parcial e foi medido com um único par.
+**Resposta.** Somar o vetor centrado de Chopin na camada 6 aumenta a projeção da continuação, relida sem steering, no eixo Bach → Chopin, mais do que um vetor aleatório ou nenhum vetor. O deslocamento é parcial e vale em 3 de 4 direções interpretáveis (ver "Outros pares").
 
 **Números** (progresso: 0 = centróide de Bach, 1 = centróide de Chopin; média ± erro padrão).
 - α = 1, n = 14 (7 sementes de Bach × 2 amostras, centróides de 1 janela): nenhum 0,392 ± 0,034; aleatório 0,433 ± 0,038; centrado 0,684 ± 0,024.
@@ -115,13 +115,13 @@ Pegamos um modelo que aprendeu a prever música, o Anticipatory Music Transforme
 
 **Veredito.**
 - Efeito do vetor centrado (H6): **sobrevive**, como deslocamento parcial.
-- Progresso monótono no caminho Bach → Chopin (H7): **enfraquece** (um par só; 7 sementes).
+- Progresso monótono no caminho Bach → Chopin (H7): **enfraquece** (o caminho só foi testado em Bach ↔ Chopin; 7 sementes).
 
 **O que NÃO se pode concluir.**
 - Que a música "virou Chopin": o progresso de 0,68 é a projeção num eixo, e a distância ao centróide de Chopin continua em 0,930 (α = 1, experimento principal; 1,182 sem steering).
 - Que "Bach domina a mistura": a observação é descritiva, sem teste. A diferença entre t = 0,5 (0,338) e "nenhum" (0,392) é menor que 2 erros padrão.
 - Que o efeito é menor no sentido inverso por causa do vetor: a comparação mistura eixos, sementes, bases de centróides (1 contra 2 janelas) e n (14 contra 7). As continuações de Chopin sem steering repetem mais trigramas (0,124 contra 0,041).
-- Que não há quebra: não vimos aumento da repetição até α = 1,5, mas isso não garante música coerente. Não houve escuta nem outro par, outro eixo ou outra métrica. O eixo de medida é o mesmo que o vetor centrado empurra.
+- Que não há quebra: não vimos aumento da repetição até α = 1,5, mas isso não garante música coerente. Não houve escuta nem outro eixo; outros pares e descritores independentes aparecem abaixo, com 7 sementes. O eixo de medida é o mesmo que o vetor centrado empurra.
 - Que os pontos intermediários caem perto dos clássicos: isso só foi visto na geometria, não no steering.
 
 **Outros pares** (`analysis/F7_deslocamento/pares_resumo.csv`; 7 sementes, 1 amostra por condição, α = 1, centróides de 2 janelas, exceto Bach → Chopin, que usa a base "forte" de 1 janela):
@@ -130,8 +130,8 @@ Pegamos um modelo que aprendeu a prever música, o Anticipatory Music Transforme
 |---|---|---|---|---|---|
 | Bach → Chopin | 1,60 | 0,39 | 0,43 | 0,68 | 7/7 (p = 0,016) |
 | Chopin → Bach | 1,60 | 0,33 | 0,29 | 0,46 | 7/7 (p = 0,016) |
-| Mozart → Debussy | 1,71 | 0,23 | 0,28 | 0,50 | 6/7 (p = 0,031) |
-| Joplin → Chopin | 1,11 | 0,44 | 0,49 | 0,55 | 5/7 (p = 0,69) |
+| Mozart → Debussy | 1,71 | 0,22 | 0,28 | 0,50 | 6/7 (p = 0,031) |
+| Joplin → Chopin | 1,11 | 0,44 | 0,49 | 0,54 | 5/7 (p = 0,69) |
 | Haydn → Mozart | 0,10 | — | — | — | não interpretável |
 
 O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → Chopin. Haydn e Mozart estão quase sobrepostos no mapa (distância de 0,10), então o eixo "origem → alvo" não está bem definido e o progresso sai do intervalo 0–1. **Leitura:** H6 deixa de depender de um par só, mas não vale para qualquer par. Nos três pares em que funcionou, os compositores estão distantes no mapa (distância ≥ 1,6). Com 4 pares, a relação entre distância e efeito é só sugestiva.
@@ -139,7 +139,7 @@ O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → C
 **Checagem com descritores independentes do modelo** (`analysis/F7_deslocamento/metrics_descritores.json`; 7 sementes de Bach × 2 amostras, continuações de 40 notas, vetor centrado de Chopin com α = 1). Medimos a música gerada sem usar o modelo, com estatísticas simples das notas. O resultado é misto:
 - **Vão na direção de Chopin:** a duração média das notas sobe de 0,30 s para 0,65 s em 7 de 7 sementes (referência: Bach 0,37 s, Chopin 0,63 s). A polifonia sobe de 2,4 para 3,0 (6 de 7 contra a condição sem steering; 7 de 7 contra o aleatório). A dispersão das alturas aumenta em relação ao vetor aleatório (7 de 7).
 - **Vão contra:** as notas por segundo caem de 9,0 para 4,8 (7 de 7), embora Chopin seja mais denso que Bach na referência (9,3 contra 8,0). A altura média cai cerca de 3 semitons.
-- **Leitura cautelosa:** o vetor muda de fato a textura (notas mais longas, mais sobrepostas, música mais "lenta"), e parte dessa mudança coincide com o perfil de Chopin. Mas não é uma imitação de Chopin em todos os aspectos. Com 7 sementes, um par só e descritores simples, isso é indício, não prova.
+- **Leitura cautelosa:** o vetor muda de fato a textura (notas mais longas, mais sobrepostas, música mais "lenta"), e parte dessa mudança coincide com o perfil de Chopin. Mas não é uma imitação de Chopin em todos os aspectos. Com 7 sementes, um só par (Bach → Chopin) e descritores simples, isso é indício, não prova.
 
 ## Q5. Expectativa: o quanto o modelo se surpreende? (F8)
 
@@ -170,8 +170,8 @@ O efeito se repete em 3 das 4 direções interpretáveis e falha em Joplin → C
 | H3 | O compositor explica uma minoria da variância entre peças | R² = 0,275 (nulo 0,0235); 65,3% das peças mais perto de outro centróide | Sobrevive; o valor depende da representação (0,12–0,28) |
 | H4 | O gênero rivaliza com o compositor | R² do gênero 0,164 contra 0,317 do compositor (1.053 peças) | Não se confirma; enfraquece |
 | H5 | O espaço é um contínuo; o ramo destacado, se houver, é o Barroco | Razão 1,769 contra p95 do nulo 2,31; corte em 2 estável (ARI 0,782), bloco de 7 pré-românticos | Contínuo sobrevive; ramo é pré-romântico, não só Barroco; k ≥ 3 cai |
-| H6 | O vetor centrado desloca mais que o aleatório e que nenhum, de forma monótona em α | 0,684 contra 0,433 e 0,392 (α = 1); 7 de 7 sementes, p = 0,016; média sobe até α = 1,5 (0,755), mas só 4 de 7 trajetórias são monótonas | Sobrevive, como deslocamento parcial |
-| H7 | O progresso Bach → Chopin é monótono; intermediários perto dos clássicos é pergunta aberta | t = 0 → 0,277; 0,5 → 0,338; 1 → 0,688 (monótono, não linear); Mozart e Beethoven são os clássicos mais próximos do segmento (geometria) | Enfraquece (um par; sem teste para "Bach domina") |
+| H6 | O vetor centrado desloca mais que o aleatório e que nenhum, de forma monótona em α | 0,684 contra 0,433 e 0,392 (α = 1); 7 de 7 sementes, p = 0,016; média sobe até α = 1,5 (0,755), mas só 4 de 7 trajetórias são monótonas | Sobrevive, como deslocamento parcial; em 3 de 4 direções interpretáveis (falha em Joplin → Chopin: 5/7, p = 0,69; Haydn → Mozart não interpretável) |
+| H7 | O progresso Bach → Chopin é monótono; intermediários perto dos clássicos é pergunta aberta | t = 0 → 0,277; 0,5 → 0,338; 1 → 0,688 (monótono, não linear); Mozart e Beethoven são os clássicos mais próximos do segmento (geometria) | Enfraquece (só Bach ↔ Chopin; sem teste para "Bach domina") |
 
 ## Leitura à luz de Meyer
 
@@ -180,7 +180,7 @@ Esta seção é interpretação. Usa a ideia geral de que o estilo se organiza e
 - **Dialeto, época (H1, H5):** a distância crescer com a diferença de nascimento (ρ = 0,505) e o bloco pré-romântico se separar de modo estável (ARI 0,782) são compatíveis com a ideia de que as épocas compartilham um dialeto. O fato de o espaço ser contínuo e o PC1 acompanhar a cronologia só em parte (ρ = 0,525) sugere que o dialeto muda gradualmente, sem fronteiras nítidas. Lembrar que há poucos barrocos e clássicos.
 - **Idioma do compositor (H3):** o compositor explica uma minoria da variação (R² = 0,275, nulo 0,0235), e o acerto médio de 0,346 é muito acima do acaso. Isso sugere que há um idioma reconhecível por compositor, mas frouxo: a nuvem de cada um se sobrepõe à dos vizinhos. É uma leitura do modelo, que vê só notas e tempos.
 - **Estilo interno da obra:** janelas da mesma peça são mais próximas entre si do que de outras peças do mesmo compositor (52 de 52). É compatível com a ideia de que cada obra tem uma coerência própria. Mas nossa medida mistura essa coerência com a gravação e o arquivo MIDI, e não mede as expectativas dentro da obra. Por isso fica como indício fraco.
-- **Escolhas dentro de restrições (H6, H7):** somar o vetor de Chopin move a continuação no eixo (0,684 contra 0,392 sem steering; 7 de 7 sementes), mas a música não chega ao centróide dele (distância 0,930). Uma leitura possível, sem teste direto, é que o vetor médio captura uma parte da restrição de um estilo, e a música gerada ainda faz escolhas que o vetor não fixa. O caminho Bach → Chopin só foi testado em um par.
+- **Escolhas dentro de restrições (H6, H7):** somar o vetor de Chopin move a continuação no eixo (0,684 contra 0,392 sem steering; 7 de 7 sementes), mas a música não chega ao centróide dele (distância 0,930). Uma leitura possível, sem teste direto, é que o vetor médio captura uma parte da restrição de um estilo, e a música gerada ainda faz escolhas que o vetor não fixa. O vetor também desloca em Mozart → Debussy e Chopin → Bach, mas não em Joplin → Chopin. Nos descritores independentes, as notas ficam mais longas e mais sobrepostas (na direção de Chopin) e menos densas (contra). O caminho Bach → Chopin só foi testado em Bach ↔ Chopin.
 - **Expectativa (F8):** a surpresa do modelo cresce, em média, com a época (ρ = 0,51, IC95% 0,23–0,73), e os ragtimes e os barrocos estão entre os mais previsíveis. Não distinguimos entre repertório mais ou menos presente no Lakh e regularidade da própria música. Mas a expectativa aqui é a de um modelo treinado no Lakh, não a de um ouvinte, e a regularidade de tonalidade e ritmo não foi medida.
 
 ## O que o modelo não vê / limitações
@@ -192,7 +192,7 @@ Esta seção é interpretação. Usa a ideia geral de que o estilo se organiza e
 - **Metadados.** Nascimento e nacionalidade foram curados à mão e não verificados em fonte externa. A verificação por web foi bloqueada no ambiente.
 - **Mapa 2D.** Distorce as distâncias (Spearman 0,76). Serve para ilustrar; as medidas são feitas no espaço original.
 - **Escolha de representação.** Camada, pooling e número de janelas mudam parte dos números (o R² do compositor vai de 0,12 a 0,28). A camada foi escolhida e avaliada nos mesmos dados.
-- **Steering.** Um par, sete sementes de Bach, uma peça por semente, sem escuta. O progresso é uma projeção num eixo.
+- **Steering.** Quatro pares interpretáveis, sete sementes cada (no principal, sementes de Bach, uma peça por semente), sem escuta. O progresso é uma projeção num eixo.
 - **Controles que faltam.** Andamento, dinâmica e linha de base simbólica (histograma de intervalos, duração, densidade). Também faltam IC e nulo para vários números (F2, transposição, vizinhos).
 - **Nomes.** Várias listas usam só o sobrenome; "Scott" pode ser J. Scott ou C. Scott.
 - **Estabilidade (teste com 3 janelas por peça; fonte: `analysis/F6_controles/metrics_3janelas.json`).** O núcleo pré-romântico se mantém, mas o bloco do corte em k = 2 ganha Mendelssohn e Victoria (9 compositores, ARI 0,753, razão de lacuna 1,732 contra p95 2,372). Fora isso, os resultados mudam pouco: camada 6 média com acurácia balanceada 0,368; Mantel ρ = 0,506 (p = 0,0002); nacionalidade parcial ρ = 0,041 (p = 0,114); R² do compositor 0,299 (63,9% das peças mais perto de outro centróide); H4: R² do gênero 0,179 contra 0,337. A base principal continua sendo 2 janelas.
@@ -210,6 +210,7 @@ Todas foram abertas e conferidas.
 7. `analysis/F7_deslocamento/figs/steering_alfa.png`. Varredura de α. Mensagem: quanto mais forte o vetor de Chopin, mais a continuação avança no eixo Bach → Chopin (0,38 a 0,75), e o vetor aleatório fica plano (0,38 a 0,47). O subtítulo diz "Repetição de trigramas não aumenta até α = 1,5", o que não garante música coerente. Por semente, só 4 de 7 são monótonas.
 8. `analysis/F7_deslocamento/figs/steering.png`. Progresso por condição, α = 1, n = 14. Mensagem: o vetor centrado (0,68) fica bem acima do aleatório (0,43) e de nenhum (0,39), e o vetor de Bach sozinho piora (0,28). O título ("empurra a música gerada na direção de Chopin, sem chegar lá") já traz a ressalva: a música não chega ao alvo (a linha tracejada em 1,0). As colunas "caminho" repetem o centrado (t = 1) e levam à leitura "Bach domina", não testada.
 9. `analysis/F7_deslocamento/figs/steering_dois_sentidos.png`. Bach → Chopin e Chopin → Bach. Mensagem: o efeito aparece nos dois sentidos (o título da figura diz "mais de Bach para Chopin", que é descritivo) (0,68 contra 0,39 e 0,43; 0,46 contra 0,33 e 0,29), menor no inverso. A comparação mistura eixos, sementes e n (14 contra 7); mostrar sem atribuir a assimetria ao vetor.
-10. `analysis/F8_expectativa/figs/surpresa_por_compositor.png`. Surpresa do modelo por compositor, em ordem de nascimento. Mensagem: Victoria, barrocos e ragtime ficam à esquerda da média (2,49), e Scharwenka, Rzewski, Scriabin e Lack ficam bem à direita; a tendência com a época é moderada (ρ = 0,51, IC95% 0,23–0,73). É surpresa para este modelo. Os IC variam bastante entre compositores.
+10. `analysis/F7_deslocamento/figs/steering_pares.png`. Progresso por condição nos 4 pares interpretáveis (média por semente ± erro padrão, 7 sementes). Mensagem: o vetor centrado fica acima do aleatório e de nenhum em Bach → Chopin (0,68), Chopin → Bach (0,46) e Mozart → Debussy (0,50), mas não em Joplin → Chopin (0,54 contra 0,49 e 0,44; 5 de 7, p = 0,69). Haydn → Mozart fica de fora (centróides a 0,10; não interpretável), citado na nota de rodapé. Figura de apoio ao slide 7.
+11. `analysis/F8_expectativa/figs/surpresa_por_compositor.png`. Surpresa do modelo por compositor, em ordem de nascimento. Mensagem: Victoria, barrocos e ragtime ficam à esquerda da média (2,49), e Scharwenka, Rzewski, Scriabin e Lack ficam bem à direita; a tendência com a época é moderada (ρ = 0,51, IC95% 0,23–0,73). É surpresa para este modelo. Os IC variam bastante entre compositores.
 
 Não recomendada: `analysis/F3_geometria/figs/mapa_pca.png` é a versão de trabalho do mapa. Tem rótulos sobrepostos e dois "Scott" sem distinção; usar a de apresentação.
