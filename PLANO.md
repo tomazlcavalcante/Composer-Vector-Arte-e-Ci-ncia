@@ -75,3 +75,5 @@ Medir como o modelo organiza os compositores no espaço interno e confrontar iss
 - Desvios de escopo vão para a lista "Ideias fora do escopo" do REPORT, nunca para o código.
 
 **Modelo de `REPORT.md`:** Pergunta · Hipótese registrada · Configuração · Resultado (número + intervalo) · Comparação com o nulo · O que **não** se pode concluir · Figuras · Ideias fora do escopo.
+
+> **Nota (08/11):** as observações sobre `use_tempos=False` e `use_sustain_pedals=False` (seção 2) valem para o tokenizador do modelo original (miditok). Os resultados finais usam o **Anticipatory Music Transformer**, cujos eventos são só (tempo em segundos, duração, nota): sem pedal (`control_change` ignorado), sem dinâmica (velocity) e sem andamento notado. Ver RESULTADOS.md.

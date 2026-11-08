@@ -110,7 +110,9 @@ h4["R2_compositor_mesmas_pecas"] = float(r2(Zg, yg))
 
 fig, ax = plt.subplots(figsize=(7, 10))
 cols = {"Renascimento": "#8c564b", "Barroco": "#d62728", "Clássico": "#ff7f0e", "Romântico": "#1f77b4", "Moderno": "#2ca02c"}
-ax.barh([c.split(",")[0] for c in disp_tab.composer], disp_tab.dispersao, color=[cols.get(p, "gray") for p in disp_tab.periodo])
+_sur = [c.split(",")[0] for c in disp_tab.composer]
+labels = [(c.split(",")[1].strip()[0] + ". " + sn) if _sur.count(sn) > 1 else sn for c, sn in zip(disp_tab.composer, _sur)]
+ax.barh(labels, disp_tab.dispersao, color=[cols.get(p, "gray") for p in disp_tab.periodo])
 ax.set_xlabel(f"dispersão média intra-compositor (n = {N_EQ} peças por sorteio)")
 ax.set_title("Quão espalhada é a obra de cada compositor")
 fig.tight_layout()

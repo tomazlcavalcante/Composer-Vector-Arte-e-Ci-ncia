@@ -94,7 +94,7 @@ Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a
 - [x] B3. Expectativa (Meyer): surpresa média do modelo (perda) por compositor e período, a partir da perda já salva por janela.
 - [x] B4. Corrigir o que a revisão apontar.
 - [ ] B5. Refazer F2–F5 com 3 janelas, se a B1 terminar; registrar a estabilidade.
-- [ ] B6. RESULTADOS.md: conclusões por hipótese, números finais e limitações.
+- [x] B6. RESULTADOS.md: conclusões por hipótese, números finais e limitações.
 - [ ] B7. APRESENTACAO.md: roteiro slide a slide (mensagem, figura, número, fala), para o grupo montar o deck às 13h.
 - [ ] B8. Revisão final de RESULTADOS e APRESENTACAO por um subagente independente.
 
