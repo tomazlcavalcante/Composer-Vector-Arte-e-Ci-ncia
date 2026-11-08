@@ -140,3 +140,8 @@ Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a
 - **Metadados:** o WebFetch funciona quando chamado pelo coordenador (nos subagentes em segundo plano ficava esperando permissão). Conferi no IMSLP os 9 compositores de baixa confiança. Só Teilman estava errado: nasceu em 1845 e é **norueguês**, não dinamarquês. Os outros 8 confirmados, com URL na coluna `fonte`. Gurlitt aparece no IMSLP como alemão e dinamarquês; mantido Alemão.
 - F3 refeita com a correção (2 janelas): H1 ρ = 0,505; nacionalidade ρ = 0,083 (p = 0,019) e, controlando a época, ρ = 0,041 (p = 0,111). Números atualizados nos documentos. Conclusões inalteradas.
 - README: corrigido o modelo dos resultados (AMT, treinado no Lakh), não "treinado no GiantMIDI".
+
+## 2026-11-08, 08:35 — material extra para a apresentação
+
+- Diagramas dos slides 2 e 10: `analysis/figs_apresentacao/pipeline.png` (o fluxo do trabalho para leigos) e `meyer_niveis.png` (os níveis de estilo e o achado de cada um). O APRESENTACAO.md já aponta para eles.
+- Exemplos em MIDI: `analysis/F7_deslocamento/exemplos_midi/`. Semente da Sinfonia BWV 796 de Bach, continuada sem steering, com vetor de Chopin em α = 1 e com α = 1,5. São ilustração (1 semente, 1 amostra), não evidência. Observação a conferir ouvindo: as versões com Chopin saíram 2 a 3 vezes mais lentas (32 s e 24 s, contra 10 s, para as mesmas 130 notas). Pode ser acaso. Se for sistemático, é um caminho interessante, mas fora do escopo agora.

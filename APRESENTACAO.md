@@ -16,7 +16,7 @@ Tempo: cerca de 1 minuto por slide (slides 1 e 12 mais curtos; 4, 5 e 7 podem pa
 
 ## Slide 2. Pedimos a um modelo que prevê música a "impressão digital" de 52 compositores
 
-- **Visual:** diagrama simples. Três caixas em sequência: (1) acervo: peças de piano do GiantMIDI; (2) modelo (Anticipatory Music Transformer, treinado no Lakh MIDI) lê cada peça e devolve uma lista de números; (3) média por compositor = "impressão digital". Ao lado, o texto "52 compositores, 2.183 peças".
+- **Visual:** `analysis/figs_apresentacao/pipeline.png` (fluxo: acervo, trechos de ~340 notas, modelo, impressão digital da camada 6, média por compositor, saídas mapa/nuvens/forma/andar no espaço).
 - **O número que importa:** 2.183 peças, 52 compositores.
 - **Fala:** Usamos um modelo que aprendeu a prever o que vem a seguir na música. Mostramos a ele 2.183 peças de piano de 52 compositores e guardamos o que ele "pensa" ao ler cada trecho. A média disso por compositor é a impressão digital dele. A partir daí tudo é geometria: perto e longe, para o modelo.
 - **Cuidado:** o modelo foi treinado no Lakh MIDI, não em música clássica; "perto" e "surpreendente" são relativos a esse treino. As gravações do acervo vêm do YouTube, transcritas automaticamente, então o intérprete e o ruído da transcrição se misturam ao compositor (VALIDADE, "O que nenhum controle cobre").
@@ -72,7 +72,7 @@ Tempo: cerca de 1 minuto por slide (slides 1 e 12 mais curtos; 4, 5 e 7 podem pa
 
 ## Slide 10. À luz de Meyer: o estilo do modelo tem níveis, mas é gradual e frouxo
 
-- **Visual:** diagrama simples. Quatro degraus ou círculos concêntricos, cada um com a evidência em uma linha: dialeto da época (cronologia parcial, bloco pré-romântico), idioma do compositor (nuvem de 28%), obra (coerência interna, fraca), escolhas dentro de restrições (steering parcial). Mais uma seta lateral: "expectativa (surpresa do modelo)".
+- **Visual:** `analysis/figs_apresentacao/meyer_niveis.png` (três níveis: época, compositor, obra, cada um com o achado em uma linha; escolhas dentro de restrições e expectativa ficam na fala).
 - **O número que importa:** 52 de 52 compositores têm janelas da mesma peça mais próximas entre si do que de outras peças do próprio compositor (diferença 0,33; IC95% 0,29 a 0,36).
 - **Fala:** Lendo à luz de Meyer, o modelo parece ter um nível de dialeto de época, que muda de forma gradual, e um idioma de compositor reconhecível mas frouxo. Dentro de cada obra há coerência, em parte: os dois trechos de uma mesma peça se parecem mais entre si do que com outras peças do autor, mas isso se mistura com a gravação e o arquivo MIDI, que são os mesmos nos dois trechos. E o vetor médio captura parte das restrições de um estilo, mas a música gerada ainda faz escolhas que ele não fixa. É uma leitura interpretativa, não uma prova de que o modelo "entende" estilo.
 - **Cuidado:** esta é a seção de interpretação do RESULTADOS; só ligamos aos níveis resultados que sobrevivem. A coesão da obra enfraquece: a medida mistura coerência da peça com a gravação e o arquivo MIDI (os mesmos nas duas janelas) e não mede expectativas dentro da obra. O vetor de Chopin move a música até 0,684 e a distância ao alvo continua 0,930. A expectativa é a do modelo, não a de um ouvinte.
@@ -103,8 +103,7 @@ Tempo: cerca de 1 minuto por slide (slides 1 e 12 mais curtos; 4, 5 e 7 podem pa
 6. `analysis/F3_geometria/figs/mapa_apresentacao.png`: regerada e conferida (52 compositores, PC1 34%, distorção 0,76). Para projetar, considerar fonte maior nos rótulos; o mapa tem muitos pontos para um slide. Opcional: destacar em cor os cinco ou seis nomes citados na fala.
 7. `analysis/F5_topologia/figs/dendrograma.png`: distingue J. Scott de C. Scott; os cortes finos (k ≥ 3) são instáveis, não comentar. Conferir legibilidade dos rótulos em tela.
 8. `analysis/F8_expectativa/figs/surpresa_por_compositor.png`: o título já diz "Surpresa do AMT"; falar sempre "do modelo" na fala. Os IC variam bastante entre compositores.
-9. Slides sem figura (1, 2, 9, 10, 11, 12): produzir o diagrama simples do slide 2 e o diagrama dos níveis de Meyer do slide 10.
-10. Não usar `analysis/F3_geometria/figs/mapa_pca.png` (rótulos sobrepostos, dois "Scott" sem distinção).
+9. Não usar `analysis/F3_geometria/figs/mapa_pca.png` (rótulos sobrepostos, dois "Scott" sem distinção).
 
 ## Sugestão de divisão das falas
 
