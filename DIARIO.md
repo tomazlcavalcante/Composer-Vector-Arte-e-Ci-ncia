@@ -19,3 +19,14 @@ GiantMIDI (subconjunto com sobrenome verificado). Precisa chegar ao ambiente por
 ### Orçamento de CPU
 
 Amostra de compositores com ≥ 20 peças (sem os contemporâneos de YouTube) e até 3 janelas por peça. Comandos de até 10 minutos, com resultados salvos incrementalmente.
+
+## 2026-11-07, 21:20 — dados e modelo no ambiente
+
+- **Domínios liberados** (huggingface.co, Google Drive). O zip do GiantMIDI veio do notebook do Tomaz pelo app. O subconjunto `surname_checked_midis` v1.2 (7.236 MIDIs) está em `/home/claude/data/giant/surname_checked_midis`.
+- **Modelo:** Anticipatory Music Transformer small (`stanford-crfm/music-small-800k`): GPT-2 com 12 camadas, d = 768, contexto de 1.024 tokens, treinado no Lakh MIDI. O código do tokenizador (`jthickstun/anticipation`) foi instalado a partir do GitHub.
+- **Sanidade:** perda de 2,88 num noturno de Chopin; cerca de 2 s por janela em CPU (2 núcleos).
+- **Decisão sobre a entrada:** usar o formato do treino do AMT no modo autoregressivo, `[AUTOREGRESS]` seguido de 341 eventos (tempo, duração, nota), com tempo relativo ao início da janela e no máximo 100 s. Assim o modelo vê dados no formato em que foi treinado.
+- **Decisão sobre a amostra:** 51 compositores com ≥ 20 peças (5 excluídos: contemporâneos de YouTube ou identidade incerta; ver `metadata_curated.csv`), 2.184 peças. Passada 1 = janela do meio de cada peça (cerca de 75 min); passadas 2 e 3 = janelas a 1/6 e 5/6, só se houver tempo. Mais Tico-Tico (Abreu) como ilustração.
+- **Decisão sobre camadas:** salvar todas as 13 (embedding + 12 blocos), com último token e média. A F2 escolhe entre elas.
+- **Metadados:** curados com conhecimento geral e marcados "verificar". Corrigidos os erros do GiantMIDI (Bach, Handel, Satie, Fauré, Brahms, Poulenc estavam como "British"). Período pela regra mecânica: nascimento + 30, cortes em 1600 / 1750 / 1820 / 1900, com a coluna `fronteira`.
+- **Comando para retomar:** `python3 analysis/F0_infra/extract_amt.py --pass 1 --budget-min 9`. O script é retomável e pula o que já foi feito.
