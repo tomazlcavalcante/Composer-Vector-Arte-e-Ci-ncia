@@ -5,5 +5,11 @@
  "dist_compositores_diferentes": 1.0051,
  "R2_janelas_por_peca": 0.7828,
  "R2_janelas_por_compositor": 0.2242,
- "R2_compositor_nivel_peca_2janelas": 0.2754
+ "R2_compositor_nivel_peca_2janelas": 0.2754,
+ "por_compositor_frac_mesma_peca_mais_perto": 1.0,
+ "por_compositor_diferenca_media": 0.3254,
+ "por_compositor_diferenca_ic95": [
+  0.292,
+  0.3598
+ ]
 }

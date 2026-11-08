@@ -60,3 +60,24 @@ res["R2_compositor_nivel_peca_2janelas"] = round(float(sum((y == k).sum() * np.s
                                                              for k in set(y)) / totp), 4)
 (HERE / "metrics_intra_obra.json").write_text(json.dumps(res, indent=1, ensure_ascii=False))
 print(json.dumps(res, indent=1, ensure_ascii=False))
+
+# --- robustez: por compositor, a distância média entre janelas da mesma peça é menor que entre peças? ---
+per = []
+for k in sorted(set(comp)):
+    m = comp == k
+    Dk = D[np.ix_(m, m)]
+    pk = pid[m]
+    iuk = np.triu_indices(m.sum(), 1)
+    sp = (pk[:, None] == pk[None])[iuk]
+    dk = Dk[iuk]
+    per.append(dict(composer=k, mesma_peca=float(dk[sp].mean()), outra_peca=float(dk[~sp].mean())))
+import pandas as pd  # noqa: E402
+per = pd.DataFrame(per)
+per.to_csv(HERE / "intra_obra_por_compositor.csv", index=False)
+diff = (per.outra_peca - per.mesma_peca).values
+boot = [rng.choice(diff, len(diff)).mean() for _ in range(2000)]
+res["por_compositor_frac_mesma_peca_mais_perto"] = round(float((diff > 0).mean()), 3)
+res["por_compositor_diferenca_media"] = round(float(diff.mean()), 4)
+res["por_compositor_diferenca_ic95"] = [round(float(x), 4) for x in np.percentile(boot, [2.5, 97.5])]
+(HERE / "metrics_intra_obra.json").write_text(json.dumps(res, indent=1, ensure_ascii=False))
+print(json.dumps(res, indent=1, ensure_ascii=False))

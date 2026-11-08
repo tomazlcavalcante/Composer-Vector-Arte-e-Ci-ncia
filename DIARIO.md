@@ -67,3 +67,12 @@ Cada peça agora é a média de duas janelas (o meio e 1/6). As métricas da pas
 2. **F4b:** nulo para a comparação mesma peça × mesmo compositor (permutar janelas entre peças do mesmo compositor) e IC bootstrap.
 3. **Revisão independente** (subagente que só vê REPORTs, figuras e números) e correções.
 4. **RESULTADOS.md:** conclusões por hipótese H1–H7, figuras candidatas para a apresentação e limitações.
+
+## 2026-11-08, 00:40 — rodada autônoma 1
+
+Ambiente intacto: dados, modelo e as 4.368 janelas extraídas. O modelo do Thiago não apareceu; seguimos com o AMT, como decidido.
+
+- **F7, varredura de α** (Bach → Chopin, 7 sementes, 1 amostra cada; centróides com 2 janelas). Progresso com o vetor centrado: α = 0 → 0,38; 0,25 → 0,47; 0,5 → 0,59; 1 → 0,68; 1,5 → 0,76. A distância ao centróide de Chopin cai de 1,18 para 0,85. Com o vetor aleatório, o progresso fica plano (0,38–0,47). Repetição de trigramas ≤ 6% em tudo: **sem quebra até α = 1,5**. **H6 confirmada** com 7 sementes; a monotonia deixa de depender só do piloto.
+- **F7, par inverso Chopin → Bach** (7 sementes): centrado 0,46 contra nenhum 0,33 e aleatório 0,29. Centrado > ambos em 7 de 7 sementes (p = 0,016). **Efeito assimétrico:** +0,14 contra +0,29 no sentido Bach → Chopin. No caminho, o vetor puro de Chopin (t = 0) puxa de volta para Chopin (0,19), e o ponto médio dá 0,41. Nos dois sentidos, a mistura meio a meio cai mais para o lado de Bach: o vetor de Bach "domina" a mistura.
+- **Decisão:** o exemplo ilustrativo de steering com o Tico-Tico fica de fora. O Abreu não tem centróide (1 peça) e a posição do Tico-Tico no mapa já cumpre o papel ilustrativo. Economiza tempo de CPU e de revisão.
+- **F4b, robustez:** em 100% dos compositores, as janelas da mesma peça ficam mais perto entre si do que de outras peças do mesmo compositor. Diferença média de 0,33 (IC95% 0,29–0,36).

@@ -30,7 +30,8 @@ ap.add_argument("--n-seeds", type=int, default=4)
 ap.add_argument("--new", type=int, default=150)
 ap.add_argument("--src", default="Bach, Johann Sebastian")
 ap.add_argument("--tgt", default="Chopin, Frédéric")
-ap.add_argument("--set", default="piloto", choices=["piloto", "forte"])
+ap.add_argument("--set", default="piloto", choices=["piloto", "forte", "alfa"])
+ap.add_argument("--reps", type=int, default=2)
 args = ap.parse_args()
 cfg = json.loads((HERE.parent / "F2_representacao" / "metrics.json").read_text())["best"]
 LAYER, POOL = cfg["layer"], cfg["pooling"]
@@ -150,6 +151,9 @@ else:
         conds = [("nenhum", None, 0.0, None), ("aleatorio", "aleatorio", 0.5, None), ("centrado", "centrado", 0.2, None),
                  ("centrado", "centrado", 0.5, None), ("centrado", "centrado", 1.0, None),
                  ("caminho_t0.5", "caminho", 0.5, 0.5)]
+    elif args.set == "alfa":  # varredura de intensidade: centrado vs aleatório
+        conds = [("nenhum", None, 0.0, None)] + [(n, n, a, None) for a in (0.25, 0.5, 1.0, 1.5)
+                                                  for n in ("centrado", "aleatorio")]
     else:  # controles com a mesma intensidade (alpha = 1) e caminho Bach -> Chopin
         conds = [("nenhum", None, 0.0, None), ("aleatorio", "aleatorio", 1.0, None), ("centrado", "centrado", 1.0, None),
                  ("caminho_t0", "caminho", 1.0, 0.0), ("caminho_t0.5", "caminho", 1.0, 0.5), ("caminho_t1", "caminho", 1.0, 1.0)]
@@ -160,7 +164,7 @@ else:
             continue
         seed = ev[:150]  # 50 eventos de semente
         for name, kind, a, tt in conds:
-            for rep in range(2):
+            for rep in range(args.reps):
                 state["v"] = vec(kind, args.tgt, tt) if kind else None
                 state["a"] = a
                 new = gen(seed, args.new)
@@ -176,10 +180,11 @@ else:
                                  dist_origem=float(cosine_dist(z[None], A[None])[0, 0]), repeticao_trigramas=rep_rate))
                 print(rows[-1], flush=True)
     res = pd.DataFrame(rows)
-    res.to_csv(HERE / f"steering_{args.set}.csv", index=False)
+    tag = args.set + ("" if args.src.startswith("Bach") and args.tgt.startswith("Chopin") else "_" + args.src.split(",")[0] + "_" + args.tgt.split(",")[0])
+    res.to_csv(HERE / f"steering_{tag}.csv", index=False)
     summ = res.groupby(["cond", "alpha"]).agg(progresso=("progresso", "mean"), progresso_dp=("progresso", "std"),
                                               repeticao=("repeticao_trigramas", "mean"), n=("progresso", "size")).round(3)
-    out[f"b_{args.set}"] = dict(origem=args.src, alvo=args.tgt, n_novos_tokens=args.new,
+    out[f"b_{tag}"] = dict(origem=args.src, alvo=args.tgt, n_novos_tokens=args.new,
                            resumo=summ.reset_index().to_dict("records"))
     print(summ)
 
