@@ -1,0 +1,59 @@
+{
+ "base": "3 janelas por peça (1/6, meio, 5/6)",
+ "F2_melhor": {
+  "pooling": "mean",
+  "layer": 6,
+  "n_pieces": 2183,
+  "n_composers": 52,
+  "bal_acc": 0.3681,
+  "knn_purity": 0.3502,
+  "between_within": 0.4423,
+  "stability": 0.8538
+ },
+ "F3": {
+  "H1_mantel_rho": 0.5064,
+  "H1_p": 0.0001999600079984003,
+  "H2_nat_parcial_rho": 0.0406,
+  "H2_nat_parcial_p": 0.11437712457508498,
+  "pca_distorcao_spearman": 0.7572
+ },
+ "F3_tico": [
+  {
+   "composer": "Johnson, Charles Leslie",
+   "dist": 0.3931
+  },
+  {
+   "composer": "Scott, James",
+   "dist": 0.4309
+  },
+  {
+   "composer": "Nazareth, Ernesto",
+   "dist": 0.4746
+  }
+ ],
+ "F4": {
+  "H3_R2_compositor": 0.2985,
+  "H3_R2_nulo_media": 0.0235,
+  "sobreposicao_frac_pecas_mais_perto_de_outro": 0.6395
+ },
+ "F4_H4": {
+  "R2_genero": 0.17876095196349343,
+  "R2_compositor_mesmas_pecas": 0.33719771608594507
+ },
+ "F5": {
+  "gap_ratio": 1.732,
+  "gap_ratio_nulo_p95": 2.372,
+  "ari_k2": 0.753,
+  "grupo_k2": [
+   "Bach",
+   "Beethoven",
+   "Handel",
+   "Haydn",
+   "Hummel",
+   "Mendelssohn",
+   "Mozart",
+   "Scarlatti",
+   "Victoria"
+  ]
+ }
+}

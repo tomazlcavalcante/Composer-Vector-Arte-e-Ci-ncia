@@ -89,11 +89,11 @@ Ambiente intacto: dados, modelo e as 4.368 janelas extraídas. O modelo do Thiag
 
 Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a subagentes baratos. Marque [x] ao concluir.
 
-- [ ] B1. Passada 3 de extração (janela a 5/6), em segundo plano, para 3 janelas por peça.
+- [x] B1. Passada 3 de extração (janela a 5/6), em segundo plano, para 3 janelas por peça.
 - [x] B2. Revisão independente (F9): um subagente confere REPORTs, VALIDADE e DIARIO contra os metrics e CSVs.
 - [x] B3. Expectativa (Meyer): surpresa média do modelo (perda) por compositor e período, a partir da perda já salva por janela.
 - [x] B4. Corrigir o que a revisão apontar.
-- [ ] B5. Refazer F2–F5 com 3 janelas, se a B1 terminar; registrar a estabilidade.
+- [x] B5. Refazer F2–F5 com 3 janelas, se a B1 terminar; registrar a estabilidade.
 - [x] B6. RESULTADOS.md: conclusões por hipótese, números finais e limitações.
 - [x] B7. APRESENTACAO.md: roteiro slide a slide (mensagem, figura, número, fala), para o grupo montar o deck às 13h.
 - [ ] B8. Revisão final de RESULTADOS e APRESENTACAO por um subagente independente.
@@ -118,3 +118,18 @@ Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a
 - F7/REPORT: "repetição de trigramas ≤ 4% em todas" (e DIARIO 00:40 "≤ 6% em tudo") → médias 1,5–4,1% no forte (nenhum 4,14%); máximos por continuação 28,9% (forte), 23,7% (varredura), 39,5% (inverso); aleatório α = 1,5 tem média 6,4%.
 - F7/REPORT: "monótono em α" → a média cresce, mas por semente só 4 de 7 são monótonas; "sem quebra até α = 1,5" → sem aumento sistemático da repetição de trigramas (única medida de degeneração).
 - Não aplicado: DIARIO 21:20 (51 compositores / 2.184 peças vs 52 / 2.183), por ser entrada antiga e fora dos arquivos editáveis.
+
+## 2026-11-08, 08:10 — B1 e B5: passada 3 e teste de estabilidade com 3 janelas
+
+- Passada 3 concluída: janela a 5/6 de cada peça, 2.184 arquivos, 55 min.
+- **Decisão:** os números principais continuam sendo os de 2 janelas, base do RESULTADOS e do roteiro. A base de 3 janelas fica como teste de estabilidade, em `analysis/F6_controles/metrics_3janelas.json` e `vizinhos_3janelas.csv`. Os arquivos das frentes F2–F5 foram mantidos em 2 janelas.
+- **Com 3 janelas:**
+  - F2 escolhe de novo a camada 6 com média (acurácia 0,37; estabilidade 0,85).
+  - H1: Mantel ρ = 0,51 (p = 0,0002).
+  - Nacionalidade parcial: ρ = 0,04 (p = 0,11).
+  - R² do compositor: 0,30 (nulo 0,02); sobreposição de 64%.
+  - Gênero × compositor: R² de 0,18 contra 0,34.
+  - Contínuo: razão 1,73, contra p95 do nulo de 2,37.
+  - Tico-Tico: mesmos 3 vizinhos (Johnson, J. Scott, Nazareth).
+  - Única mudança: o bloco k = 2 ganha Mendelssohn e Victoria (ARI 0,75). O núcleo pré-romântico se mantém, mas a fronteira do bloco depende da amostra.
+- Conclusão: tudo o que o RESULTADOS afirma se mantém ou fica um pouco mais forte com mais janelas.
