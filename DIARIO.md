@@ -77,3 +77,10 @@ Ambiente intacto: dados, modelo e as 4.368 janelas extraídas. O modelo do Thiag
 - **Decisão:** o exemplo ilustrativo de steering com o Tico-Tico fica de fora. O Abreu não tem centróide (1 peça) e a posição do Tico-Tico no mapa já cumpre o papel ilustrativo. Economiza tempo de CPU e de revisão.
 - **F4b, robustez:** em 100% dos compositores, as janelas da mesma peça ficam mais perto entre si do que de outras peças do mesmo compositor. Diferença média de 0,33 (IC95% 0,29–0,36).
 - Ressalvas da revisão do REPORT da F7: a monotonia em α vale na média, mas só 4 de 7 sementes são individualmente monótonas; em α = 0,25 a vantagem sobre o aleatório ainda é fraca (5 de 7, p = 0,08). No par inverso, as condições "nenhum" e "aleatório" repetem mais (12% de trigramas repetidos), o que pode influir no progresso medido. Novas figuras: `steering_alfa.png` e `steering_dois_sentidos.png`.
+
+## 2026-11-08, 06:30 — rodada autônoma 2
+
+- **F6 refeita com a base de 2 janelas** (a versão anterior ficou em `*_passada1.*`). Transposição: deslocamento de 0,022 (±2 semitons) e 0,027 (±5), contra 0,93 entre centróides; em 9% dos casos o centróide mais próximo muda. Tamanho amostral: sem relação com a distância bruta (ρ = −0,12) nem com a dispersão (ρ = 0,04).
+- **Robustez entre representações** (`F6_controles/secundaria.py`). H1 vale em todas: camada 6 média 0,51; camada 5 média 0,49; camada 12 média 0,42; camada 6 último token 0,41, todas com p = 0,001. A nacionalidade parcial fica entre 0,01 e 0,04 em todas. R² do compositor: 0,28 / 0,26 / 0,22 / 0,12. O bloco pré-romântico aparece em todas; nas camadas 12 e com último token, vem com intrusos. **Decisão:** as conclusões H1, H2, H3 e H5 não dependem da escolha fina da representação. O número exato do R² depende.
+- **Tabela de validade** escrita em `analysis/F6_controles/VALIDADE.md`: 12 afirmações classificadas em sobrevive, enfraquece ou cai, mais o que nenhum controle cobre (pianista e gravação, modelo treinado no Lakh, poucos barrocos e clássicos).
+- O dendrograma da F5 agora distingue J. Scott de C. Scott. A F5 foi refeita; números inalterados.

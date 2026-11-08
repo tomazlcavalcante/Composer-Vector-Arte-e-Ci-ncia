@@ -1,0 +1,68 @@
+{
+ "camada6_mean": {
+  "H1_mantel": 0.505,
+  "H1_p": 0.001,
+  "H2_nat_parcial": 0.039,
+  "H3_R2": 0.275,
+  "grupo_menor_k2": [
+   "Bach",
+   "Beethoven",
+   "Handel",
+   "Haydn",
+   "Hummel",
+   "Mozart",
+   "Scarlatti"
+  ]
+ },
+ "camada5_mean": {
+  "H1_mantel": 0.492,
+  "H1_p": 0.001,
+  "H2_nat_parcial": 0.04,
+  "H3_R2": 0.264,
+  "grupo_menor_k2": [
+   "Bach",
+   "Beethoven",
+   "Handel",
+   "Haydn",
+   "Hummel",
+   "Mozart",
+   "Scarlatti"
+  ]
+ },
+ "camada12_mean": {
+  "H1_mantel": 0.424,
+  "H1_p": 0.001,
+  "H2_nat_parcial": 0.04,
+  "H3_R2": 0.22,
+  "grupo_menor_k2": [
+   "Bach",
+   "Beethoven",
+   "Gurlitt",
+   "Handel",
+   "Haydn",
+   "Hummel",
+   "Johnson",
+   "Mozart",
+   "Raff",
+   "Scarlatti",
+   "Scott",
+   "Victoria"
+  ]
+ },
+ "camada6_last": {
+  "H1_mantel": 0.414,
+  "H1_p": 0.001,
+  "H2_nat_parcial": 0.012,
+  "H3_R2": 0.124,
+  "grupo_menor_k2": [
+   "Bach",
+   "Beethoven",
+   "Handel",
+   "Haydn",
+   "Hummel",
+   "Mozart",
+   "Scarlatti",
+   "Victoria"
+  ]
+ }
+}

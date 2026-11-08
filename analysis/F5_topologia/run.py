@@ -58,6 +58,8 @@ gap_ratio_null = null[:, -1] / np.median(null, axis=1)
 
 # estabilidade de grupos (ligação média) em bootstrap por peças
 L = linkage(squareform(D, checks=False), "average")
+_sur = [k.split(",")[0] for k in keys]
+SHORT = [(k.split(",")[1].strip()[0] + ". " + s) if _sur.count(s) > 1 else s for k, s in zip(keys, _sur)]
 ari = {}
 for k in range(2, 6):
     base = fcluster(L, k, "maxclust")
@@ -70,15 +72,15 @@ for k in range(2, 6):
         vals.append(adjusted_rand_score(base, fcluster(Lb, k, "maxclust")))
     ari[k] = round(float(np.mean(vals)), 3)
 meta = load_meta().set_index("composer_key").loc[keys]
-groups = {k: {int(g): [keys[i].split(",")[0] for i in np.where(fcluster(L, k, "maxclust") == g)[0]]
+groups = {k: {int(g): [SHORT[i] for i in np.where(fcluster(L, k, "maxclust") == g)[0]]
               for g in set(fcluster(L, k, "maxclust"))} for k in range(2, 5)}
 
 cols = {"Renascimento": "#8c564b", "Barroco": "#d62728", "Clássico": "#ff7f0e", "Romântico": "#1f77b4", "Moderno": "#2ca02c"}
 fig, ax = plt.subplots(figsize=(8, 11))
-dn = dendrogram(L, labels=[k.split(",")[0] for k in keys], orientation="left", ax=ax, color_threshold=0,
+dn = dendrogram(L, labels=SHORT, orientation="left", ax=ax, color_threshold=0,
                 above_threshold_color="#888")
 for lbl in ax.get_ymajorticklabels():
-    i = [k.split(",")[0] for k in keys].index(lbl.get_text())
+    i = SHORT.index(lbl.get_text())
     lbl.set_color(cols.get(meta.periodo.values[i], "gray"))
 ax.set_title(f"Dendrograma dos centróides (ligação média, cosseno)\ncor do nome = período; estabilidade ARI k=2..5: {ari}", fontsize=10)
 fig.tight_layout()

@@ -1,0 +1,181 @@
+piece_id,composer,semitons,deslocamento,muda_vizinho
+"Wachs, Paul, Boléro, -9Oh6wrnmbw","Wachs, Paul",-5,0.07281875610351562,False
+"Wachs, Paul, Boléro, -9Oh6wrnmbw","Wachs, Paul",-2,0.06801116466522217,False
+"Wachs, Paul, Boléro, -9Oh6wrnmbw","Wachs, Paul",2,0.07430887222290039,False
+"Wachs, Paul, Boléro, -9Oh6wrnmbw","Wachs, Paul",5,0.0649067759513855,False
+"Czerny, Carl, 110 Progressive Excercises, Op.453, RfCjHjj6Zxw","Czerny, Carl",-5,0.008537769317626953,False
+"Czerny, Carl, 110 Progressive Excercises, Op.453, RfCjHjj6Zxw","Czerny, Carl",-2,0.00720667839050293,False
+"Czerny, Carl, 110 Progressive Excercises, Op.453, RfCjHjj6Zxw","Czerny, Carl",2,0.007802307605743408,False
+"Czerny, Carl, 110 Progressive Excercises, Op.453, RfCjHjj6Zxw","Czerny, Carl",5,0.01124119758605957,False
+"Mozart, Wolfgang Amadeus, Piano Sonata No.8 in A minor, K.310_300d, fRgxY8VUOz8","Mozart, Wolfgang Amadeus",-5,0.03286433219909668,False
+"Mozart, Wolfgang Amadeus, Piano Sonata No.8 in A minor, K.310_300d, fRgxY8VUOz8","Mozart, Wolfgang Amadeus",-2,0.03338336944580078,False
+"Mozart, Wolfgang Amadeus, Piano Sonata No.8 in A minor, K.310_300d, fRgxY8VUOz8","Mozart, Wolfgang Amadeus",2,0.02527153491973877,False
+"Mozart, Wolfgang Amadeus, Piano Sonata No.8 in A minor, K.310_300d, fRgxY8VUOz8","Mozart, Wolfgang Amadeus",5,0.03245675563812256,False
+"Fauré, Gabriel, Nocturne No.12, Op.107, GXVPsoq4GBQ","Fauré, Gabriel",-5,0.025145649909973145,False
+"Fauré, Gabriel, Nocturne No.12, Op.107, GXVPsoq4GBQ","Fauré, Gabriel",-2,0.011062026023864746,False
+"Fauré, Gabriel, Nocturne No.12, Op.107, GXVPsoq4GBQ","Fauré, Gabriel",2,0.010688424110412598,False
+"Fauré, Gabriel, Nocturne No.12, Op.107, GXVPsoq4GBQ","Fauré, Gabriel",5,0.025416970252990723,False
+"Liszt, Franz, Vexilla regis prodeunt, S.185, n_ido2UzXFM","Liszt, Franz",-5,0.018002748489379883,False
+"Liszt, Franz, Vexilla regis prodeunt, S.185, n_ido2UzXFM","Liszt, Franz",-2,0.018626868724822998,False
+"Liszt, Franz, Vexilla regis prodeunt, S.185, n_ido2UzXFM","Liszt, Franz",2,0.0277329683303833,False
+"Liszt, Franz, Vexilla regis prodeunt, S.185, n_ido2UzXFM","Liszt, Franz",5,0.019686460494995117,False
+"Beethoven, Ludwig van, Bagatelle in F minor, DWA7NMKXhnI","Beethoven, Ludwig van",-5,0.029317021369934082,False
+"Beethoven, Ludwig van, Bagatelle in F minor, DWA7NMKXhnI","Beethoven, Ludwig van",-2,0.02975362539291382,False
+"Beethoven, Ludwig van, Bagatelle in F minor, DWA7NMKXhnI","Beethoven, Ludwig van",2,0.02640712261199951,True
+"Beethoven, Ludwig van, Bagatelle in F minor, DWA7NMKXhnI","Beethoven, Ludwig van",5,0.0289304256439209,False
+"Victoria, Tomás Luis de, Nisi Dominus, o6hIRc7oU8E","Victoria, Tomás Luis de",-5,0.021795213222503662,False
+"Victoria, Tomás Luis de, Nisi Dominus, o6hIRc7oU8E","Victoria, Tomás Luis de",-2,0.019143879413604736,False
+"Victoria, Tomás Luis de, Nisi Dominus, o6hIRc7oU8E","Victoria, Tomás Luis de",2,0.014230489730834961,False
+"Victoria, Tomás Luis de, Nisi Dominus, o6hIRc7oU8E","Victoria, Tomás Luis de",5,0.017421185970306396,False
+"Schubert, Franz, 6 German Dances, D.820, NabtIIRnM3Q","Schubert, Franz",-5,0.033127546310424805,False
+"Schubert, Franz, 6 German Dances, D.820, NabtIIRnM3Q","Schubert, Franz",-2,0.020239293575286865,False
+"Schubert, Franz, 6 German Dances, D.820, NabtIIRnM3Q","Schubert, Franz",2,0.017688632011413574,False
+"Schubert, Franz, 6 German Dances, D.820, NabtIIRnM3Q","Schubert, Franz",5,0.028353214263916016,False
+"Schubert, Franz, 12 Ecossaises, D.781, 3lrlMyJ8mYU","Schubert, Franz",-5,0.021522045135498047,False
+"Schubert, Franz, 12 Ecossaises, D.781, 3lrlMyJ8mYU","Schubert, Franz",-2,0.02321016788482666,False
+"Schubert, Franz, 12 Ecossaises, D.781, 3lrlMyJ8mYU","Schubert, Franz",2,0.01785820722579956,False
+"Schubert, Franz, 12 Ecossaises, D.781, 3lrlMyJ8mYU","Schubert, Franz",5,0.020988821983337402,False
+"Rebikov, Vladimir, Jeux des sons, D4_dKTuXQsU","Rebikov, Vladimir",-5,0.030870139598846436,True
+"Rebikov, Vladimir, Jeux des sons, D4_dKTuXQsU","Rebikov, Vladimir",-2,0.0234452486038208,False
+"Rebikov, Vladimir, Jeux des sons, D4_dKTuXQsU","Rebikov, Vladimir",2,0.015407264232635498,False
+"Rebikov, Vladimir, Jeux des sons, D4_dKTuXQsU","Rebikov, Vladimir",5,0.024916410446166992,False
+"Liszt, Franz, Grande valse di bravura, S.209, vVQ2UEse-MI","Liszt, Franz",-5,0.03682518005371094,False
+"Liszt, Franz, Grande valse di bravura, S.209, vVQ2UEse-MI","Liszt, Franz",-2,0.01833021640777588,False
+"Liszt, Franz, Grande valse di bravura, S.209, vVQ2UEse-MI","Liszt, Franz",2,0.01749277114868164,False
+"Liszt, Franz, Grande valse di bravura, S.209, vVQ2UEse-MI","Liszt, Franz",5,0.03478062152862549,False
+"Scarlatti, Domenico, Keyboard Sonata in F minor, K.238, v4EIwCqISDs","Scarlatti, Domenico",-5,0.03379058837890625,False
+"Scarlatti, Domenico, Keyboard Sonata in F minor, K.238, v4EIwCqISDs","Scarlatti, Domenico",-2,0.028639554977416992,True
+"Scarlatti, Domenico, Keyboard Sonata in F minor, K.238, v4EIwCqISDs","Scarlatti, Domenico",2,0.025176286697387695,True
+"Scarlatti, Domenico, Keyboard Sonata in F minor, K.238, v4EIwCqISDs","Scarlatti, Domenico",5,0.030005335807800293,True
+"Meyer-Helmund, Erik, Petite Sérénade, Nu0isYm7ipo","Meyer-Helmund, Erik",-5,0.041486382484436035,False
+"Meyer-Helmund, Erik, Petite Sérénade, Nu0isYm7ipo","Meyer-Helmund, Erik",-2,0.039434611797332764,False
+"Meyer-Helmund, Erik, Petite Sérénade, Nu0isYm7ipo","Meyer-Helmund, Erik",2,0.04134654998779297,False
+"Meyer-Helmund, Erik, Petite Sérénade, Nu0isYm7ipo","Meyer-Helmund, Erik",5,0.03851759433746338,False
+"Liszt, Franz, Années de pèlerinage I, S.160, Aj2gFk0FoKo","Liszt, Franz",-5,0.025772452354431152,False
+"Liszt, Franz, Années de pèlerinage I, S.160, Aj2gFk0FoKo","Liszt, Franz",-2,0.01860445737838745,False
+"Liszt, Franz, Années de pèlerinage I, S.160, Aj2gFk0FoKo","Liszt, Franz",2,0.015417635440826416,False
+"Liszt, Franz, Années de pèlerinage I, S.160, Aj2gFk0FoKo","Liszt, Franz",5,0.024110019207000732,False
+"Handel, George Frideric, Suite in F minor, HWV 433, GkM30b6V1Rw","Handel, George Frideric",-5,0.02051597833633423,False
+"Handel, George Frideric, Suite in F minor, HWV 433, GkM30b6V1Rw","Handel, George Frideric",-2,0.02129596471786499,False
+"Handel, George Frideric, Suite in F minor, HWV 433, GkM30b6V1Rw","Handel, George Frideric",2,0.012283921241760254,False
+"Handel, George Frideric, Suite in F minor, HWV 433, GkM30b6V1Rw","Handel, George Frideric",5,0.025142133235931396,False
+"Bach, Johann Sebastian, Air in F major, BWV Anh.131, ofljU7lmZMA","Bach, Johann Sebastian",-5,0.01051175594329834,False
+"Bach, Johann Sebastian, Air in F major, BWV Anh.131, ofljU7lmZMA","Bach, Johann Sebastian",-2,0.009078264236450195,False
+"Bach, Johann Sebastian, Air in F major, BWV Anh.131, ofljU7lmZMA","Bach, Johann Sebastian",2,0.006218314170837402,False
+"Bach, Johann Sebastian, Air in F major, BWV Anh.131, ofljU7lmZMA","Bach, Johann Sebastian",5,0.010922133922576904,False
+"Rebikov, Vladimir, Moments d'allegresse, yZZO98arXbI","Rebikov, Vladimir",-5,0.027433395385742188,False
+"Rebikov, Vladimir, Moments d'allegresse, yZZO98arXbI","Rebikov, Vladimir",-2,0.0206335186958313,False
+"Rebikov, Vladimir, Moments d'allegresse, yZZO98arXbI","Rebikov, Vladimir",2,0.018250107765197754,False
+"Rebikov, Vladimir, Moments d'allegresse, yZZO98arXbI","Rebikov, Vladimir",5,0.02480524778366089,False
+"Prokofiev, Sergey, 6 Pieces from Cinderella, Op.102, 6uo2bD7oNv0","Prokofiev, Sergey",-5,0.02370542287826538,False
+"Prokofiev, Sergey, 6 Pieces from Cinderella, Op.102, 6uo2bD7oNv0","Prokofiev, Sergey",-2,0.013169050216674805,False
+"Prokofiev, Sergey, 6 Pieces from Cinderella, Op.102, 6uo2bD7oNv0","Prokofiev, Sergey",2,0.009521245956420898,False
+"Prokofiev, Sergey, 6 Pieces from Cinderella, Op.102, 6uo2bD7oNv0","Prokofiev, Sergey",5,0.0200919508934021,False
+"Balakirev, Mily, Spanish Melody, OSVktCy44B4","Balakirev, Mily",-5,0.03762316703796387,False
+"Balakirev, Mily, Spanish Melody, OSVktCy44B4","Balakirev, Mily",-2,0.030243992805480957,False
+"Balakirev, Mily, Spanish Melody, OSVktCy44B4","Balakirev, Mily",2,0.03471040725708008,False
+"Balakirev, Mily, Spanish Melody, OSVktCy44B4","Balakirev, Mily",5,0.02938944101333618,False
+"Scharwenka, Xaver, Barcarolle, Op.14, 7qpPXywf9Bs","Scharwenka, Xaver",-5,0.04547065496444702,False
+"Scharwenka, Xaver, Barcarolle, Op.14, 7qpPXywf9Bs","Scharwenka, Xaver",-2,0.03509652614593506,False
+"Scharwenka, Xaver, Barcarolle, Op.14, 7qpPXywf9Bs","Scharwenka, Xaver",2,0.042587339878082275,False
+"Scharwenka, Xaver, Barcarolle, Op.14, 7qpPXywf9Bs","Scharwenka, Xaver",5,0.03918623924255371,False
+"Mozart, Wolfgang Amadeus, 5 Variations in G major, K.501, hoMXLv3U3To","Mozart, Wolfgang Amadeus",-5,0.022582650184631348,True
+"Mozart, Wolfgang Amadeus, 5 Variations in G major, K.501, hoMXLv3U3To","Mozart, Wolfgang Amadeus",-2,0.01879751682281494,True
+"Mozart, Wolfgang Amadeus, 5 Variations in G major, K.501, hoMXLv3U3To","Mozart, Wolfgang Amadeus",2,0.01948368549346924,False
+"Mozart, Wolfgang Amadeus, 5 Variations in G major, K.501, hoMXLv3U3To","Mozart, Wolfgang Amadeus",5,0.02056252956390381,False
+"Bach, Johann Sebastian, Invention in C minor, BWV 773, XCh0k-jsCiY","Bach, Johann Sebastian",-5,0.014239013195037842,False
+"Bach, Johann Sebastian, Invention in C minor, BWV 773, XCh0k-jsCiY","Bach, Johann Sebastian",-2,0.01700526475906372,False
+"Bach, Johann Sebastian, Invention in C minor, BWV 773, XCh0k-jsCiY","Bach, Johann Sebastian",2,0.010829687118530273,False
+"Bach, Johann Sebastian, Invention in C minor, BWV 773, XCh0k-jsCiY","Bach, Johann Sebastian",5,0.01871126890182495,False
+"Gurlitt, Cornelius, Fleurs de Champs, Op.104, 81fcIZ9dd7Q","Gurlitt, Cornelius",-5,0.05176270008087158,False
+"Gurlitt, Cornelius, Fleurs de Champs, Op.104, 81fcIZ9dd7Q","Gurlitt, Cornelius",-2,0.04573732614517212,False
+"Gurlitt, Cornelius, Fleurs de Champs, Op.104, 81fcIZ9dd7Q","Gurlitt, Cornelius",2,0.0517193078994751,False
+"Gurlitt, Cornelius, Fleurs de Champs, Op.104, 81fcIZ9dd7Q","Gurlitt, Cornelius",5,0.04349762201309204,False
+"Rachmaninoff, Sergei, Polka de W.R., EMFWuGd7vSo","Rachmaninoff, Sergei",-5,0.012221693992614746,False
+"Rachmaninoff, Sergei, Polka de W.R., EMFWuGd7vSo","Rachmaninoff, Sergei",-2,0.012209892272949219,False
+"Rachmaninoff, Sergei, Polka de W.R., EMFWuGd7vSo","Rachmaninoff, Sergei",2,0.011295080184936523,False
+"Rachmaninoff, Sergei, Polka de W.R., EMFWuGd7vSo","Rachmaninoff, Sergei",5,0.012519598007202148,False
+"Chopin, Frédéric, Variations brillantes, Op.12, m7Sxe1y0U7M","Chopin, Frédéric",-5,0.03251612186431885,False
+"Chopin, Frédéric, Variations brillantes, Op.12, m7Sxe1y0U7M","Chopin, Frédéric",-2,0.01798713207244873,False
+"Chopin, Frédéric, Variations brillantes, Op.12, m7Sxe1y0U7M","Chopin, Frédéric",2,0.017693638801574707,False
+"Chopin, Frédéric, Variations brillantes, Op.12, m7Sxe1y0U7M","Chopin, Frédéric",5,0.03007274866104126,False
+"Johnson, Charles Leslie, Under the Southern Moon, NTl1KIZEZrc","Johnson, Charles Leslie",-5,0.023963212966918945,False
+"Johnson, Charles Leslie, Under the Southern Moon, NTl1KIZEZrc","Johnson, Charles Leslie",-2,0.021461129188537598,False
+"Johnson, Charles Leslie, Under the Southern Moon, NTl1KIZEZrc","Johnson, Charles Leslie",2,0.015085339546203613,False
+"Johnson, Charles Leslie, Under the Southern Moon, NTl1KIZEZrc","Johnson, Charles Leslie",5,0.021035492420196533,False
+"Tchaikovsky, Pyotr, Moment lyrique, oDyytmxRtDY","Tchaikovsky, Pyotr",-5,0.04052501916885376,False
+"Tchaikovsky, Pyotr, Moment lyrique, oDyytmxRtDY","Tchaikovsky, Pyotr",-2,0.02854079008102417,False
+"Tchaikovsky, Pyotr, Moment lyrique, oDyytmxRtDY","Tchaikovsky, Pyotr",2,0.04357486963272095,False
+"Tchaikovsky, Pyotr, Moment lyrique, oDyytmxRtDY","Tchaikovsky, Pyotr",5,0.04263961315155029,False
+"Scott, Cyril, Impressions from the Jungle Book, 27IIYJB0V7Q","Scott, Cyril",-5,0.01520848274230957,True
+"Scott, Cyril, Impressions from the Jungle Book, 27IIYJB0V7Q","Scott, Cyril",-2,0.00861513614654541,True
+"Scott, Cyril, Impressions from the Jungle Book, 27IIYJB0V7Q","Scott, Cyril",2,0.008255958557128906,False
+"Scott, Cyril, Impressions from the Jungle Book, 27IIYJB0V7Q","Scott, Cyril",5,0.014936089515686035,False
+"Balakirev, Mily, Nocturne No.2, NZYtqt6lIcw","Balakirev, Mily",-5,0.031023502349853516,False
+"Balakirev, Mily, Nocturne No.2, NZYtqt6lIcw","Balakirev, Mily",-2,0.017901897430419922,False
+"Balakirev, Mily, Nocturne No.2, NZYtqt6lIcw","Balakirev, Mily",2,0.02239018678665161,False
+"Balakirev, Mily, Nocturne No.2, NZYtqt6lIcw","Balakirev, Mily",5,0.023292958736419678,True
+"Czerny, Carl, Das moderne Klavierspiel, Op.837, 9YJlw-o7DUM","Czerny, Carl",-5,0.019280731678009033,True
+"Czerny, Carl, Das moderne Klavierspiel, Op.837, 9YJlw-o7DUM","Czerny, Carl",-2,0.015964806079864502,False
+"Czerny, Carl, Das moderne Klavierspiel, Op.837, 9YJlw-o7DUM","Czerny, Carl",2,0.013360381126403809,True
+"Czerny, Carl, Das moderne Klavierspiel, Op.837, 9YJlw-o7DUM","Czerny, Carl",5,0.017711281776428223,True
+"Poulenc, Francis, Esquisse d’une fanfare, FP 25, VKt6Emx4NoM","Poulenc, Francis",-5,0.015218377113342285,False
+"Poulenc, Francis, Esquisse d’une fanfare, FP 25, VKt6Emx4NoM","Poulenc, Francis",-2,0.007180333137512207,False
+"Poulenc, Francis, Esquisse d’une fanfare, FP 25, VKt6Emx4NoM","Poulenc, Francis",2,0.007816016674041748,False
+"Poulenc, Francis, Esquisse d’une fanfare, FP 25, VKt6Emx4NoM","Poulenc, Francis",5,0.01696193218231201,True
+"Nazareth, Ernesto, A bela Melusina, 3MJeFz8dwZk","Nazareth, Ernesto",-5,0.019543886184692383,False
+"Nazareth, Ernesto, A bela Melusina, 3MJeFz8dwZk","Nazareth, Ernesto",-2,0.012159764766693115,False
+"Nazareth, Ernesto, A bela Melusina, 3MJeFz8dwZk","Nazareth, Ernesto",2,0.016240596771240234,False
+"Nazareth, Ernesto, A bela Melusina, 3MJeFz8dwZk","Nazareth, Ernesto",5,0.022538602352142334,False
+"Liszt, Franz, Marche héroïque, S.510, Ymb8OyJ4104","Liszt, Franz",-5,0.02333807945251465,False
+"Liszt, Franz, Marche héroïque, S.510, Ymb8OyJ4104","Liszt, Franz",-2,0.015509247779846191,False
+"Liszt, Franz, Marche héroïque, S.510, Ymb8OyJ4104","Liszt, Franz",2,0.013953328132629395,False
+"Liszt, Franz, Marche héroïque, S.510, Ymb8OyJ4104","Liszt, Franz",5,0.020412445068359375,False
+"Chaminade, Cécile, Poèmes provençaux, Op.127, XLezQGA8P3g","Chaminade, Cécile",-5,0.018502354621887207,False
+"Chaminade, Cécile, Poèmes provençaux, Op.127, XLezQGA8P3g","Chaminade, Cécile",-2,0.02091968059539795,False
+"Chaminade, Cécile, Poèmes provençaux, Op.127, XLezQGA8P3g","Chaminade, Cécile",2,0.024420976638793945,False
+"Chaminade, Cécile, Poèmes provençaux, Op.127, XLezQGA8P3g","Chaminade, Cécile",5,0.02400648593902588,False
+"Beethoven, Ludwig van, 24 Variations on 'Venni Amore', WoO 65, ZzM4s4_5WtQ","Beethoven, Ludwig van",-5,0.01657038927078247,False
+"Beethoven, Ludwig van, 24 Variations on 'Venni Amore', WoO 65, ZzM4s4_5WtQ","Beethoven, Ludwig van",-2,0.01902163028717041,False
+"Beethoven, Ludwig van, 24 Variations on 'Venni Amore', WoO 65, ZzM4s4_5WtQ","Beethoven, Ludwig van",2,0.023722589015960693,False
+"Beethoven, Ludwig van, 24 Variations on 'Venni Amore', WoO 65, ZzM4s4_5WtQ","Beethoven, Ludwig van",5,0.014720141887664795,True
+"Debussy, Claude, Pour le piano, KLicw5ryMpQ","Debussy, Claude",-5,0.016316533088684082,False
+"Debussy, Claude, Pour le piano, KLicw5ryMpQ","Debussy, Claude",-2,0.013978242874145508,False
+"Debussy, Claude, Pour le piano, KLicw5ryMpQ","Debussy, Claude",2,0.010849416255950928,False
+"Debussy, Claude, Pour le piano, KLicw5ryMpQ","Debussy, Claude",5,0.015003859996795654,False
+"Mozart, Wolfgang Amadeus, Piano Sonata No.17 in B-flat major, K.570, kVwEkgQ3dPs","Mozart, Wolfgang Amadeus",-5,0.03910112380981445,False
+"Mozart, Wolfgang Amadeus, Piano Sonata No.17 in B-flat major, K.570, kVwEkgQ3dPs","Mozart, Wolfgang Amadeus",-2,0.02934098243713379,False
+"Mozart, Wolfgang Amadeus, Piano Sonata No.17 in B-flat major, K.570, kVwEkgQ3dPs","Mozart, Wolfgang Amadeus",2,0.0236968994140625,False
+"Mozart, Wolfgang Amadeus, Piano Sonata No.17 in B-flat major, K.570, kVwEkgQ3dPs","Mozart, Wolfgang Amadeus",5,0.032618701457977295,False
+"Chopin, Frédéric, Waltz in E-flat major, B.46, 2JkFOhuhAio","Chopin, Frédéric",-5,0.04811549186706543,True
+"Chopin, Frédéric, Waltz in E-flat major, B.46, 2JkFOhuhAio","Chopin, Frédéric",-2,0.048110902309417725,False
+"Chopin, Frédéric, Waltz in E-flat major, B.46, 2JkFOhuhAio","Chopin, Frédéric",2,0.045482635498046875,False
+"Chopin, Frédéric, Waltz in E-flat major, B.46, 2JkFOhuhAio","Chopin, Frédéric",5,0.03622555732727051,False
+"Bach, Johann Sebastian, Prelude in A minor, BWV 922, 88dJlWFuTYg","Bach, Johann Sebastian",-5,0.01579946279525757,False
+"Bach, Johann Sebastian, Prelude in A minor, BWV 922, 88dJlWFuTYg","Bach, Johann Sebastian",-2,0.009178876876831055,False
+"Bach, Johann Sebastian, Prelude in A minor, BWV 922, 88dJlWFuTYg","Bach, Johann Sebastian",2,0.010277509689331055,False
+"Bach, Johann Sebastian, Prelude in A minor, BWV 922, 88dJlWFuTYg","Bach, Johann Sebastian",5,0.01959085464477539,True
+"Fauré, Gabriel, Barcarolle No.8, Op.96, LNsougxmfy8","Fauré, Gabriel",-5,0.029444336891174316,False
+"Fauré, Gabriel, Barcarolle No.8, Op.96, LNsougxmfy8","Fauré, Gabriel",-2,0.015517830848693848,False
+"Fauré, Gabriel, Barcarolle No.8, Op.96, LNsougxmfy8","Fauré, Gabriel",2,0.012197017669677734,False
+"Fauré, Gabriel, Barcarolle No.8, Op.96, LNsougxmfy8","Fauré, Gabriel",5,0.030600249767303467,False
+"Liszt, Franz, Allegro di bravura, S.151, -_peKn8MccA","Liszt, Franz",-5,0.027774333953857422,False
+"Liszt, Franz, Allegro di bravura, S.151, -_peKn8MccA","Liszt, Franz",-2,0.029660403728485107,False
+"Liszt, Franz, Allegro di bravura, S.151, -_peKn8MccA","Liszt, Franz",2,0.027854323387145996,True
+"Liszt, Franz, Allegro di bravura, S.151, -_peKn8MccA","Liszt, Franz",5,0.02909952402114868,True
+"Haydn, Joseph, Divertimento in E-flat major, Hob.XVI:45, wHwlDl6Wiwg","Haydn, Joseph",-5,0.043278276920318604,False
+"Haydn, Joseph, Divertimento in E-flat major, Hob.XVI:45, wHwlDl6Wiwg","Haydn, Joseph",-2,0.04453200101852417,False
+"Haydn, Joseph, Divertimento in E-flat major, Hob.XVI:45, wHwlDl6Wiwg","Haydn, Joseph",2,0.038795292377471924,False
+"Haydn, Joseph, Divertimento in E-flat major, Hob.XVI:45, wHwlDl6Wiwg","Haydn, Joseph",5,0.04456794261932373,False
+"Liszt, Franz, Illustrations du Prophète, S.414, TiuSXhFQDNY","Liszt, Franz",-5,0.01842522621154785,True
+"Liszt, Franz, Illustrations du Prophète, S.414, TiuSXhFQDNY","Liszt, Franz",-2,0.018954098224639893,True
+"Liszt, Franz, Illustrations du Prophète, S.414, TiuSXhFQDNY","Liszt, Franz",2,0.020468533039093018,True
+"Liszt, Franz, Illustrations du Prophète, S.414, TiuSXhFQDNY","Liszt, Franz",5,0.016340017318725586,False
+"Turina, Joaquín, Jardines de Andalucía, Op.31, Qt3zOv9-VzA","Turina, Joaquín",-5,0.028824925422668457,False
+"Turina, Joaquín, Jardines de Andalucía, Op.31, Qt3zOv9-VzA","Turina, Joaquín",-2,0.021846652030944824,False
+"Turina, Joaquín, Jardines de Andalucía, Op.31, Qt3zOv9-VzA","Turina, Joaquín",2,0.025353670120239258,False
+"Turina, Joaquín, Jardines de Andalucía, Op.31, Qt3zOv9-VzA","Turina, Joaquín",5,0.029938817024230957,False
+"Handel, George Frideric, Minuet in G minor, HWV 540, jlGXOodXpCg","Handel, George Frideric",-5,0.028294146060943604,False
+"Handel, George Frideric, Minuet in G minor, HWV 540, jlGXOodXpCg","Handel, George Frideric",-2,0.01777184009552002,False
+"Handel, George Frideric, Minuet in G minor, HWV 540, jlGXOodXpCg","Handel, George Frideric",2,0.016078710556030273,False
+"Handel, George Frideric, Minuet in G minor, HWV 540, jlGXOodXpCg","Handel, George Frideric",5,0.025083541870117188,False
