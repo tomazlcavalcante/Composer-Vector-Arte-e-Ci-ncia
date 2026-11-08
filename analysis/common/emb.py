@@ -17,8 +17,10 @@ def load_meta() -> pd.DataFrame:
     return pd.read_csv(ROOT / "analysis" / "data" / "metadata_curated.csv")
 
 
-def load(layer: int, pooling: str = "mean", windows=(1, 2, 3), include_extra=False):
+def load(layer: int, pooling: str = "mean", windows=None, include_extra=False):
     """Retorna (X [n_janelas, 768] float32, df com piece_id, composer_key, window, loss)."""
+    if windows is None:  # base de janelas fixada por ambiente (ex.: CV_WINDOWS=1,2)
+        windows = tuple(int(w) for w in os.environ.get("CV_WINDOWS", "1,2,3").split(","))
     rows, vecs = [], []
     for f in sorted(EMB_DIR.glob("*.npz")):
         w = int(f.stem.rsplit("__w", 1)[1])

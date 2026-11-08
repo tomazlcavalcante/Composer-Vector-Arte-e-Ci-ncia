@@ -1,18 +1,18 @@
 {
  "layer": 6,
  "pooling": "mean",
- "H3_R2_compositor": 0.2843,
+ "H3_R2_compositor": 0.2754,
  "H3_R2_nulo_media": 0.0235,
  "H3_R2_nulo_p95": 0.0254,
- "sobreposicao_frac_pecas_mais_perto_de_outro": 0.6445,
+ "sobreposicao_frac_pecas_mais_perto_de_outro": 0.6532,
  "H4": {
-  "mesmo_compositor_genero_diferente": 0.7686804533004761,
-  "mesmo_genero_compositor_diferente": 0.9354492425918579,
-  "mesmo_compositor_mesmo_genero": 0.6284139156341553,
-  "tudo_diferente": 1.0187629461288452,
+  "mesmo_compositor_genero_diferente": 0.7788615822792053,
+  "mesmo_genero_compositor_diferente": 0.9404037594795227,
+  "mesmo_compositor_mesmo_genero": 0.6347289681434631,
+  "tudo_diferente": 1.0183686017990112,
   "n_pecas_com_genero": 1053,
-  "R2_genero": 0.16837819257785663,
-  "R2_compositor_mesmas_pecas": 0.3230877897281369
+  "R2_genero": 0.16400491920667984,
+  "R2_compositor_mesmas_pecas": 0.31651584923264225
  },
  "mais_compactos": [
   "Victoria, Tomás Luis de",
@@ -22,7 +22,7 @@
   "Joplin, Scott"
  ],
  "mais_espalhados": [
-  "Poulenc, Francis",
+  "Mendelssohn, Felix",
   "Moszkowski, Moritz",
   "Gurlitt, Cornelius",
   "Ravina, Jean Henri",
