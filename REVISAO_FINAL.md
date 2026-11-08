@@ -36,3 +36,17 @@ Revisão independente de RESULTADOS.md e APRESENTACAO.md. Todos os números conf
 | APRESENTACAO.md | deixar explícito no título ou legenda que é a surpresa do modelo. Os IC variam bastante entre compositores. | o título já diz "Surpresa do AMT"; falar sempre "do modelo" na fala. Os IC variam bastante entre compositores. | figura atual já tem 'Surpresa do AMT' |
 
 Fora dos dois arquivos (não editado): `README.md` linha 5 diz que o modelo foi treinado no GiantMIDI-Piano; o AMT usado foi treinado no Lakh MIDI.
+
+## Revisão 2
+
+Números de Q6/Q7, slides 4 a 6 e VALIDADE (linhas 13 a 18) conferidos contra os metrics.json e CSVs de F4, F9 a F13: sem divergência numérica. Figuras dos slides 4, 5 e 6 conferidas: o texto as descreve corretamente. VALIDADE não precisou de correção. Os ajustes abaixo são de linguagem.
+
+| arquivo | antes | depois | motivo |
+|---|---|---|---|
+| RESULTADOS.md (Q6, título) | O modelo sabe mais que estatística de superfície? | A cronologia do mapa se reduz à estatística de superfície? | "sabe" antropomorfiza; a evidência é sobre o mapa |
+| RESULTADOS.md (Q7, finais) | "no espírito de Meyer" | "a leitura de Meyer é nossa, sem atribuição específica" | atribuição a Meyer não verificada |
+| RESULTADOS.md (Q7, valsas, Leitura) | "para o modelo, a valsa atravessa culturas" | as valsas ficam mais perto de Chopin que os tangos, polcas e rags dos mesmos autores; não é dizer que a valsa atravessa culturas (3/4 contra 2/4) | generalização sem a ressalva do compasso |
+| RESULTADOS.md (Meyer, convenções) | "o gênero de dança agrupa obras de culturas diferentes" | "as valsas de dança ficam juntas no mapa apesar de os autores serem diferentes" | idem |
+| APRESENTACAO.md (slide 4, título e fala) | "O modelo sabe mais..."; "capta mais do que densidade, registro ou forma" | cronologia sobrevive, com queda; "o mapa não é só esses descritores simples e lineares" | "forma" não foi medida |
+| APRESENTACAO.md (slide 5, título e fala) | "Valsas atravessam culturas" | título com "talvez só pelo compasso 3/4"; fala sem afirmar que o modelo reconhece a valsa | ressalva do compasso ausente no título |
+| APRESENTACAO.md (slides 11 e 12) | "gênero valsa agrupa obras de culturas diferentes"; "valsas atravessam culturas" | formulações com a ressalva do compasso | consistência com o slide 5 |
