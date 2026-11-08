@@ -50,3 +50,24 @@ Números de Q6/Q7, slides 4 a 6 e VALIDADE (linhas 13 a 18) conferidos contra os
 | APRESENTACAO.md (slide 4, título e fala) | "O modelo sabe mais..."; "capta mais do que densidade, registro ou forma" | cronologia sobrevive, com queda; "o mapa não é só esses descritores simples e lineares" | "forma" não foi medida |
 | APRESENTACAO.md (slide 5, título e fala) | "Valsas atravessam culturas" | título com "talvez só pelo compasso 3/4"; fala sem afirmar que o modelo reconhece a valsa | ressalva do compasso ausente no título |
 | APRESENTACAO.md (slides 11 e 12) | "gênero valsa agrupa obras de culturas diferentes"; "valsas atravessam culturas" | formulações com a ressalva do compasso | consistência com o slide 5 |
+
+## Revisão 3
+
+Coerência final de RESULTADOS.md, APRESENTACAO.md e analysis/F6_controles/VALIDADE.md contra os metrics atuais. Sem rodar modelos. Tabela da VALIDADE conferida: uma única tabela contígua (26 linhas, 5 colunas cada, sem linha em branco nem linha solta). Os 13 slides principais têm título-mensagem, visual, número, fala e cuidado; todas as figuras citadas existem (ls).
+
+| arquivo | antes | depois | motivo |
+|---|---|---|---|
+| RESULTADOS.md (Base de dados, Limitações), VALIDADE (cabeçalho), APRESENTACAO (cabeçalho, R3) | F12 e parte descritiva da F13 "não refeitas, base anterior" | regeradas com 2.103 peças; só F6 (transposição) e F7 (steering) ficam na base com cópias (2.183) | `F12/metrics.json` (n = 2.103) e `F13/metrics.json` são posteriores à remoção das cópias |
+| RESULTADOS Q7, H13, VALIDADE 17, APRESENTACAO R3 | Δ período −0,0072, 53,1%, p = 0,0012; compositor −0,0054 (p = 0,016); 33/52 e 26/52; +0,020/−0,015; perda 2,475 → 2,472; ρ −0,16 | −0,0086, 52,8%, p = 0,0005; −0,0061 (p = 0,012); 34/52 (p = 0,018) e 28/52 (p = 0,34); +0,021/−0,018; 2,476 → 2,474; −0,15 | metrics da F12. Veredito "cai" inalterado |
+| RESULTADOS Q7 (F13 descritivo) | Nazareth 0,354, 2º Czerny 0,579, Villa-Lobos 1,171, 47º | 0,352, 0,535, 1,169, 46º | `F13/metrics.json` |
+| VALIDADE 11 | ρ = −0,116 (F6, base com cópias) | ρ = −0,174 (F3, base nova), igual ao RESULTADOS Q2 | contradição entre arquivos |
+| VALIDADE 1, 12 | transposição sem marca de base | "(F6, base anterior)" | F6 metrics é de 06:37, antes da remoção das cópias |
+| VALIDADE | sem linha para H15; linha 18 sem a nuance de F14 | linha 18b (H15 refutada, com cautela; 5 de 5 em minuetos/Ländler/sarabandes, p = 0,0625) | H15 só existia no RESULTADOS |
+| APRESENTACAO slides 5, 11, 12; RESULTADOS Abertura, Q7, Meyer | "pode ser só o compasso" / "o compasso pode ser tudo" / "a valsa atravessa culturas" | "não parece ser só o compasso (F14), mas com n pequeno" | alinhar com o título do slide 5 e com a H15 |
+| APRESENTACAO slide 6 | "os 72% restantes" | "73%" (1 − 0,268) | RESULTADOS Q2 diz 73% (o REPORT da F4 diz 72%) |
+| RESULTADOS (hipóteses) | H21 antes de H20 | H20 antes de H21 | ordem |
+| RESULTADOS (figuras, 12) | "O modelo sabe mais que estatística simples" | "O mapa não é só estatística simples" | antropomorfização |
+
+Conferido e sem divergência: H1–H5, H8–H12, H14, H15, H18, H21 (F3, F4, F5, F9, F14, F16, F17 contra os textos); ARI, razão da lacuna, sonda, R² e valsas (0,417/1,085; p = 0,002). Nenhum resto de 28%, 0,505 ou 0,35 de sonda; os 2.183 que sobram estão marcados como base com cópias (F6, F7, passada 1, 3 janelas).
+
+Fora dos três arquivos (não editado): os REPORT.md da F12 (2.183 peças, números antigos) e da F13 (parte descritiva) ainda citam a base anterior; `analysis/F4_nuvens/REPORT.md` diz 72% onde 1 − 0,268 = 73%.
