@@ -96,7 +96,7 @@ Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a
 - [x] B5. Refazer F2–F5 com 3 janelas, se a B1 terminar; registrar a estabilidade.
 - [x] B6. RESULTADOS.md: conclusões por hipótese, números finais e limitações.
 - [x] B7. APRESENTACAO.md: roteiro slide a slide (mensagem, figura, número, fala), para o grupo montar o deck às 13h.
-- [ ] B8. Revisão final de RESULTADOS e APRESENTACAO por um subagente independente.
+- [x] B8. Revisão final de RESULTADOS e APRESENTACAO por um subagente independente.
 
 ## 2026-11-08, ~08:00 — errata da revisão independente (B4)
 
@@ -133,3 +133,10 @@ Pedido do Tomaz: trabalho contínuo, com leitura, escrita e revisão delegadas a
   - Tico-Tico: mesmos 3 vizinhos (Johnson, J. Scott, Nazareth).
   - Única mudança: o bloco k = 2 ganha Mendelssohn e Victoria (ARI 0,75). O núcleo pré-romântico se mantém, mas a fronteira do bloco depende da amostra.
 - Conclusão: tudo o que o RESULTADOS afirma se mantém ou fica um pouco mais forte com mais janelas.
+
+## 2026-11-08, 08:20 — B8 e verificação de metadados
+
+- **B8:** revisão final independente de RESULTADOS.md e APRESENTACAO.md. Foram 30 ajustes, quase todos de redação: avisos de figura obsoletos, exageros, mistura de bases em F7 e atribuições a Meyer que não podemos conferir. O registro está em REVISAO_FINAL.md. Também foi corrigida a descrição de `h0_barras.png`: a maior parte das fusões fica **abaixo** da faixa do nulo e só a última barra fica dentro.
+- **Metadados:** o WebFetch funciona quando chamado pelo coordenador (nos subagentes em segundo plano ficava esperando permissão). Conferi no IMSLP os 9 compositores de baixa confiança. Só Teilman estava errado: nasceu em 1845 e é **norueguês**, não dinamarquês. Os outros 8 confirmados, com URL na coluna `fonte`. Gurlitt aparece no IMSLP como alemão e dinamarquês; mantido Alemão.
+- F3 refeita com a correção (2 janelas): H1 ρ = 0,505; nacionalidade ρ = 0,083 (p = 0,019) e, controlando a época, ρ = 0,041 (p = 0,111). Números atualizados nos documentos. Conclusões inalteradas.
+- README: corrigido o modelo dos resultados (AMT, treinado no Lakh), não "treinado no GiantMIDI".

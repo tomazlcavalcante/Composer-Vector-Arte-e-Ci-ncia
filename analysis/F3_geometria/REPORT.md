@@ -17,7 +17,7 @@ Quem fica perto de quem? A proximidade acompanha período e nacionalidade?
 
 ## Resultado
 - **H1:** Mantel ρ = 0,505, p = 0,0002.
-- **H2:** nacionalidade ρ = 0,081 (p = 0,022); controlando o período, ρ = 0,039 (p = 0,123).
+- **H2:** nacionalidade ρ = 0,083 (p = 0,019); controlando o período, ρ = 0,041 (p = 0,111).
 - Distância média entre centróides: 0,932.
 - PCA: PC1 explica 33,5% e PC2 19,6% da variância dos centróides. Correlação de Spearman entre distâncias originais e projetadas: 0,76.
 - **Passada 1 (1 janela), para comparar:** Mantel ρ = 0,485; nacionalidade ρ = 0,082 (parcial 0,041, p = 0,111); distorção da PCA 0,72; distância média 0,942. As conclusões de H1 e H2 não mudaram.
@@ -35,12 +35,12 @@ Quem fica perto de quem? A proximidade acompanha período e nacionalidade?
 
 ## Comparação com o nulo
 - Mantel: o p vem de permutar a ordem dos compositores nas matrizes. Com 5.000 permutações, 0,0002 é o menor p possível (1/5001).
-- Nacionalidade: ρ pequeno, p = 0,022 sem controle. Com o período controlado, não passa de 0,05. Coerente com H2.
+- Nacionalidade: ρ pequeno, p = 0,019 sem controle. Com o período controlado, não passa de 0,05. Coerente com H2.
 - Os vizinhos não têm nulo próprio. Só os IC de bootstrap.
 
 ## O que não se pode concluir
 - H1 está confirmada, mas ρ = 0,50 é moderado. O ano de nascimento não explica a maior parte da ordem das distâncias.
-- H2: "some ao controlar a época" vale para o teste parcial (p = 0,12). Não é prova de ausência de efeito.
+- H2: "some ao controlar a época" vale para o teste parcial (p = 0,11). Não é prova de ausência de efeito.
 - O mapa 2D distorce (ρ = 0,76). Distâncias no desenho não são as distâncias reais. Por isso o título da figura de apresentação diz que o eixo principal "acompanha, em parte, a cronologia" (PC1 × ano de nascimento, ρ = 0,525): há relação com o tempo, mas não é uma linha do tempo.
 - Os IC de vários pares são largos (ex.: Debussy ↔ C. Scott vai de 0,123 a 0,385; Chopin → Grieg, de 0,249 a 0,614). "Vizinho mais próximo" pode mudar com outra amostra de peças.
 - Nacionalidade e nascimento foram curados à mão e não verificados em fonte externa.

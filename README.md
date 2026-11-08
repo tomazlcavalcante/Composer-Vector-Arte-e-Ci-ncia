@@ -2,7 +2,7 @@
 
 Ensaio para a disciplina **Artes e Ciência** (IMPA Tech), de Lucas Barbosa, Thiago Vinicius e Tomaz L. Cavalcante.
 
-O trabalho analisa **como um Music Transformer organiza os compositores no seu espaço interno**. O modelo foi treinado no GiantMIDI-Piano, e o estilo de cada compositor é definido como a média das representações das suas obras ("composer vector", Jiang et al., 2026). Essa organização é confrontada com a noção de estilo de Leonard B. Meyer (1989). Não julgamos a qualidade das músicas geradas.
+O trabalho analisa **como um Music Transformer organiza os compositores no seu espaço interno**. O acervo analisado é o GiantMIDI-Piano. Os resultados finais usam o Anticipatory Music Transformer (treinado no Lakh MIDI); o estilo de cada compositor é definido como a média das representações das suas obras ("composer vector", Jiang et al., 2026). Essa organização é confrontada com a noção de estilo de Leonard B. Meyer (1989). Não julgamos a qualidade das músicas geradas.
 
 - Plano completo e versão de dois dias: [`PLANO.md`](PLANO.md) (o documento vivo do grupo está no Claude Docs).
 - Código original do modelo: [thicius/composer-vector-ml2](https://github.com/thicius/composer-vector-ml2). O notebook usado no treino está em `referencia/`.

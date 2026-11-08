@@ -3,12 +3,12 @@
  "pooling": "mean",
  "n_composers": 52,
  "n_pieces": 2183,
- "H1_mantel_rho": 0.5048,
+ "H1_mantel_rho": 0.5049,
  "H1_p": 0.0001999600079984003,
- "H2_nat_rho": 0.0807,
- "H2_nat_p": 0.021995600879824034,
- "H2_nat_parcial_rho": 0.0389,
- "H2_nat_parcial_p": 0.1225754849030194,
+ "H2_nat_rho": 0.0834,
+ "H2_nat_p": 0.01919616076784643,
+ "H2_nat_parcial_rho": 0.0408,
+ "H2_nat_parcial_p": 0.11137772445510898,
  "pca_explicada": [
   0.3352999985218048,
   0.195700004696846
