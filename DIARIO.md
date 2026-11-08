@@ -166,3 +166,12 @@ Itens B1–B8 concluídos, mais os extras: diagramas, exemplos MIDI, descritores
 - **Metadados:** os compositores conhecidos seguem sem URL de fonte. Só os 9 de baixa confiança foram conferidos no IMSLP.
 - **Exemplos MIDI:** ouvir antes de usar.
 - **Deck:** montar a partir do APRESENTACAO.md.
+
+## 2026-11-08, 09:15 — Plano 2: resultados
+
+- **A (superfície, F9).** Os descritores simbólicos simples explicam 50% da variância das representações. Mas o mapa só de descritores acompanha a época bem menos (Mantel 0,20 contra 0,50), e a RSA modelo × descritores é 0,64. Sem os descritores, a cronologia continua (0,34) e a sonda cai pouco (0,35 → 0,31). Surpresa × época: 0,51 → 0,41 com descritores controlados (p = 0,002). **O modelo sabe mais que estatística de superfície.**
+- **B (gênero, F10).** Sem o gênero do título, a cronologia continua (0,38). O bloco pré-romântico segue no mesmo ramo, mas o corte em 2 grupos deixa de isolá-lo.
+- **C1 (F11).** Resíduos de "à frente ou atrás do tempo": 37 de 52 com IC (só da amostragem de peças) que exclui zero. O padrão: ragtime e clássicos soam "mais antigos" que a data; o romantismo tardio, "mais moderno". **Decisão:** usar só como ilustração, porque o IC não inclui a incerteza da reta e da PCA.
+- **C2 (finais, F12).** H13 cai: efeito de cerca de 1% e de sinal oposto entre períodos.
+- **C3 (fio brasileiro, F13).** Gêneros de Nazareth verificados em fontes (IMSLP, Musica Brasilis, Nazareth 150 anos). As 4 valsas ficam longe do ragtime e perto de Chopin, e os 8 tangos e polcas, o contrário: separação completa (p = 0,002). As valsas de Joplin e Johnson também ficam mais perto de Chopin que os 79 rags (p = 0,0003). **Para o modelo, a "valsa" atravessa culturas.** Ressalva: o compasso 3/4 pode ser o que ele capta.
+- **D.** Explorador interativo publicado como artifact (https://claude.ai/artifact/NeP4zc74AncnZsXsZuLvvo). Figuras novas: `F9_superficie/figs/controles_cronologia.png`, `F13_brasil/figs/valsas.png`, `F4_nuvens/figs/nuvens_pecas.png`, `F11_tempo/figs/tempo_vs_mapa.png`.
