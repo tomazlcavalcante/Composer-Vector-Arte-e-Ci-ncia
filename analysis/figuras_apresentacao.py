@@ -127,6 +127,70 @@ def steering():
     plt.close(fig)
 
 
+def steering_alfa():
+    d = pd.read_csv(HERE / "F7_deslocamento/steering_alfa.csv")
+    zero = d[d.cond == "nenhum"].progresso
+    fig, ax = plt.subplots(figsize=(10, 6))
+    cores = {"centrado": "#1f77b4", "aleatorio": "#888888"}
+    nomes = {"centrado": "vetor centrado (Chopin)", "aleatorio": "vetor aleatório"}
+    for c in ("aleatorio", "centrado"):
+        g = d[d.cond == c].groupby("alpha").progresso.agg(["mean", "std", "count"])
+        g["se"] = g["std"] / np.sqrt(g["count"])
+        xs = [0.0] + list(g.index)
+        ms = [zero.mean()] + list(g["mean"])
+        ses = [zero.std() / np.sqrt(len(zero))] + list(g["se"])
+        ax.errorbar(xs, ms, yerr=ses, fmt="-o", ms=8, color=cores[c], capsize=4, lw=2, markeredgecolor="white",
+                    label=nomes[c], zorder=3)
+        for x, m, se_ in zip(xs[1:], ms[1:], ses[1:]):
+            y = m + se_ + 0.035 if c == "centrado" else m - se_ - 0.035
+            ax.text(x, y, f"{m:.2f}".replace(".", ","), ha="center", va="center", fontsize=10.5, color=cores[c],
+                    bbox=dict(fc="white", ec="none", pad=1, alpha=0.85))
+    ax.text(-0.04, zero.mean(), f"{zero.mean():.2f}".replace(".", ","), ha="right", va="center", fontsize=10.5,
+            color=MUTED)
+    ax.axhline(0, color=MUTED, lw=1, ls="--"); ax.axhline(1, color=MUTED, lw=1, ls="--")
+    ax.text(1.68, 0.015, "origem (centróide de Bach)", ha="right", va="bottom", fontsize=10, color=MUTED)
+    ax.text(1.68, 0.985, "alvo (centróide de Chopin)", ha="right", va="top", fontsize=10, color=MUTED)
+    ax.set_xticks([0, 0.25, 0.5, 1, 1.5]); ax.set_xticklabels(["0\n(sem steering)", "0,25", "0,5", "1", "1,5"])
+    ax.set_xlim(-0.2, 1.7); ax.set_ylim(-0.1, 1.1)
+    ax.set_xlabel("intensidade α do vetor somado"); ax.set_ylabel("progresso na direção Bach → Chopin")
+    ax.legend(frameon=False, loc="lower right", bbox_to_anchor=(1, 0.12))
+    ax.set_title("Quanto mais forte o vetor de Chopin, mais a música avança; o aleatório não", fontsize=14,
+                 loc="left", fontweight="bold", pad=24)
+    ax.text(0, 1.02, "Média ± erro padrão, 7 sementes de Bach × 1 amostra por α, camada 6, continuações relidas sem "
+            "steering. Sem quebra até α = 1,5.", transform=ax.transAxes, fontsize=9.5, color=MUTED)
+    fig.tight_layout()
+    fig.savefig(HERE / "F7_deslocamento/figs/steering_alfa.png", dpi=150)
+    plt.close(fig)
+
+
+def steering_dois_sentidos():
+    pares = [("Bach → Chopin", "steering_forte.csv"), ("Chopin → Bach", "steering_forte_Chopin_Bach.csv")]
+    conds = [("nenhum", "sem steering", "#bbbbbb"), ("aleatorio", "vetor aleatório", "#888888"),
+             ("centrado", "vetor centrado (alvo), α = 1", "#1f77b4")]
+    fig, ax = plt.subplots(figsize=(10, 6))
+    w = 0.26
+    for j, (c, lab, col) in enumerate(conds):
+        for i, (nome, f) in enumerate(pares):
+            d = pd.read_csv(HERE / "F7_deslocamento" / f)
+            p = d[d.cond == c].groupby("seed").progresso.mean()  # média por semente (7 sementes)
+            m, se = p.mean(), p.std() / np.sqrt(len(p))
+            x = i + (j - 1) * w
+            ax.bar(x, m, w * 0.92, color=col, label=lab if i == 0 else None, zorder=2)
+            ax.errorbar(x, m, yerr=se, color=INK, capsize=4, lw=1.5, zorder=3)
+            ax.text(x, m + se + 0.015, f"{m:.2f}".replace(".", ","), ha="center", va="bottom", fontsize=10.5, color=INK)
+    ax.set_xticks([0, 1]); ax.set_xticklabels([n for n, _ in pares], fontsize=12)
+    ax.set_xlim(-0.6, 1.6); ax.set_ylim(0, 0.85)
+    ax.set_ylabel("progresso na direção origem → alvo")
+    ax.legend(frameon=False, loc="upper right")
+    ax.set_title("O vetor do alvo desloca a música nos dois sentidos, mais de Bach para Chopin", fontsize=14,
+                 loc="left", fontweight="bold", pad=24)
+    ax.text(0, 1.02, "Média ± erro padrão sobre 7 sementes (média das amostras de cada semente), α = 1, camada 6. "
+            "0 = origem, 1 = alvo.", transform=ax.transAxes, fontsize=9.5, color=MUTED)
+    fig.tight_layout()
+    fig.savefig(HERE / "F7_deslocamento/figs/steering_dois_sentidos.png", dpi=150)
+    plt.close(fig)
+
+
 def camadas():
     m = json.loads((HERE / "F2_representacao/metrics.json").read_text())
     r = pd.DataFrame(m["results"])
@@ -154,4 +218,4 @@ def camadas():
 if __name__ == "__main__":
     for f in (HERE / "F2_representacao/figs", HERE / "F7_deslocamento/figs"):
         f.mkdir(exist_ok=True)
-    camadas(); steering(); mapa()
+    camadas(); steering(); steering_alfa(); steering_dois_sentidos(); mapa()
