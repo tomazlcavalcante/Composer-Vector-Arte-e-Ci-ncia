@@ -18,3 +18,10 @@ __pycache__/
 .venv/
 env/
 .ipynb_checkpoints/
+apresentacao_latex/*.aux
+apresentacao_latex/*.log
+apresentacao_latex/*.fls
+apresentacao_latex/*.fdb_latexmk
+apresentacao_latex/*.out
+apresentacao_latex/*.toc
+apresentacao_latex/*.xdv

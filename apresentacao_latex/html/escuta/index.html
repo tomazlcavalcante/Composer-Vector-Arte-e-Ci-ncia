@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escuta: o que o vetor do compositor faz com a música</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+  :root { --ink:#14171C; --bg:#FBFBF9; --card:#FFFFFF; --blue:#2D5B8A; --muted:#5B6270; --line:#E2E5EA; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Inter', Arial, sans-serif; line-height:1.55; }
+  main { max-width: 940px; margin: 0 auto; padding: 56px 24px 96px; }
+  h1 { font-weight:700; font-size:40px; line-height:1.1; letter-spacing:-0.8px; margin:0 0 16px; }
+  h2.part { font-size:26px; font-weight:700; margin:56px 0 6px; letter-spacing:-0.3px; }
+  p.partlead { color:var(--muted); margin:0 0 24px; max-width:760px; }
+  h3 { font-size:21px; font-weight:600; line-height:1.25; margin:0 0 4px; }
+  .lead { font-size:17px; color:#2E333C; max-width: 760px; }
+  .note { border-left:3px solid var(--blue); padding:6px 0 6px 18px; margin:28px 0 8px; font-size:15px; color:#2E333C; }
+  .note p { margin:8px 0; }
+  section.group { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:26px 28px; margin-bottom:22px; }
+  .what { color:var(--muted); font-size:14.5px; margin:0 0 14px; }
+  .track { display:grid; grid-template-columns: 200px 1fr; gap:16px; align-items:center; padding:8px 0; border-top:1px solid #F0F1F4; }
+  .track:first-of-type { border-top:none; }
+  .label b { display:block; font-size:14.5px; }
+  .label span { font-size:12.5px; color:var(--muted); }
+  audio { width:100%; height:38px; }
+  .listen { margin:14px 0 0; font-size:15px; }
+  .listen b { color:var(--blue); }
+  table { border-collapse:collapse; font-size:13.5px; margin-top:12px; width:100%; }
+  th, td { text-align:left; padding:5px 10px 5px 0; border-bottom:1px solid #EEF0F3; }
+  th { color:var(--muted); font-weight:600; }
+  .num { text-align:right; font-variant-numeric: tabular-nums; }
+  details { margin-top:48px; }
+  summary { cursor:pointer; font-size:20px; font-weight:700; }
+  footer { color:var(--muted); font-size:13px; margin-top:48px; }
+  @media (max-width: 640px) { .track { grid-template-columns: 1fr; gap:6px; } h1 { font-size:32px; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Escuta: o que o vetor do compositor faz com a música</h1>
+<p class="lead">O modelo recebe cerca de 10 segundos do começo de uma peça real e continua sozinho por mais 120 notas. Enquanto ele gera, somamos ao estado interno da camada 6 o vetor de um compositor, com intensidade α. É o procedimento do slide 9, agora para ouvir.</p>
+
+<div class="note">
+<p><b>Como ouvir:</b> cada faixa começa com a semente real; a parte gerada começa por volta dos 10 s.</p>
+<p><b>O som:</b> piano General MIDI sintetizado, sem dinâmica nem pedal, porque o modelo não gera essas informações. Ouça a escrita (notas, ritmo, textura), não o timbre.</p>
+<p><b>Seleção:</b> com vetor, as continuações às vezes degeneram (o tempo volta para trás ou as notas se empilham). Usei o primeiro sorteio em que nenhuma versão degenerou, o mesmo sorteio para todas as versões de um grupo, salvo onde indicado. Cada versão é uma única geração: é ilustração, não medida de efeito.</p>
+</div>
+
+<h2 class="part">1. Interpolação: entre Bach e Debussy</h2>
+<p class="partlead">O vetor é uma mistura: (1 − t) · vetor de Bach + t · vetor de Debussy, sempre com α = 0,75. A semente é neutra, o começo da <i>Sonata ao Luar</i> de Beethoven. A última coluna é onde o próprio modelo, relendo a continuação sem vetor, a coloca na régua de 0 (centro de Bach) a 1 (centro de Debussy).</p>
+<section class="group">
+<h3>Beethoven, Sonata op. 27 n.º 2, 1.º movimento, de Bach a Debussy</h3>
+<p class="what">A continuação começa aos 10,2 s. Mesmo sorteio em todas as versões.</p>
+<div class="track"><div class="label"><b>Semente</b><span>os 10 s reais</span></div><audio controls preload="none" src="audio/i_0_semente_beethoven.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b><span>o modelo continua Beethoven</span></div><audio controls preload="none" src="audio/i_1_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>t = 0</b><span>só Bach</span></div><audio controls preload="none" src="audio/i_2_t000.mp3"></audio></div>
+<div class="track"><div class="label"><b>t = 0,25</b></div><audio controls preload="none" src="audio/i_2_t025.mp3"></audio></div>
+<div class="track"><div class="label"><b>t = 0,5</b><span>meio a meio</span></div><audio controls preload="none" src="audio/i_2_t050.mp3"></audio></div>
+<div class="track"><div class="label"><b>t = 0,75</b></div><audio controls preload="none" src="audio/i_2_t075.mp3"></audio></div>
+<div class="track"><div class="label"><b>t = 1</b><span>só Debussy</span></div><audio controls preload="none" src="audio/i_2_t100.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> a régua do modelo anda em ordem com a mistura (0,33 → 0,34 → 0,62 → 0,86 → 0,92). Na escrita, as notas ficam cada vez mais longas e passam a se sobrepor: do lado de Debussy soam mais de 20 notas ao mesmo tempo, como se o pedal estivesse sempre abaixado. Do lado de Bach a música fica mais grave e mais seca. O ponto do meio (t = 0,5) é o mais lento de todos.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">régua Bach → Debussy</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">notas soando juntas</th></tr>
+<tr><td>Sem vetor</td><td class="num">0,57</td><td class="num">4,7</td><td class="num">0,67 s</td><td class="num">5,4</td></tr>
+<tr><td>t = 0 (Bach)</td><td class="num">0,33</td><td class="num">4,9</td><td class="num">0,41 s</td><td class="num">4,0</td></tr>
+<tr><td>t = 0,25</td><td class="num">0,34</td><td class="num">3,0</td><td class="num">0,47 s</td><td class="num">3,1</td></tr>
+<tr><td>t = 0,5</td><td class="num">0,62</td><td class="num">2,5</td><td class="num">1,09 s</td><td class="num">4,7</td></tr>
+<tr><td>t = 0,75</td><td class="num">0,86</td><td class="num">5,2</td><td class="num">2,94 s</td><td class="num">17,3</td></tr>
+<tr><td>t = 1 (Debussy)</td><td class="num">0,92</td><td class="num">6,0</td><td class="num">3,40 s</td><td class="num">24,5</td></tr>
+</table>
+</section>
+
+<h2 class="part">2. Peças famosas, com α = 0,5, 0,75 e 1</h2>
+<p class="partlead">Cinco começos conhecidos, cada um empurrado na direção de um compositor de outro mundo. α = 1 é a intensidade do experimento do slide 9.</p>
+
+<section class="group">
+<h3>Bach, Prelúdio em dó maior (BWV 846) + vetor de Chopin</h3>
+<p class="what">A continuação começa aos 10,4 s.</p>
+<div class="track"><div class="label"><b>Semente</b><span>os 10 s reais</span></div><audio controls preload="none" src="audio/g1_bach_0_semente.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/g1_bach_1_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Chopin, α = 0,5</b></div><audio controls preload="none" src="audio/g1_bach_2_chopin_a0_5.mp3"></audio></div>
+<div class="track"><div class="label"><b>Chopin, α = 0,75</b></div><audio controls preload="none" src="audio/g1_bach_2_chopin_a0_75.mp3"></audio></div>
+<div class="track"><div class="label"><b>Chopin, α = 1</b></div><audio controls preload="none" src="audio/g1_bach_2_chopin_a1_0.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> com Chopin, as notas se alongam e o registro desce um pouco. Mas o efeito não cresce em ordem: em α = 0,75 sai uma massa ressonante (15 notas soando juntas), mais extrema que em α = 1.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">notas soando juntas</th></tr>
+<tr><td>Sem vetor</td><td class="num">4,7</td><td class="num">0,62 s</td><td class="num">4,3</td></tr>
+<tr><td>α = 0,5</td><td class="num">3,6</td><td class="num">0,93 s</td><td class="num">4,4</td></tr>
+<tr><td>α = 0,75</td><td class="num">5,5</td><td class="num">2,14 s</td><td class="num">14,6</td></tr>
+<tr><td>α = 1</td><td class="num">3,9</td><td class="num">1,28 s</td><td class="num">5,3</td></tr>
+</table>
+</section>
+
+<section class="group">
+<h3>Beethoven, Für Elise + vetor de Debussy</h3>
+<p class="what">A continuação começa aos 10,4 s.</p>
+<div class="track"><div class="label"><b>Semente</b><span>os 10 s reais</span></div><audio controls preload="none" src="audio/g2_elise_0_semente.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/g2_elise_1_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Debussy, α = 0,5</b></div><audio controls preload="none" src="audio/g2_elise_2_debussy_a0_5.mp3"></audio></div>
+<div class="track"><div class="label"><b>Debussy, α = 0,75</b></div><audio controls preload="none" src="audio/g2_elise_2_debussy_a0_75.mp3"></audio></div>
+<div class="track"><div class="label"><b>Debussy, α = 1</b></div><audio controls preload="none" src="audio/g2_elise_2_debussy_a1_0.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> só em α = 1 a mudança é clara: notas mais de duas vezes mais longas, registro mais agudo e mais sobreposição. Em α = 0,5 a continuação fica até mais rápida e picada, na direção contrária.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">altura média (MIDI)</th></tr>
+<tr><td>Sem vetor</td><td class="num">5,4</td><td class="num">0,43 s</td><td class="num">65</td></tr>
+<tr><td>α = 0,5</td><td class="num">10,3</td><td class="num">0,14 s</td><td class="num">70</td></tr>
+<tr><td>α = 0,75</td><td class="num">4,8</td><td class="num">0,56 s</td><td class="num">65</td></tr>
+<tr><td>α = 1</td><td class="num">5,5</td><td class="num">1,04 s</td><td class="num">72</td></tr>
+</table>
+</section>
+
+<section class="group">
+<h3>Satie, Gymnopédie n.º 1 + vetor de Bach</h3>
+<p class="what">A continuação começa por volta dos 9 s (a semente tem só 18 notas, de tão lenta).</p>
+<div class="track"><div class="label"><b>Semente</b><span>os 10 s reais</span></div><audio controls preload="none" src="audio/g3_gymnopedie_0_semente.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/g3_gymnopedie_1_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Bach, α = 0,5</b></div><audio controls preload="none" src="audio/g3_gymnopedie_2_bach_a0_5.mp3"></audio></div>
+<div class="track"><div class="label"><b>Bach, α = 0,75</b></div><audio controls preload="none" src="audio/g3_gymnopedie_2_bach_a0_75.mp3"></audio></div>
+<div class="track"><div class="label"><b>Bach, α = 1</b></div><audio controls preload="none" src="audio/g3_gymnopedie_2_bach_a1_0.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> o mais curioso aqui é a versão sem vetor. Sozinho, o modelo abandona a calma da Gymnopédie: passa de 2 para 5,5 notas por segundo, com notas curtíssimas. O vetor de Bach muda pouco, sem direção clara.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">altura média (MIDI)</th></tr>
+<tr><td>Semente (real)</td><td class="num">2,0</td><td class="num">2,18 s</td><td class="num">56</td></tr>
+<tr><td>Sem vetor</td><td class="num">5,5</td><td class="num">0,11 s</td><td class="num">67</td></tr>
+<tr><td>α = 0,5</td><td class="num">6,1</td><td class="num">0,08 s</td><td class="num">74</td></tr>
+<tr><td>α = 0,75</td><td class="num">7,8</td><td class="num">0,19 s</td><td class="num">69</td></tr>
+<tr><td>α = 1</td><td class="num">4,7</td><td class="num">0,24 s</td><td class="num">66</td></tr>
+</table>
+</section>
+
+<section class="group">
+<h3>Mozart, Sonata em dó maior (K. 545) + vetor de Satie</h3>
+<p class="what">A continuação começa aos 10,4 s. Aqui cada versão precisou de um sorteio diferente para não degenerar.</p>
+<div class="track"><div class="label"><b>Semente</b><span>os 10 s reais</span></div><audio controls preload="none" src="audio/g4_mozart545_0_semente.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/g4_mozart545_1_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Satie, α = 0,5</b></div><audio controls preload="none" src="audio/g4_mozart545_2_satie_a0_5.mp3"></audio></div>
+<div class="track"><div class="label"><b>Satie, α = 0,75</b></div><audio controls preload="none" src="audio/g4_mozart545_2_satie_a0_75.mp3"></audio></div>
+<div class="track"><div class="label"><b>Satie, α = 1</b></div><audio controls preload="none" src="audio/g4_mozart545_2_satie_a1_0.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> o gradiente mais limpo da página. A partir de α = 0,75 a sonata fica mais lenta, as notas se alongam e a música desce quase uma oitava. Com α = 0,5 quase nada muda.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">altura média (MIDI)</th></tr>
+<tr><td>Sem vetor</td><td class="num">10,5</td><td class="num">0,14 s</td><td class="num">68</td></tr>
+<tr><td>α = 0,5</td><td class="num">10,8</td><td class="num">0,12 s</td><td class="num">65</td></tr>
+<tr><td>α = 0,75</td><td class="num">7,0</td><td class="num">0,54 s</td><td class="num">59</td></tr>
+<tr><td>α = 1</td><td class="num">5,9</td><td class="num">0,79 s</td><td class="num">58</td></tr>
+</table>
+</section>
+
+<section class="group">
+<h3>Chopin, Fantasia-Improviso (op. 66) + vetor de Mozart</h3>
+<p class="what">A continuação começa aos 10,5 s.</p>
+<div class="track"><div class="label"><b>Semente</b><span>os 10 s reais</span></div><audio controls preload="none" src="audio/g5_impromptu_0_semente.mp3"></audio></div>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/g5_impromptu_1_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Mozart, α = 0,5</b></div><audio controls preload="none" src="audio/g5_impromptu_2_mozart_a0_5.mp3"></audio></div>
+<div class="track"><div class="label"><b>Mozart, α = 0,75</b></div><audio controls preload="none" src="audio/g5_impromptu_2_mozart_a0_75.mp3"></audio></div>
+<div class="track"><div class="label"><b>Mozart, α = 1</b></div><audio controls preload="none" src="audio/g5_impromptu_2_mozart_a1_0.mp3"></audio></div>
+<p class="listen"><b>O que ouvir:</b> sem vetor, o modelo mantém a torrente de notas do improviso (22 por segundo). Com Mozart em α = 0,75, a textura fica mais leve e mais lenta (11 notas por segundo, 2 soando juntas em vez de 5). Em α = 1 a torrente volta: aqui o efeito não cresce com α.</p>
+<table>
+<tr><th>Parte gerada</th><th class="num">notas/s</th><th class="num">duração mediana</th><th class="num">notas soando juntas</th></tr>
+<tr><td>Sem vetor</td><td class="num">22,2</td><td class="num">0,14 s</td><td class="num">5,3</td></tr>
+<tr><td>α = 0,5</td><td class="num">18,8</td><td class="num">0,15 s</td><td class="num">5,1</td></tr>
+<tr><td>α = 0,75</td><td class="num">11,2</td><td class="num">0,08 s</td><td class="num">2,2</td></tr>
+<tr><td>α = 1</td><td class="num">22,3</td><td class="num">0,08 s</td><td class="num">3,2</td></tr>
+</table>
+</section>
+
+<details>
+<summary>Rodada anterior (sementes de 4 a 15 s)</summary>
+<p class="partlead" style="margin-top:12px">Primeira tentativa, com sementes de 50 notas e vetores mais fortes.</p>
+<section class="group">
+<h3>Bach, Invenção em lá menor + vetor de Chopin</h3>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/01_bach_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Chopin, α = 1</b></div><audio controls preload="none" src="audio/02_bach_chopin_a1.mp3"></audio></div>
+<div class="track"><div class="label"><b>Chopin, α = 2</b></div><audio controls preload="none" src="audio/03_bach_chopin_a2.mp3"></audio></div>
+<div class="track"><div class="label"><b>Aleatório, α = 1,5</b><span>controle</span></div><audio controls preload="none" src="audio/04_bach_aleatorio_a1_5.mp3"></audio></div>
+</section>
+<section class="group">
+<h3>Mozart, Sonata K. 331 + vetor de Debussy</h3>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/05_mozart_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Debussy, α = 1</b></div><audio controls preload="none" src="audio/06_mozart_debussy_a1.mp3"></audio></div>
+</section>
+<section class="group">
+<h3>Chopin, Noturno op. 72 n.º 1 + vetor de Joplin</h3>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/07_chopin_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Joplin, α = 1</b></div><audio controls preload="none" src="audio/08_chopin_joplin_a1.mp3"></audio></div>
+</section>
+<section class="group">
+<h3>Nazareth, Odeon + vetor de Chopin</h3>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/09_odeon_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Chopin, α = 1,5</b></div><audio controls preload="none" src="audio/10_odeon_chopin_a1_5.mp3"></audio></div>
+</section>
+<section class="group">
+<h3>Abreu, Tico-Tico no Fubá + vetor de Satie</h3>
+<div class="track"><div class="label"><b>Sem vetor</b></div><audio controls preload="none" src="audio/11_ticotico_sem_vetor.mp3"></audio></div>
+<div class="track"><div class="label"><b>Satie, α = 0,6</b></div><audio controls preload="none" src="audio/12_ticotico_satie_a0_6.mp3"></audio></div>
+</section>
+</details>
+
+<footer>Modelo: Anticipatory Music Transformer (small), treinado no Lakh MIDI. Vetores da camada 6 de 12 (centro do compositor menos o centro geral). Sementes: começo das peças do GiantMIDI-Piano. Geração: top-p 0,98, 120 notas. Código: <code>analysis/F18_escuta/</code> no repositório do grupo.</footer>
+</main>
+</body>
+</html>
