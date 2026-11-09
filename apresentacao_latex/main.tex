@@ -1,11 +1,21 @@
 % Como um modelo de música organiza os compositores
 % Artes e Ciência · IMPA Tech · novembro de 2026
-% Compilar com XeLaTeX ou LuaLaTeX (ver README.md):  latexmk -xelatex main.tex
+% Compila com pdfLaTeX, XeLaTeX ou LuaLaTeX. Com XeLaTeX/LuaLaTeX a fonte Inter do sistema é usada, se existir.
 % Notas do apresentador: descomente a linha \setbeameroption{show notes on second screen=right}.
 
 \documentclass[aspectratio=169,10pt]{beamer}
 
-\usepackage{fontspec}
+\usepackage{iftex}
+\ifPDFTeX
+  % pdfLaTeX (padrão do Overleaf)
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+  \IfFileExists{inter.sty}{\usepackage[sfdefault]{inter}}{}
+\else
+  % XeLaTeX ou LuaLaTeX
+  \usepackage{fontspec}
+\fi
 \usepackage[brazil]{babel}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -16,9 +26,9 @@
 % \setbeameroption{show notes on second screen=right}
 
 % ---------- Fonte: Inter se estiver instalada; senão, a sans padrão ----------
-\IfFontExistsTF{Inter}{%
-  \setsansfont{Inter}[BoldFont={Inter SemiBold}]%
-}{}
+\ifPDFTeX\else
+  \IfFontExistsTF{Inter}{\setsansfont{Inter}[BoldFont={Inter SemiBold}]}{}
+\fi
 
 % ---------- Cores ----------
 \definecolor{tinta}{HTML}{14171C}

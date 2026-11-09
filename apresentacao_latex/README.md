@@ -18,15 +18,14 @@ apresentacao_latex/
 
 ## Como compilar
 
-O arquivo usa `fontspec`, então precisa de **XeLaTeX** ou **LuaLaTeX** (não de pdfLaTeX):
+Compila com **pdfLaTeX** (o padrão do Overleaf), **XeLaTeX** ou **LuaLaTeX**:
 
 ```
-latexmk -xelatex main.tex
+latexmk -pdf main.tex        # pdfLaTeX
+latexmk -xelatex main.tex    # XeLaTeX
 ```
 
-No Overleaf: Menu → Compiler → XeLaTeX.
-
-Fonte: se a fonte Inter estiver instalada, ela é usada. Se não estiver, o arquivo cai na sans padrão do LaTeX sem dar erro. A Inter é gratuita: https://rsms.me/inter/
+Fonte: com pdfLaTeX, usa o pacote `inter` se ele existir na instalação; com XeLaTeX ou LuaLaTeX, usa a fonte Inter do sistema, se estiver instalada. Sem a Inter, cai na sans padrão do LaTeX sem dar erro. O `main.pdf` incluído foi compilado com XeLaTeX e a Inter. A fonte é gratuita: https://rsms.me/inter/
 
 ## Notas do apresentador
 
