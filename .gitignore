@@ -25,3 +25,4 @@ apresentacao_latex/*.fdb_latexmk
 apresentacao_latex/*.out
 apresentacao_latex/*.toc
 apresentacao_latex/*.xdv
+!apresentacao_latex/html/escuta/audio/*.mp3
