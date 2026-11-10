@@ -39,7 +39,12 @@ O PDF passa a ter o slide à esquerda e as notas à direita, para usar com o seg
 
 ## Os links do último slide
 
-O slide 13 ("Próximos passos") tem dois links para as páginas da pasta `html/`. Eles funcionam quando o PDF está na mesma pasta que `html/` e o leitor de PDF aceita abrir arquivos locais (Okular, Evince, Adobe Reader e SumatraPDF aceitam; o leitor do navegador e o Preview do macOS em geral não). Se o link não abrir, basta abrir os arquivos `html/explorador.html` e `html/escuta/index.html` direto no navegador. As duas páginas funcionam sem internet; só a fonte depende de conexão.
+O slide 13 aponta para as duas páginas publicadas no GitHub Pages do repositório:
+
+- Mapa interativo: https://tomazlcavalcante.github.io/Composer-Vector-Arte-e-Ci-ncia/apresentacao_latex/html/explorador.html
+- Trechos para ouvir: https://tomazlcavalcante.github.io/Composer-Vector-Arte-e-Ci-ncia/apresentacao_latex/html/escuta/index.html
+
+Funcionam em qualquer leitor de PDF com internet. As mesmas páginas estão na pasta `html/` para abrir sem internet, direto no navegador.
 
 ## Origem
 
